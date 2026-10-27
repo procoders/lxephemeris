@@ -1,0 +1,195 @@
+name: Release (PyPI, npm, crates.io & GitHub Release)
+
+on:
+  push:
+    tags:
+      - "v*"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  python-wheels:
+    name: Build Python Wheels (${{ matrix.platform.os }}-${{ matrix.platform.target }})
+    runs-on: ${{ matrix.platform.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        platform:
+          - { os: ubuntu-latest, target: x86_64, manylinux: auto }
+          - { os: ubuntu-24.04-arm, target: aarch64, manylinux: auto }
+          - { os: macos-14, target: x86_64, manylinux: "" }
+          - { os: macos-14, target: aarch64, manylinux: "" }
+          - { os: windows-latest, target: x64, manylinux: "" }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Build wheel with maturin
+        uses: PyO3/maturin-action@v1
+        with:
+          working-directory: crates/lxephemeris-py
+          target: ${{ matrix.platform.target }}
+          args: --release --out dist --find-interpreter
+          sccache: "true"
+          manylinux: ${{ matrix.platform.manylinux }}
+      - name: Upload wheels artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-wheels-${{ matrix.platform.os }}-${{ matrix.platform.target }}
+          path: crates/lxephemeris-py/dist
+
+  python-sdist:
+    name: Build Python Source Distribution (sdist)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build sdist
+        uses: PyO3/maturin-action@v1
+        with:
+          working-directory: crates/lxephemeris-py
+          command: sdist
+          args: --out dist
+      - name: Upload sdist artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: python-wheels-sdist
+          path: crates/lxephemeris-py/dist
+
+  node-binaries:
+    name: Build Node.js Addon (${{ matrix.build.node_name }})
+    runs-on: ${{ matrix.build.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        build:
+          - { os: ubuntu-latest, target: x86_64-unknown-linux-gnu, lib_file: liblxephemeris_node.so, node_name: lxephemeris.linux-x64-gnu.node }
+          - { os: ubuntu-24.04-arm, target: aarch64-unknown-linux-gnu, lib_file: liblxephemeris_node.so, node_name: lxephemeris.linux-arm64-gnu.node }
+          - { os: macos-14, target: aarch64-apple-darwin, lib_file: liblxephemeris_node.dylib, node_name: lxephemeris.darwin-arm64.node }
+          - { os: macos-14, target: x86_64-apple-darwin, lib_file: liblxephemeris_node.dylib, node_name: lxephemeris.darwin-x64.node }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          targets: ${{ matrix.build.target }}
+      - uses: Swatinem/rust-cache@v2
+        with:
+          key: ${{ matrix.build.target }}
+      - name: Build lxephemeris-node
+        run: cargo build -p lxephemeris-node --release --features napi-addon --target ${{ matrix.build.target }}
+      - name: Rename to .node binary
+        shell: bash
+        run: |
+          mkdir -p dist-node
+          cp "target/${{ matrix.build.target }}/release/${{ matrix.build.lib_file }}" "dist-node/${{ matrix.build.node_name }}"
+      - name: Upload Node.js binary artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: node-binary-${{ matrix.build.node_name }}
+          path: dist-node/${{ matrix.build.node_name }}
+
+  package-and-github-release:
+    name: Package npm Tarball & Attach Release Assets
+    needs: [python-wheels, python-sdist, node-binaries]
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Download Python wheel & sdist artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: python-wheels-*
+          path: release-assets
+          merge-multiple: true
+      - name: Download Node.js binary artifacts
+        uses: actions/download-artifact@v4
+        with:
+          pattern: node-binary-*
+          path: crates/lxephemeris-node
+          merge-multiple: true
+      - name: Pack universal multi-platform npm tarball
+        run: |
+          cp README.md LICENSE.md LICENSE-NONCOMMERCIAL.md crates/lxephemeris-node/
+          cd crates/lxephemeris-node
+          npm pack --pack-destination ../../release-assets
+          cp *.node ../../release-assets/
+      - name: Upload bundled npm package artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: npm-package-tarball
+          path: release-assets/lxephemeris-*.tgz
+      - name: Attach Python & Node.js packages to GitHub Release
+        if: startsWith(github.ref, 'refs/tags/v')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          gh release upload "${GITHUB_REF_NAME}" release-assets/* --clobber
+
+  publish-npm:
+    name: Publish to npm
+    needs: [package-and-github-release]
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    env:
+      NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+    steps:
+      - uses: actions/setup-node@v4
+        if: env.NPM_TOKEN != ''
+        with:
+          node-version: "22"
+          registry-url: "https://registry.npmjs.org"
+      - uses: actions/download-artifact@v4
+        if: env.NPM_TOKEN != ''
+        with:
+          name: npm-package-tarball
+          path: npm-dist
+      - name: Publish to npm registry
+        if: env.NPM_TOKEN != ''
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+        run: npm publish npm-dist/lxephemeris-*.tgz --access public
+
+  publish-pypi:
+    name: Publish to PyPI
+    needs: [python-wheels, python-sdist]
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    env:
+      PYPI_API_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+    steps:
+      - uses: actions/download-artifact@v4
+        if: env.PYPI_API_TOKEN != ''
+        with:
+          pattern: python-wheels-*
+          path: dist
+          merge-multiple: true
+      - uses: PyO3/maturin-action@v1
+        if: env.PYPI_API_TOKEN != ''
+        env:
+          MATURIN_PYPI_TOKEN: ${{ secrets.PYPI_API_TOKEN }}
+        with:
+          command: upload
+          args: --non-interactive --skip-existing dist/*
+
+  publish-crates:
+    name: Publish to crates.io
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    env:
+      CARGO_REGISTRY_TOKEN: ${{ secrets.CARGO_REGISTRY_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+        if: env.CARGO_REGISTRY_TOKEN != ''
+      - uses: dtolnay/rust-toolchain@stable
+        if: env.CARGO_REGISTRY_TOKEN != ''
+      - name: Publish lxephemeris-core
+        if: env.CARGO_REGISTRY_TOKEN != ''
+        run: cargo publish -p lxephemeris-core
+      - name: Publish lxephemeris-cli
+        if: env.CARGO_REGISTRY_TOKEN != ''
+        run: cargo publish -p lxephemeris-cli

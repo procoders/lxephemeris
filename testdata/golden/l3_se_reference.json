@@ -1,0 +1,5459 @@
+{
+  "schema_version": "1.0.0",
+  "tier": "L3_blackbox_se_reference",
+  "oracle": "pyswisseph (strictly black-box CLI/API invocation per ARCHITECTURE.md \u00a71.2.2b)",
+  "summary_metrics": {
+    "max_midlat_23_houses_diff_arcsec": 3.609972,
+    "max_midlat_8_angles_diff_arcsec": 0.0,
+    "interpolated_lilith_vs_se_intp_apog_rms_arcmin": 4.88,
+    "interpolated_lilith_vs_se_intp_apog_max_arcmin": 8.95
+  },
+  "major_bodies": [
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "body": "Sun",
+      "lon_deg": 280.6633122966,
+      "lat_deg": 7.65346e-05,
+      "dist_au": 0.9832644482,
+      "lon_speed_deg_day": 1.0198530951,
+      "lat_speed_deg_day": 3.12418e-05,
+      "dist_speed_au_day": -2.7225e-06,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "body": "Moon",
+      "lon_deg": 279.6167515518,
+      "lat_deg": 1.7444645273,
+      "dist_au": 0.0024505221,
+      "lon_speed_deg_day": 14.4736166392,
+      "lat_speed_deg_day": 1.2533722777,
+      "dist_speed_au_day": -2.17584e-05,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "body": "Mercury",
+      "lon_deg": 259.6393851873,
+      "lat_deg": 1.0559109535,
+      "dist_au": 1.150561319,
+      "lon_speed_deg_day": 1.289598572,
+      "lat_speed_deg_day": -0.1408837947,
+      "dist_speed_au_day": 0.0168386544,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "body": "Venus",
+      "lon_deg": 306.9961931726,
+      "lat_deg": -1.6864350326,
+      "dist_au": 1.4624098315,
+      "lon_speed_deg_day": 1.2433409748,
+      "lat_speed_deg_day": -0.0063738561,
+      "dist_speed_au_day": -0.0043787766,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "body": "Mars",
+      "lon_deg": 284.2530525784,
+      "lat_deg": -0.9282385576,
+      "dist_au": 2.4007083411,
+      "lon_speed_deg_day": 0.7707443644,
+      "lat_speed_deg_day": -0.0056452215,
+      "dist_speed_au_day": -0.0005111104,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "body": "Jupiter",
+      "lon_deg": 241.2335808006,
+      "lat_deg": 0.8143999954,
+      "dist_au": 6.1078275557,
+      "lon_speed_deg_day": 0.1950475437,
+      "lat_speed_deg_day": 0.000257668,
+      "dist_speed_au_day": -0.0105088006,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "body": "Saturn",
+      "lon_deg": 267.77495957,
+      "lat_deg": 1.0073046142,
+      "dist_au": 11.0228165269,
+      "lon_speed_deg_day": 0.1162222409,
+      "lat_speed_deg_day": -0.0007279234,
+      "dist_speed_au_day": -0.0037398106,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "body": "Uranus",
+      "lon_deg": 250.1668306778,
+      "lat_deg": 0.0633347336,
+      "dist_au": 19.8335494578,
+      "lon_speed_deg_day": 0.0551575383,
+      "lat_speed_deg_day": -0.000130916,
+      "dist_speed_au_day": -0.0085657031,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "body": "Neptune",
+      "lon_deg": 85.2051727572,
+      "lat_deg": -1.299460306,
+      "dist_au": 28.9225917099,
+      "lon_speed_deg_day": -0.0271202503,
+      "lat_speed_deg_day": 0.0003512889,
+      "dist_speed_au_day": 0.0046067083,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "body": "Pluto",
+      "lon_deg": 75.2427542017,
+      "lat_deg": -9.775813834,
+      "dist_au": 46.0824005293,
+      "lon_speed_deg_day": -0.0171854712,
+      "lat_speed_deg_day": 0.0022563741,
+      "dist_speed_au_day": 0.0069410313,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "body": "Sun",
+      "lon_deg": 280.0045165092,
+      "lat_deg": -2.38294e-05,
+      "dist_au": 0.9832436785,
+      "lon_speed_deg_day": 1.0190645202,
+      "lat_speed_deg_day": 3.242e-05,
+      "dist_speed_au_day": -1.4188e-05,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "body": "Moon",
+      "lon_deg": 61.4112449009,
+      "lat_deg": 3.7816032528,
+      "dist_au": 0.002671333,
+      "lon_speed_deg_day": 12.1988519205,
+      "lat_speed_deg_day": 0.7014560255,
+      "dist_speed_au_day": -2.01673e-05,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "body": "Mercury",
+      "lon_deg": 299.4469240592,
+      "lat_deg": -1.2244372359,
+      "dist_au": 1.0029914252,
+      "lon_speed_deg_day": 1.0712881852,
+      "lat_speed_deg_day": 0.1722072649,
+      "dist_speed_au_day": -0.0255101938,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "body": "Venus",
+      "lon_deg": 316.9793609436,
+      "lat_deg": 0.6307122434,
+      "dist_au": 0.3746855052,
+      "lon_speed_deg_day": 0.3541144202,
+      "lat_speed_deg_day": 0.1932994742,
+      "dist_speed_au_day": -0.0060728582,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "body": "Mars",
+      "lon_deg": 182.211078483,
+      "lat_deg": 2.5124877025,
+      "dist_au": 1.2155205788,
+      "lon_speed_deg_day": 0.3678412453,
+      "lat_speed_deg_day": 0.017984314,
+      "dist_speed_au_day": -0.0097089956,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "body": "Jupiter",
+      "lon_deg": 306.5052724802,
+      "lat_deg": -0.5840093836,
+      "dist_au": 5.935366758,
+      "lon_speed_deg_day": 0.225192179,
+      "lat_speed_deg_day": -0.0007320895,
+      "dist_speed_au_day": 0.0068051677,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "body": "Saturn",
+      "lon_deg": 169.4374390687,
+      "lat_deg": 2.006193651,
+      "dist_au": 8.9624863843,
+      "lon_speed_deg_day": -0.0033401453,
+      "lat_speed_deg_day": 0.0045380478,
+      "dist_speed_au_day": -0.0155191204,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "body": "Uranus",
+      "lon_deg": 92.682740229,
+      "lat_deg": 0.2689245313,
+      "dist_au": 17.9698579037,
+      "lon_speed_deg_day": -0.0425859352,
+      "lat_speed_deg_day": 0.0001206126,
+      "dist_speed_au_day": 0.0020104348,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "body": "Neptune",
+      "lon_deg": 197.2660042231,
+      "lat_deg": 1.591667652,
+      "dist_au": 30.4037223592,
+      "lon_speed_deg_day": 0.0101703109,
+      "lat_speed_deg_day": 0.0009852921,
+      "dist_speed_au_day": -0.0172270337,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "body": "Pluto",
+      "lon_deg": 137.7985349678,
+      "lat_deg": 8.2015413608,
+      "dist_au": 35.5510787915,
+      "lon_speed_deg_day": -0.0178440354,
+      "lat_speed_deg_day": 0.0036781718,
+      "dist_speed_au_day": -0.0112963742,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "body": "Sun",
+      "lon_deg": 280.3681665583,
+      "lat_deg": 0.0002323318,
+      "dist_au": 0.9833276503,
+      "lon_speed_deg_day": 1.0194320212,
+      "lat_speed_deg_day": -8.867e-07,
+      "dist_speed_au_day": -7.3427e-06,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "body": "Moon",
+      "lon_deg": 223.3148945943,
+      "lat_deg": 5.1709469544,
+      "dist_au": 0.0026899635,
+      "lon_speed_deg_day": 12.0212913664,
+      "lat_speed_deg_day": -0.1778892602,
+      "dist_speed_au_day": 1.85826e-05,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "body": "Mercury",
+      "lon_deg": 271.8881253093,
+      "lat_deg": -0.9947531533,
+      "dist_au": 1.4154660708,
+      "lon_speed_deg_day": 1.5562501902,
+      "lat_speed_deg_day": -0.0974941654,
+      "dist_speed_au_day": 0.0046202408,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "body": "Venus",
+      "lon_deg": 241.5649051341,
+      "lat_deg": 2.0663687344,
+      "dist_au": 1.137574589,
+      "lon_speed_deg_day": 1.2090388892,
+      "lat_speed_deg_day": -0.0280726253,
+      "dist_speed_au_day": 0.0064858952,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "body": "Mars",
+      "lon_deg": 327.9627402813,
+      "lat_deg": -1.0677921622,
+      "dist_au": 1.8496834273,
+      "lon_speed_deg_day": 0.7756727563,
+      "lat_speed_deg_day": 0.0124754751,
+      "dist_speed_au_day": 0.0054248047,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "body": "Jupiter",
+      "lon_deg": 25.2530001972,
+      "lat_deg": -1.2621766595,
+      "dist_au": 4.6211698699,
+      "lon_speed_deg_day": 0.0407588278,
+      "lat_speed_deg_day": 0.0051733605,
+      "dist_speed_au_day": 0.0155207758,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "body": "Saturn",
+      "lon_deg": 40.3956536907,
+      "lat_deg": -2.4448260618,
+      "dist_au": 8.6527853483,
+      "lon_speed_deg_day": -0.0199461209,
+      "lat_speed_deg_day": 0.0047431439,
+      "dist_speed_au_day": 0.014379316,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "body": "Uranus",
+      "lon_deg": 314.8091859736,
+      "lat_deg": -0.658333059,
+      "dist_au": 20.727161907,
+      "lon_speed_deg_day": 0.0503432036,
+      "lat_speed_deg_day": 0.0002500284,
+      "dist_speed_au_day": 0.0099098741,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "body": "Neptune",
+      "lon_deg": 303.1929549455,
+      "lat_deg": 0.2349913519,
+      "dist_au": 31.0245221944,
+      "lon_speed_deg_day": 0.0355699582,
+      "lat_speed_deg_day": -0.0002236548,
+      "dist_speed_au_day": 0.0067554868,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "body": "Pluto",
+      "lon_deg": 251.454682877,
+      "lat_deg": 10.8552013821,
+      "dist_au": 31.0643960702,
+      "lon_speed_deg_day": 0.0351530688,
+      "lat_speed_deg_day": 0.0014673286,
+      "dist_speed_au_day": -0.0079140825,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "body": "Sun",
+      "lon_deg": 89.8916654147,
+      "lat_deg": 6.4421e-06,
+      "dist_au": 1.016195936,
+      "lon_speed_deg_day": 0.9545848654,
+      "lat_speed_deg_day": 1.33718e-05,
+      "dist_speed_au_day": 7.26654e-05,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "body": "Moon",
+      "lon_deg": 28.8557136829,
+      "lat_deg": 3.007651796,
+      "dist_au": 0.0024477667,
+      "lon_speed_deg_day": 14.4544857758,
+      "lat_speed_deg_day": 1.0183329258,
+      "dist_speed_au_day": -1.70935e-05,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "body": "Mercury",
+      "lon_deg": 111.6750383295,
+      "lat_deg": 1.8032506539,
+      "dist_au": 1.0556660085,
+      "lon_speed_deg_day": 1.5577817036,
+      "lat_speed_deg_day": -0.072042781,
+      "dist_speed_au_day": -0.0174270517,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "body": "Venus",
+      "lon_deg": 45.2277500318,
+      "lat_deg": -2.6878949441,
+      "dist_au": 0.8585414693,
+      "lon_speed_deg_day": 1.0605810742,
+      "lat_speed_deg_day": -0.0035553562,
+      "dist_speed_au_day": 0.0078917523,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "body": "Mars",
+      "lon_deg": 152.0469765636,
+      "lat_deg": 1.153362301,
+      "dist_au": 1.8528529081,
+      "lon_speed_deg_day": 0.5649013597,
+      "lat_speed_deg_day": -0.0142063115,
+      "dist_speed_au_day": 0.0074606134,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "body": "Jupiter",
+      "lon_deg": 92.5329900687,
+      "lat_deg": -0.1452605961,
+      "dist_au": 6.1563774289,
+      "lon_speed_deg_day": 0.2283894884,
+      "lat_speed_deg_day": 0.0016042017,
+      "dist_speed_au_day": 0.0011511754,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "body": "Saturn",
+      "lon_deg": 1.5238801109,
+      "lat_deg": -2.1910937248,
+      "dist_au": 9.5531575224,
+      "lon_speed_deg_day": 0.0367242524,
+      "lat_speed_deg_day": -0.004429855,
+      "dist_speed_au_day": -0.016625372,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "body": "Uranus",
+      "lon_deg": 59.2075211899,
+      "lat_deg": -0.2095702541,
+      "dist_au": 20.3910888112,
+      "lon_speed_deg_day": 0.0519694206,
+      "lat_speed_deg_day": 4.20448e-05,
+      "dist_speed_au_day": -0.0086178158,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "body": "Neptune",
+      "lon_deg": 2.1225425038,
+      "lat_deg": -1.31491564,
+      "dist_au": 29.912064593,
+      "lon_speed_deg_day": 0.0075831295,
+      "lat_speed_deg_day": -0.0008628792,
+      "dist_speed_au_day": -0.0168262029,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "body": "Pluto",
+      "lon_deg": 303.3401887404,
+      "lat_deg": -3.6876615879,
+      "dist_au": 34.4372164609,
+      "lon_speed_deg_day": -0.0186827565,
+      "lat_speed_deg_day": -0.0024147986,
+      "dist_speed_au_day": -0.0086860079,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "body": "Sun",
+      "lon_deg": 280.2380029405,
+      "lat_deg": 0.0001227533,
+      "dist_au": 0.9833611019,
+      "lon_speed_deg_day": 1.0191394268,
+      "lat_speed_deg_day": -1.69135e-05,
+      "dist_speed_au_day": -2.47464e-05,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "body": "Moon",
+      "lon_deg": 11.8745249259,
+      "lat_deg": 3.8310597964,
+      "dist_au": 0.0025163804,
+      "lon_speed_deg_day": 13.6680716537,
+      "lat_speed_deg_day": -0.8314670338,
+      "dist_speed_au_day": 3.02486e-05,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "body": "Mercury",
+      "lon_deg": 270.5580309403,
+      "lat_deg": 3.0968307019,
+      "dist_au": 0.6959198397,
+      "lon_speed_deg_day": -1.0331039843,
+      "lat_speed_deg_day": 0.0877483459,
+      "dist_speed_au_day": 0.0105649729,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "body": "Venus",
+      "lon_deg": 280.6178511821,
+      "lat_deg": -0.5878589904,
+      "dist_au": 1.7107137144,
+      "lon_speed_deg_day": 1.2584072587,
+      "lat_speed_deg_day": -0.0364764291,
+      "dist_speed_au_day": -3.04423e-05,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "body": "Mars",
+      "lon_deg": 227.3964698268,
+      "lat_deg": 0.7763861449,
+      "dist_au": 2.016226643,
+      "lon_speed_deg_day": 0.6354679462,
+      "lat_speed_deg_day": -0.0073618737,
+      "dist_speed_au_day": -0.0084318085,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "body": "Jupiter",
+      "lon_deg": 121.7505280622,
+      "lat_deg": 0.4567205761,
+      "dist_au": 4.3138648281,
+      "lon_speed_deg_day": -0.1174097791,
+      "lat_speed_deg_day": 0.002765407,
+      "dist_speed_au_day": -0.005525314,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "body": "Saturn",
+      "lon_deg": 297.5164282096,
+      "lat_deg": -0.2030398534,
+      "dist_au": 10.9195877445,
+      "lon_speed_deg_day": 0.1154606018,
+      "lat_speed_deg_day": -0.0011048956,
+      "dist_speed_au_day": 0.0049006919,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "body": "Uranus",
+      "lon_deg": 170.7354887657,
+      "lat_deg": 0.7863743253,
+      "dist_au": 17.9321206688,
+      "lon_speed_deg_day": -0.0054575591,
+      "lat_speed_deg_day": 0.0007004094,
+      "dist_speed_au_day": -0.0162868081,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "body": "Neptune",
+      "lon_deg": 53.6117693599,
+      "lat_deg": -1.763139959,
+      "dist_au": 29.1333353875,
+      "lon_speed_deg_day": -0.0174113884,
+      "lat_speed_deg_day": 0.0007989954,
+      "dist_speed_au_day": 0.0126157895,
+      "ret_flag": 260
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "body": "Pluto",
+      "lon_deg": 337.5247603365,
+      "lat_deg": -12.6932835917,
+      "dist_au": 41.9436268538,
+      "lon_speed_deg_day": 0.0166830049,
+      "lat_speed_deg_day": 0.0037239086,
+      "dist_speed_au_day": 0.0149653204,
+      "ret_flag": 260
+    }
+  ],
+  "nodes_and_liliths": [
+    {
+      "epoch_label": "1855-06-01T00:00:00",
+      "jd_tt": 2398736.5,
+      "points": {
+        "Mean_Node": {
+          "l3_se_lon_deg": 41.454525903,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002569555,
+          "l3_se_lon_speed_deg_day": -0.052900265,
+          "l1b_lon_deg": 41.454456164,
+          "diff_lon_arcsec": -0.2511
+        },
+        "True_Node": {
+          "l3_se_lon_deg": 42.669299472,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002602143,
+          "l3_se_lon_speed_deg_day": -0.06653954,
+          "l1b_lon_deg": 42.671395018,
+          "diff_lon_arcsec": 7.544
+        },
+        "Mean_Lilith": {
+          "l3_se_lon_deg": 140.310718097,
+          "l3_se_lat_deg": 5.084375758,
+          "l3_se_dist_au": 0.002710625,
+          "l3_se_lon_speed_deg_day": 0.112091298,
+          "l1b_lon_deg": 140.275498114,
+          "diff_lon_arcsec": -126.7919
+        },
+        "True_Lilith": {
+          "l3_se_lon_deg": 119.546206583,
+          "l3_se_lat_deg": 5.072648485,
+          "l3_se_dist_au": 0.002709947,
+          "l3_se_lon_speed_deg_day": -0.754393592,
+          "l1b_lon_deg": 119.547457886,
+          "diff_lon_arcsec": 4.5047
+        },
+        "Interpolated_Lilith": {
+          "l3_se_lon_deg": 142.384493117,
+          "l3_se_lat_deg": 5.137324594,
+          "l3_se_dist_au": 0.002704247,
+          "l3_se_lon_speed_deg_day": 0.18260027,
+          "l1b_lon_deg": 142.414697546,
+          "diff_lon_arcsec": 108.7359
+        }
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00",
+      "jd_tt": 2415021.0,
+      "points": {
+        "Mean_Node": {
+          "l3_se_lon_deg": 259.134852588,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002569555,
+          "l3_se_lon_speed_deg_day": -0.052908034,
+          "l1b_lon_deg": 259.134802883,
+          "diff_lon_arcsec": -0.1789
+        },
+        "True_Node": {
+          "l3_se_lon_deg": 260.25692973,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002486412,
+          "l3_se_lon_speed_deg_day": -0.025784561,
+          "l1b_lon_deg": 260.258431612,
+          "diff_lon_arcsec": 5.4068
+        },
+        "Mean_Lilith": {
+          "l3_se_lon_deg": 154.388784582,
+          "l3_se_lat_deg": -4.976790104,
+          "l3_se_dist_au": 0.002710625,
+          "l3_se_lon_speed_deg_day": 0.112028464,
+          "l1b_lon_deg": 154.445569102,
+          "diff_lon_arcsec": 204.4243
+        },
+        "True_Lilith": {
+          "l3_se_lon_deg": 135.702385997,
+          "l3_se_lat_deg": -4.327089049,
+          "l3_se_dist_au": 0.002746401,
+          "l3_se_lon_speed_deg_day": -1.984032698,
+          "l1b_lon_deg": 135.698370629,
+          "diff_lon_arcsec": -14.4553
+        },
+        "Interpolated_Lilith": {
+          "l3_se_lon_deg": 158.82172482,
+          "l3_se_lat_deg": -5.144139647,
+          "l3_se_dist_au": 0.002708616,
+          "l3_se_lon_speed_deg_day": 0.199234609,
+          "l1b_lon_deg": 158.905566031,
+          "diff_lon_arcsec": 301.8284
+        }
+      }
+    },
+    {
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "points": {
+        "Mean_Node": {
+          "l3_se_lon_deg": 251.859766653,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002569555,
+          "l3_se_lon_speed_deg_day": -0.052941461,
+          "l1b_lon_deg": 251.859744192,
+          "diff_lon_arcsec": -0.0809
+        },
+        "True_Node": {
+          "l3_se_lon_deg": 250.960395041,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002594638,
+          "l3_se_lon_speed_deg_day": -0.036061365,
+          "l1b_lon_deg": 250.962941149,
+          "diff_lon_arcsec": 9.166
+        },
+        "Mean_Lilith": {
+          "l3_se_lon_deg": 281.746482679,
+          "l3_se_lat_deg": 2.569074363,
+          "l3_se_dist_au": 0.002710625,
+          "l3_se_lon_speed_deg_day": 0.111083306,
+          "l1b_lon_deg": 281.846506612,
+          "diff_lon_arcsec": 360.0862
+        },
+        "True_Lilith": {
+          "l3_se_lon_deg": 301.148456903,
+          "l3_se_lat_deg": 3.89096366,
+          "l3_se_dist_au": 0.002624935,
+          "l3_se_lon_speed_deg_day": 0.763362863,
+          "l1b_lon_deg": 301.126576237,
+          "diff_lon_arcsec": -78.7704
+        },
+        "Interpolated_Lilith": {
+          "l3_se_lon_deg": 281.361192147,
+          "l3_se_lat_deg": 2.5652555,
+          "l3_se_dist_au": 0.002702896,
+          "l3_se_lon_speed_deg_day": 0.218174797,
+          "l1b_lon_deg": 281.340802619,
+          "diff_lon_arcsec": -73.4023
+        }
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "points": {
+        "Mean_Node": {
+          "l3_se_lon_deg": 143.078644653,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002569555,
+          "l3_se_lon_speed_deg_day": -0.052929706,
+          "l1b_lon_deg": 143.078634249,
+          "diff_lon_arcsec": -0.0375
+        },
+        "True_Node": {
+          "l3_se_lon_deg": 141.626162689,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002641937,
+          "l3_se_lon_speed_deg_day": -0.061076035,
+          "l1b_lon_deg": 141.626698163,
+          "diff_lon_arcsec": 1.9277
+        },
+        "Mean_Lilith": {
+          "l3_se_lon_deg": 187.924515857,
+          "l3_se_lat_deg": 3.633451674,
+          "l3_se_dist_au": 0.002710625,
+          "l3_se_lon_speed_deg_day": 0.111426017,
+          "l1b_lon_deg": 188.040179006,
+          "diff_lon_arcsec": 416.3873
+        },
+        "True_Lilith": {
+          "l3_se_lon_deg": 200.025093919,
+          "l3_se_lat_deg": 4.346383589,
+          "l3_se_dist_au": 0.002717483,
+          "l3_se_lon_speed_deg_day": -3.217736584,
+          "l1b_lon_deg": 200.041694239,
+          "diff_lon_arcsec": 59.7612
+        },
+        "Interpolated_Lilith": {
+          "l3_se_lon_deg": 186.646037188,
+          "l3_se_lat_deg": 3.594203821,
+          "l3_se_dist_au": 0.002702311,
+          "l3_se_lon_speed_deg_day": 0.188944684,
+          "l1b_lon_deg": 186.626348288,
+          "diff_lon_arcsec": -70.88
+        }
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "points": {
+        "Mean_Node": {
+          "l3_se_lon_deg": 125.040685175,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002569555,
+          "l3_se_lon_speed_deg_day": -0.052951808,
+          "l1b_lon_deg": 125.040685011,
+          "diff_lon_arcsec": -0.0006
+        },
+        "True_Node": {
+          "l3_se_lon_deg": 123.953329104,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002445371,
+          "l3_se_lon_speed_deg_day": -0.054376971,
+          "l1b_lon_deg": 123.954063324,
+          "diff_lon_arcsec": 2.6432
+        },
+        "Mean_Lilith": {
+          "l3_se_lon_deg": 263.464250479,
+          "l3_se_lat_deg": 3.419723161,
+          "l3_se_dist_au": 0.002710625,
+          "l3_se_lon_speed_deg_day": 0.111327688,
+          "l1b_lon_deg": 263.349373121,
+          "diff_lon_arcsec": -413.5585
+        },
+        "True_Lilith": {
+          "l3_se_lon_deg": 252.978123674,
+          "l3_se_lat_deg": 4.07559897,
+          "l3_se_dist_au": 0.002713841,
+          "l3_se_lon_speed_deg_day": 1.64653367,
+          "l1b_lon_deg": 252.994208574,
+          "diff_lon_arcsec": 57.9056
+        },
+        "Interpolated_Lilith": {
+          "l3_se_lon_deg": 259.163948367,
+          "l3_se_lat_deg": 3.685070064,
+          "l3_se_dist_au": 0.00271709,
+          "l3_se_lon_speed_deg_day": -0.015906922,
+          "l1b_lon_deg": 259.238430953,
+          "diff_lon_arcsec": 268.1373
+        }
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "points": {
+        "Mean_Node": {
+          "l3_se_lon_deg": 333.433898651,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002569555,
+          "l3_se_lon_speed_deg_day": -0.052890186,
+          "l1b_lon_deg": 333.433912947,
+          "diff_lon_arcsec": 0.0515
+        },
+        "True_Node": {
+          "l3_se_lon_deg": 332.298330742,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002631291,
+          "l3_se_lon_speed_deg_day": -0.158251021,
+          "l1b_lon_deg": 332.291401025,
+          "diff_lon_arcsec": -24.947
+        },
+        "Mean_Lilith": {
+          "l3_se_lon_deg": 259.741888223,
+          "l3_se_lat_deg": -4.93942275,
+          "l3_se_dist_au": 0.002710625,
+          "l3_se_lon_speed_deg_day": 0.112027368,
+          "l1b_lon_deg": 259.679658937,
+          "diff_lon_arcsec": -224.0254
+        },
+        "True_Lilith": {
+          "l3_se_lon_deg": 261.739808827,
+          "l3_se_lat_deg": -4.751488885,
+          "l3_se_dist_au": 0.002773272,
+          "l3_se_lon_speed_deg_day": -1.743198611,
+          "l1b_lon_deg": 261.722192755,
+          "diff_lon_arcsec": -63.4179
+        },
+        "Interpolated_Lilith": {
+          "l3_se_lon_deg": 258.652415124,
+          "l3_se_lat_deg": -4.821684259,
+          "l3_se_dist_au": 0.002716615,
+          "l3_se_lon_speed_deg_day": -0.070787116,
+          "l1b_lon_deg": 258.752922529,
+          "diff_lon_arcsec": 361.8267
+        }
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "points": {
+        "Mean_Node": {
+          "l3_se_lon_deg": 237.981129675,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002569555,
+          "l3_se_lon_speed_deg_day": -0.052961291,
+          "l1b_lon_deg": 237.981157496,
+          "diff_lon_arcsec": 0.1002
+        },
+        "True_Node": {
+          "l3_se_lon_deg": 239.499086813,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002454668,
+          "l3_se_lon_speed_deg_day": 0.015887681,
+          "l1b_lon_deg": 239.500096087,
+          "diff_lon_arcsec": 3.6334
+        },
+        "Mean_Lilith": {
+          "l3_se_lon_deg": 137.821574923,
+          "l3_se_lat_deg": -5.065141473,
+          "l3_se_dist_au": 0.002710625,
+          "l3_se_lon_speed_deg_day": 0.11201998,
+          "l1b_lon_deg": 137.86169306,
+          "diff_lon_arcsec": 144.4253
+        },
+        "True_Lilith": {
+          "l3_se_lon_deg": 109.675375549,
+          "l3_se_lat_deg": -3.982343107,
+          "l3_se_dist_au": 0.002669077,
+          "l3_se_lon_speed_deg_day": 1.253292882,
+          "l1b_lon_deg": 109.670741702,
+          "diff_lon_arcsec": -16.6819
+        },
+        "Interpolated_Lilith": {
+          "l3_se_lon_deg": 143.180745485,
+          "l3_se_lat_deg": -5.117244336,
+          "l3_se_dist_au": 0.00271291,
+          "l3_se_lon_speed_deg_day": 0.136636249,
+          "l1b_lon_deg": 143.293725049,
+          "diff_lon_arcsec": 406.7264
+        }
+      }
+    },
+    {
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "points": {
+        "Mean_Node": {
+          "l3_se_lon_deg": 350.937703334,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002569555,
+          "l3_se_lon_speed_deg_day": -0.05296023,
+          "l1b_lon_deg": 350.937761044,
+          "diff_lon_arcsec": 0.2078
+        },
+        "True_Node": {
+          "l3_se_lon_deg": 349.835452699,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002628592,
+          "l3_se_lon_speed_deg_day": -0.024331619,
+          "l1b_lon_deg": 349.834675732,
+          "diff_lon_arcsec": -2.7971
+        },
+        "Mean_Lilith": {
+          "l3_se_lon_deg": 12.223337454,
+          "l3_se_lat_deg": 1.872240436,
+          "l3_se_dist_au": 0.002710625,
+          "l3_se_lon_speed_deg_day": 0.110908633,
+          "l1b_lon_deg": 12.301756178,
+          "diff_lon_arcsec": 282.3074
+        },
+        "True_Lilith": {
+          "l3_se_lon_deg": 3.660748004,
+          "l3_se_lat_deg": 1.212487971,
+          "l3_se_dist_au": 0.002630974,
+          "l3_se_lon_speed_deg_day": 3.176201974,
+          "l1b_lon_deg": 3.632463564,
+          "diff_lon_arcsec": -101.824
+        },
+        "Interpolated_Lilith": {
+          "l3_se_lon_deg": 11.917368705,
+          "l3_se_lat_deg": 1.889151529,
+          "l3_se_dist_au": 0.002702359,
+          "l3_se_lon_speed_deg_day": 0.236390062,
+          "l1b_lon_deg": 11.908932245,
+          "diff_lon_arcsec": -30.3713
+        }
+      }
+    },
+    {
+      "epoch_label": "2145-06-01T00:00:00",
+      "jd_tt": 2504656.5,
+      "points": {
+        "Mean_Node": {
+          "l3_se_lon_deg": 192.595799508,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002569555,
+          "l3_se_lon_speed_deg_day": -0.052971593,
+          "l1b_lon_deg": 192.59588699,
+          "diff_lon_arcsec": 0.3149
+        },
+        "True_Node": {
+          "l3_se_lon_deg": 193.942901024,
+          "l3_se_lat_deg": 0.0,
+          "l3_se_dist_au": 0.002461476,
+          "l3_se_lon_speed_deg_day": 0.0045968,
+          "l1b_lon_deg": 193.938498131,
+          "diff_lon_arcsec": -15.8504
+        },
+        "Mean_Lilith": {
+          "l3_se_lon_deg": 60.025048027,
+          "l3_se_lat_deg": -3.793953432,
+          "l3_se_dist_au": 0.002710625,
+          "l3_se_lon_speed_deg_day": 0.111442008,
+          "l1b_lon_deg": 60.140350228,
+          "diff_lon_arcsec": 415.0879
+        },
+        "True_Lilith": {
+          "l3_se_lon_deg": 75.48331888,
+          "l3_se_lat_deg": -4.498302619,
+          "l3_se_dist_au": 0.002723333,
+          "l3_se_lon_speed_deg_day": -2.185359175,
+          "l1b_lon_deg": 75.478575446,
+          "diff_lon_arcsec": -17.0764
+        },
+        "Interpolated_Lilith": {
+          "l3_se_lon_deg": 58.45224017,
+          "l3_se_lat_deg": -3.558751829,
+          "l3_se_dist_au": 0.002717491,
+          "l3_se_lon_speed_deg_day": -0.036631502,
+          "l1b_lon_deg": 58.60134212,
+          "diff_lon_arcsec": 536.767
+        }
+      }
+    }
+  ],
+  "ayanamsas_12": [
+    {
+      "ayanamsa_code": "fagan_bradley",
+      "legacy_id": 0,
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "l1b_mean_deg": 22.715563482,
+      "l3_se_mean_deg": 22.715524956,
+      "diff_mean_arcsec": 0.1387,
+      "l1b_true_deg": 22.712131245,
+      "l3_se_true_deg": 22.712092709,
+      "diff_true_arcsec": 0.1387
+    },
+    {
+      "ayanamsa_code": "lahiri",
+      "legacy_id": 1,
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "l1b_mean_deg": 21.832199959,
+      "l3_se_mean_deg": 21.832317344,
+      "diff_mean_arcsec": -0.4226,
+      "l1b_true_deg": 21.828767723,
+      "l3_se_true_deg": 21.828885096,
+      "diff_true_arcsec": -0.4225
+    },
+    {
+      "ayanamsa_code": "raman",
+      "legacy_id": 3,
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "l1b_mean_deg": 20.38598014,
+      "l3_se_mean_deg": 20.386015786,
+      "diff_mean_arcsec": -0.1283,
+      "l1b_true_deg": 20.382547904,
+      "l3_se_true_deg": 20.382583539,
+      "diff_true_arcsec": -0.1283
+    },
+    {
+      "ayanamsa_code": "ushashashi",
+      "legacy_id": 4,
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "l1b_mean_deg": 18.03273014,
+      "l3_se_mean_deg": 18.032765774,
+      "diff_mean_arcsec": -0.1283,
+      "l1b_true_deg": 18.029297904,
+      "l3_se_true_deg": 18.029333527,
+      "diff_true_arcsec": -0.1282
+    },
+    {
+      "ayanamsa_code": "krishnamurti",
+      "legacy_id": 5,
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "l1b_mean_deg": 21.73542914,
+      "l3_se_mean_deg": 21.735464786,
+      "diff_mean_arcsec": -0.1283,
+      "l1b_true_deg": 21.731996904,
+      "l3_se_true_deg": 21.732032539,
+      "diff_true_arcsec": -0.1283
+    },
+    {
+      "ayanamsa_code": "yukteshwar",
+      "legacy_id": 7,
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "l1b_mean_deg": 20.453992362,
+      "l3_se_mean_deg": 20.454027774,
+      "diff_mean_arcsec": -0.1275,
+      "l1b_true_deg": 20.450560126,
+      "l3_se_true_deg": 20.450595527,
+      "diff_true_arcsec": -0.1274
+    },
+    {
+      "ayanamsa_code": "jn_bhasin",
+      "legacy_id": 8,
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "l1b_mean_deg": 20.737325696,
+      "l3_se_mean_deg": 20.737361774,
+      "diff_mean_arcsec": -0.1299,
+      "l1b_true_deg": 20.73389346,
+      "l3_se_true_deg": 20.733929527,
+      "diff_true_arcsec": -0.1298
+    },
+    {
+      "ayanamsa_code": "suryasiddhanta",
+      "legacy_id": 21,
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "l1b_mean_deg": 18.870615859,
+      "l3_se_mean_deg": 18.870288361,
+      "diff_mean_arcsec": 1.179,
+      "l1b_true_deg": 18.867183623,
+      "l3_se_true_deg": 18.866856114,
+      "diff_true_arcsec": 1.179
+    },
+    {
+      "ayanamsa_code": "ss_citra",
+      "legacy_id": 26,
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "l1b_mean_deg": 20.981320303,
+      "l3_se_mean_deg": 20.980992801,
+      "diff_mean_arcsec": 1.179,
+      "l1b_true_deg": 20.977888067,
+      "l3_se_true_deg": 20.977560554,
+      "diff_true_arcsec": 1.179
+    },
+    {
+      "ayanamsa_code": "true_citra",
+      "legacy_id": 27,
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "l1b_mean_deg": 21.818309407,
+      "l3_se_mean_deg": 21.817230108,
+      "diff_mean_arcsec": 3.8855,
+      "l1b_true_deg": 21.814877171,
+      "l3_se_true_deg": 21.81379786,
+      "diff_true_arcsec": 3.8855
+    },
+    {
+      "ayanamsa_code": "true_revati",
+      "legacy_id": 28,
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "l1b_mean_deg": 18.014809419,
+      "l3_se_mean_deg": 18.015491173,
+      "diff_mean_arcsec": -2.4543,
+      "l1b_true_deg": 18.011377183,
+      "l3_se_true_deg": 18.012058926,
+      "diff_true_arcsec": -2.4543
+    },
+    {
+      "ayanamsa_code": "true_pushya",
+      "legacy_id": 29,
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "l1b_mean_deg": 20.69547095,
+      "l3_se_mean_deg": 20.700688637,
+      "diff_mean_arcsec": -18.7837,
+      "l1b_true_deg": 20.692038713,
+      "l3_se_true_deg": 20.697256389,
+      "diff_true_arcsec": -18.7836
+    },
+    {
+      "ayanamsa_code": "fagan_bradley",
+      "legacy_id": 0,
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "l1b_mean_deg": 23.343793261,
+      "l3_se_mean_deg": 23.343719102,
+      "diff_mean_arcsec": 0.267,
+      "l1b_true_deg": 23.348611695,
+      "l3_se_true_deg": 23.348537491,
+      "diff_true_arcsec": 0.2671
+    },
+    {
+      "ayanamsa_code": "lahiri",
+      "legacy_id": 1,
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "l1b_mean_deg": 22.460429728,
+      "l3_se_mean_deg": 22.460511479,
+      "diff_mean_arcsec": -0.2943,
+      "l1b_true_deg": 22.465248162,
+      "l3_se_true_deg": 22.465329869,
+      "diff_true_arcsec": -0.2941
+    },
+    {
+      "ayanamsa_code": "raman",
+      "legacy_id": 3,
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "l1b_mean_deg": 21.01421,
+      "l3_se_mean_deg": 21.014210013,
+      "diff_mean_arcsec": -0.0,
+      "l1b_true_deg": 21.019028434,
+      "l3_se_true_deg": 21.019028402,
+      "diff_true_arcsec": 0.0001
+    },
+    {
+      "ayanamsa_code": "ushashashi",
+      "legacy_id": 4,
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "l1b_mean_deg": 18.66096,
+      "l3_se_mean_deg": 18.66096,
+      "diff_mean_arcsec": 0.0,
+      "l1b_true_deg": 18.665778434,
+      "l3_se_true_deg": 18.66577839,
+      "diff_true_arcsec": 0.0002
+    },
+    {
+      "ayanamsa_code": "krishnamurti",
+      "legacy_id": 5,
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "l1b_mean_deg": 22.363659,
+      "l3_se_mean_deg": 22.363659013,
+      "diff_mean_arcsec": -0.0,
+      "l1b_true_deg": 22.368477434,
+      "l3_se_true_deg": 22.368477402,
+      "diff_true_arcsec": 0.0001
+    },
+    {
+      "ayanamsa_code": "yukteshwar",
+      "legacy_id": 7,
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "l1b_mean_deg": 21.082222222,
+      "l3_se_mean_deg": 21.082222,
+      "diff_mean_arcsec": 0.0008,
+      "l1b_true_deg": 21.087040656,
+      "l3_se_true_deg": 21.08704039,
+      "diff_true_arcsec": 0.001
+    },
+    {
+      "ayanamsa_code": "jn_bhasin",
+      "legacy_id": 8,
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "l1b_mean_deg": 21.365555556,
+      "l3_se_mean_deg": 21.365556,
+      "diff_mean_arcsec": -0.0016,
+      "l1b_true_deg": 21.370373989,
+      "l3_se_true_deg": 21.37037439,
+      "diff_true_arcsec": -0.0014
+    },
+    {
+      "ayanamsa_code": "suryasiddhanta",
+      "legacy_id": 21,
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "l1b_mean_deg": 19.498844749,
+      "l3_se_mean_deg": 19.4984815,
+      "diff_mean_arcsec": 1.3077,
+      "l1b_true_deg": 19.503663183,
+      "l3_se_true_deg": 19.50329989,
+      "diff_true_arcsec": 1.3079
+    },
+    {
+      "ayanamsa_code": "ss_citra",
+      "legacy_id": 26,
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "l1b_mean_deg": 21.609549194,
+      "l3_se_mean_deg": 21.60918594,
+      "diff_mean_arcsec": 1.3077,
+      "l1b_true_deg": 21.614367628,
+      "l3_se_true_deg": 21.61400433,
+      "diff_true_arcsec": 1.3079
+    },
+    {
+      "ayanamsa_code": "true_citra",
+      "legacy_id": 27,
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "l1b_mean_deg": 22.445969149,
+      "l3_se_mean_deg": 22.444685766,
+      "diff_mean_arcsec": 4.6202,
+      "l1b_true_deg": 22.450787583,
+      "l3_se_true_deg": 22.449504156,
+      "diff_true_arcsec": 4.6203
+    },
+    {
+      "ayanamsa_code": "true_revati",
+      "legacy_id": 28,
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "l1b_mean_deg": 18.644439248,
+      "l3_se_mean_deg": 18.645327421,
+      "diff_mean_arcsec": -3.1974,
+      "l1b_true_deg": 18.649257682,
+      "l3_se_true_deg": 18.65014581,
+      "diff_true_arcsec": -3.1973
+    },
+    {
+      "ayanamsa_code": "true_pushya",
+      "legacy_id": 29,
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "l1b_mean_deg": 21.324208365,
+      "l3_se_mean_deg": 21.329337091,
+      "diff_mean_arcsec": -18.4634,
+      "l1b_true_deg": 21.329026799,
+      "l3_se_true_deg": 21.334155481,
+      "diff_true_arcsec": -18.4633
+    },
+    {
+      "ayanamsa_code": "fagan_bradley",
+      "legacy_id": 0,
+      "epoch_label": "1949-12-31T22:09:47",
+      "jd_tt": 2433282.42345905,
+      "l1b_mean_deg": 24.042044444,
+      "l3_se_mean_deg": 24.041929837,
+      "diff_mean_arcsec": 0.4126,
+      "l1b_true_deg": 24.041124698,
+      "l3_se_true_deg": 24.041010062,
+      "diff_true_arcsec": 0.4127
+    },
+    {
+      "ayanamsa_code": "lahiri",
+      "legacy_id": 1,
+      "epoch_label": "1949-12-31T22:09:47",
+      "jd_tt": 2433282.42345905,
+      "l1b_mean_deg": 23.158680902,
+      "l3_se_mean_deg": 23.158722204,
+      "diff_mean_arcsec": -0.1487,
+      "l1b_true_deg": 23.157761155,
+      "l3_se_true_deg": 23.157802429,
+      "diff_true_arcsec": -0.1486
+    },
+    {
+      "ayanamsa_code": "raman",
+      "legacy_id": 3,
+      "epoch_label": "1949-12-31T22:09:47",
+      "jd_tt": 2433282.42345905,
+      "l1b_mean_deg": 21.712461259,
+      "l3_se_mean_deg": 21.712420823,
+      "diff_mean_arcsec": 0.1456,
+      "l1b_true_deg": 21.711541512,
+      "l3_se_true_deg": 21.711501048,
+      "diff_true_arcsec": 0.1457
+    },
+    {
+      "ayanamsa_code": "ushashashi",
+      "legacy_id": 4,
+      "epoch_label": "1949-12-31T22:09:47",
+      "jd_tt": 2433282.42345905,
+      "l1b_mean_deg": 19.359211259,
+      "l3_se_mean_deg": 19.35917081,
+      "diff_mean_arcsec": 0.1456,
+      "l1b_true_deg": 19.358291512,
+      "l3_se_true_deg": 19.358251035,
+      "diff_true_arcsec": 0.1457
+    },
+    {
+      "ayanamsa_code": "krishnamurti",
+      "legacy_id": 5,
+      "epoch_label": "1949-12-31T22:09:47",
+      "jd_tt": 2433282.42345905,
+      "l1b_mean_deg": 23.061910259,
+      "l3_se_mean_deg": 23.061869823,
+      "diff_mean_arcsec": 0.1456,
+      "l1b_true_deg": 23.060990512,
+      "l3_se_true_deg": 23.060950048,
+      "diff_true_arcsec": 0.1457
+    },
+    {
+      "ayanamsa_code": "yukteshwar",
+      "legacy_id": 7,
+      "epoch_label": "1949-12-31T22:09:47",
+      "jd_tt": 2433282.42345905,
+      "l1b_mean_deg": 21.780473481,
+      "l3_se_mean_deg": 21.78043281,
+      "diff_mean_arcsec": 0.1464,
+      "l1b_true_deg": 21.779553735,
+      "l3_se_true_deg": 21.779513035,
+      "diff_true_arcsec": 0.1465
+    },
+    {
+      "ayanamsa_code": "jn_bhasin",
+      "legacy_id": 8,
+      "epoch_label": "1949-12-31T22:09:47",
+      "jd_tt": 2433282.42345905,
+      "l1b_mean_deg": 22.063806815,
+      "l3_se_mean_deg": 22.06376681,
+      "diff_mean_arcsec": 0.144,
+      "l1b_true_deg": 22.062887068,
+      "l3_se_true_deg": 22.062847035,
+      "diff_true_arcsec": 0.1441
+    },
+    {
+      "ayanamsa_code": "suryasiddhanta",
+      "legacy_id": 21,
+      "epoch_label": "1949-12-31T22:09:47",
+      "jd_tt": 2433282.42345905,
+      "l1b_mean_deg": 20.19709454,
+      "l3_se_mean_deg": 20.196690694,
+      "diff_mean_arcsec": 1.4538,
+      "l1b_true_deg": 20.196174793,
+      "l3_se_true_deg": 20.195770919,
+      "diff_true_arcsec": 1.4539
+    },
+    {
+      "ayanamsa_code": "ss_citra",
+      "legacy_id": 26,
+      "epoch_label": "1949-12-31T22:09:47",
+      "jd_tt": 2433282.42345905,
+      "l1b_mean_deg": 22.307798984,
+      "l3_se_mean_deg": 22.307395134,
+      "diff_mean_arcsec": 1.4539,
+      "l1b_true_deg": 22.306879238,
+      "l3_se_true_deg": 22.306475359,
+      "diff_true_arcsec": 1.454
+    },
+    {
+      "ayanamsa_code": "true_citra",
+      "legacy_id": 27,
+      "epoch_label": "1949-12-31T22:09:47",
+      "jd_tt": 2433282.42345905,
+      "l1b_mean_deg": 23.143586178,
+      "l3_se_mean_deg": 23.142266246,
+      "diff_mean_arcsec": 4.7518,
+      "l1b_true_deg": 23.142666432,
+      "l3_se_true_deg": 23.141346471,
+      "diff_true_arcsec": 4.7519
+    },
+    {
+      "ayanamsa_code": "true_revati",
+      "legacy_id": 28,
+      "epoch_label": "1949-12-31T22:09:47",
+      "jd_tt": 2433282.42345905,
+      "l1b_mean_deg": 19.344245239,
+      "l3_se_mean_deg": 19.345171072,
+      "diff_mean_arcsec": -3.333,
+      "l1b_true_deg": 19.343325492,
+      "l3_se_true_deg": 19.344251297,
+      "diff_true_arcsec": -3.3329
+    },
+    {
+      "ayanamsa_code": "true_pushya",
+      "legacy_id": 29,
+      "epoch_label": "1949-12-31T22:09:47",
+      "jd_tt": 2433282.42345905,
+      "l1b_mean_deg": 22.023022325,
+      "l3_se_mean_deg": 22.0281292,
+      "diff_mean_arcsec": -18.3847,
+      "l1b_true_deg": 22.022102578,
+      "l3_se_true_deg": 22.027209425,
+      "diff_true_arcsec": -18.3846
+    },
+    {
+      "ayanamsa_code": "fagan_bradley",
+      "legacy_id": 0,
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "l1b_mean_deg": 24.128888287,
+      "l3_se_mean_deg": 24.128768588,
+      "diff_mean_arcsec": 0.4309,
+      "l1b_true_deg": 24.133548816,
+      "l3_se_true_deg": 24.133428833,
+      "diff_true_arcsec": 0.4319
+    },
+    {
+      "ayanamsa_code": "lahiri",
+      "legacy_id": 1,
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "l1b_mean_deg": 23.245524743,
+      "l3_se_mean_deg": 23.245560955,
+      "diff_mean_arcsec": -0.1304,
+      "l1b_true_deg": 23.250185272,
+      "l3_se_true_deg": 23.250221199,
+      "diff_true_arcsec": -0.1293
+    },
+    {
+      "ayanamsa_code": "raman",
+      "legacy_id": 3,
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "l1b_mean_deg": 21.79930511,
+      "l3_se_mean_deg": 21.799259582,
+      "diff_mean_arcsec": 0.1639,
+      "l1b_true_deg": 21.803965639,
+      "l3_se_true_deg": 21.803919827,
+      "diff_true_arcsec": 0.1649
+    },
+    {
+      "ayanamsa_code": "ushashashi",
+      "legacy_id": 4,
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "l1b_mean_deg": 19.44605511,
+      "l3_se_mean_deg": 19.44600957,
+      "diff_mean_arcsec": 0.1639,
+      "l1b_true_deg": 19.450715639,
+      "l3_se_true_deg": 19.450669815,
+      "diff_true_arcsec": 0.165
+    },
+    {
+      "ayanamsa_code": "krishnamurti",
+      "legacy_id": 5,
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "l1b_mean_deg": 23.14875411,
+      "l3_se_mean_deg": 23.148708582,
+      "diff_mean_arcsec": 0.1639,
+      "l1b_true_deg": 23.153414639,
+      "l3_se_true_deg": 23.153368827,
+      "diff_true_arcsec": 0.1649
+    },
+    {
+      "ayanamsa_code": "yukteshwar",
+      "legacy_id": 7,
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "l1b_mean_deg": 21.867317332,
+      "l3_se_mean_deg": 21.86727157,
+      "diff_mean_arcsec": 0.1647,
+      "l1b_true_deg": 21.871977861,
+      "l3_se_true_deg": 21.871931815,
+      "diff_true_arcsec": 0.1658
+    },
+    {
+      "ayanamsa_code": "jn_bhasin",
+      "legacy_id": 8,
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "l1b_mean_deg": 22.150650665,
+      "l3_se_mean_deg": 22.15060557,
+      "diff_mean_arcsec": 0.1623,
+      "l1b_true_deg": 22.155311194,
+      "l3_se_true_deg": 22.155265815,
+      "diff_true_arcsec": 0.1634
+    },
+    {
+      "ayanamsa_code": "suryasiddhanta",
+      "legacy_id": 21,
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "l1b_mean_deg": 20.283938179,
+      "l3_se_mean_deg": 20.283529222,
+      "diff_mean_arcsec": 1.4722,
+      "l1b_true_deg": 20.288598708,
+      "l3_se_true_deg": 20.288189467,
+      "diff_true_arcsec": 1.4733
+    },
+    {
+      "ayanamsa_code": "ss_citra",
+      "legacy_id": 26,
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "l1b_mean_deg": 22.394642623,
+      "l3_se_mean_deg": 22.394233662,
+      "diff_mean_arcsec": 1.4723,
+      "l1b_true_deg": 22.399303153,
+      "l3_se_true_deg": 22.398893907,
+      "diff_true_arcsec": 1.4733
+    },
+    {
+      "ayanamsa_code": "true_citra",
+      "legacy_id": 27,
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "l1b_mean_deg": 23.230349022,
+      "l3_se_mean_deg": 23.23557957,
+      "diff_mean_arcsec": -18.83,
+      "l1b_true_deg": 23.235009551,
+      "l3_se_true_deg": 23.240239815,
+      "diff_true_arcsec": -18.8289
+    },
+    {
+      "ayanamsa_code": "true_revati",
+      "legacy_id": 28,
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "l1b_mean_deg": 19.431285762,
+      "l3_se_mean_deg": 19.425918065,
+      "diff_mean_arcsec": 19.3237,
+      "l1b_true_deg": 19.435946291,
+      "l3_se_true_deg": 19.430578309,
+      "diff_true_arcsec": 19.3247
+    },
+    {
+      "ayanamsa_code": "true_pushya",
+      "legacy_id": 29,
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "l1b_mean_deg": 22.109927426,
+      "l3_se_mean_deg": 22.113497249,
+      "diff_mean_arcsec": -12.8514,
+      "l1b_true_deg": 22.114587956,
+      "l3_se_true_deg": 22.118157494,
+      "diff_true_arcsec": -12.8503
+    },
+    {
+      "ayanamsa_code": "fagan_bradley",
+      "legacy_id": 0,
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "l1b_mean_deg": 24.467422396,
+      "l3_se_mean_deg": 24.467282729,
+      "diff_mean_arcsec": 0.5028,
+      "l1b_true_deg": 24.464494932,
+      "l3_se_true_deg": 24.464355306,
+      "diff_true_arcsec": 0.5027
+    },
+    {
+      "ayanamsa_code": "lahiri",
+      "legacy_id": 1,
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "l1b_mean_deg": 23.584058848,
+      "l3_se_mean_deg": 23.584075091,
+      "diff_mean_arcsec": -0.0585,
+      "l1b_true_deg": 23.581131384,
+      "l3_se_true_deg": 23.581147668,
+      "diff_true_arcsec": -0.0586
+    },
+    {
+      "ayanamsa_code": "raman",
+      "legacy_id": 3,
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "l1b_mean_deg": 22.13783925,
+      "l3_se_mean_deg": 22.137773753,
+      "diff_mean_arcsec": 0.2358,
+      "l1b_true_deg": 22.134911785,
+      "l3_se_true_deg": 22.13484633,
+      "diff_true_arcsec": 0.2356
+    },
+    {
+      "ayanamsa_code": "ushashashi",
+      "legacy_id": 4,
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "l1b_mean_deg": 19.78458925,
+      "l3_se_mean_deg": 19.784523741,
+      "diff_mean_arcsec": 0.2358,
+      "l1b_true_deg": 19.781661785,
+      "l3_se_true_deg": 19.781596318,
+      "diff_true_arcsec": 0.2357
+    },
+    {
+      "ayanamsa_code": "krishnamurti",
+      "legacy_id": 5,
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "l1b_mean_deg": 23.48728825,
+      "l3_se_mean_deg": 23.487222753,
+      "diff_mean_arcsec": 0.2358,
+      "l1b_true_deg": 23.484360785,
+      "l3_se_true_deg": 23.48429533,
+      "diff_true_arcsec": 0.2356
+    },
+    {
+      "ayanamsa_code": "yukteshwar",
+      "legacy_id": 7,
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "l1b_mean_deg": 22.205851472,
+      "l3_se_mean_deg": 22.205785741,
+      "diff_mean_arcsec": 0.2366,
+      "l1b_true_deg": 22.202924007,
+      "l3_se_true_deg": 22.202858318,
+      "diff_true_arcsec": 0.2365
+    },
+    {
+      "ayanamsa_code": "jn_bhasin",
+      "legacy_id": 8,
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "l1b_mean_deg": 22.489184805,
+      "l3_se_mean_deg": 22.489119741,
+      "diff_mean_arcsec": 0.2342,
+      "l1b_true_deg": 22.486257341,
+      "l3_se_true_deg": 22.486192318,
+      "diff_true_arcsec": 0.2341
+    },
+    {
+      "ayanamsa_code": "suryasiddhanta",
+      "legacy_id": 21,
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "l1b_mean_deg": 20.622471434,
+      "l3_se_mean_deg": 20.622042429,
+      "diff_mean_arcsec": 1.5444,
+      "l1b_true_deg": 20.619543969,
+      "l3_se_true_deg": 20.619115006,
+      "diff_true_arcsec": 1.5443
+    },
+    {
+      "ayanamsa_code": "ss_citra",
+      "legacy_id": 26,
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "l1b_mean_deg": 22.733175878,
+      "l3_se_mean_deg": 22.732746869,
+      "diff_mean_arcsec": 1.5444,
+      "l1b_true_deg": 22.730248413,
+      "l3_se_true_deg": 22.729819446,
+      "diff_true_arcsec": 1.5443
+    },
+    {
+      "ayanamsa_code": "true_citra",
+      "legacy_id": 27,
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "l1b_mean_deg": 23.568570812,
+      "l3_se_mean_deg": 23.571318824,
+      "diff_mean_arcsec": -9.8928,
+      "l1b_true_deg": 23.565643347,
+      "l3_se_true_deg": 23.568391401,
+      "diff_true_arcsec": -9.893
+    },
+    {
+      "ayanamsa_code": "true_revati",
+      "legacy_id": 28,
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "l1b_mean_deg": 19.770579602,
+      "l3_se_mean_deg": 19.76817688,
+      "diff_mean_arcsec": 8.6498,
+      "l1b_true_deg": 19.767652137,
+      "l3_se_true_deg": 19.765249457,
+      "diff_true_arcsec": 8.6496
+    },
+    {
+      "ayanamsa_code": "true_pushya",
+      "legacy_id": 29,
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "l1b_mean_deg": 22.448734484,
+      "l3_se_mean_deg": 22.444719727,
+      "diff_mean_arcsec": 14.4531,
+      "l1b_true_deg": 22.44580702,
+      "l3_se_true_deg": 22.441792304,
+      "diff_true_arcsec": 14.453
+    },
+    {
+      "ayanamsa_code": "fagan_bradley",
+      "legacy_id": 0,
+      "epoch_label": "2000-01-01T00:00:00",
+      "jd_tt": 2451544.500738756,
+      "l1b_mean_deg": 24.740436785,
+      "l3_se_mean_deg": 24.740280872,
+      "diff_mean_arcsec": 0.5613,
+      "l1b_true_deg": 24.736566874,
+      "l3_se_true_deg": 24.736411134,
+      "diff_true_arcsec": 0.5607
+    },
+    {
+      "ayanamsa_code": "lahiri",
+      "legacy_id": 1,
+      "epoch_label": "2000-01-01T00:00:00",
+      "jd_tt": 2451544.500738756,
+      "l1b_mean_deg": 23.857073234,
+      "l3_se_mean_deg": 23.857073231,
+      "diff_mean_arcsec": 0.0,
+      "l1b_true_deg": 23.853203323,
+      "l3_se_true_deg": 23.853203493,
+      "diff_true_arcsec": -0.0006
+    },
+    {
+      "ayanamsa_code": "raman",
+      "legacy_id": 3,
+      "epoch_label": "2000-01-01T00:00:00",
+      "jd_tt": 2451544.500738756,
+      "l1b_mean_deg": 22.410853661,
+      "l3_se_mean_deg": 22.410771918,
+      "diff_mean_arcsec": 0.2943,
+      "l1b_true_deg": 22.406983749,
+      "l3_se_true_deg": 22.40690218,
+      "diff_true_arcsec": 0.2937
+    },
+    {
+      "ayanamsa_code": "ushashashi",
+      "legacy_id": 4,
+      "epoch_label": "2000-01-01T00:00:00",
+      "jd_tt": 2451544.500738756,
+      "l1b_mean_deg": 20.057603661,
+      "l3_se_mean_deg": 20.057521905,
+      "diff_mean_arcsec": 0.2943,
+      "l1b_true_deg": 20.053733749,
+      "l3_se_true_deg": 20.053652167,
+      "diff_true_arcsec": 0.2937
+    },
+    {
+      "ayanamsa_code": "krishnamurti",
+      "legacy_id": 5,
+      "epoch_label": "2000-01-01T00:00:00",
+      "jd_tt": 2451544.500738756,
+      "l1b_mean_deg": 23.760302661,
+      "l3_se_mean_deg": 23.760220918,
+      "diff_mean_arcsec": 0.2943,
+      "l1b_true_deg": 23.756432749,
+      "l3_se_true_deg": 23.75635118,
+      "diff_true_arcsec": 0.2937
+    },
+    {
+      "ayanamsa_code": "yukteshwar",
+      "legacy_id": 7,
+      "epoch_label": "2000-01-01T00:00:00",
+      "jd_tt": 2451544.500738756,
+      "l1b_mean_deg": 22.478865883,
+      "l3_se_mean_deg": 22.478783905,
+      "diff_mean_arcsec": 0.2951,
+      "l1b_true_deg": 22.474995971,
+      "l3_se_true_deg": 22.474914167,
+      "diff_true_arcsec": 0.2945
+    },
+    {
+      "ayanamsa_code": "jn_bhasin",
+      "legacy_id": 8,
+      "epoch_label": "2000-01-01T00:00:00",
+      "jd_tt": 2451544.500738756,
+      "l1b_mean_deg": 22.762199216,
+      "l3_se_mean_deg": 22.762117905,
+      "diff_mean_arcsec": 0.2927,
+      "l1b_true_deg": 22.758329305,
+      "l3_se_true_deg": 22.758248167,
+      "diff_true_arcsec": 0.2921
+    },
+    {
+      "ayanamsa_code": "suryasiddhanta",
+      "legacy_id": 21,
+      "epoch_label": "2000-01-01T00:00:00",
+      "jd_tt": 2451544.500738756,
+      "l1b_mean_deg": 20.89548506,
+      "l3_se_mean_deg": 20.895039742,
+      "diff_mean_arcsec": 1.6031,
+      "l1b_true_deg": 20.891615149,
+      "l3_se_true_deg": 20.891170004,
+      "diff_true_arcsec": 1.6025
+    },
+    {
+      "ayanamsa_code": "ss_citra",
+      "legacy_id": 26,
+      "epoch_label": "2000-01-01T00:00:00",
+      "jd_tt": 2451544.500738756,
+      "l1b_mean_deg": 23.006189505,
+      "l3_se_mean_deg": 23.005744182,
+      "diff_mean_arcsec": 1.6032,
+      "l1b_true_deg": 23.002319593,
+      "l3_se_true_deg": 23.001874444,
+      "diff_true_arcsec": 1.6025
+    },
+    {
+      "ayanamsa_code": "true_citra",
+      "legacy_id": 27,
+      "epoch_label": "2000-01-01T00:00:00",
+      "jd_tt": 2451544.500738756,
+      "l1b_mean_deg": 23.841343668,
+      "l3_se_mean_deg": 23.839946632,
+      "diff_mean_arcsec": 5.0293,
+      "l1b_true_deg": 23.837473756,
+      "l3_se_true_deg": 23.836076894,
+      "diff_true_arcsec": 5.0287
+    },
+    {
+      "ayanamsa_code": "true_revati",
+      "legacy_id": 28,
+      "epoch_label": "2000-01-01T00:00:00",
+      "jd_tt": 2451544.500738756,
+      "l1b_mean_deg": 20.04419139,
+      "l3_se_mean_deg": 20.04519543,
+      "diff_mean_arcsec": -3.6145,
+      "l1b_true_deg": 20.040321479,
+      "l3_se_true_deg": 20.041325692,
+      "diff_true_arcsec": -3.6152
+    },
+    {
+      "ayanamsa_code": "true_pushya",
+      "legacy_id": 29,
+      "epoch_label": "2000-01-01T00:00:00",
+      "jd_tt": 2451544.500738756,
+      "l1b_mean_deg": 22.721976419,
+      "l3_se_mean_deg": 22.727048035,
+      "diff_mean_arcsec": -18.2578,
+      "l1b_true_deg": 22.718106507,
+      "l3_se_true_deg": 22.723178296,
+      "diff_true_arcsec": -18.2584
+    },
+    {
+      "ayanamsa_code": "fagan_bradley",
+      "legacy_id": 0,
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "l1b_mean_deg": 24.740455881,
+      "l3_se_mean_deg": 24.740299966,
+      "diff_mean_arcsec": 0.5613,
+      "l1b_true_deg": 24.736585882,
+      "l3_se_true_deg": 24.736430097,
+      "diff_true_arcsec": 0.5608
+    },
+    {
+      "ayanamsa_code": "lahiri",
+      "legacy_id": 1,
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "l1b_mean_deg": 23.85709233,
+      "l3_se_mean_deg": 23.857092325,
+      "diff_mean_arcsec": 0.0,
+      "l1b_true_deg": 23.853222331,
+      "l3_se_true_deg": 23.853222456,
+      "diff_true_arcsec": -0.0005
+    },
+    {
+      "ayanamsa_code": "raman",
+      "legacy_id": 3,
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "l1b_mean_deg": 22.410872756,
+      "l3_se_mean_deg": 22.410791012,
+      "diff_mean_arcsec": 0.2943,
+      "l1b_true_deg": 22.407002757,
+      "l3_se_true_deg": 22.406921143,
+      "diff_true_arcsec": 0.2938
+    },
+    {
+      "ayanamsa_code": "ushashashi",
+      "legacy_id": 4,
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "l1b_mean_deg": 20.057622756,
+      "l3_se_mean_deg": 20.057541,
+      "diff_mean_arcsec": 0.2943,
+      "l1b_true_deg": 20.053752757,
+      "l3_se_true_deg": 20.05367113,
+      "diff_true_arcsec": 0.2939
+    },
+    {
+      "ayanamsa_code": "krishnamurti",
+      "legacy_id": 5,
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "l1b_mean_deg": 23.760321756,
+      "l3_se_mean_deg": 23.760240012,
+      "diff_mean_arcsec": 0.2943,
+      "l1b_true_deg": 23.756451757,
+      "l3_se_true_deg": 23.756370143,
+      "diff_true_arcsec": 0.2938
+    },
+    {
+      "ayanamsa_code": "yukteshwar",
+      "legacy_id": 7,
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "l1b_mean_deg": 22.478884978,
+      "l3_se_mean_deg": 22.478803,
+      "diff_mean_arcsec": 0.2951,
+      "l1b_true_deg": 22.475014979,
+      "l3_se_true_deg": 22.47493313,
+      "diff_true_arcsec": 0.2947
+    },
+    {
+      "ayanamsa_code": "jn_bhasin",
+      "legacy_id": 8,
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "l1b_mean_deg": 22.762218312,
+      "l3_se_mean_deg": 22.762137,
+      "diff_mean_arcsec": 0.2927,
+      "l1b_true_deg": 22.758348313,
+      "l3_se_true_deg": 22.75826713,
+      "diff_true_arcsec": 0.2923
+    },
+    {
+      "ayanamsa_code": "suryasiddhanta",
+      "legacy_id": 21,
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "l1b_mean_deg": 20.895504156,
+      "l3_se_mean_deg": 20.895058836,
+      "diff_mean_arcsec": 1.6032,
+      "l1b_true_deg": 20.891634157,
+      "l3_se_true_deg": 20.891188967,
+      "diff_true_arcsec": 1.6027
+    },
+    {
+      "ayanamsa_code": "ss_citra",
+      "legacy_id": 26,
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "l1b_mean_deg": 23.0062086,
+      "l3_se_mean_deg": 23.005763276,
+      "diff_mean_arcsec": 1.6032,
+      "l1b_true_deg": 23.002338601,
+      "l3_se_true_deg": 23.001893407,
+      "diff_true_arcsec": 1.6027
+    },
+    {
+      "ayanamsa_code": "true_citra",
+      "legacy_id": 27,
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "l1b_mean_deg": 23.841362753,
+      "l3_se_mean_deg": 23.840014948,
+      "diff_mean_arcsec": 4.8521,
+      "l1b_true_deg": 23.837492754,
+      "l3_se_true_deg": 23.836145079,
+      "diff_true_arcsec": 4.8516
+    },
+    {
+      "ayanamsa_code": "true_revati",
+      "legacy_id": 28,
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "l1b_mean_deg": 20.04421052,
+      "l3_se_mean_deg": 20.04516465,
+      "diff_mean_arcsec": -3.4349,
+      "l1b_true_deg": 20.040340521,
+      "l3_se_true_deg": 20.04129478,
+      "diff_true_arcsec": -3.4353
+    },
+    {
+      "ayanamsa_code": "true_pushya",
+      "legacy_id": 29,
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "l1b_mean_deg": 22.721995476,
+      "l3_se_mean_deg": 22.727091551,
+      "diff_mean_arcsec": -18.3459,
+      "l1b_true_deg": 22.718125477,
+      "l3_se_true_deg": 22.723221681,
+      "diff_true_arcsec": -18.3463
+    },
+    {
+      "ayanamsa_code": "fagan_bradley",
+      "legacy_id": 0,
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "l1b_mean_deg": 25.110000802,
+      "l3_se_mean_deg": 25.109822698,
+      "diff_mean_arcsec": 0.6412,
+      "l1b_true_deg": 25.112012786,
+      "l3_se_true_deg": 25.111834835,
+      "diff_true_arcsec": 0.6406
+    },
+    {
+      "ayanamsa_code": "lahiri",
+      "legacy_id": 1,
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "l1b_mean_deg": 24.226637247,
+      "l3_se_mean_deg": 24.226615054,
+      "diff_mean_arcsec": 0.0799,
+      "l1b_true_deg": 24.228649231,
+      "l3_se_true_deg": 24.228627191,
+      "diff_true_arcsec": 0.0793
+    },
+    {
+      "ayanamsa_code": "raman",
+      "legacy_id": 3,
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "l1b_mean_deg": 22.780417703,
+      "l3_se_mean_deg": 22.78031377,
+      "diff_mean_arcsec": 0.3742,
+      "l1b_true_deg": 22.782429688,
+      "l3_se_true_deg": 22.782325907,
+      "diff_true_arcsec": 0.3736
+    },
+    {
+      "ayanamsa_code": "ushashashi",
+      "legacy_id": 4,
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "l1b_mean_deg": 20.427167703,
+      "l3_se_mean_deg": 20.427063757,
+      "diff_mean_arcsec": 0.3742,
+      "l1b_true_deg": 20.429179688,
+      "l3_se_true_deg": 20.429075895,
+      "diff_true_arcsec": 0.3737
+    },
+    {
+      "ayanamsa_code": "krishnamurti",
+      "legacy_id": 5,
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "l1b_mean_deg": 24.129866703,
+      "l3_se_mean_deg": 24.12976277,
+      "diff_mean_arcsec": 0.3742,
+      "l1b_true_deg": 24.131878688,
+      "l3_se_true_deg": 24.131774907,
+      "diff_true_arcsec": 0.3736
+    },
+    {
+      "ayanamsa_code": "yukteshwar",
+      "legacy_id": 7,
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "l1b_mean_deg": 22.848429925,
+      "l3_se_mean_deg": 22.848325757,
+      "diff_mean_arcsec": 0.375,
+      "l1b_true_deg": 22.85044191,
+      "l3_se_true_deg": 22.850337895,
+      "diff_true_arcsec": 0.3745
+    },
+    {
+      "ayanamsa_code": "jn_bhasin",
+      "legacy_id": 8,
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "l1b_mean_deg": 23.131763259,
+      "l3_se_mean_deg": 23.131659757,
+      "diff_mean_arcsec": 0.3726,
+      "l1b_true_deg": 23.133775243,
+      "l3_se_true_deg": 23.133671895,
+      "diff_true_arcsec": 0.3721
+    },
+    {
+      "ayanamsa_code": "suryasiddhanta",
+      "legacy_id": 21,
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "l1b_mean_deg": 21.265047941,
+      "l3_se_mean_deg": 21.264580337,
+      "diff_mean_arcsec": 1.6834,
+      "l1b_true_deg": 21.267059925,
+      "l3_se_true_deg": 21.266592474,
+      "diff_true_arcsec": 1.6828
+    },
+    {
+      "ayanamsa_code": "ss_citra",
+      "legacy_id": 26,
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "l1b_mean_deg": 23.375752385,
+      "l3_se_mean_deg": 23.375284777,
+      "diff_mean_arcsec": 1.6834,
+      "l1b_true_deg": 23.37776437,
+      "l3_se_true_deg": 23.377296914,
+      "diff_true_arcsec": 1.6828
+    },
+    {
+      "ayanamsa_code": "true_citra",
+      "legacy_id": 27,
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "l1b_mean_deg": 24.210564874,
+      "l3_se_mean_deg": 24.213421051,
+      "diff_mean_arcsec": -10.2822,
+      "l1b_true_deg": 24.212576859,
+      "l3_se_true_deg": 24.215433188,
+      "diff_true_arcsec": -10.2828
+    },
+    {
+      "ayanamsa_code": "true_revati",
+      "legacy_id": 28,
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "l1b_mean_deg": 20.414586911,
+      "l3_se_mean_deg": 20.412071954,
+      "diff_mean_arcsec": 9.0538,
+      "l1b_true_deg": 20.416598895,
+      "l3_se_true_deg": 20.414084091,
+      "diff_true_arcsec": 9.0533
+    },
+    {
+      "ayanamsa_code": "true_pushya",
+      "legacy_id": 29,
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "l1b_mean_deg": 23.091828969,
+      "l3_se_mean_deg": 23.087900364,
+      "diff_mean_arcsec": 14.143,
+      "l1b_true_deg": 23.093840953,
+      "l3_se_true_deg": 23.089912501,
+      "diff_true_arcsec": 14.1424
+    },
+    {
+      "ayanamsa_code": "fagan_bradley",
+      "legacy_id": 0,
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "l1b_mean_deg": 25.439018766,
+      "l3_se_mean_deg": 25.438820717,
+      "diff_mean_arcsec": 0.713,
+      "l1b_true_deg": 25.443233069,
+      "l3_se_true_deg": 25.44303505,
+      "diff_true_arcsec": 0.7129
+    },
+    {
+      "ayanamsa_code": "lahiri",
+      "legacy_id": 1,
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "l1b_mean_deg": 24.555655208,
+      "l3_se_mean_deg": 24.55561307,
+      "diff_mean_arcsec": 0.1517,
+      "l1b_true_deg": 24.559869512,
+      "l3_se_true_deg": 24.559827403,
+      "diff_true_arcsec": 0.1516
+    },
+    {
+      "ayanamsa_code": "raman",
+      "legacy_id": 3,
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "l1b_mean_deg": 23.109435687,
+      "l3_se_mean_deg": 23.109311808,
+      "diff_mean_arcsec": 0.446,
+      "l1b_true_deg": 23.113649991,
+      "l3_se_true_deg": 23.113526141,
+      "diff_true_arcsec": 0.4459
+    },
+    {
+      "ayanamsa_code": "ushashashi",
+      "legacy_id": 4,
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "l1b_mean_deg": 20.756185687,
+      "l3_se_mean_deg": 20.756061796,
+      "diff_mean_arcsec": 0.446,
+      "l1b_true_deg": 20.760399991,
+      "l3_se_true_deg": 20.760276128,
+      "diff_true_arcsec": 0.4459
+    },
+    {
+      "ayanamsa_code": "krishnamurti",
+      "legacy_id": 5,
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "l1b_mean_deg": 24.458884687,
+      "l3_se_mean_deg": 24.458760808,
+      "diff_mean_arcsec": 0.446,
+      "l1b_true_deg": 24.463098991,
+      "l3_se_true_deg": 24.462975141,
+      "diff_true_arcsec": 0.4459
+    },
+    {
+      "ayanamsa_code": "yukteshwar",
+      "legacy_id": 7,
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "l1b_mean_deg": 23.177447909,
+      "l3_se_mean_deg": 23.177323796,
+      "diff_mean_arcsec": 0.4468,
+      "l1b_true_deg": 23.181662213,
+      "l3_se_true_deg": 23.181538128,
+      "diff_true_arcsec": 0.4467
+    },
+    {
+      "ayanamsa_code": "jn_bhasin",
+      "legacy_id": 8,
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "l1b_mean_deg": 23.460781243,
+      "l3_se_mean_deg": 23.460657796,
+      "diff_mean_arcsec": 0.4444,
+      "l1b_true_deg": 23.464995546,
+      "l3_se_true_deg": 23.464872128,
+      "diff_true_arcsec": 0.4443
+    },
+    {
+      "ayanamsa_code": "suryasiddhanta",
+      "legacy_id": 21,
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "l1b_mean_deg": 21.594064793,
+      "l3_se_mean_deg": 21.593577155,
+      "diff_mean_arcsec": 1.7555,
+      "l1b_true_deg": 21.598279096,
+      "l3_se_true_deg": 21.597791488,
+      "diff_true_arcsec": 1.7554
+    },
+    {
+      "ayanamsa_code": "ss_citra",
+      "legacy_id": 26,
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "l1b_mean_deg": 23.704769238,
+      "l3_se_mean_deg": 23.704281595,
+      "diff_mean_arcsec": 1.7555,
+      "l1b_true_deg": 23.708983541,
+      "l3_se_true_deg": 23.708495928,
+      "diff_true_arcsec": 1.7554
+    },
+    {
+      "ayanamsa_code": "true_citra",
+      "legacy_id": 27,
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "l1b_mean_deg": 24.539290109,
+      "l3_se_mean_deg": 24.537915331,
+      "diff_mean_arcsec": 4.9492,
+      "l1b_true_deg": 24.543504413,
+      "l3_se_true_deg": 24.542129663,
+      "diff_true_arcsec": 4.9491
+    },
+    {
+      "ayanamsa_code": "true_revati",
+      "legacy_id": 28,
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "l1b_mean_deg": 20.744326323,
+      "l3_se_mean_deg": 20.745308082,
+      "diff_mean_arcsec": -3.5343,
+      "l1b_true_deg": 20.748540626,
+      "l3_se_true_deg": 20.749522415,
+      "diff_true_arcsec": -3.5344
+    },
+    {
+      "ayanamsa_code": "true_pushya",
+      "legacy_id": 29,
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "l1b_mean_deg": 23.421119217,
+      "l3_se_mean_deg": 23.426200381,
+      "diff_mean_arcsec": -18.2922,
+      "l1b_true_deg": 23.42533352,
+      "l3_se_true_deg": 23.430414714,
+      "diff_true_arcsec": -18.2923
+    },
+    {
+      "ayanamsa_code": "fagan_bradley",
+      "legacy_id": 0,
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "l1b_mean_deg": 26.137716871,
+      "l3_se_mean_deg": 26.137475883,
+      "diff_mean_arcsec": 0.8676,
+      "l1b_true_deg": 26.138630317,
+      "l3_se_true_deg": 26.138389605,
+      "diff_true_arcsec": 0.8666
+    },
+    {
+      "ayanamsa_code": "lahiri",
+      "legacy_id": 1,
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "l1b_mean_deg": 25.254353309,
+      "l3_se_mean_deg": 25.254268232,
+      "diff_mean_arcsec": 0.3063,
+      "l1b_true_deg": 25.255266755,
+      "l3_se_true_deg": 25.255181954,
+      "diff_true_arcsec": 0.3053
+    },
+    {
+      "ayanamsa_code": "raman",
+      "legacy_id": 3,
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "l1b_mean_deg": 23.808133824,
+      "l3_se_mean_deg": 23.807967005,
+      "diff_mean_arcsec": 0.6005,
+      "l1b_true_deg": 23.80904727,
+      "l3_se_true_deg": 23.808880727,
+      "diff_true_arcsec": 0.5996
+    },
+    {
+      "ayanamsa_code": "ushashashi",
+      "legacy_id": 4,
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "l1b_mean_deg": 21.454883824,
+      "l3_se_mean_deg": 21.454716992,
+      "diff_mean_arcsec": 0.6006,
+      "l1b_true_deg": 21.45579727,
+      "l3_se_true_deg": 21.455630714,
+      "diff_true_arcsec": 0.5996
+    },
+    {
+      "ayanamsa_code": "krishnamurti",
+      "legacy_id": 5,
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "l1b_mean_deg": 25.157582824,
+      "l3_se_mean_deg": 25.157416005,
+      "diff_mean_arcsec": 0.6005,
+      "l1b_true_deg": 25.15849627,
+      "l3_se_true_deg": 25.158329727,
+      "diff_true_arcsec": 0.5996
+    },
+    {
+      "ayanamsa_code": "yukteshwar",
+      "legacy_id": 7,
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "l1b_mean_deg": 23.876146046,
+      "l3_se_mean_deg": 23.875978992,
+      "diff_mean_arcsec": 0.6014,
+      "l1b_true_deg": 23.877059492,
+      "l3_se_true_deg": 23.876892714,
+      "diff_true_arcsec": 0.6004
+    },
+    {
+      "ayanamsa_code": "jn_bhasin",
+      "legacy_id": 8,
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "l1b_mean_deg": 24.159479379,
+      "l3_se_mean_deg": 24.159312992,
+      "diff_mean_arcsec": 0.599,
+      "l1b_true_deg": 24.160392826,
+      "l3_se_true_deg": 24.160226714,
+      "diff_true_arcsec": 0.598
+    },
+    {
+      "ayanamsa_code": "suryasiddhanta",
+      "legacy_id": 21,
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "l1b_mean_deg": 22.292760224,
+      "l3_se_mean_deg": 22.292229447,
+      "diff_mean_arcsec": 1.9108,
+      "l1b_true_deg": 22.29367367,
+      "l3_se_true_deg": 22.293143169,
+      "diff_true_arcsec": 1.9098
+    },
+    {
+      "ayanamsa_code": "ss_citra",
+      "legacy_id": 26,
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "l1b_mean_deg": 24.403464668,
+      "l3_se_mean_deg": 24.402933887,
+      "diff_mean_arcsec": 1.9108,
+      "l1b_true_deg": 24.404378115,
+      "l3_se_true_deg": 24.403847609,
+      "diff_true_arcsec": 1.9098
+    },
+    {
+      "ayanamsa_code": "true_citra",
+      "legacy_id": 27,
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "l1b_mean_deg": 25.237352088,
+      "l3_se_mean_deg": 25.235892779,
+      "diff_mean_arcsec": 5.2535,
+      "l1b_true_deg": 25.238265534,
+      "l3_se_true_deg": 25.236806501,
+      "diff_true_arcsec": 5.2525
+    },
+    {
+      "ayanamsa_code": "true_revati",
+      "legacy_id": 28,
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "l1b_mean_deg": 21.444576389,
+      "l3_se_mean_deg": 21.445644093,
+      "diff_mean_arcsec": -3.8437,
+      "l1b_true_deg": 21.445489836,
+      "l3_se_true_deg": 21.446557815,
+      "diff_true_arcsec": -3.8447
+    },
+    {
+      "ayanamsa_code": "true_pushya",
+      "legacy_id": 29,
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "l1b_mean_deg": 24.120377296,
+      "l3_se_mean_deg": 24.125414796,
+      "diff_mean_arcsec": -18.135,
+      "l1b_true_deg": 24.121290743,
+      "l3_se_true_deg": 24.126328519,
+      "diff_true_arcsec": -18.136
+    }
+  ],
+  "uranians_and_transpluto": [
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "point": "Cupido",
+      "geo_lon_deg": 105.28075548,
+      "helio_lon_deg": 105.16509966,
+      "geo_speed_deg_day": -0.02095926
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "point": "Hades",
+      "geo_lon_deg": 336.37729581,
+      "helio_lon_deg": 337.30126322,
+      "geo_speed_deg_day": 0.01377123
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "point": "Zeus",
+      "geo_lon_deg": 104.27422822,
+      "helio_lon_deg": 104.20877701,
+      "geo_speed_deg_day": -0.01487942
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "point": "Kronos",
+      "geo_lon_deg": 17.11135213,
+      "helio_lon_deg": 17.97180162,
+      "geo_speed_deg_day": 0.00013229
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "point": "Apollon",
+      "geo_lon_deg": 138.55586402,
+      "helio_lon_deg": 138.05919773,
+      "geo_speed_deg_day": -0.00954658
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "point": "Admetos",
+      "geo_lon_deg": 350.61999549,
+      "helio_lon_deg": 351.34080116,
+      "geo_speed_deg_day": 0.00619113
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "point": "Vulkanus",
+      "geo_lon_deg": 55.3898975,
+      "helio_lon_deg": 55.90400833,
+      "geo_speed_deg_day": -0.00773752
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "point": "Poseidon",
+      "geo_lon_deg": 166.13682463,
+      "helio_lon_deg": 165.52187,
+      "geo_speed_deg_day": -0.00353111
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00_TT",
+      "jd_tt": 2415021.0,
+      "point": "Transpluto",
+      "geo_lon_deg": 101.60871267,
+      "helio_lon_deg": 101.59071808,
+      "geo_speed_deg_day": -0.01192498
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "point": "Cupido",
+      "geo_lon_deg": 175.17558179,
+      "helio_lon_deg": 173.84931757,
+      "geo_speed_deg_day": -0.00237773
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "point": "Hades",
+      "geo_lon_deg": 26.97475645,
+      "helio_lon_deg": 28.03727497,
+      "geo_speed_deg_day": -0.0030696
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "point": "Zeus",
+      "geo_lon_deg": 144.98473141,
+      "helio_lon_deg": 144.30896049,
+      "geo_speed_deg_day": -0.00978668
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "point": "Kronos",
+      "geo_lon_deg": 52.31079514,
+      "helio_lon_deg": 52.94797548,
+      "geo_speed_deg_day": -0.00858174
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "point": "Apollon",
+      "geo_lon_deg": 170.04278687,
+      "helio_lon_deg": 169.28759734,
+      "geo_speed_deg_day": -0.00305921
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "point": "Admetos",
+      "geo_lon_deg": 19.76920087,
+      "helio_lon_deg": 20.52231778,
+      "geo_speed_deg_day": -0.00076954
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "point": "Vulkanus",
+      "geo_lon_deg": 82.89328725,
+      "helio_lon_deg": 83.10244259,
+      "geo_speed_deg_day": -0.01103692
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "point": "Poseidon",
+      "geo_lon_deg": 190.40514651,
+      "helio_lon_deg": 189.73186747,
+      "geo_speed_deg_day": 0.00152885
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00_TT",
+      "jd_tt": 2433282.5,
+      "point": "Transpluto",
+      "geo_lon_deg": 126.02249557,
+      "helio_lon_deg": 125.72826046,
+      "geo_speed_deg_day": -0.00939279
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "point": "Cupido",
+      "geo_lon_deg": 243.89644129,
+      "helio_lon_deg": 243.08215523,
+      "geo_speed_deg_day": 0.02313236
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "point": "Hades",
+      "geo_lon_deg": 78.18040071,
+      "helio_lon_deg": 78.5945978,
+      "geo_speed_deg_day": -0.01584793
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "point": "Zeus",
+      "geo_lon_deg": 185.38829076,
+      "helio_lon_deg": 184.44037245,
+      "geo_speed_deg_day": 0.00082555
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "point": "Kronos",
+      "geo_lon_deg": 87.7940171,
+      "helio_lon_deg": 87.97744469,
+      "geo_speed_deg_day": -0.01336385
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "point": "Apollon",
+      "geo_lon_deg": 201.30650537,
+      "helio_lon_deg": 200.52069171,
+      "geo_speed_deg_day": 0.00449898
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "point": "Admetos",
+      "geo_lon_deg": 49.11515531,
+      "helio_lon_deg": 49.7084173,
+      "geo_speed_deg_day": -0.00705296
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "point": "Vulkanus",
+      "geo_lon_deg": 110.43843479,
+      "helio_lon_deg": 110.30535216,
+      "geo_speed_deg_day": -0.01140986
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "point": "Poseidon",
+      "geo_lon_deg": 214.55807537,
+      "helio_lon_deg": 213.94617547,
+      "geo_speed_deg_day": 0.0062944
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00_TT",
+      "jd_tt": 2451545.0,
+      "point": "Transpluto",
+      "geo_lon_deg": 145.73652556,
+      "helio_lon_deg": 145.30323379,
+      "geo_speed_deg_day": -0.00653154
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "point": "Cupido",
+      "geo_lon_deg": 278.83327829,
+      "helio_lon_deg": 278.6063278,
+      "geo_speed_deg_day": -0.02011284
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "point": "Hades",
+      "geo_lon_deg": 104.00022513,
+      "helio_lon_deg": 104.28519392,
+      "geo_speed_deg_day": 0.02084114
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "point": "Zeus",
+      "geo_lon_deg": 204.01398631,
+      "helio_lon_deg": 204.90905891,
+      "geo_speed_deg_day": -0.00467594
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "point": "Kronos",
+      "geo_lon_deg": 105.615559,
+      "helio_lon_deg": 105.8641838,
+      "geo_speed_deg_day": 0.01603279
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "point": "Apollon",
+      "geo_lon_deg": 215.76821686,
+      "helio_lon_deg": 216.43609398,
+      "geo_speed_deg_day": -0.00655533
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "point": "Admetos",
+      "geo_lon_deg": 64.9100058,
+      "helio_lon_deg": 64.58112767,
+      "geo_speed_deg_day": 0.01343597
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "point": "Vulkanus",
+      "geo_lon_deg": 123.74341726,
+      "helio_lon_deg": 124.16787098,
+      "geo_speed_deg_day": 0.01170613
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "point": "Poseidon",
+      "geo_lon_deg": 225.80617889,
+      "helio_lon_deg": 226.2863686,
+      "geo_speed_deg_day": -0.00716358
+    },
+    {
+      "epoch_label": "2025-06-21T00:00:00_TT",
+      "jd_tt": 2460847.5,
+      "point": "Transpluto",
+      "geo_lon_deg": 153.67505447,
+      "helio_lon_deg": 154.21932822,
+      "geo_speed_deg_day": 0.00522884
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "point": "Cupido",
+      "geo_lon_deg": 312.15584505,
+      "helio_lon_deg": 312.89066552,
+      "geo_speed_deg_day": 0.02413137
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "point": "Hades",
+      "geo_lon_deg": 129.5496387,
+      "helio_lon_deg": 129.00165745,
+      "geo_speed_deg_day": -0.01467497
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "point": "Zeus",
+      "geo_lon_deg": 225.41294769,
+      "helio_lon_deg": 224.63826496,
+      "geo_speed_deg_day": 0.01189317
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "point": "Kronos",
+      "geo_lon_deg": 123.46865369,
+      "helio_lon_deg": 123.12058313,
+      "geo_speed_deg_day": -0.0124376
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "point": "Apollon",
+      "geo_lon_deg": 232.35477864,
+      "helio_lon_deg": 231.7641254,
+      "geo_speed_deg_day": 0.01121448
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "point": "Admetos",
+      "geo_lon_deg": 78.62833819,
+      "helio_lon_deg": 78.90491341,
+      "geo_speed_deg_day": -0.01123743
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "point": "Vulkanus",
+      "geo_lon_deg": 137.96950452,
+      "helio_lon_deg": 137.51871223,
+      "geo_speed_deg_day": -0.00882169
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "point": "Poseidon",
+      "geo_lon_deg": 238.61399971,
+      "helio_lon_deg": 238.17101531,
+      "geo_speed_deg_day": 0.01023431
+    },
+    {
+      "epoch_label": "2050-01-01T12:00:00_TT",
+      "jd_tt": 2469807.0,
+      "point": "Transpluto",
+      "geo_lon_deg": 162.88142592,
+      "helio_lon_deg": 162.3713175,
+      "geo_speed_deg_day": -0.00373365
+    }
+  ],
+  "houses_23_comparison": [
+    {
+      "case_id": "zurich_midlat_north",
+      "lat_deg": 47.37,
+      "lon_deg": 8.55,
+      "l3_se_angles_8": {
+        "ASC": 36.798667095,
+        "MC": 287.538877858,
+        "ARMC": 289.007072361,
+        "Vertex": 194.789240562,
+        "EqASC": 20.578254463,
+        "CoASC_Koch": 14.069148442,
+        "CoASC_Munkasey": 33.009201422,
+        "PolarASC": 194.069148442
+      },
+      "angle_diffs_arcsec": {
+        "ASC": 0.0,
+        "MC": 0.0,
+        "ARMC": 0.0,
+        "Vertex": 0.0,
+        "EqASC": 0.0,
+        "CoASC_Koch": 0.0,
+        "CoASC_Munkasey": 0.0,
+        "PolarASC": 0.0
+      },
+      "systems": {
+        "P": {
+          "l3_se_cusps": [
+            36.798667095,
+            67.775331638,
+            88.502907083,
+            107.538877858,
+            129.758935826,
+            162.697745555,
+            216.798667095,
+            247.775331638,
+            268.502907083,
+            287.538877858,
+            309.758935826,
+            342.697745555
+          ],
+          "max_diff_vs_l1b_arcsec": 2e-06
+        },
+        "K": {
+          "l3_se_cusps": [
+            36.798667095,
+            67.391859211,
+            89.517998352,
+            107.538877858,
+            135.962893651,
+            175.514500028,
+            216.798667095,
+            247.391859211,
+            269.517998352,
+            287.538877858,
+            315.962893651,
+            355.514500028
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "O": {
+          "l3_se_cusps": [
+            36.798667095,
+            60.37873735,
+            83.958807604,
+            107.538877858,
+            143.958807604,
+            180.37873735,
+            216.798667095,
+            240.37873735,
+            263.958807604,
+            287.538877858,
+            323.958807604,
+            0.37873735
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "R": {
+          "l3_se_cusps": [
+            36.798667095,
+            73.217213494,
+            92.397106845,
+            107.538877858,
+            125.993119697,
+            160.088912053,
+            216.798667095,
+            253.217213494,
+            272.397106845,
+            287.538877858,
+            305.993119697,
+            340.088912053
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "C": {
+          "l3_se_cusps": [
+            36.798667095,
+            80.930875563,
+            96.834149622,
+            107.538877858,
+            119.826594202,
+            145.162005579,
+            216.798667095,
+            260.930875563,
+            276.834149622,
+            287.538877858,
+            299.826594202,
+            325.162005579
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "A": {
+          "l3_se_cusps": [
+            36.798667095,
+            66.798667095,
+            96.798667095,
+            126.798667095,
+            156.798667095,
+            186.798667095,
+            216.798667095,
+            246.798667095,
+            276.798667095,
+            306.798667095,
+            336.798667095,
+            6.798667095
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "W": {
+          "l3_se_cusps": [
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0,
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0,
+            330.0,
+            0.0
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "B": {
+          "l3_se_cusps": [
+            36.798667095,
+            61.430649462,
+            84.638137175,
+            107.538877858,
+            141.78801594,
+            179.249322789,
+            216.798667095,
+            241.430649462,
+            264.638137175,
+            287.538877858,
+            321.78801594,
+            359.249322789
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "M": {
+          "l3_se_cusps": [
+            17.538877858,
+            46.552571337,
+            78.045835177,
+            110.578254463,
+            141.432335448,
+            169.894559611,
+            197.538877858,
+            226.552571337,
+            258.045835177,
+            290.578254463,
+            321.432335448,
+            349.894559611
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "T": {
+          "l3_se_cusps": [
+            36.798667095,
+            67.426491568,
+            88.195752277,
+            107.538877858,
+            129.900530846,
+            162.709697145,
+            216.798667095,
+            247.426491568,
+            268.195752277,
+            287.538877858,
+            309.900530846,
+            342.709697145
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "U": {
+          "l3_se_cusps": [
+            36.798667095,
+            56.095452422,
+            76.960031917,
+            107.538877858,
+            152.725156111,
+            191.928446056,
+            216.798667095,
+            236.095452422,
+            256.960031917,
+            287.538877858,
+            332.725156111,
+            11.928446056
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "X": {
+          "l3_se_cusps": [
+            20.578254463,
+            51.432335448,
+            79.894559611,
+            107.538877858,
+            136.552571337,
+            168.045835177,
+            200.578254463,
+            231.432335448,
+            259.894559611,
+            287.538877858,
+            316.552571337,
+            348.045835177
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "V": {
+          "l3_se_cusps": [
+            21.798667095,
+            51.798667095,
+            81.798667095,
+            111.798667095,
+            141.798667095,
+            171.798667095,
+            201.798667095,
+            231.798667095,
+            261.798667095,
+            291.798667095,
+            321.798667095,
+            351.798667095
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "L": {
+          "l3_se_cusps": [
+            36.798667095,
+            61.983719786,
+            82.353825168,
+            107.538877858,
+            142.353825168,
+            181.983719786,
+            216.798667095,
+            241.983719786,
+            262.353825168,
+            287.538877858,
+            322.353825168,
+            1.983719786
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "Q": {
+          "l3_se_cusps": [
+            36.798667095,
+            61.623190708,
+            82.714354245,
+            107.538877858,
+            141.929631329,
+            182.407913625,
+            216.798667095,
+            241.623190708,
+            262.714354245,
+            287.538877858,
+            321.929631329,
+            2.407913625
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "I": {
+          "l3_se_cusps": [
+            36.798667057,
+            76.461119758,
+            93.938312452,
+            107.538877945,
+            123.772442831,
+            153.697279972,
+            216.798667057,
+            247.218666701,
+            268.620678288,
+            287.538877945,
+            311.79850779,
+            351.921067608
+          ],
+          "max_diff_vs_l1b_arcsec": 3.609972
+        },
+        "i": {
+          "l3_se_cusps": [
+            36.798667057,
+            76.461119758,
+            93.938312452,
+            107.538877945,
+            123.772442831,
+            153.697279972,
+            216.798667057,
+            247.218666701,
+            268.620678288,
+            287.538877945,
+            311.79850779,
+            351.921067608
+          ],
+          "max_diff_vs_l1b_arcsec": 3.609972
+        },
+        "F": {
+          "l3_se_cusps": [
+            36.798667095,
+            66.330112752,
+            94.096396407,
+            122.199103279,
+            152.492907658,
+            184.862868316,
+            216.798667095,
+            246.330112752,
+            274.096396407,
+            302.199103279,
+            332.492907658,
+            4.862868316
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "N": {
+          "l3_se_cusps": [
+            0.0,
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0,
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0,
+            330.0
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "S": {
+          "l3_se_cusps": [
+            18.588702222,
+            48.588702222,
+            72.168772477,
+            95.748842731,
+            125.748842731,
+            162.168772477,
+            198.588702222,
+            228.588702222,
+            252.168772477,
+            275.748842731,
+            305.748842731,
+            342.168772477
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "D": {
+          "l3_se_cusps": [
+            17.538877858,
+            47.538877858,
+            77.538877858,
+            107.538877858,
+            137.538877858,
+            167.538877858,
+            197.538877858,
+            227.538877858,
+            257.538877858,
+            287.538877858,
+            317.538877858,
+            347.538877858
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "Y": {
+          "l3_se_cusps": [
+            36.798667095,
+            70.242816406,
+            90.660844325,
+            107.538877858,
+            128.597708364,
+            165.986449141,
+            216.798667095,
+            255.33573408,
+            273.458826477,
+            287.538877858,
+            304.454195104,
+            335.902897215
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "H": {
+          "l3_se_cusps": [
+            14.789240562,
+            46.89824006,
+            78.261997153,
+            107.538877858,
+            135.551602107,
+            164.170330888,
+            194.789240562,
+            226.89824006,
+            258.261997153,
+            287.538877858,
+            315.551602107,
+            344.170330888
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "sydney_midlat_south",
+      "lat_deg": -33.87,
+      "lon_deg": 151.21,
+      "l3_se_angles_8": {
+        "ASC": 258.645429303,
+        "MC": 149.006954462,
+        "ARMC": 151.139476319,
+        "Vertex": 40.224824839,
+        "EqASC": 243.176270053,
+        "CoASC_Koch": 230.975156133,
+        "CoASC_Munkasey": 279.703062291,
+        "PolarASC": 50.975156133
+      },
+      "angle_diffs_arcsec": {
+        "ASC": 0.0,
+        "MC": 0.0,
+        "ARMC": 0.0,
+        "Vertex": 0.0,
+        "EqASC": 0.0,
+        "CoASC_Koch": 0.0,
+        "CoASC_Munkasey": 0.0,
+        "PolarASC": 0.0
+      },
+      "systems": {
+        "P": {
+          "l3_se_cusps": [
+            258.645429303,
+            281.180709109,
+            303.392291712,
+            329.006954462,
+            1.375305988,
+            40.439828805,
+            78.645429303,
+            101.180709109,
+            123.392291712,
+            149.006954462,
+            181.375305988,
+            220.439828805
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "K": {
+          "l3_se_cusps": [
+            258.645429303,
+            283.616132988,
+            306.468455324,
+            329.006954462,
+            9.994458827,
+            48.350556885,
+            78.645429303,
+            103.616132988,
+            126.468455324,
+            149.006954462,
+            189.994458827,
+            228.350556885
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "O": {
+          "l3_se_cusps": [
+            258.645429303,
+            282.099271023,
+            305.553112743,
+            329.006954462,
+            5.553112743,
+            42.099271023,
+            78.645429303,
+            102.099271023,
+            125.553112743,
+            149.006954462,
+            185.553112743,
+            222.099271023
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "R": {
+          "l3_se_cusps": [
+            258.645429303,
+            284.009766241,
+            305.385844921,
+            329.006954462,
+            1.453348596,
+            43.024367462,
+            78.645429303,
+            104.009766241,
+            125.385844921,
+            149.006954462,
+            181.453348596,
+            223.024367462
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "C": {
+          "l3_se_cusps": [
+            258.645429303,
+            287.538916448,
+            308.551791328,
+            329.006954462,
+            355.951282571,
+            36.327681662,
+            78.645429303,
+            107.538916448,
+            128.551791328,
+            149.006954462,
+            175.951282571,
+            216.327681662
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "A": {
+          "l3_se_cusps": [
+            258.645429303,
+            288.645429303,
+            318.645429303,
+            348.645429303,
+            18.645429303,
+            48.645429303,
+            78.645429303,
+            108.645429303,
+            138.645429303,
+            168.645429303,
+            198.645429303,
+            228.645429303
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "W": {
+          "l3_se_cusps": [
+            240.0,
+            270.0,
+            300.0,
+            330.0,
+            0.0,
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0,
+            180.0,
+            210.0
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "B": {
+          "l3_se_cusps": [
+            258.645429303,
+            281.173244436,
+            304.313213695,
+            329.006954462,
+            7.235913008,
+            44.611726069,
+            78.645429303,
+            101.173244436,
+            124.313213695,
+            149.006954462,
+            187.235913008,
+            224.611726069
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "M": {
+          "l3_se_cusps": [
+            239.006954462,
+            271.241921072,
+            303.365453042,
+            333.176270053,
+            1.045478029,
+            29.000781343,
+            59.006954462,
+            91.241921072,
+            123.365453042,
+            153.176270053,
+            181.045478029,
+            209.000781343
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "T": {
+          "l3_se_cusps": [
+            258.645429303,
+            281.104462844,
+            303.357034944,
+            329.006954462,
+            1.375305089,
+            40.414811453,
+            78.645429303,
+            101.104462844,
+            123.357034944,
+            149.006954462,
+            181.375305089,
+            220.414811453
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "U": {
+          "l3_se_cusps": [
+            258.645429303,
+            280.252800401,
+            301.456549419,
+            329.006954462,
+            8.737938456,
+            49.739863291,
+            78.645429303,
+            100.252800401,
+            121.456549419,
+            149.006954462,
+            188.737938456,
+            229.739863291
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "X": {
+          "l3_se_cusps": [
+            243.176270053,
+            271.045478029,
+            299.000781343,
+            329.006954462,
+            1.241921072,
+            33.365453042,
+            63.176270053,
+            91.045478029,
+            119.000781343,
+            149.006954462,
+            181.241921072,
+            213.365453042
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "V": {
+          "l3_se_cusps": [
+            243.645429303,
+            273.645429303,
+            303.645429303,
+            333.645429303,
+            3.645429303,
+            33.645429303,
+            63.645429303,
+            93.645429303,
+            123.645429303,
+            153.645429303,
+            183.645429303,
+            213.645429303
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "L": {
+          "l3_se_cusps": [
+            258.645429303,
+            283.735810593,
+            303.916573173,
+            329.006954462,
+            3.916573173,
+            43.735810593,
+            78.645429303,
+            103.735810593,
+            123.916573173,
+            149.006954462,
+            183.916573173,
+            223.735810593
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "Q": {
+          "l3_se_cusps": [
+            258.645429303,
+            283.361397895,
+            304.290985871,
+            329.006954462,
+            3.474594307,
+            44.177789458,
+            78.645429303,
+            103.361397895,
+            124.290985871,
+            149.006954462,
+            183.474594307,
+            224.177789458
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "I": {
+          "l3_se_cusps": [
+            258.645429264,
+            286.123568296,
+            306.943710788,
+            329.006954569,
+            358.701692528,
+            39.052388158,
+            78.645429264,
+            101.104575527,
+            122.797874476,
+            149.006954569,
+            186.200198755,
+            228.259368616
+          ],
+          "max_diff_vs_l1b_arcsec": 2.468865
+        },
+        "i": {
+          "l3_se_cusps": [
+            258.645429264,
+            286.123568296,
+            306.943710788,
+            329.006954569,
+            358.701692528,
+            39.052388158,
+            78.645429264,
+            101.104575527,
+            122.797874476,
+            149.006954569,
+            186.200198755,
+            228.259368616
+          ],
+          "max_diff_vs_l1b_arcsec": 2.468865
+        },
+        "F": {
+          "l3_se_cusps": [
+            258.645429303,
+            286.277960705,
+            315.191148641,
+            346.582679104,
+            19.130919164,
+            50.098077143,
+            78.645429303,
+            106.277960705,
+            135.191148641,
+            166.582679104,
+            199.130919164,
+            230.098077143
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "N": {
+          "l3_se_cusps": [
+            0.0,
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0,
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0,
+            330.0
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "S": {
+          "l3_se_cusps": [
+            240.372350163,
+            270.372350163,
+            293.826191883,
+            317.280033602,
+            347.280033602,
+            23.826191883,
+            60.372350163,
+            90.372350163,
+            113.826191883,
+            137.280033602,
+            167.280033602,
+            203.826191883
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "D": {
+          "l3_se_cusps": [
+            239.006954462,
+            269.006954462,
+            299.006954462,
+            329.006954462,
+            359.006954462,
+            29.006954462,
+            59.006954462,
+            89.006954462,
+            119.006954462,
+            149.006954462,
+            179.006954462,
+            209.006954462
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "Y": {
+          "l3_se_cusps": [
+            258.645429303,
+            281.183068408,
+            302.874307918,
+            329.006954462,
+            6.057086284,
+            48.121652292,
+            78.645429303,
+            106.082378449,
+            126.916445738,
+            149.006954462,
+            178.749125422,
+            219.130952412
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "H": {
+          "l3_se_cusps": [
+            220.224824839,
+            261.605577155,
+            301.602813889,
+            329.006954462,
+            349.978111903,
+            11.374373793,
+            40.224824839,
+            81.605577155,
+            121.602813889,
+            149.006954462,
+            169.978111903,
+            191.374373793
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "london_midlat_north",
+      "lat_deg": 51.51,
+      "lon_deg": -0.13,
+      "l3_se_angles_8": {
+        "ASC": 114.94472931,
+        "MC": 357.586089197,
+        "ARMC": 357.785066062,
+        "Vertex": 250.607425007,
+        "EqASC": 87.967671472,
+        "CoASC_Koch": 61.804010018,
+        "CoASC_Munkasey": 105.697408457,
+        "PolarASC": 241.804010018
+      },
+      "angle_diffs_arcsec": {
+        "ASC": 0.0,
+        "MC": 0.0,
+        "ARMC": 0.0,
+        "Vertex": 0.0,
+        "EqASC": 0.0,
+        "CoASC_Koch": 0.0,
+        "CoASC_Munkasey": 0.0,
+        "PolarASC": 0.0
+      },
+      "systems": {
+        "P": {
+          "l3_se_cusps": [
+            114.94472931,
+            130.901770713,
+            150.560941498,
+            177.586089197,
+            215.957887269,
+            260.24694777,
+            294.94472931,
+            310.901770713,
+            330.560941498,
+            357.586089197,
+            35.957887269,
+            80.24694777
+          ],
+          "max_diff_vs_l1b_arcsec": 1.6e-05
+        },
+        "K": {
+          "l3_se_cusps": [
+            114.94472931,
+            136.08455013,
+            156.769314353,
+            177.586089197,
+            237.457097127,
+            271.11924072,
+            294.94472931,
+            316.08455013,
+            336.769314353,
+            357.586089197,
+            57.457097127,
+            91.11924072
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "O": {
+          "l3_se_cusps": [
+            114.94472931,
+            135.825182605,
+            156.705635901,
+            177.586089197,
+            216.705635901,
+            255.825182605,
+            294.94472931,
+            315.825182605,
+            336.705635901,
+            357.586089197,
+            36.705635901,
+            75.825182605
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "R": {
+          "l3_se_cusps": [
+            114.94472931,
+            134.219326334,
+            152.552503922,
+            177.586089197,
+            219.695449289,
+            266.221027976,
+            294.94472931,
+            314.219326334,
+            332.552503922,
+            357.586089197,
+            39.695449289,
+            86.221027976
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "C": {
+          "l3_se_cusps": [
+            114.94472931,
+            141.79731716,
+            159.849134513,
+            177.586089197,
+            203.138900237,
+            248.181965879,
+            294.94472931,
+            321.79731716,
+            339.849134513,
+            357.586089197,
+            23.138900237,
+            68.181965879
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "A": {
+          "l3_se_cusps": [
+            114.94472931,
+            144.94472931,
+            174.94472931,
+            204.94472931,
+            234.94472931,
+            264.94472931,
+            294.94472931,
+            324.94472931,
+            354.94472931,
+            24.94472931,
+            54.94472931,
+            84.94472931
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "W": {
+          "l3_se_cusps": [
+            90.0,
+            120.0,
+            150.0,
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0,
+            330.0,
+            0.0,
+            30.0,
+            60.0
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "B": {
+          "l3_se_cusps": [
+            114.94472931,
+            134.718989121,
+            155.68601806,
+            177.586089197,
+            219.891241979,
+            258.210649069,
+            294.94472931,
+            314.718989121,
+            335.68601806,
+            357.586089197,
+            39.891241979,
+            78.210649069
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "M": {
+          "l3_se_cusps": [
+            87.586089197,
+            119.868543191,
+            149.967574645,
+            177.967671472,
+            205.800484681,
+            235.520033022,
+            267.586089197,
+            299.868543191,
+            329.967574645,
+            357.967671472,
+            25.800484681,
+            55.520033022
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "T": {
+          "l3_se_cusps": [
+            114.94472931,
+            130.708333335,
+            150.519404653,
+            177.586089197,
+            215.858484815,
+            259.578297818,
+            294.94472931,
+            310.708333335,
+            330.519404653,
+            357.586089197,
+            35.858484815,
+            79.578297818
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "U": {
+          "l3_se_cusps": [
+            114.94472931,
+            130.264498538,
+            147.576153534,
+            177.586089197,
+            232.729386899,
+            274.021543127,
+            294.94472931,
+            310.264498538,
+            327.576153534,
+            357.586089197,
+            52.729386899,
+            94.021543127
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "X": {
+          "l3_se_cusps": [
+            87.967671472,
+            115.800484681,
+            145.520033022,
+            177.586089197,
+            209.868543191,
+            239.967574645,
+            267.967671472,
+            295.800484681,
+            325.520033022,
+            357.586089197,
+            29.868543191,
+            59.967574645
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "V": {
+          "l3_se_cusps": [
+            99.94472931,
+            129.94472931,
+            159.94472931,
+            189.94472931,
+            219.94472931,
+            249.94472931,
+            279.94472931,
+            309.94472931,
+            339.94472931,
+            9.94472931,
+            39.94472931,
+            69.94472931
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "L": {
+          "l3_se_cusps": [
+            114.94472931,
+            138.105069282,
+            154.425749225,
+            177.586089197,
+            214.425749225,
+            258.105069282,
+            294.94472931,
+            318.105069282,
+            334.425749225,
+            357.586089197,
+            34.425749225,
+            78.105069282
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "Q": {
+          "l3_se_cusps": [
+            114.94472931,
+            137.39419664,
+            155.136621867,
+            177.586089197,
+            213.527254583,
+            259.003563924,
+            294.94472931,
+            317.39419664,
+            335.136621867,
+            357.586089197,
+            33.527254583,
+            79.003563924
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "I": {
+          "l3_se_cusps": [
+            114.944729035,
+            134.232781748,
+            152.565311355,
+            177.586089013,
+            219.663291786,
+            266.192499761,
+            294.944729035,
+            314.205843073,
+            332.539654232,
+            357.586089013,
+            39.727720595,
+            86.249600075
+          ],
+          "max_diff_vs_l1b_arcsec": 2.277058
+        },
+        "i": {
+          "l3_se_cusps": [
+            114.944729035,
+            134.232781748,
+            152.565311355,
+            177.586089013,
+            219.663291786,
+            266.192499761,
+            294.944729035,
+            314.205843073,
+            332.539654232,
+            357.586089013,
+            39.727720595,
+            86.249600075
+          ],
+          "max_diff_vs_l1b_arcsec": 2.277058
+        },
+        "F": {
+          "l3_se_cusps": [
+            114.94472931,
+            144.588361404,
+            176.603805119,
+            208.923317881,
+            239.100397783,
+            267.140180587,
+            294.94472931,
+            324.588361404,
+            356.603805119,
+            28.923317881,
+            59.100397783,
+            87.140180587
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "N": {
+          "l3_se_cusps": [
+            0.0,
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0,
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0,
+            330.0
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "S": {
+          "l3_se_cusps": [
+            95.384955958,
+            125.384955958,
+            146.265409253,
+            167.145862549,
+            197.145862549,
+            236.265409253,
+            275.384955958,
+            305.384955958,
+            326.265409253,
+            347.145862549,
+            17.145862549,
+            56.265409253
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "D": {
+          "l3_se_cusps": [
+            87.586089197,
+            117.586089197,
+            147.586089197,
+            177.586089197,
+            207.586089197,
+            237.586089197,
+            267.586089197,
+            297.586089197,
+            327.586089197,
+            357.586089197,
+            27.586089197,
+            57.586089197
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "Y": {
+          "l3_se_cusps": [
+            114.94472931,
+            129.90810978,
+            147.666248701,
+            177.586089197,
+            232.486923296,
+            274.668101934,
+            294.94472931,
+            316.742564166,
+            334.626051058,
+            357.586089197,
+            34.616970277,
+            80.638116905
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "H": {
+          "l3_se_cusps": [
+            70.607425007,
+            107.523022543,
+            147.103150183,
+            177.586089197,
+            200.998719548,
+            223.359193016,
+            250.607425007,
+            287.523022543,
+            327.103150183,
+            357.586089197,
+            20.998719548,
+            43.359193016
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "sao_paulo_south",
+      "lat_deg": -23.55,
+      "lon_deg": -46.63,
+      "l3_se_angles_8": {
+        "ASC": 358.420673491,
+        "MC": 268.419281892,
+        "ARMC": 268.27714518,
+        "Vertex": 98.054433181,
+        "EqASC": 358.122244494,
+        "CoASC_Koch": 357.684832638,
+        "CoASC_Munkasey": 359.058686919,
+        "PolarASC": 177.684832638
+      },
+      "angle_diffs_arcsec": {
+        "ASC": 0.0,
+        "MC": 0.0,
+        "ARMC": 0.0,
+        "Vertex": 0.0,
+        "EqASC": 0.0,
+        "CoASC_Koch": 0.0,
+        "CoASC_Munkasey": 0.0,
+        "PolarASC": 0.0
+      },
+      "systems": {
+        "P": {
+          "l3_se_cusps": [
+            358.420673491,
+            27.153374773,
+            57.570792449,
+            88.419281892,
+            119.223280618,
+            149.595834702,
+            178.420673491,
+            207.153374773,
+            237.570792449,
+            268.419281892,
+            299.223280618,
+            329.595834702
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "K": {
+          "l3_se_cusps": [
+            358.420673491,
+            29.03265584,
+            58.704654995,
+            88.419281892,
+            118.291675324,
+            147.880455534,
+            178.420673491,
+            209.03265584,
+            238.704654995,
+            268.419281892,
+            298.291675324,
+            327.880455534
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "O": {
+          "l3_se_cusps": [
+            358.420673491,
+            28.420209625,
+            58.419745759,
+            88.419281892,
+            118.419745759,
+            148.420209625,
+            178.420673491,
+            208.420209625,
+            238.419745759,
+            268.419281892,
+            298.419745759,
+            328.420209625
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "R": {
+          "l3_se_cusps": [
+            358.420673491,
+            26.309370971,
+            56.214925286,
+            88.419281892,
+            120.624429016,
+            150.531367049,
+            178.420673491,
+            206.309370971,
+            236.214925286,
+            268.419281892,
+            300.624429016,
+            330.531367049
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "C": {
+          "l3_se_cusps": [
+            358.420673491,
+            28.418601958,
+            58.417906106,
+            88.419281892,
+            118.421353551,
+            148.422049297,
+            178.420673491,
+            208.418601958,
+            238.417906106,
+            268.419281892,
+            298.421353551,
+            328.422049297
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "A": {
+          "l3_se_cusps": [
+            358.420673491,
+            28.420673491,
+            58.420673491,
+            88.420673491,
+            118.420673491,
+            148.420673491,
+            178.420673491,
+            208.420673491,
+            238.420673491,
+            268.420673491,
+            298.420673491,
+            328.420673491
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "W": {
+          "l3_se_cusps": [
+            330.0,
+            0.0,
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0,
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "B": {
+          "l3_se_cusps": [
+            358.420673491,
+            30.575178419,
+            60.528355642,
+            88.419281892,
+            116.354418352,
+            146.217869959,
+            178.420673491,
+            210.575178419,
+            240.528355642,
+            268.419281892,
+            296.354418352,
+            326.217869959
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "M": {
+          "l3_se_cusps": [
+            358.419281892,
+            26.267580863,
+            56.028673833,
+            88.122244494,
+            120.384299969,
+            150.440789902,
+            178.419281892,
+            206.267580863,
+            236.028673833,
+            268.122244494,
+            300.384299969,
+            330.440789902
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "T": {
+          "l3_se_cusps": [
+            358.420673491,
+            27.155125732,
+            57.58082232,
+            88.419281892,
+            119.212100739,
+            149.593428439,
+            178.420673491,
+            207.155125732,
+            237.58082232,
+            268.419281892,
+            299.212100739,
+            329.593428439
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "U": {
+          "l3_se_cusps": [
+            358.420673491,
+            28.398434137,
+            58.397728683,
+            88.419281892,
+            118.441531823,
+            148.442217966,
+            178.420673491,
+            208.398434137,
+            238.397728683,
+            268.419281892,
+            298.441531823,
+            328.442217966
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "X": {
+          "l3_se_cusps": [
+            358.122244494,
+            30.384299969,
+            60.440789902,
+            88.419281892,
+            116.267580863,
+            146.028673833,
+            178.122244494,
+            210.384299969,
+            240.440789902,
+            268.419281892,
+            296.267580863,
+            326.028673833
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "V": {
+          "l3_se_cusps": [
+            343.420673491,
+            13.420673491,
+            43.420673491,
+            73.420673491,
+            103.420673491,
+            133.420673491,
+            163.420673491,
+            193.420673491,
+            223.420673491,
+            253.420673491,
+            283.420673491,
+            313.420673491
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "L": {
+          "l3_se_cusps": [
+            358.420673491,
+            28.420325591,
+            58.419629792,
+            88.419281892,
+            118.419629792,
+            148.420325591,
+            178.420673491,
+            208.420325591,
+            238.419629792,
+            268.419281892,
+            298.419629792,
+            328.420325591
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "Q": {
+          "l3_se_cusps": [
+            358.420673491,
+            28.420325589,
+            58.419629794,
+            88.419281892,
+            118.41962979,
+            148.420325593,
+            178.420673491,
+            208.420325589,
+            238.419629794,
+            268.419281892,
+            298.41962979,
+            328.420325593
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "I": {
+          "l3_se_cusps": [
+            358.420673323,
+            24.878223575,
+            54.84707126,
+            88.419281722,
+            121.992343293,
+            151.962570592,
+            178.420673323,
+            207.578047014,
+            237.321884279,
+            268.419281722,
+            299.517421647,
+            329.26263896
+          ],
+          "max_diff_vs_l1b_arcsec": 0.097426
+        },
+        "i": {
+          "l3_se_cusps": [
+            358.420673323,
+            24.878223575,
+            54.84707126,
+            88.419281722,
+            121.992343293,
+            151.962570592,
+            178.420673323,
+            207.578047014,
+            237.321884279,
+            268.419281722,
+            299.517421647,
+            329.26263896
+          ],
+          "max_diff_vs_l1b_arcsec": 0.097426
+        },
+        "F": {
+          "l3_se_cusps": [
+            358.420673491,
+            30.670583209,
+            60.703425321,
+            88.670543753,
+            116.528150345,
+            146.312504091,
+            178.420673491,
+            210.670583209,
+            240.703425321,
+            268.670543753,
+            296.528150345,
+            326.312504091
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "N": {
+          "l3_se_cusps": [
+            0.0,
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0,
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0,
+            330.0
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "S": {
+          "l3_se_cusps": [
+            343.420441558,
+            13.420441558,
+            43.419977692,
+            73.419513825,
+            103.419513825,
+            133.419977692,
+            163.420441558,
+            193.420441558,
+            223.419977692,
+            253.419513825,
+            283.419513825,
+            313.419977692
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "D": {
+          "l3_se_cusps": [
+            358.419281892,
+            28.419281892,
+            58.419281892,
+            88.419281892,
+            118.419281892,
+            148.419281892,
+            178.419281892,
+            208.419281892,
+            238.419281892,
+            268.419281892,
+            298.419281892,
+            328.419281892
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "Y": {
+          "l3_se_cusps": [
+            358.420673491,
+            26.257128263,
+            56.167202302,
+            88.419281892,
+            120.672154092,
+            150.583611854,
+            178.420673491,
+            206.361371727,
+            236.262260774,
+            268.419281892,
+            300.577091454,
+            330.479364203
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "H": {
+          "l3_se_cusps": [
+            278.054433181,
+            88.21349002,
+            88.351638419,
+            88.419281892,
+            88.485997461,
+            88.616719529,
+            98.054433181,
+            268.21349002,
+            268.351638419,
+            268.419281892,
+            268.485997461,
+            268.616719529
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "antimeridian_pos180_north",
+      "lat_deg": 45.0,
+      "lon_deg": 180.0,
+      "l3_se_angles_8": {
+        "ASC": 187.947907082,
+        "MC": 99.611087721,
+        "ARMC": 100.457072361,
+        "Vertex": 19.786563636,
+        "EqASC": 191.373899531,
+        "CoASC_Koch": 199.786563636,
+        "CoASC_Munkasey": 187.947907082,
+        "PolarASC": 19.786563636
+      },
+      "angle_diffs_arcsec": {
+        "ASC": 0.0,
+        "MC": 0.0,
+        "ARMC": 0.0,
+        "Vertex": 0.0,
+        "EqASC": 0.0,
+        "CoASC_Koch": 0.0,
+        "CoASC_Munkasey": 0.0,
+        "PolarASC": 0.0
+      },
+      "systems": {
+        "P": {
+          "l3_se_cusps": [
+            187.947907082,
+            213.928846964,
+            244.840871433,
+            279.611087721,
+            313.803685276,
+            343.511414838,
+            7.947907082,
+            33.928846964,
+            64.840871433,
+            99.611087721,
+            133.803685276,
+            163.511414838
+          ],
+          "max_diff_vs_l1b_arcsec": 6e-06
+        },
+        "K": {
+          "l3_se_cusps": [
+            187.947907082,
+            216.952202663,
+            246.164596096,
+            279.611087721,
+            309.884311287,
+            338.794210109,
+            7.947907082,
+            36.952202663,
+            66.164596096,
+            99.611087721,
+            129.884311287,
+            158.794210109
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "O": {
+          "l3_se_cusps": [
+            187.947907082,
+            218.502300628,
+            249.056694175,
+            279.611087721,
+            309.056694175,
+            338.502300628,
+            7.947907082,
+            38.502300628,
+            69.056694175,
+            99.611087721,
+            129.056694175,
+            158.502300628
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "R": {
+          "l3_se_cusps": [
+            187.947907082,
+            211.897288044,
+            241.777177535,
+            279.611087721,
+            316.227611163,
+            344.535215225,
+            7.947907082,
+            31.897288044,
+            61.777177535,
+            99.611087721,
+            136.227611163,
+            164.535215225
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "C": {
+          "l3_se_cusps": [
+            187.947907082,
+            220.221367555,
+            250.996168046,
+            279.611087721,
+            307.48107336,
+            336.598789032,
+            7.947907082,
+            40.221367555,
+            70.996168046,
+            99.611087721,
+            127.48107336,
+            156.598789032
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "A": {
+          "l3_se_cusps": [
+            187.947907082,
+            217.947907082,
+            247.947907082,
+            277.947907082,
+            307.947907082,
+            337.947907082,
+            7.947907082,
+            37.947907082,
+            67.947907082,
+            97.947907082,
+            127.947907082,
+            157.947907082
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "W": {
+          "l3_se_cusps": [
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0,
+            330.0,
+            0.0,
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "B": {
+          "l3_se_cusps": [
+            187.947907082,
+            220.773849247,
+            250.976845672,
+            279.611087721,
+            307.007517171,
+            336.607277344,
+            7.947907082,
+            40.773849247,
+            70.976845672,
+            99.611087721,
+            127.007517171,
+            156.607277344
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "M": {
+          "l3_se_cusps": [
+            189.611087721,
+            218.040521566,
+            248.849424104,
+            281.373899531,
+            312.9066478,
+            341.960853739,
+            9.611087721,
+            38.040521566,
+            68.849424104,
+            101.373899531,
+            132.9066478,
+            161.960853739
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "T": {
+          "l3_se_cusps": [
+            187.947907082,
+            213.964697897,
+            244.997352669,
+            279.611087721,
+            313.731493358,
+            343.507016175,
+            7.947907082,
+            33.964697897,
+            64.997352669,
+            99.611087721,
+            133.731493358,
+            163.507016175
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "U": {
+          "l3_se_cusps": [
+            187.947907082,
+            212.147115671,
+            242.104679353,
+            279.611087721,
+            315.917899476,
+            344.295874951,
+            7.947907082,
+            32.147115671,
+            62.104679353,
+            99.611087721,
+            135.917899476,
+            164.295874951
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "X": {
+          "l3_se_cusps": [
+            191.373899531,
+            222.9066478,
+            251.960853739,
+            279.611087721,
+            308.040521566,
+            338.849424104,
+            11.373899531,
+            42.9066478,
+            71.960853739,
+            99.611087721,
+            128.040521566,
+            158.849424104
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "V": {
+          "l3_se_cusps": [
+            172.947907082,
+            202.947907082,
+            232.947907082,
+            262.947907082,
+            292.947907082,
+            322.947907082,
+            352.947907082,
+            22.947907082,
+            52.947907082,
+            82.947907082,
+            112.947907082,
+            142.947907082
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "L": {
+          "l3_se_cusps": [
+            187.947907082,
+            218.363702242,
+            249.195292561,
+            279.611087721,
+            309.195292561,
+            338.363702242,
+            7.947907082,
+            38.363702242,
+            69.195292561,
+            99.611087721,
+            129.195292561,
+            158.363702242
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "Q": {
+          "l3_se_cusps": [
+            187.947907082,
+            218.36080052,
+            249.198194283,
+            279.611087721,
+            309.192430783,
+            338.36656402,
+            7.947907082,
+            38.36080052,
+            69.198194283,
+            99.611087721,
+            129.192430783,
+            158.36656402
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "I": {
+          "l3_se_cusps": [
+            187.947907147,
+            215.327692343,
+            245.036760299,
+            279.6110878,
+            313.142355037,
+            341.255495669,
+            7.947907147,
+            26.720987721,
+            54.959274905,
+            99.6110878,
+            142.666254687,
+            169.513434684
+          ],
+          "max_diff_vs_l1b_arcsec": 2.185515
+        },
+        "i": {
+          "l3_se_cusps": [
+            187.947907147,
+            215.327692343,
+            245.036760299,
+            279.6110878,
+            313.142355037,
+            341.255495669,
+            7.947907147,
+            26.720987721,
+            54.959274905,
+            99.6110878,
+            142.666254687,
+            169.513434684
+          ],
+          "max_diff_vs_l1b_arcsec": 2.185515
+        },
+        "F": {
+          "l3_se_cusps": [
+            187.947907082,
+            219.702420177,
+            249.002974169,
+            276.702997873,
+            304.950886061,
+            335.490031065,
+            7.947907082,
+            39.702420177,
+            69.002974169,
+            96.702997873,
+            124.950886061,
+            155.490031065
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "N": {
+          "l3_se_cusps": [
+            0.0,
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0,
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0,
+            330.0
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "S": {
+          "l3_se_cusps": [
+            173.225103855,
+            203.225103855,
+            233.779497401,
+            264.333890948,
+            294.333890948,
+            323.779497401,
+            353.225103855,
+            23.225103855,
+            53.779497401,
+            84.333890948,
+            114.333890948,
+            143.779497401
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "D": {
+          "l3_se_cusps": [
+            189.611087721,
+            219.611087721,
+            249.611087721,
+            279.611087721,
+            309.611087721,
+            339.611087721,
+            9.611087721,
+            39.611087721,
+            69.611087721,
+            99.611087721,
+            129.611087721,
+            159.611087721
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "Y": {
+          "l3_se_cusps": [
+            187.947907082,
+            212.429732821,
+            242.352369009,
+            279.611087721,
+            315.683627588,
+            344.02521751,
+            7.947907082,
+            31.337399324,
+            61.147362504,
+            99.611087721,
+            136.82306543,
+            165.071893839
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "H": {
+          "l3_se_cusps": [
+            199.786563636,
+            249.4758839,
+            267.864157079,
+            279.611087721,
+            292.276139329,
+            315.864109151,
+            19.786563636,
+            69.4758839,
+            87.864157079,
+            99.611087721,
+            112.276139329,
+            135.864109151
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        }
+      }
+    },
+    {
+      "case_id": "antimeridian_neg180_south",
+      "lat_deg": -45.0,
+      "lon_deg": -180.0,
+      "l3_se_angles_8": {
+        "ASC": 199.786563636,
+        "MC": 99.611087721,
+        "ARMC": 100.457072361,
+        "Vertex": 7.947907082,
+        "EqASC": 191.373899531,
+        "CoASC_Koch": 187.947907082,
+        "CoASC_Munkasey": 199.786563636,
+        "PolarASC": 7.947907082
+      },
+      "angle_diffs_arcsec": {
+        "ASC": 0.0,
+        "MC": 0.0,
+        "ARMC": 0.0,
+        "Vertex": 0.0,
+        "EqASC": 0.0,
+        "CoASC_Koch": 0.0,
+        "CoASC_Munkasey": 0.0,
+        "PolarASC": 0.0
+      },
+      "systems": {
+        "P": {
+          "l3_se_cusps": [
+            199.786563636,
+            236.484265797,
+            259.747438517,
+            279.611087721,
+            301.15635687,
+            330.798048988,
+            19.786563636,
+            56.484265797,
+            79.747438517,
+            99.611087721,
+            121.15635687,
+            150.798048988
+          ],
+          "max_diff_vs_l1b_arcsec": 1.5e-05
+        },
+        "K": {
+          "l3_se_cusps": [
+            199.786563636,
+            234.394965088,
+            259.705080805,
+            279.611087721,
+            304.690700419,
+            338.982352246,
+            19.786563636,
+            54.394965088,
+            79.705080805,
+            99.611087721,
+            124.690700419,
+            158.982352246
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "O": {
+          "l3_se_cusps": [
+            199.786563636,
+            226.394738331,
+            253.002913026,
+            279.611087721,
+            313.002913026,
+            346.394738331,
+            19.786563636,
+            46.394738331,
+            73.002913026,
+            99.611087721,
+            133.002913026,
+            166.394738331
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "R": {
+          "l3_se_cusps": [
+            199.786563636,
+            241.40878052,
+            263.460037368,
+            279.611087721,
+            297.521928435,
+            327.255816006,
+            19.786563636,
+            61.40878052,
+            83.460037368,
+            99.611087721,
+            117.521928435,
+            147.255816006
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "C": {
+          "l3_se_cusps": [
+            199.786563636,
+            249.4758839,
+            267.864157079,
+            279.611087721,
+            292.276139329,
+            315.864109151,
+            19.786563636,
+            69.4758839,
+            87.864157079,
+            99.611087721,
+            112.276139329,
+            135.864109151
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "A": {
+          "l3_se_cusps": [
+            199.786563636,
+            229.786563636,
+            259.786563636,
+            289.786563636,
+            319.786563636,
+            349.786563636,
+            19.786563636,
+            49.786563636,
+            79.786563636,
+            109.786563636,
+            139.786563636,
+            169.786563636
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "W": {
+          "l3_se_cusps": [
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0,
+            330.0,
+            0.0,
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "B": {
+          "l3_se_cusps": [
+            199.786563636,
+            228.12424848,
+            254.386963149,
+            279.611087721,
+            310.609238449,
+            344.434413248,
+            19.786563636,
+            48.12424848,
+            74.386963149,
+            99.611087721,
+            130.609238449,
+            164.434413248
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "M": {
+          "l3_se_cusps": [
+            189.611087721,
+            218.040521566,
+            248.849424104,
+            281.373899531,
+            312.9066478,
+            341.960853739,
+            9.611087721,
+            38.040521566,
+            68.849424104,
+            101.373899531,
+            132.9066478,
+            161.960853739
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "T": {
+          "l3_se_cusps": [
+            199.786563636,
+            236.287892712,
+            259.519527493,
+            279.611087721,
+            301.307024013,
+            330.837843545,
+            19.786563636,
+            56.287892712,
+            79.519527493,
+            99.611087721,
+            121.307024013,
+            150.837843545
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "U": {
+          "l3_se_cusps": [
+            199.786563636,
+            221.837517716,
+            246.479690166,
+            279.611087721,
+            320.054645029,
+            354.426512758,
+            19.786563636,
+            41.837517716,
+            66.479690166,
+            99.611087721,
+            140.054645029,
+            174.426512758
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "X": {
+          "l3_se_cusps": [
+            191.373899531,
+            222.9066478,
+            251.960853739,
+            279.611087721,
+            308.040521566,
+            338.849424104,
+            11.373899531,
+            42.9066478,
+            71.960853739,
+            99.611087721,
+            128.040521566,
+            158.849424104
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "V": {
+          "l3_se_cusps": [
+            184.786563636,
+            214.786563636,
+            244.786563636,
+            274.786563636,
+            304.786563636,
+            334.786563636,
+            4.786563636,
+            34.786563636,
+            64.786563636,
+            94.786563636,
+            124.786563636,
+            154.786563636
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "L": {
+          "l3_se_cusps": [
+            199.786563636,
+            227.242694657,
+            252.1549567,
+            279.611087721,
+            312.1549567,
+            347.242694657,
+            19.786563636,
+            47.242694657,
+            72.1549567,
+            99.611087721,
+            132.1549567,
+            167.242694657
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "Q": {
+          "l3_se_cusps": [
+            199.786563636,
+            227.138990353,
+            252.258661004,
+            279.611087721,
+            312.042040469,
+            347.355610887,
+            19.786563636,
+            47.138990353,
+            72.258661004,
+            99.611087721,
+            132.042040469,
+            167.355610887
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "I": {
+          "l3_se_cusps": [
+            199.786563683,
+            235.094596243,
+            259.749992101,
+            279.6110878,
+            302.151814743,
+            336.26422917,
+            19.786563683,
+            65.002571184,
+            85.083959465,
+            99.6110878,
+            115.555614085,
+            142.141439603
+          ],
+          "max_diff_vs_l1b_arcsec": 2.69008
+        },
+        "i": {
+          "l3_se_cusps": [
+            199.786563683,
+            235.094596243,
+            259.749992101,
+            279.6110878,
+            302.151814743,
+            336.26422917,
+            19.786563683,
+            65.002571184,
+            85.083959465,
+            99.6110878,
+            115.555614085,
+            142.141439603
+          ],
+          "max_diff_vs_l1b_arcsec": 2.69008
+        },
+        "F": {
+          "l3_se_cusps": [
+            199.786563636,
+            230.702692689,
+            259.21112799,
+            286.848489143,
+            315.806883823,
+            347.244793682,
+            19.786563636,
+            50.702692689,
+            79.21112799,
+            106.848489143,
+            135.806883823,
+            167.244793682
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "N": {
+          "l3_se_cusps": [
+            0.0,
+            30.0,
+            60.0,
+            90.0,
+            120.0,
+            150.0,
+            180.0,
+            210.0,
+            240.0,
+            270.0,
+            300.0,
+            330.0
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "S": {
+          "l3_se_cusps": [
+            183.090650983,
+            213.090650983,
+            239.698825678,
+            266.307000373,
+            296.307000373,
+            329.698825678,
+            3.090650983,
+            33.090650983,
+            59.698825678,
+            86.307000373,
+            116.307000373,
+            149.698825678
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "D": {
+          "l3_se_cusps": [
+            189.611087721,
+            219.611087721,
+            249.611087721,
+            279.611087721,
+            309.611087721,
+            339.611087721,
+            9.611087721,
+            39.611087721,
+            69.611087721,
+            99.611087721,
+            129.611087721,
+            159.611087721
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "Y": {
+          "l3_se_cusps": [
+            199.786563636,
+            239.775697532,
+            262.597197913,
+            279.611087721,
+            298.581768744,
+            329.58896508,
+            19.786563636,
+            62.784072858,
+            84.132122612,
+            99.611087721,
+            116.703625072,
+            145.294006385
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        },
+        "H": {
+          "l3_se_cusps": [
+            187.947907082,
+            220.221367555,
+            250.996168046,
+            279.611087721,
+            307.48107336,
+            336.598789032,
+            7.947907082,
+            40.221367555,
+            70.996168046,
+            99.611087721,
+            127.48107336,
+            156.598789032
+          ],
+          "max_diff_vs_l1b_arcsec": 0.0
+        }
+      }
+    }
+  ],
+  "solar_eclipses_comparison": [
+    {
+      "label": "1999-08-11 Total Solar Eclipse (Europe)",
+      "kind": "Total",
+      "l1b_jd_tt_greatest": 2451401.9619412,
+      "l3_se_jd_tt_greatest": 2451401.9612246,
+      "diff_seconds": 61.91,
+      "se_ret_flag": 5
+    },
+    {
+      "label": "2005-04-08 Hybrid Solar Eclipse (Pacific / Americas)",
+      "kind": "Hybrid",
+      "l1b_jd_tt_greatest": 2453469.3582956,
+      "l3_se_jd_tt_greatest": 2453469.3589196,
+      "diff_seconds": -53.91,
+      "se_ret_flag": 33
+    },
+    {
+      "label": "2013-11-03 Hybrid Solar Eclipse (Atlantic / Africa)",
+      "kind": "Hybrid",
+      "l1b_jd_tt_greatest": 2456600.0333283,
+      "l3_se_jd_tt_greatest": 2456600.0330785,
+      "diff_seconds": 21.58,
+      "se_ret_flag": 33
+    },
+    {
+      "label": "2017-08-21 Total Solar Eclipse (North America)",
+      "kind": "Total",
+      "l1b_jd_tt_greatest": 2457987.2676702,
+      "l3_se_jd_tt_greatest": 2457987.2685373,
+      "diff_seconds": -74.92,
+      "se_ret_flag": 5
+    },
+    {
+      "label": "2023-04-20 Hybrid Solar Eclipse (Exmouth / Indonesia)",
+      "kind": "Hybrid",
+      "l1b_jd_tt_greatest": 2460054.67863,
+      "l3_se_jd_tt_greatest": 2460054.6791191,
+      "diff_seconds": -42.25,
+      "se_ret_flag": 33
+    },
+    {
+      "label": "2023-10-14 Annular Solar Eclipse (Americas)",
+      "kind": "Annular",
+      "l1b_jd_tt_greatest": 2460232.2500731,
+      "l3_se_jd_tt_greatest": 2460232.2504657,
+      "diff_seconds": -33.92,
+      "se_ret_flag": 9
+    },
+    {
+      "label": "2024-04-08 Total Solar Eclipse (North America)",
+      "kind": "Total",
+      "l1b_jd_tt_greatest": 2460409.2620058,
+      "l3_se_jd_tt_greatest": 2460409.2628792,
+      "diff_seconds": -75.46,
+      "se_ret_flag": 5
+    },
+    {
+      "label": "2025-03-29 Partial Solar Eclipse (North Atlantic / Europe)",
+      "kind": "Partial",
+      "l1b_jd_tt_greatest": 2460763.9497058,
+      "l3_se_jd_tt_greatest": 2460763.9504119,
+      "diff_seconds": -61.01,
+      "se_ret_flag": 18
+    }
+  ],
+  "lunar_eclipses_comparison": [
+    {
+      "label": "2000-07-16 Total Lunar Eclipse (Century-Max Duration)",
+      "kind": "Total",
+      "l1b_jd_tt_greatest": 2451742.0817919,
+      "l3_se_jd_tt_greatest": 2451742.0810123,
+      "diff_seconds": 67.36,
+      "se_ret_flag": 4
+    },
+    {
+      "label": "2018-07-27 Total Lunar Eclipse (21st-Century Longest)",
+      "kind": "Total",
+      "l1b_jd_tt_greatest": 2458327.3501801,
+      "l3_se_jd_tt_greatest": 2458327.3492529,
+      "diff_seconds": 80.11,
+      "se_ret_flag": 4
+    },
+    {
+      "label": "2021-11-19 Near-Total Partial Lunar Eclipse",
+      "kind": "Partial",
+      "l1b_jd_tt_greatest": 2459537.8786466,
+      "l3_se_jd_tt_greatest": 2459537.8778192,
+      "diff_seconds": 71.49,
+      "se_ret_flag": 16
+    },
+    {
+      "label": "2022-11-08 Total Lunar Eclipse",
+      "kind": "Total",
+      "l1b_jd_tt_greatest": 2459891.9599317,
+      "l3_se_jd_tt_greatest": 2459891.9585569,
+      "diff_seconds": 118.79,
+      "se_ret_flag": 4
+    },
+    {
+      "label": "2023-05-05 Deep Penumbral Lunar Eclipse",
+      "kind": "Penumbral",
+      "l1b_jd_tt_greatest": 2460070.2254979,
+      "l3_se_jd_tt_greatest": 2460070.2251011,
+      "diff_seconds": 34.28,
+      "se_ret_flag": 64
+    },
+    {
+      "label": "2025-03-14 Total Lunar Eclipse",
+      "kind": "Total",
+      "l1b_jd_tt_greatest": 2460748.792926,
+      "l3_se_jd_tt_greatest": 2460748.791625,
+      "diff_seconds": 112.4,
+      "se_ret_flag": 4
+    }
+  ]
+}

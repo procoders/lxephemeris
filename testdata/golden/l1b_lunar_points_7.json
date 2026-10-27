@@ -1,0 +1,417 @@
+{
+  "schema_version": "1.0.0",
+  "level": "L1B",
+  "source": "IERS 2003 (faom03/faf03/fal03) + DE440s osculating state + natural_apogee_c2_spline_v1",
+  "ephemeris": "DE440s (de440s.bsp)",
+  "mu_earth_moon_km3_s2": 403503.23562500003,
+  "time_scale": "TT",
+  "tolerance_arcsec": 0.05,
+  "count": 9,
+  "vectors": [
+    {
+      "epoch_label": "1855-06-01T00:00:00",
+      "jd_tt": 2398736.5,
+      "points": {
+        "Mean_Node": {
+          "lon_deg": 41.454456163798824,
+          "lon_mean_deg": 41.45777958291376,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052900241053666835
+        },
+        "Mean_South_Node": {
+          "lon_deg": 221.45445616379882,
+          "lon_mean_deg": 221.45777958291376,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052900241053666835
+        },
+        "True_Node": {
+          "lon_deg": 42.67139508522189,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.06292319143773284
+        },
+        "True_South_Node": {
+          "lon_deg": 222.6713950852219,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.06292319143773284
+        },
+        "Mean_Lilith": {
+          "lon_deg": 140.27549811378626,
+          "lon_mean_deg": 140.27882153276872,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.11145802460563577
+        },
+        "True_Lilith": {
+          "lon_deg": 119.54745790057372,
+          "lat_deg": 5.07264091779382,
+          "lon_speed_deg_day": -0.7607262056059199
+        },
+        "Interpolated_Lilith": {
+          "lon_deg": 142.40342259187884,
+          "lat_deg": 5.136706802994482,
+          "lon_speed_deg_day": 0.18150624084006023,
+          "lat_speed_deg_day": -0.007146467253172251
+        }
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00",
+      "jd_tt": 2415021.0,
+      "points": {
+        "Mean_Node": {
+          "lon_deg": 259.1348028825714,
+          "lon_mean_deg": 259.12993655904404,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052907975445495574
+        },
+        "Mean_South_Node": {
+          "lon_deg": 79.13480288257142,
+          "lon_mean_deg": 79.12993655904404,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052907975445495574
+        },
+        "True_Node": {
+          "lon_deg": 260.2584316154081,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.0244981836375473
+        },
+        "True_South_Node": {
+          "lon_deg": 80.25843161540809,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.0244981836375473
+        },
+        "Mean_Lilith": {
+          "lon_deg": 154.44556910153835,
+          "lon_mean_deg": 154.44070277801092,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.11144998888147549
+        },
+        "True_Lilith": {
+          "lon_deg": 135.69837061280148,
+          "lat_deg": -4.326708381581812,
+          "lon_speed_deg_day": -1.9781966025610132
+        },
+        "Interpolated_Lilith": {
+          "lon_deg": 158.89995806614164,
+          "lat_deg": -5.143605794996597,
+          "lon_speed_deg_day": 0.20397720342965048,
+          "lat_speed_deg_day": -0.00018730777119620862
+        }
+      }
+    },
+    {
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "points": {
+        "Mean_Node": {
+          "lon_deg": 251.85974419208395,
+          "lon_mean_deg": 251.85508366276173,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.05294146651581647
+        },
+        "Mean_South_Node": {
+          "lon_deg": 71.85974419208395,
+          "lon_mean_deg": 71.85508366276173,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.05294146651581647
+        },
+        "True_Node": {
+          "lon_deg": 250.9629411494018,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.03354105242743799
+        },
+        "True_South_Node": {
+          "lon_deg": 70.96294114940179,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.03354105242743799
+        },
+        "Mean_Lilith": {
+          "lon_deg": 281.8465066119568,
+          "lon_mean_deg": 281.8418460826015,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.11141611717947734
+        },
+        "True_Lilith": {
+          "lon_deg": 301.1265762289396,
+          "lat_deg": 3.8896990373368223,
+          "lon_speed_deg_day": 0.7511819838160818
+        },
+        "Interpolated_Lilith": {
+          "lon_deg": 281.35887947737183,
+          "lat_deg": 2.5655001304888945,
+          "lon_speed_deg_day": 0.21312747045570363,
+          "lat_speed_deg_day": 0.025275559662913203
+        }
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "points": {
+        "Mean_Node": {
+          "lon_deg": 143.07863424878673,
+          "lon_mean_deg": 143.08156171358686,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052929694944584486
+        },
+        "Mean_South_Node": {
+          "lon_deg": 323.0786342487867,
+          "lon_mean_deg": 323.0815617135869,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052929694944584486
+        },
+        "True_Node": {
+          "lon_deg": 141.62669815718385,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.06125748817288468
+        },
+        "True_South_Node": {
+          "lon_deg": 321.62669815718385,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.06125748817288468
+        },
+        "Mean_Lilith": {
+          "lon_deg": 188.04017900627218,
+          "lon_mean_deg": 188.04310647108878,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.11142772440624492
+        },
+        "True_Lilith": {
+          "lon_deg": 200.04169424102642,
+          "lat_deg": 4.347034326177781,
+          "lon_speed_deg_day": -3.2221947201477406
+        },
+        "Interpolated_Lilith": {
+          "lon_deg": 186.62547336723838,
+          "lat_deg": 3.5918956840343457,
+          "lon_speed_deg_day": 0.19035260405506943,
+          "lat_speed_deg_day": 0.019972938554546724
+        }
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "points": {
+        "Mean_Node": {
+          "lon_deg": 125.04068501101918,
+          "lon_mean_deg": 125.04455501,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052951797259222555
+        },
+        "Mean_South_Node": {
+          "lon_deg": 305.04068501101915,
+          "lon_mean_deg": 305.04455501,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052951797259222555
+        },
+        "True_Node": {
+          "lon_deg": 123.9540633260808,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.05472665035188129
+        },
+        "True_South_Node": {
+          "lon_deg": 303.9540633260808,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.05472665035188129
+        },
+        "Mean_Lilith": {
+          "lon_deg": 263.3493731210192,
+          "lon_mean_deg": 263.35324312,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.11140548945459598
+        },
+        "True_Lilith": {
+          "lon_deg": 252.9942085754052,
+          "lat_deg": 4.074648701750649,
+          "lon_speed_deg_day": 1.6376214090702206
+        },
+        "Interpolated_Lilith": {
+          "lon_deg": 259.2380976287105,
+          "lat_deg": 3.679777980252927,
+          "lon_speed_deg_day": -0.044199609903281124,
+          "lat_speed_deg_day": 0.005106932097755823
+        }
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "points": {
+        "Mean_Node": {
+          "lon_deg": 333.4339129465458,
+          "lon_mean_deg": 333.4319009621944,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052890190608473026
+        },
+        "Mean_South_Node": {
+          "lon_deg": 153.43391294654577,
+          "lon_mean_deg": 153.4319009621944,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052890190608473026
+        },
+        "True_Node": {
+          "lon_deg": 332.29140103384043,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.15933352040576665
+        },
+        "True_South_Node": {
+          "lon_deg": 152.29140103384043,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.15933352040576665
+        },
+        "Mean_Lilith": {
+          "lon_deg": 259.6796589366234,
+          "lon_mean_deg": 259.67764695228857,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.1114669164561143
+        },
+        "True_Lilith": {
+          "lon_deg": 261.7221927557517,
+          "lat_deg": -4.751932380465097,
+          "lon_speed_deg_day": -1.7353179889300918
+        },
+        "Interpolated_Lilith": {
+          "lon_deg": 258.741785224978,
+          "lat_deg": -4.819753955756212,
+          "lon_speed_deg_day": -0.06778544975101104,
+          "lat_speed_deg_day": -0.0026172924617618187
+        }
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "points": {
+        "Mean_Node": {
+          "lon_deg": 237.98115749644566,
+          "lon_mean_deg": 237.976943193066,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052961262334892276
+        },
+        "Mean_South_Node": {
+          "lon_deg": 57.98115749644569,
+          "lon_mean_deg": 57.976943193066006,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052961262334892276
+        },
+        "True_Node": {
+          "lon_deg": 239.50009607169756,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.013611143595426256
+        },
+        "True_South_Node": {
+          "lon_deg": 59.500096071697556,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.013611143595426256
+        },
+        "Mean_Lilith": {
+          "lon_deg": 137.86169305967618,
+          "lon_mean_deg": 137.85747875629653,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.11139568465895086
+        },
+        "True_Lilith": {
+          "lon_deg": 109.67074170614704,
+          "lat_deg": -3.9819009864468047,
+          "lon_speed_deg_day": 1.2608154142805006
+        },
+        "Interpolated_Lilith": {
+          "lon_deg": 143.29841413443253,
+          "lat_deg": -5.117925484625809,
+          "lon_speed_deg_day": 0.13486772470864367,
+          "lat_speed_deg_day": 0.003569998885372628
+        }
+      }
+    },
+    {
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "points": {
+        "Mean_Node": {
+          "lon_deg": 350.93776104394675,
+          "lon_mean_deg": 350.93684759735856,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.05296016966053764
+        },
+        "Mean_South_Node": {
+          "lon_deg": 170.9377610439467,
+          "lon_mean_deg": 170.93684759735856,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.05296016966053764
+        },
+        "True_Node": {
+          "lon_deg": 349.83467574728456,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.02406162277122803
+        },
+        "True_South_Node": {
+          "lon_deg": 169.83467574728456,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.02406162277122803
+        },
+        "Mean_Lilith": {
+          "lon_deg": 12.301756177518934,
+          "lon_mean_deg": 12.300842730930668,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.1113964370274666
+        },
+        "True_Lilith": {
+          "lon_deg": 3.6324635651047803,
+          "lat_deg": 1.210305357552261,
+          "lon_speed_deg_day": 3.1685059088761705
+        },
+        "Interpolated_Lilith": {
+          "lon_deg": 11.926417097121753,
+          "lat_deg": 1.8907465171965387,
+          "lon_speed_deg_day": 0.23103580399711346,
+          "lat_speed_deg_day": 0.02856276462334674
+        }
+      }
+    },
+    {
+      "epoch_label": "2145-06-01T00:00:00",
+      "jd_tt": 2504656.5,
+      "points": {
+        "Mean_Node": {
+          "lon_deg": 192.59588699043184,
+          "lon_mean_deg": 192.5950672509309,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052971597295332754
+        },
+        "Mean_South_Node": {
+          "lon_deg": 12.595886990431836,
+          "lon_mean_deg": 12.595067250930924,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": -0.052971597295332754
+        },
+        "True_Node": {
+          "lon_deg": 193.93849810560232,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.005595711097612366
+        },
+        "True_South_Node": {
+          "lon_deg": 13.93849810560232,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.005595711097612366
+        },
+        "Mean_Lilith": {
+          "lon_deg": 60.14035022795586,
+          "lon_mean_deg": 60.13953048845491,
+          "lat_deg": 0.0,
+          "lon_speed_deg_day": 0.11138469978885081
+        },
+        "True_Lilith": {
+          "lon_deg": 75.4785754484128,
+          "lat_deg": -4.498064648041134,
+          "lon_speed_deg_day": -2.1862529320017074
+        },
+        "Interpolated_Lilith": {
+          "lon_deg": 58.548390549748135,
+          "lat_deg": -3.5651262721048314,
+          "lon_speed_deg_day": -0.02771857353541007,
+          "lat_speed_deg_day": 0.00021752469423154532
+        }
+      }
+    }
+  ]
+}

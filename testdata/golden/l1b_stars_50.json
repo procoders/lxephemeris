@@ -1,0 +1,3235 @@
+{
+  "schema_version": "1.0.0",
+  "level": "L1B",
+  "source": "VizieR I/311 (Hipparcos-2, J1991.25) + XHIP V/137D RV + pyerfa (pmpx -> ldsun -> ab -> npb06)",
+  "ephemeris": "DE440s (de440s.bsp)",
+  "time_scale": "TT",
+  "tolerance_arcsec": 0.01,
+  "count": 104,
+  "vectors": [
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Aldebaran",
+      "bayer": "alTau",
+      "hip": 21421,
+      "hr": 1457,
+      "hd": 29139,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 0.85,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 68.98000194,
+        "dec_deg": 16.50976158,
+        "pm_ra_cosdec_mas_yr": 63.45,
+        "pm_dec_mas_yr": -188.94,
+        "plx_mas": 48.94,
+        "rv_kms": 54.26
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 68.98016278619352,
+        "dec_deg": 16.509302361683346
+      },
+      "apparent_of_date": {
+        "lon_deg": 69.79031716618564,
+        "lat_deg": -5.467602035905801,
+        "ra_deg": 68.9815355788769,
+        "dec_deg": 16.50768448393869
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Regulus",
+      "bayer": "alLeo",
+      "hip": 49669,
+      "hr": 3982,
+      "hd": 87901,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.35,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 152.09358042,
+        "dec_deg": 11.96719519,
+        "pm_ra_cosdec_mas_yr": -248.73,
+        "pm_dec_mas_yr": 5.59,
+        "plx_mas": 41.13,
+        "rv_kms": 5.9
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 152.09296243828146,
+        "dec_deg": 11.967208776100026
+      },
+      "apparent_of_date": {
+        "lon_deg": 149.82904059714693,
+        "lat_deg": 0.4648132092707501,
+        "ra_deg": 152.09256144624075,
+        "dec_deg": 11.96646208082992
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Antares",
+      "bayer": "alSco",
+      "hip": 80763,
+      "hr": 6134,
+      "hd": 148478,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 0.96,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 247.35194829,
+        "dec_deg": -26.43194598,
+        "pm_ra_cosdec_mas_yr": -12.11,
+        "pm_dec_mas_yr": -23.3,
+        "plx_mas": 5.89,
+        "rv_kms": -3.5
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 247.3519154198263,
+        "dec_deg": -26.43200261195113
+      },
+      "apparent_of_date": {
+        "lon_deg": 249.75342683666992,
+        "lat_deg": -4.569717069862255,
+        "ra_deg": 247.34251084801627,
+        "dec_deg": -26.42892961243233
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Fomalhaut",
+      "bayer": "alPsA",
+      "hip": 113368,
+      "hr": 8728,
+      "hd": 216956,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.16,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 344.41177299,
+        "dec_deg": -29.6218368,
+        "pm_ra_cosdec_mas_yr": 328.95,
+        "pm_dec_mas_yr": -164.67,
+        "plx_mas": 129.81,
+        "rv_kms": 6.5
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 344.4126927211702,
+        "dec_deg": -29.622237033389467
+      },
+      "apparent_of_date": {
+        "lon_deg": 333.8526633747035,
+        "lat_deg": -21.13729383471624,
+        "ra_deg": 344.4051754883318,
+        "dec_deg": -29.626242053725466
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Sirius",
+      "bayer": "alCMa",
+      "hip": 32349,
+      "hr": 2491,
+      "hd": 48915,
+      "comp": "ABC",
+      "is_astra_50": true,
+      "vmag": -1.46,
+      "flags": "MULTICOMP(ABC)",
+      "icrs_j1991_25": {
+        "ra_deg": 101.28854105,
+        "dec_deg": -16.71314306,
+        "pm_ra_cosdec_mas_yr": -546.01,
+        "pm_dec_mas_yr": -1223.07,
+        "plx_mas": 379.21,
+        "rv_kms": -5.5
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 101.28715536061837,
+        "dec_deg": -16.716115850449373
+      },
+      "apparent_of_date": {
+        "lon_deg": 104.08530396471949,
+        "lat_deg": -39.605067739335055,
+        "ra_deg": 101.29018210509615,
+        "dec_deg": -16.717802414332834
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Spica",
+      "bayer": "alVir",
+      "hip": 65474,
+      "hr": 5056,
+      "hd": 116658,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 0.98,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 201.29835228,
+        "dec_deg": -11.16124494,
+        "pm_ra_cosdec_mas_yr": -42.35,
+        "pm_dec_mas_yr": -30.67,
+        "plx_mas": 13.06,
+        "rv_kms": 0.0
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 201.29824736155095,
+        "dec_deg": -11.161319485120645
+      },
+      "apparent_of_date": {
+        "lon_deg": 203.83614790537055,
+        "lat_deg": -2.0542854162315476,
+        "ra_deg": 201.29369241227732,
+        "dec_deg": -11.158613638163823
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Algol",
+      "bayer": "bePer",
+      "hip": 14576,
+      "hr": 936,
+      "hd": 19356,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.12,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 47.04220893,
+        "dec_deg": 40.95565071,
+        "pm_ra_cosdec_mas_yr": 2.99,
+        "pm_dec_mas_yr": -1.66,
+        "plx_mas": 36.27,
+        "rv_kms": 3.7
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 47.04221855286376,
+        "dec_deg": 40.95564667528223
+      },
+      "apparent_of_date": {
+        "lon_deg": 56.168190035750506,
+        "lat_deg": 22.430076634210664,
+        "ra_deg": 47.04328025198172,
+        "dec_deg": 40.95610983322285
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Arcturus",
+      "bayer": "alBoo",
+      "hip": 69673,
+      "hr": 5340,
+      "hd": 124897,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": -0.04,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 213.91811408,
+        "dec_deg": 19.18727046,
+        "pm_ra_cosdec_mas_yr": -1093.39,
+        "pm_dec_mas_yr": -2000.06,
+        "plx_mas": 88.83,
+        "rv_kms": -5.24
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 213.91530029483548,
+        "dec_deg": 19.182409161376466
+      },
+      "apparent_of_date": {
+        "lon_deg": 204.2281728340738,
+        "lat_deg": 30.733359084344546,
+        "ra_deg": 213.9090925172561,
+        "dec_deg": 19.182452698929428
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Vega",
+      "bayer": "alLyr",
+      "hip": 91262,
+      "hr": 7001,
+      "hd": 172167,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 0.03,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 279.23410825,
+        "dec_deg": 38.78299326,
+        "pm_ra_cosdec_mas_yr": 200.94,
+        "pm_dec_mas_yr": 286.23,
+        "plx_mas": 130.23,
+        "rv_kms": -20.6
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 279.23473480206724,
+        "dec_deg": 38.783688972946564
+      },
+      "apparent_of_date": {
+        "lon_deg": 285.3003423051199,
+        "lat_deg": 61.733258220783846,
+        "ra_deg": 279.2252155149934,
+        "dec_deg": 38.784648589743014
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Capella",
+      "bayer": "alAur",
+      "hip": 24608,
+      "hr": 1708,
+      "hd": 34029,
+      "comp": "AP",
+      "is_astra_50": true,
+      "vmag": 0.08,
+      "flags": "MULTICOMP(AP)",
+      "icrs_j1991_25": {
+        "ra_deg": 79.17206466,
+        "dec_deg": 45.99902905,
+        "pm_ra_cosdec_mas_yr": 75.25,
+        "pm_dec_mas_yr": -426.89,
+        "plx_mas": 76.2,
+        "rv_kms": 29.19
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 79.17232793909398,
+        "dec_deg": 45.99799149048779
+      },
+      "apparent_of_date": {
+        "lon_deg": 81.85999605399407,
+        "lat_deg": 22.864998187233926,
+        "ra_deg": 79.17530145198513,
+        "dec_deg": 45.99729106610002
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Procyon",
+      "bayer": "alCMi",
+      "hip": 37279,
+      "hr": 2943,
+      "hd": 61421,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 0.38,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 114.82724202,
+        "dec_deg": 5.22750758,
+        "pm_ra_cosdec_mas_yr": -714.59,
+        "pm_dec_mas_yr": -1036.8,
+        "plx_mas": 284.56,
+        "rv_kms": -2.7
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 114.82549791020207,
+        "dec_deg": 5.224987560267982
+      },
+      "apparent_of_date": {
+        "lon_deg": 115.78749665090794,
+        "lat_deg": -16.019205839813978,
+        "ra_deg": 114.82737082162059,
+        "dec_deg": 5.223602763045056
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Rigel",
+      "bayer": "beOri",
+      "hip": 24436,
+      "hr": 1713,
+      "hd": 34085,
+      "comp": "ABC",
+      "is_astra_50": true,
+      "vmag": 0.12,
+      "flags": "MULTICOMP(ABC)",
+      "icrs_j1991_25": {
+        "ra_deg": 78.63446385,
+        "dec_deg": -8.20163958,
+        "pm_ra_cosdec_mas_yr": 1.31,
+        "pm_dec_mas_yr": 0.5,
+        "plx_mas": 3.78,
+        "rv_kms": 17.8
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 78.63446706692812,
+        "dec_deg": -8.20163836472294
+      },
+      "apparent_of_date": {
+        "lon_deg": 76.83192007270407,
+        "lat_deg": -31.12395693167952,
+        "ra_deg": 78.63654014147427,
+        "dec_deg": -8.20422273739667
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Betelgeuse",
+      "bayer": "alOri",
+      "hip": 27989,
+      "hr": 2061,
+      "hd": 39801,
+      "comp": "AP",
+      "is_astra_50": true,
+      "vmag": 0.5,
+      "flags": "MULTICOMP(AP)",
+      "icrs_j1991_25": {
+        "ra_deg": 88.79287149,
+        "dec_deg": 7.40703653,
+        "pm_ra_cosdec_mas_yr": 27.54,
+        "pm_dec_mas_yr": 11.3,
+        "plx_mas": 6.55,
+        "rv_kms": 21.91
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 88.79293899068868,
+        "dec_deg": 7.407063995237423
+      },
+      "apparent_of_date": {
+        "lon_deg": 88.75663018290429,
+        "lat_deg": -16.02732296463455,
+        "ra_deg": 88.79491455338918,
+        "dec_deg": 7.405153134121947
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Altair",
+      "bayer": "alAql",
+      "hip": 97649,
+      "hr": 7557,
+      "hd": 187642,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 0.77,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 297.69450819,
+        "dec_deg": 8.86738473,
+        "pm_ra_cosdec_mas_yr": 536.23,
+        "pm_dec_mas_yr": 385.29,
+        "plx_mas": 194.95,
+        "rv_kms": -26.6
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 297.695827357606,
+        "dec_deg": 8.868321239897682
+      },
+      "apparent_of_date": {
+        "lon_deg": 301.7663462414483,
+        "lat_deg": 29.30446015508155,
+        "ra_deg": 297.68704489562725,
+        "dec_deg": 8.868864816718062
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Pollux",
+      "bayer": "beGem",
+      "hip": 37826,
+      "hr": 2990,
+      "hd": 62509,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.14,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 116.33068294,
+        "dec_deg": 28.02631022,
+        "pm_ra_cosdec_mas_yr": -626.55,
+        "pm_dec_mas_yr": -45.8,
+        "plx_mas": 96.54,
+        "rv_kms": 3.23
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 116.32895777437872,
+        "dec_deg": 28.026198890093575
+      },
+      "apparent_of_date": {
+        "lon_deg": 113.21746088547901,
+        "lat_deg": 6.684052969983356,
+        "ra_deg": 116.33056509151213,
+        "dec_deg": 28.024298150820282
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Castor",
+      "bayer": "alGem",
+      "hip": 36850,
+      "hr": 2891,
+      "hd": 60179,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 1.98,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 113.65001968,
+        "dec_deg": 31.88863511,
+        "pm_ra_cosdec_mas_yr": -191.45,
+        "pm_dec_mas_yr": -145.19,
+        "plx_mas": 64.12,
+        "rv_kms": 5.4
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 113.6494716414639,
+        "dec_deg": 31.888282217556686
+      },
+      "apparent_of_date": {
+        "lon_deg": 110.24213301943973,
+        "lat_deg": 10.095594455303766,
+        "ra_deg": 113.65124367952446,
+        "dec_deg": 31.886339255015518
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Bellatrix",
+      "bayer": "gaOri",
+      "hip": 25336,
+      "hr": 1790,
+      "hd": 35468,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.64,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 81.28278339,
+        "dec_deg": 6.34973457,
+        "pm_ra_cosdec_mas_yr": -8.11,
+        "pm_dec_mas_yr": -12.88,
+        "plx_mas": 12.92,
+        "rv_kms": 18.2
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 81.28276355656551,
+        "dec_deg": 6.34970326450994
+      },
+      "apparent_of_date": {
+        "lon_deg": 80.94829820933083,
+        "lat_deg": -16.816592902766736,
+        "ra_deg": 81.28458814560022,
+        "dec_deg": 6.3476687853813205
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Alnilam",
+      "bayer": "epOri",
+      "hip": 26311,
+      "hr": 1903,
+      "hd": 37128,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.7,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 84.05338544,
+        "dec_deg": -1.20191724,
+        "pm_ra_cosdec_mas_yr": 1.44,
+        "pm_dec_mas_yr": -0.78,
+        "plx_mas": 1.65,
+        "rv_kms": 27.3
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 84.05338894076881,
+        "dec_deg": -1.201919135832567
+      },
+      "apparent_of_date": {
+        "lon_deg": 83.46586545530481,
+        "lat_deg": -24.507075657909418,
+        "ra_deg": 84.05543464725153,
+        "dec_deg": -1.204123900068611
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Deneb",
+      "bayer": "alCyg",
+      "hip": 102098,
+      "hr": 7924,
+      "hd": 197345,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.25,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 310.35797281,
+        "dec_deg": 45.28033431,
+        "pm_ra_cosdec_mas_yr": 2.01,
+        "pm_dec_mas_yr": 1.85,
+        "plx_mas": 2.31,
+        "rv_kms": -4.9
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 310.3579797530775,
+        "dec_deg": 45.28033880652802
+      },
+      "apparent_of_date": {
+        "lon_deg": 335.3187081451702,
+        "lat_deg": 59.910237703215685,
+        "ra_deg": 310.3496214703326,
+        "dec_deg": 45.282368127354914
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Achernar",
+      "bayer": "alEri",
+      "hip": 7588,
+      "hr": 472,
+      "hd": 10144,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 0.46,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 24.42813208,
+        "dec_deg": -57.23665985,
+        "pm_ra_cosdec_mas_yr": 87.0,
+        "pm_dec_mas_yr": -38.24,
+        "plx_mas": 23.39,
+        "rv_kms": 18.6
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 24.428522822161444,
+        "dec_deg": -57.23675279347628
+      },
+      "apparent_of_date": {
+        "lon_deg": 345.30258805737446,
+        "lat_deg": -59.38265996091697,
+        "ra_deg": 24.426423209428076,
+        "dec_deg": -57.24374221054779
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Hamal",
+      "bayer": "alAri",
+      "hip": 9884,
+      "hr": 617,
+      "hd": 12929,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.0,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 31.79285751,
+        "dec_deg": 23.46277747,
+        "pm_ra_cosdec_mas_yr": 188.55,
+        "pm_dec_mas_yr": -148.08,
+        "plx_mas": 49.56,
+        "rv_kms": -14.64
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 31.793357099576628,
+        "dec_deg": 23.462417550200897
+      },
+      "apparent_of_date": {
+        "lon_deg": 37.661289469597016,
+        "lat_deg": 9.96600327288677,
+        "ra_deg": 31.792416195869173,
+        "dec_deg": 23.462002694920066
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Mirach",
+      "bayer": "beAnd",
+      "hip": 5447,
+      "hr": 337,
+      "hd": 6860,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.06,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 17.43249023,
+        "dec_deg": 35.62083036,
+        "pm_ra_cosdec_mas_yr": 175.9,
+        "pm_dec_mas_yr": -112.2,
+        "plx_mas": 16.52,
+        "rv_kms": 0.06
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 17.433016172930422,
+        "dec_deg": 35.62055765052624
+      },
+      "apparent_of_date": {
+        "lon_deg": 30.40355452890873,
+        "lat_deg": 25.9457417096522,
+        "ra_deg": 17.43120070119534,
+        "dec_deg": 35.62159510684744
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Alioth",
+      "bayer": "epUMa",
+      "hip": 62956,
+      "hr": 4905,
+      "hd": 112185,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 1.77,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 193.50680405,
+        "dec_deg": 55.95984299,
+        "pm_ra_cosdec_mas_yr": 111.91,
+        "pm_dec_mas_yr": -8.24,
+        "plx_mas": 39.51,
+        "rv_kms": -12.7
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 193.50728996867898,
+        "dec_deg": 55.959822961176506
+      },
+      "apparent_of_date": {
+        "lon_deg": 158.93481361152794,
+        "lat_deg": 54.31479831935341,
+        "ra_deg": 193.5012787304153,
+        "dec_deg": 55.956690758356736
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Alcyone",
+      "bayer": "etTau",
+      "hip": 17702,
+      "hr": 1165,
+      "hd": 23630,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.87,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 56.87110081,
+        "dec_deg": 24.10524179,
+        "pm_ra_cosdec_mas_yr": 19.34,
+        "pm_dec_mas_yr": -43.67,
+        "plx_mas": 8.09,
+        "rv_kms": 5.4
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 56.87115230764575,
+        "dec_deg": 24.105135647671755
+      },
+      "apparent_of_date": {
+        "lon_deg": 59.99294106724622,
+        "lat_deg": 4.051219662766934,
+        "ra_deg": 56.87206552311744,
+        "dec_deg": 24.10416695402013
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Alphecca",
+      "bayer": "alCrB",
+      "hip": 76267,
+      "hr": 5793,
+      "hd": 139006,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.23,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 233.67162276,
+        "dec_deg": 26.71491051,
+        "pm_ra_cosdec_mas_yr": 120.27,
+        "pm_dec_mas_yr": -89.58,
+        "plx_mas": 43.46,
+        "rv_kms": 1.4
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 233.67195001524675,
+        "dec_deg": 26.714692780576588
+      },
+      "apparent_of_date": {
+        "lon_deg": 222.2876693396405,
+        "lat_deg": 44.320094708795615,
+        "ra_deg": 233.66406224618035,
+        "dec_deg": 26.71465745413553
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Markab",
+      "bayer": "alPeg",
+      "hip": 113963,
+      "hr": 8781,
+      "hd": 218045,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.49,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 346.19007056,
+        "dec_deg": 15.20536753,
+        "pm_ra_cosdec_mas_yr": 60.4,
+        "pm_dec_mas_yr": -41.3,
+        "plx_mas": 24.46,
+        "rv_kms": -2.7
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 346.19022269139936,
+        "dec_deg": 15.205267147945118
+      },
+      "apparent_of_date": {
+        "lon_deg": 353.4799403798641,
+        "lat_deg": 19.407862326560455,
+        "ra_deg": 346.18481983749643,
+        "dec_deg": 15.205136013255352
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Zubenelgenubi",
+      "bayer": "al-2Lib",
+      "hip": 72622,
+      "hr": 5531,
+      "hd": 130841,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.75,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 222.71990516,
+        "dec_deg": -16.04161027,
+        "pm_ra_cosdec_mas_yr": -105.68,
+        "pm_dec_mas_yr": -68.4,
+        "plx_mas": 43.03,
+        "rv_kms": -22.0
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 222.71963788931606,
+        "dec_deg": -16.04177652124288
+      },
+      "apparent_of_date": {
+        "lon_deg": 225.07551205833047,
+        "lat_deg": 0.3330429103453233,
+        "ra_deg": 222.71285325406353,
+        "dec_deg": -16.038620569869753
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Zubeneschamali",
+      "bayer": "beLib",
+      "hip": 74785,
+      "hr": 5685,
+      "hd": 135742,
+      "comp": "*",
+      "is_astra_50": true,
+      "vmag": 2.61,
+      "flags": "MULTICOMP(*)",
+      "icrs_j1991_25": {
+        "ra_deg": 229.25196592,
+        "dec_deg": -9.38286665,
+        "pm_ra_cosdec_mas_yr": -98.1,
+        "pm_dec_mas_yr": -19.65,
+        "plx_mas": 17.62,
+        "rv_kms": -35.6
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 229.2517242477858,
+        "dec_deg": -9.382914410602792
+      },
+      "apparent_of_date": {
+        "lon_deg": 229.3641413953936,
+        "lat_deg": 8.495271246871804,
+        "ra_deg": 229.2444238919826,
+        "dec_deg": -9.380378246506956
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Acrab",
+      "bayer": "be-1Sco",
+      "hip": 78820,
+      "hr": 5984,
+      "hd": 144217,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 2.62,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 241.35931336,
+        "dec_deg": -19.80539435,
+        "pm_ra_cosdec_mas_yr": -5.2,
+        "pm_dec_mas_yr": -24.04,
+        "plx_mas": 8.07,
+        "rv_kms": -1.0
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 241.35929992649878,
+        "dec_deg": -19.805452780559275
+      },
+      "apparent_of_date": {
+        "lon_deg": 243.18154411895267,
+        "lat_deg": 1.0077000860889258,
+        "ra_deg": 241.35072009935124,
+        "dec_deg": -19.802485774189844
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Dschubba",
+      "bayer": "deSco",
+      "hip": 78401,
+      "hr": 5953,
+      "hd": 143275,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 2.32,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 240.08338223,
+        "dec_deg": -22.62162036,
+        "pm_ra_cosdec_mas_yr": -10.21,
+        "pm_dec_mas_yr": -35.41,
+        "plx_mas": 6.64,
+        "rv_kms": -6.0
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 240.0833553456605,
+        "dec_deg": -22.621706426000667
+      },
+      "apparent_of_date": {
+        "lon_deg": 242.56278714890334,
+        "lat_deg": -1.9859333408570068,
+        "ra_deg": 240.07475667579598,
+        "dec_deg": -22.6185174253064
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Ras Alhague",
+      "bayer": "alOph",
+      "hip": 86032,
+      "hr": 6556,
+      "hd": 159561,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.08,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 263.73335361,
+        "dec_deg": 12.56057593,
+        "pm_ra_cosdec_mas_yr": 108.07,
+        "pm_dec_mas_yr": -221.57,
+        "plx_mas": 67.13,
+        "rv_kms": 11.7
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 263.73362271841364,
+        "dec_deg": 12.560037395456456
+      },
+      "apparent_of_date": {
+        "lon_deg": 262.4379705268498,
+        "lat_deg": 35.83414833737149,
+        "ra_deg": 263.7246932933491,
+        "dec_deg": 12.561043675470488
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Rasalgethi",
+      "bayer": "alHer",
+      "hip": 84345,
+      "hr": 6406,
+      "hd": 156014,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 3.48,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 258.66192746,
+        "dec_deg": 14.39025294,
+        "pm_ra_cosdec_mas_yr": -7.32,
+        "pm_dec_mas_yr": 36.07,
+        "plx_mas": 9.07,
+        "rv_kms": -32.09
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 258.66190909199213,
+        "dec_deg": 14.390340610366541
+      },
+      "apparent_of_date": {
+        "lon_deg": 256.14146164156443,
+        "lat_deg": 37.28471079572029,
+        "ra_deg": 258.6531023621393,
+        "dec_deg": 14.391302400643454
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Canopus",
+      "bayer": "alCar",
+      "hip": 30438,
+      "hr": 2326,
+      "hd": 45348,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": -0.72,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 95.9878779,
+        "dec_deg": -52.69571787,
+        "pm_ra_cosdec_mas_yr": 19.93,
+        "pm_dec_mas_yr": 23.24,
+        "plx_mas": 10.55,
+        "rv_kms": 20.3
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 95.98795782902987,
+        "dec_deg": -52.69566138397027
+      },
+      "apparent_of_date": {
+        "lon_deg": 104.98023436818009,
+        "lat_deg": -75.8234297507934,
+        "ra_deg": 95.99615338468864,
+        "dec_deg": -52.697637990475364
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Alphard",
+      "bayer": "alHya",
+      "hip": 46390,
+      "hr": 3748,
+      "hd": 81797,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.98,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 141.89688204,
+        "dec_deg": -8.65868307,
+        "pm_ra_cosdec_mas_yr": -15.23,
+        "pm_dec_mas_yr": 34.37,
+        "plx_mas": 18.09,
+        "rv_kms": -4.7
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 141.89684459585706,
+        "dec_deg": -8.658599531740176
+      },
+      "apparent_of_date": {
+        "lon_deg": 147.27962509558483,
+        "lat_deg": -22.38077436524809,
+        "ra_deg": 141.89795603605455,
+        "dec_deg": -8.658203606888447
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Dubhe",
+      "bayer": "alUMa",
+      "hip": 54061,
+      "hr": 4301,
+      "hd": 95689,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 1.79,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 165.93265337,
+        "dec_deg": 61.75111903,
+        "pm_ra_cosdec_mas_yr": -134.11,
+        "pm_dec_mas_yr": -34.7,
+        "plx_mas": 26.54,
+        "rv_kms": -9.4
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 165.9319646737308,
+        "dec_deg": 61.751034687808215
+      },
+      "apparent_of_date": {
+        "lon_deg": 135.20087400981396,
+        "lat_deg": 49.677799420387615,
+        "ra_deg": 165.929727586032,
+        "dec_deg": 61.74728797844238
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Merak",
+      "bayer": "beUMa",
+      "hip": 53910,
+      "hr": 4295,
+      "hd": 95418,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.37,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 165.45996142,
+        "dec_deg": 56.38234469,
+        "pm_ra_cosdec_mas_yr": 81.43,
+        "pm_dec_mas_yr": 33.49,
+        "plx_mas": 40.9,
+        "rv_kms": -13.1
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 165.46031890606648,
+        "dec_deg": 56.38242608918166
+      },
+      "apparent_of_date": {
+        "lon_deg": 139.43718160469524,
+        "lat_deg": 45.13042526366233,
+        "ra_deg": 165.45813045876955,
+        "dec_deg": 56.37890080051886
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Phecda",
+      "bayer": "gaUMa",
+      "hip": 58001,
+      "hr": 4554,
+      "hd": 103287,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.44,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 178.45725512,
+        "dec_deg": 53.69473297,
+        "pm_ra_cosdec_mas_yr": 107.68,
+        "pm_dec_mas_yr": 11.01,
+        "plx_mas": 39.21,
+        "rv_kms": -11.9
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 178.45769715531785,
+        "dec_deg": 53.6947597297148
+      },
+      "apparent_of_date": {
+        "lon_deg": 150.4785882637796,
+        "lat_deg": 47.13828850901781,
+        "ra_deg": 178.45380762848157,
+        "dec_deg": 53.6914477960883
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Polaris",
+      "bayer": "alUMi",
+      "hip": 11767,
+      "hr": 424,
+      "hd": 8890,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.02,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 37.946143,
+        "dec_deg": 89.26413778,
+        "pm_ra_cosdec_mas_yr": 44.48,
+        "pm_dec_mas_yr": -11.85,
+        "plx_mas": 7.54,
+        "rv_kms": -16.42
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 37.95456066963353,
+        "dec_deg": 89.26410896994376
+      },
+      "apparent_of_date": {
+        "lon_deg": 88.57769481921923,
+        "lat_deg": 66.1025596747924,
+        "ra_deg": 38.1900196760572,
+        "dec_deg": 89.26697280501139
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Scheat",
+      "bayer": "bePeg",
+      "hip": 113881,
+      "hr": 8775,
+      "hd": 217906,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.42,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 345.94305579,
+        "dec_deg": 28.08245431,
+        "pm_ra_cosdec_mas_yr": 187.65,
+        "pm_dec_mas_yr": 136.93,
+        "plx_mas": 16.64,
+        "rv_kms": 7.99
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 345.9435727452082,
+        "dec_deg": 28.082787124607663
+      },
+      "apparent_of_date": {
+        "lon_deg": 359.36900759987884,
+        "lat_deg": 31.14344603327359,
+        "ra_deg": 345.93842967026507,
+        "dec_deg": 28.08379945392851
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Algenib",
+      "bayer": "gaPeg",
+      "hip": 1067,
+      "hr": 39,
+      "hd": 886,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.83,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 3.30895847,
+        "dec_deg": 15.1836161,
+        "pm_ra_cosdec_mas_yr": 1.98,
+        "pm_dec_mas_yr": -9.28,
+        "plx_mas": 8.33,
+        "rv_kms": 3.2
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 3.3089634565724575,
+        "dec_deg": 15.183593544449767
+      },
+      "apparent_of_date": {
+        "lon_deg": 9.152033818024492,
+        "lat_deg": 12.601187705575082,
+        "ra_deg": 3.3051723856850783,
+        "dec_deg": 15.183059958306263
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Alpheratz",
+      "bayer": "alAnd",
+      "hip": 677,
+      "hr": 15,
+      "hd": 358,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.06,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 2.09653385,
+        "dec_deg": 29.09082837,
+        "pm_ra_cosdec_mas_yr": 137.46,
+        "pm_dec_mas_yr": -163.44,
+        "plx_mas": 33.62,
+        "rv_kms": -10.1
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 2.0969161854916147,
+        "dec_deg": 29.0904311182509
+      },
+      "apparent_of_date": {
+        "lon_deg": 14.305025842909226,
+        "lat_deg": 25.682941748525767,
+        "ra_deg": 2.093360920678248,
+        "dec_deg": 29.09124493861738
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Menkar",
+      "bayer": "alCet",
+      "hip": 14135,
+      "hr": 911,
+      "hd": 18884,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.53,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 45.56991317,
+        "dec_deg": 4.08992556,
+        "pm_ra_cosdec_mas_yr": -10.41,
+        "pm_dec_mas_yr": -76.85,
+        "plx_mas": 13.09,
+        "rv_kms": -26.08
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 45.56988780324474,
+        "dec_deg": 4.089738771234496
+      },
+      "apparent_of_date": {
+        "lon_deg": 44.319581729527215,
+        "lat_deg": -12.58662060545969,
+        "ra_deg": 45.56974135224893,
+        "dec_deg": 4.087428600391539
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Mira",
+      "bayer": "omiCet",
+      "hip": 10826,
+      "hr": 681,
+      "hd": 14386,
+      "comp": "AP",
+      "is_astra_50": true,
+      "vmag": 3.04,
+      "flags": "MULTICOMP(AP)",
+      "icrs_j1991_25": {
+        "ra_deg": 34.83661105,
+        "dec_deg": -2.97706076,
+        "pm_ra_cosdec_mas_yr": 9.33,
+        "pm_dec_mas_yr": -237.36,
+        "plx_mas": 10.91,
+        "rv_kms": 63.5
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 34.83663375760063,
+        "dec_deg": -2.9776376730901926
+      },
+      "apparent_of_date": {
+        "lon_deg": 31.520265752667765,
+        "lat_deg": -15.938382077627775,
+        "ra_deg": 34.835528879551134,
+        "dec_deg": -2.980509819243091
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Baten Kaitos",
+      "bayer": "zeCet",
+      "hip": 8645,
+      "hr": 539,
+      "hd": 11353,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 3.73,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 27.8650443,
+        "dec_deg": -10.33494527,
+        "pm_ra_cosdec_mas_yr": 40.8,
+        "pm_dec_mas_yr": -37.25,
+        "plx_mas": 13.88,
+        "rv_kms": 7.8
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 27.865145102031317,
+        "dec_deg": -10.335035808091078
+      },
+      "apparent_of_date": {
+        "lon_deg": 21.947470609851727,
+        "lat_deg": -20.33653013663348,
+        "ra_deg": 27.863309581756273,
+        "dec_deg": -10.33854538945456
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Difda",
+      "bayer": "beCet",
+      "hip": 3419,
+      "hr": 188,
+      "hd": 4128,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.04,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 10.89678447,
+        "dec_deg": -17.98668407,
+        "pm_ra_cosdec_mas_yr": 232.55,
+        "pm_dec_mas_yr": 31.99,
+        "plx_mas": 33.86,
+        "rv_kms": 13.1
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 10.897378735985946,
+        "dec_deg": -17.986606315931258
+      },
+      "apparent_of_date": {
+        "lon_deg": 2.5787886218994127,
+        "lat_deg": -20.78558174032383,
+        "ra_deg": 10.89354661116838,
+        "dec_deg": -17.9906073461738
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Enif",
+      "bayer": "epPeg",
+      "hip": 107315,
+      "hr": 8308,
+      "hd": 206778,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.39,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 326.0464175,
+        "dec_deg": 9.87500758,
+        "pm_ra_cosdec_mas_yr": 26.92,
+        "pm_dec_mas_yr": 0.44,
+        "plx_mas": 4.73,
+        "rv_kms": 3.39
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 326.0464839145289,
+        "dec_deg": 9.875008649437788
+      },
+      "apparent_of_date": {
+        "lon_deg": 331.8771466249598,
+        "lat_deg": 22.101590756785765,
+        "ra_deg": 326.03928337653724,
+        "dec_deg": 9.874932133592576
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Sadalmelik",
+      "bayer": "alAqr",
+      "hip": 109074,
+      "hr": 8414,
+      "hd": 209750,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.96,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 331.44593869,
+        "dec_deg": -0.31982628,
+        "pm_ra_cosdec_mas_yr": 18.25,
+        "pm_dec_mas_yr": -9.39,
+        "plx_mas": 6.23,
+        "rv_kms": 6.85
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 331.4459830483131,
+        "dec_deg": -0.319849102907855
+      },
+      "apparent_of_date": {
+        "lon_deg": 333.34504897711975,
+        "lat_deg": 10.662422270954082,
+        "ra_deg": 331.4388597431683,
+        "dec_deg": -0.32087982043100455
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Sadalsuud",
+      "bayer": "beAqr",
+      "hip": 106278,
+      "hr": 8232,
+      "hd": 204867,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.91,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 322.88966964,
+        "dec_deg": -5.5711556,
+        "pm_ra_cosdec_mas_yr": 18.77,
+        "pm_dec_mas_yr": -8.21,
+        "plx_mas": 6.07,
+        "rv_kms": 6.28
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 322.8897154780343,
+        "dec_deg": -5.571175554852534
+      },
+      "apparent_of_date": {
+        "lon_deg": 323.3869160866944,
+        "lat_deg": 8.615595483278854,
+        "ra_deg": 322.8817334540517,
+        "dec_deg": -5.572236917377144
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Deneb Algedi",
+      "bayer": "deCap",
+      "hip": 107556,
+      "hr": 8322,
+      "hd": 207098,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.87,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 326.7595222,
+        "dec_deg": -16.12656594,
+        "pm_ra_cosdec_mas_yr": 261.7,
+        "pm_dec_mas_yr": -296.7,
+        "plx_mas": 84.27,
+        "rv_kms": -3.4
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 326.76018433503685,
+        "dec_deg": -16.127287086661383
+      },
+      "apparent_of_date": {
+        "lon_deg": 323.5344427970309,
+        "lat_deg": -2.601860596918984,
+        "ra_deg": 326.7519069884297,
+        "dec_deg": -16.129278840877323
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Nashira",
+      "bayer": "gaCap",
+      "hip": 106985,
+      "hr": 8278,
+      "hd": 206088,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 3.68,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 325.02225947,
+        "dec_deg": -16.66225299,
+        "pm_ra_cosdec_mas_yr": 187.56,
+        "pm_dec_mas_yr": -22.45,
+        "plx_mas": 20.77,
+        "rv_kms": -31.2
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 325.022735328301,
+        "dec_deg": -16.66230755574586
+      },
+      "apparent_of_date": {
+        "lon_deg": 321.78256971689495,
+        "lat_deg": -2.55746367690057,
+        "ra_deg": 325.0143009757879,
+        "dec_deg": -16.66423146433533
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Revati (zeta Psc A)",
+      "bayer": "zePsc",
+      "hip": 5737,
+      "hr": 361,
+      "hd": 7344,
+      "comp": "A",
+      "is_astra_50": false,
+      "vmag": 5.24,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 18.43250842,
+        "dec_deg": 7.57548938,
+        "pm_ra_cosdec_mas_yr": 145.0,
+        "pm_dec_mas_yr": -55.69,
+        "plx_mas": 18.76,
+        "rv_kms": 15.0
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 18.43286395263639,
+        "dec_deg": 7.575354022557805
+      },
+      "apparent_of_date": {
+        "lon_deg": 19.87462506402454,
+        "lat_deg": -0.21345472094676593,
+        "ra_deg": 18.430346840718386,
+        "dec_deg": 7.573719306662175
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "name": "Pushya (delta Cnc)",
+      "bayer": "deCnc",
+      "hip": 42911,
+      "hr": 3461,
+      "hd": 74442,
+      "comp": "A",
+      "is_astra_50": false,
+      "vmag": 3.94,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 131.17129191,
+        "dec_deg": 18.15486373,
+        "pm_ra_cosdec_mas_yr": -17.67,
+        "pm_dec_mas_yr": -229.26,
+        "plx_mas": 24.98,
+        "rv_kms": 17.14
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 131.17124671234654,
+        "dec_deg": 18.154306502963006
+      },
+      "apparent_of_date": {
+        "lon_deg": 128.7232216586143,
+        "lat_deg": 0.07716866429610907,
+        "ra_deg": 131.17215090031223,
+        "dec_deg": 18.152776291576682
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Aldebaran",
+      "bayer": "alTau",
+      "hip": 21421,
+      "hr": 1457,
+      "hd": 29139,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 0.85,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 68.98000194,
+        "dec_deg": 16.50976158,
+        "pm_ra_cosdec_mas_yr": 63.45,
+        "pm_dec_mas_yr": -188.94,
+        "plx_mas": 48.94,
+        "rv_kms": 54.26
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 68.98016278619352,
+        "dec_deg": 16.509302361683346
+      },
+      "apparent_of_date": {
+        "lon_deg": 70.15559086259327,
+        "lat_deg": -5.465303219651211,
+        "ra_deg": 69.35661792801501,
+        "dec_deg": 16.56185593139082
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Regulus",
+      "bayer": "alLeo",
+      "hip": 49669,
+      "hr": 3982,
+      "hd": 87901,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.35,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 152.09358042,
+        "dec_deg": 11.96719519,
+        "pm_ra_cosdec_mas_yr": -248.73,
+        "pm_dec_mas_yr": 5.59,
+        "plx_mas": 41.13,
+        "rv_kms": 5.9
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 152.09296243828146,
+        "dec_deg": 11.967208776100026
+      },
+      "apparent_of_date": {
+        "lon_deg": 150.19673171292175,
+        "lat_deg": 0.46574486969051515,
+        "ra_deg": 152.44464053616682,
+        "dec_deg": 11.837996740670754
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Antares",
+      "bayer": "alSco",
+      "hip": 80763,
+      "hr": 6134,
+      "hd": 148478,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 0.96,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 247.35194829,
+        "dec_deg": -26.43194598,
+        "pm_ra_cosdec_mas_yr": -12.11,
+        "pm_dec_mas_yr": -23.3,
+        "plx_mas": 5.89,
+        "rv_kms": -3.5
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 247.3519154198263,
+        "dec_deg": -26.43200261195113
+      },
+      "apparent_of_date": {
+        "lon_deg": 250.1391666374383,
+        "lat_deg": -4.573573362464742,
+        "ra_deg": 247.76630035984812,
+        "dec_deg": -26.49154813785408
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Fomalhaut",
+      "bayer": "alPsA",
+      "hip": 113368,
+      "hr": 8728,
+      "hd": 216956,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.16,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 344.41177299,
+        "dec_deg": -29.6218368,
+        "pm_ra_cosdec_mas_yr": 328.95,
+        "pm_dec_mas_yr": -164.67,
+        "plx_mas": 129.81,
+        "rv_kms": 6.5
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 344.4126927211702,
+        "dec_deg": -29.622237033389467
+      },
+      "apparent_of_date": {
+        "lon_deg": 334.2369025255165,
+        "lat_deg": -21.137051567957727,
+        "ra_deg": 344.7807535694955,
+        "dec_deg": -29.47874669573466
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Sirius",
+      "bayer": "alCMa",
+      "hip": 32349,
+      "hr": 2491,
+      "hd": 48915,
+      "comp": "ABC",
+      "is_astra_50": true,
+      "vmag": -1.46,
+      "flags": "MULTICOMP(ABC)",
+      "icrs_j1991_25": {
+        "ra_deg": 101.28854105,
+        "dec_deg": -16.71314306,
+        "pm_ra_cosdec_mas_yr": -546.01,
+        "pm_dec_mas_yr": -1223.07,
+        "plx_mas": 379.21,
+        "rv_kms": -5.5
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 101.28715536061837,
+        "dec_deg": -16.716115850449373
+      },
+      "apparent_of_date": {
+        "lon_deg": 104.44140594912201,
+        "lat_deg": -39.612534391410286,
+        "ra_deg": 101.57434590040543,
+        "dec_deg": -16.753063541195626
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Spica",
+      "bayer": "alVir",
+      "hip": 65474,
+      "hr": 5056,
+      "hd": 116658,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 0.98,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 201.29835228,
+        "dec_deg": -11.16124494,
+        "pm_ra_cosdec_mas_yr": -42.35,
+        "pm_dec_mas_yr": -30.67,
+        "plx_mas": 13.06,
+        "rv_kms": 0.0
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 201.29824736155095,
+        "dec_deg": -11.161319485120645
+      },
+      "apparent_of_date": {
+        "lon_deg": 204.21543336279314,
+        "lat_deg": -2.056660757656254,
+        "ra_deg": 201.65170647862794,
+        "dec_deg": -11.301300793363476
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Algol",
+      "bayer": "bePer",
+      "hip": 14576,
+      "hr": 936,
+      "hd": 19356,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.12,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 47.04220893,
+        "dec_deg": 40.95565071,
+        "pm_ra_cosdec_mas_yr": 2.99,
+        "pm_dec_mas_yr": -1.66,
+        "plx_mas": 36.27,
+        "rv_kms": 3.7
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 47.04221855286376,
+        "dec_deg": 40.95564667528223
+      },
+      "apparent_of_date": {
+        "lon_deg": 56.533052841295266,
+        "lat_deg": 22.430569052316073,
+        "ra_deg": 47.47037129420298,
+        "dec_deg": 41.05525966072603
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Arcturus",
+      "bayer": "alBoo",
+      "hip": 69673,
+      "hr": 5340,
+      "hd": 124897,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": -0.04,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 213.91811408,
+        "dec_deg": 19.18727046,
+        "pm_ra_cosdec_mas_yr": -1093.39,
+        "pm_dec_mas_yr": -2000.06,
+        "plx_mas": 88.83,
+        "rv_kms": -5.24
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 213.91530029483548,
+        "dec_deg": 19.182409161376466
+      },
+      "apparent_of_date": {
+        "lon_deg": 204.60821607872364,
+        "lat_deg": 30.720346298794478,
+        "ra_deg": 214.22322733336077,
+        "dec_deg": 19.045073857461055
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Vega",
+      "bayer": "alLyr",
+      "hip": 91262,
+      "hr": 7001,
+      "hd": 172167,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 0.03,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 279.23410825,
+        "dec_deg": 38.78299326,
+        "pm_ra_cosdec_mas_yr": 200.94,
+        "pm_dec_mas_yr": 286.23,
+        "plx_mas": 130.23,
+        "rv_kms": -20.6
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 279.23473480206724,
+        "dec_deg": 38.783688972946564
+      },
+      "apparent_of_date": {
+        "lon_deg": 285.7003714155187,
+        "lat_deg": 61.72967855998309,
+        "ra_deg": 279.4666214989579,
+        "dec_deg": 38.80669900818384
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Capella",
+      "bayer": "alAur",
+      "hip": 24608,
+      "hr": 1708,
+      "hd": 34029,
+      "comp": "AP",
+      "is_astra_50": true,
+      "vmag": 0.08,
+      "flags": "MULTICOMP(AP)",
+      "icrs_j1991_25": {
+        "ra_deg": 79.17206466,
+        "dec_deg": 45.99902905,
+        "pm_ra_cosdec_mas_yr": 75.25,
+        "pm_dec_mas_yr": -426.89,
+        "plx_mas": 76.2,
+        "rv_kms": 29.19
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 79.17232793909398,
+        "dec_deg": 45.99799149048779
+      },
+      "apparent_of_date": {
+        "lon_deg": 82.22361544663163,
+        "lat_deg": 22.864495811007668,
+        "ra_deg": 79.65620527915499,
+        "dec_deg": 46.02359772932679
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Procyon",
+      "bayer": "alCMi",
+      "hip": 37279,
+      "hr": 2943,
+      "hd": 61421,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 0.38,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 114.82724202,
+        "dec_deg": 5.22750758,
+        "pm_ra_cosdec_mas_yr": -714.59,
+        "pm_dec_mas_yr": -1036.8,
+        "plx_mas": 284.56,
+        "rv_kms": -2.7
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 114.82549791020207,
+        "dec_deg": 5.224987560267982
+      },
+      "apparent_of_date": {
+        "lon_deg": 116.14759909962092,
+        "lat_deg": -16.025877748826968,
+        "ra_deg": 115.16839168549002,
+        "dec_deg": 5.156728773310916
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Rigel",
+      "bayer": "beOri",
+      "hip": 24436,
+      "hr": 1713,
+      "hd": 34085,
+      "comp": "ABC",
+      "is_astra_50": true,
+      "vmag": 0.12,
+      "flags": "MULTICOMP(ABC)",
+      "icrs_j1991_25": {
+        "ra_deg": 78.63446385,
+        "dec_deg": -8.20163958,
+        "pm_ra_cosdec_mas_yr": 1.31,
+        "pm_dec_mas_yr": 0.5,
+        "plx_mas": 3.78,
+        "rv_kms": 17.8
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 78.63446706692812,
+        "dec_deg": -8.20163836472294
+      },
+      "apparent_of_date": {
+        "lon_deg": 77.19491897785136,
+        "lat_deg": -31.119015937750834,
+        "ra_deg": 78.94876713462004,
+        "dec_deg": -8.170998447296311
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Betelgeuse",
+      "bayer": "alOri",
+      "hip": 27989,
+      "hr": 2061,
+      "hd": 39801,
+      "comp": "AP",
+      "is_astra_50": true,
+      "vmag": 0.5,
+      "flags": "MULTICOMP(AP)",
+      "icrs_j1991_25": {
+        "ra_deg": 88.79287149,
+        "dec_deg": 7.40703653,
+        "pm_ra_cosdec_mas_yr": 27.54,
+        "pm_dec_mas_yr": 11.3,
+        "plx_mas": 6.55,
+        "rv_kms": 21.91
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 88.79293899068868,
+        "dec_deg": 7.407063995237423
+      },
+      "apparent_of_date": {
+        "lon_deg": 89.12047447119626,
+        "lat_deg": -16.023628538004694,
+        "ra_deg": 89.14752531333306,
+        "dec_deg": 7.41169151660847
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Altair",
+      "bayer": "alAql",
+      "hip": 97649,
+      "hr": 7557,
+      "hd": 187642,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 0.77,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 297.69450819,
+        "dec_deg": 8.86738473,
+        "pm_ra_cosdec_mas_yr": 536.23,
+        "pm_dec_mas_yr": 385.29,
+        "plx_mas": 194.95,
+        "rv_kms": -26.6
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 297.695827357606,
+        "dec_deg": 8.868321239897682
+      },
+      "apparent_of_date": {
+        "lon_deg": 302.15696197878935,
+        "lat_deg": 29.30093493101502,
+        "ra_deg": 298.02465553713466,
+        "dec_deg": 8.937799082360364
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Pollux",
+      "bayer": "beGem",
+      "hip": 37826,
+      "hr": 2990,
+      "hd": 62509,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.14,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 116.33068294,
+        "dec_deg": 28.02631022,
+        "pm_ra_cosdec_mas_yr": -626.55,
+        "pm_dec_mas_yr": -45.8,
+        "plx_mas": 96.54,
+        "rv_kms": 3.23
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 116.32895777437872,
+        "dec_deg": 28.026198890093575
+      },
+      "apparent_of_date": {
+        "lon_deg": 113.57796597916615,
+        "lat_deg": 6.6864114576679485,
+        "ra_deg": 116.73005788527314,
+        "dec_deg": 27.962789362320795
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Castor",
+      "bayer": "alGem",
+      "hip": 36850,
+      "hr": 2891,
+      "hd": 60179,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 1.98,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 113.65001968,
+        "dec_deg": 31.88863511,
+        "pm_ra_cosdec_mas_yr": -191.45,
+        "pm_dec_mas_yr": -145.19,
+        "plx_mas": 64.12,
+        "rv_kms": 5.4
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 113.6494716414639,
+        "dec_deg": 31.888282217556686
+      },
+      "apparent_of_date": {
+        "lon_deg": 110.60569081777409,
+        "lat_deg": 10.098046778049365,
+        "ra_deg": 114.067523165436,
+        "dec_deg": 31.830491062354717
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Bellatrix",
+      "bayer": "gaOri",
+      "hip": 25336,
+      "hr": 1790,
+      "hd": 35468,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.64,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 81.28278339,
+        "dec_deg": 6.34973457,
+        "pm_ra_cosdec_mas_yr": -8.11,
+        "pm_dec_mas_yr": -12.88,
+        "plx_mas": 12.92,
+        "rv_kms": 18.2
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 81.28276355656551,
+        "dec_deg": 6.34970326450994
+      },
+      "apparent_of_date": {
+        "lon_deg": 81.3121501322217,
+        "lat_deg": -16.812620441420247,
+        "ra_deg": 81.63412241861357,
+        "dec_deg": 6.373369628976656
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Alnilam",
+      "bayer": "epOri",
+      "hip": 26311,
+      "hr": 1903,
+      "hd": 37128,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.7,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 84.05338544,
+        "dec_deg": -1.20191724,
+        "pm_ra_cosdec_mas_yr": 1.44,
+        "pm_dec_mas_yr": -0.78,
+        "plx_mas": 1.65,
+        "rv_kms": 27.3
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 84.05338894076881,
+        "dec_deg": -1.201919135832567
+      },
+      "apparent_of_date": {
+        "lon_deg": 83.82907042592447,
+        "lat_deg": -24.5029430635119,
+        "ra_deg": 84.38549384099568,
+        "dec_deg": -1.1852030124881543
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Deneb",
+      "bayer": "alCyg",
+      "hip": 102098,
+      "hr": 7924,
+      "hd": 197345,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.25,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 310.35797281,
+        "dec_deg": 45.28033431,
+        "pm_ra_cosdec_mas_yr": 2.01,
+        "pm_dec_mas_yr": 1.85,
+        "plx_mas": 2.31,
+        "rv_kms": -4.9
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 310.3579797530775,
+        "dec_deg": 45.28033880652802
+      },
+      "apparent_of_date": {
+        "lon_deg": 335.6986146305079,
+        "lat_deg": 59.90037576603061,
+        "ra_deg": 310.5889667215272,
+        "dec_deg": 45.371802521918475
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Achernar",
+      "bayer": "alEri",
+      "hip": 7588,
+      "hr": 472,
+      "hd": 10144,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 0.46,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 24.42813208,
+        "dec_deg": -57.23665985,
+        "pm_ra_cosdec_mas_yr": 87.0,
+        "pm_dec_mas_yr": -38.24,
+        "plx_mas": 23.39,
+        "rv_kms": 18.6
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 24.428522822161444,
+        "dec_deg": -57.23675279347628
+      },
+      "apparent_of_date": {
+        "lon_deg": 345.6906002083662,
+        "lat_deg": -59.374594103831875,
+        "ra_deg": 24.67281363905297,
+        "dec_deg": -57.09758099521708
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Hamal",
+      "bayer": "alAri",
+      "hip": 9884,
+      "hr": 617,
+      "hd": 12929,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.0,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 31.79285751,
+        "dec_deg": 23.46277747,
+        "pm_ra_cosdec_mas_yr": 188.55,
+        "pm_dec_mas_yr": -148.08,
+        "plx_mas": 49.56,
+        "rv_kms": -14.64
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 31.793357099576628,
+        "dec_deg": 23.462417550200897
+      },
+      "apparent_of_date": {
+        "lon_deg": 38.03053646528751,
+        "lat_deg": 9.965267729226325,
+        "ra_deg": 32.165241439928415,
+        "dec_deg": 23.586022516117993
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Mirach",
+      "bayer": "beAnd",
+      "hip": 5447,
+      "hr": 337,
+      "hd": 6860,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.06,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 17.43249023,
+        "dec_deg": 35.62083036,
+        "pm_ra_cosdec_mas_yr": 175.9,
+        "pm_dec_mas_yr": -112.2,
+        "plx_mas": 16.52,
+        "rv_kms": 0.06
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 17.433016172930422,
+        "dec_deg": 35.62055765052624
+      },
+      "apparent_of_date": {
+        "lon_deg": 30.772549614647833,
+        "lat_deg": 25.942121802440564,
+        "ra_deg": 17.803369533596044,
+        "dec_deg": 35.75827223169678
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Alioth",
+      "bayer": "epUMa",
+      "hip": 62956,
+      "hr": 4905,
+      "hd": 112185,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 1.77,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 193.50680405,
+        "dec_deg": 55.95984299,
+        "pm_ra_cosdec_mas_yr": 111.91,
+        "pm_dec_mas_yr": -8.24,
+        "plx_mas": 39.51,
+        "rv_kms": -12.7
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 193.50728996867898,
+        "dec_deg": 55.959822961176506
+      },
+      "apparent_of_date": {
+        "lon_deg": 159.30837523288693,
+        "lat_deg": 54.324659651951116,
+        "ra_deg": 193.80424639066894,
+        "dec_deg": 55.81963124927959
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Alcyone",
+      "bayer": "etTau",
+      "hip": 17702,
+      "hr": 1165,
+      "hd": 23630,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.87,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 56.87110081,
+        "dec_deg": 24.10524179,
+        "pm_ra_cosdec_mas_yr": 19.34,
+        "pm_dec_mas_yr": -43.67,
+        "plx_mas": 8.09,
+        "rv_kms": 5.4
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 56.87115230764575,
+        "dec_deg": 24.105135647671755
+      },
+      "apparent_of_date": {
+        "lon_deg": 60.35872669244564,
+        "lat_deg": 4.053588195001661,
+        "ra_deg": 57.2617873544665,
+        "dec_deg": 24.185783576942253
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Alphecca",
+      "bayer": "alCrB",
+      "hip": 76267,
+      "hr": 5793,
+      "hd": 139006,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.23,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 233.67162276,
+        "dec_deg": 26.71491051,
+        "pm_ra_cosdec_mas_yr": 120.27,
+        "pm_dec_mas_yr": -89.58,
+        "plx_mas": 43.46,
+        "rv_kms": 1.4
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 233.67195001524675,
+        "dec_deg": 26.714692780576588
+      },
+      "apparent_of_date": {
+        "lon_deg": 222.67699121288632,
+        "lat_deg": 44.323231869572325,
+        "ra_deg": 233.95971035635876,
+        "dec_deg": 26.62599082378564
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Markab",
+      "bayer": "alPeg",
+      "hip": 113963,
+      "hr": 8781,
+      "hd": 218045,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.49,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 346.19007056,
+        "dec_deg": 15.20536753,
+        "pm_ra_cosdec_mas_yr": 60.4,
+        "pm_dec_mas_yr": -41.3,
+        "plx_mas": 24.46,
+        "rv_kms": -2.7
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 346.19022269139936,
+        "dec_deg": 15.205267147945118
+      },
+      "apparent_of_date": {
+        "lon_deg": 353.8562024630992,
+        "lat_deg": 19.40362133907273,
+        "ra_deg": 346.5221304942192,
+        "dec_deg": 15.346643863617656
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Zubenelgenubi",
+      "bayer": "al-2Lib",
+      "hip": 72622,
+      "hr": 5531,
+      "hd": 130841,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.75,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 222.71990516,
+        "dec_deg": -16.04161027,
+        "pm_ra_cosdec_mas_yr": -105.68,
+        "pm_dec_mas_yr": -68.4,
+        "plx_mas": 43.03,
+        "rv_kms": -22.0
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 222.71963788931606,
+        "dec_deg": -16.04177652124288
+      },
+      "apparent_of_date": {
+        "lon_deg": 225.45801954033016,
+        "lat_deg": 0.3297276268582588,
+        "ra_deg": 223.09263075702137,
+        "dec_deg": -16.153405893194925
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Zubeneschamali",
+      "bayer": "beLib",
+      "hip": 74785,
+      "hr": 5685,
+      "hd": 135742,
+      "comp": "*",
+      "is_astra_50": true,
+      "vmag": 2.61,
+      "flags": "MULTICOMP(*)",
+      "icrs_j1991_25": {
+        "ra_deg": 229.25196592,
+        "dec_deg": -9.38286665,
+        "pm_ra_cosdec_mas_yr": -98.1,
+        "pm_dec_mas_yr": -19.65,
+        "plx_mas": 17.62,
+        "rv_kms": -35.6
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 229.2517242477858,
+        "dec_deg": -9.382914410602792
+      },
+      "apparent_of_date": {
+        "lon_deg": 229.74756235837162,
+        "lat_deg": 8.493257224206644,
+        "ra_deg": 229.614891937387,
+        "dec_deg": -9.481696304652672
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Acrab",
+      "bayer": "be-1Sco",
+      "hip": 78820,
+      "hr": 5984,
+      "hd": 144217,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 2.62,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 241.35931336,
+        "dec_deg": -19.80539435,
+        "pm_ra_cosdec_mas_yr": -5.2,
+        "pm_dec_mas_yr": -24.04,
+        "plx_mas": 8.07,
+        "rv_kms": -1.0
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 241.35929992649878,
+        "dec_deg": -19.805452780559275
+      },
+      "apparent_of_date": {
+        "lon_deg": 243.56684639527163,
+        "lat_deg": 1.0044049517296028,
+        "ra_deg": 241.75214688171332,
+        "dec_deg": -19.878943302820844
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Dschubba",
+      "bayer": "deSco",
+      "hip": 78401,
+      "hr": 5953,
+      "hd": 143275,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 2.32,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 240.08338223,
+        "dec_deg": -22.62162036,
+        "pm_ra_cosdec_mas_yr": -10.21,
+        "pm_dec_mas_yr": -35.41,
+        "plx_mas": 6.64,
+        "rv_kms": -6.0
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 240.0833553456605,
+        "dec_deg": -22.621706426000667
+      },
+      "apparent_of_date": {
+        "lon_deg": 242.94794915248235,
+        "lat_deg": -1.989590878858287,
+        "ra_deg": 240.48284791787637,
+        "dec_deg": -22.698269579022412
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Ras Alhague",
+      "bayer": "alOph",
+      "hip": 86032,
+      "hr": 6556,
+      "hd": 159561,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.08,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 263.73335361,
+        "dec_deg": 12.56057593,
+        "pm_ra_cosdec_mas_yr": 108.07,
+        "pm_dec_mas_yr": -221.57,
+        "plx_mas": 67.13,
+        "rv_kms": 11.7
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 263.73362271841364,
+        "dec_deg": 12.560037395456456
+      },
+      "apparent_of_date": {
+        "lon_deg": 262.8282654907812,
+        "lat_deg": 35.83022571471701,
+        "ra_deg": 264.04821835838425,
+        "dec_deg": 12.540349082809557
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Rasalgethi",
+      "bayer": "alHer",
+      "hip": 84345,
+      "hr": 6406,
+      "hd": 156014,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 3.48,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 258.66192746,
+        "dec_deg": 14.39025294,
+        "pm_ra_cosdec_mas_yr": -7.32,
+        "pm_dec_mas_yr": 36.07,
+        "plx_mas": 9.07,
+        "rv_kms": -32.09
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 258.66190909199213,
+        "dec_deg": 14.390340610366541
+      },
+      "apparent_of_date": {
+        "lon_deg": 256.5307888777843,
+        "lat_deg": 37.28341775520849,
+        "ra_deg": 258.9712546178525,
+        "dec_deg": 14.359728356202844
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Canopus",
+      "bayer": "alCar",
+      "hip": 30438,
+      "hr": 2326,
+      "hd": 45348,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": -0.72,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 95.9878779,
+        "dec_deg": -52.69571787,
+        "pm_ra_cosdec_mas_yr": 19.93,
+        "pm_dec_mas_yr": 23.24,
+        "plx_mas": 10.55,
+        "rv_kms": 20.3
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 95.98795782902987,
+        "dec_deg": -52.69566138397027
+      },
+      "apparent_of_date": {
+        "lon_deg": 105.30656468625045,
+        "lat_deg": -75.82244633878635,
+        "ra_deg": 96.12634662941156,
+        "dec_deg": -52.71013049885158
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Alphard",
+      "bayer": "alHya",
+      "hip": 46390,
+      "hr": 3748,
+      "hd": 81797,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 1.98,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 141.89688204,
+        "dec_deg": -8.65868307,
+        "pm_ra_cosdec_mas_yr": -15.23,
+        "pm_dec_mas_yr": 34.37,
+        "plx_mas": 18.09,
+        "rv_kms": -4.7
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 141.89684459585706,
+        "dec_deg": -8.658599531740176
+      },
+      "apparent_of_date": {
+        "lon_deg": 147.64661865159533,
+        "lat_deg": -22.382504738783737,
+        "ra_deg": 142.22028614264974,
+        "dec_deg": -8.774801038719334
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Dubhe",
+      "bayer": "alUMa",
+      "hip": 54061,
+      "hr": 4301,
+      "hd": 95689,
+      "comp": "AB",
+      "is_astra_50": true,
+      "vmag": 1.79,
+      "flags": "MULTICOMP(AB)",
+      "icrs_j1991_25": {
+        "ra_deg": 165.93265337,
+        "dec_deg": 61.75111903,
+        "pm_ra_cosdec_mas_yr": -134.11,
+        "pm_dec_mas_yr": -34.7,
+        "plx_mas": 26.54,
+        "rv_kms": -9.4
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 165.9319646737308,
+        "dec_deg": 61.751034687808215
+      },
+      "apparent_of_date": {
+        "lon_deg": 135.56572166375054,
+        "lat_deg": 49.685085799597125,
+        "ra_deg": 166.33861658085365,
+        "dec_deg": 61.61230296210413
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Merak",
+      "bayer": "beUMa",
+      "hip": 53910,
+      "hr": 4295,
+      "hd": 95418,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.37,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 165.45996142,
+        "dec_deg": 56.38234469,
+        "pm_ra_cosdec_mas_yr": 81.43,
+        "pm_dec_mas_yr": 33.49,
+        "plx_mas": 40.9,
+        "rv_kms": -13.1
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 165.46031890606648,
+        "dec_deg": 56.38242608918166
+      },
+      "apparent_of_date": {
+        "lon_deg": 139.8051142449876,
+        "lat_deg": 45.13883199616885,
+        "ra_deg": 165.85872107410614,
+        "dec_deg": 56.24421774148063
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Phecda",
+      "bayer": "gaUMa",
+      "hip": 58001,
+      "hr": 4554,
+      "hd": 103287,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.44,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 178.45725512,
+        "dec_deg": 53.69473297,
+        "pm_ra_cosdec_mas_yr": 107.68,
+        "pm_dec_mas_yr": 11.01,
+        "plx_mas": 39.21,
+        "rv_kms": -11.9
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 178.45769715531785,
+        "dec_deg": 53.6947597297148
+      },
+      "apparent_of_date": {
+        "lon_deg": 150.84957783280186,
+        "lat_deg": 47.14727527882846,
+        "ra_deg": 178.80816481822083,
+        "dec_deg": 53.551224769175754
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Polaris",
+      "bayer": "alUMi",
+      "hip": 11767,
+      "hr": 424,
+      "hd": 8890,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.02,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 37.946143,
+        "dec_deg": 89.26413778,
+        "pm_ra_cosdec_mas_yr": 44.48,
+        "pm_dec_mas_yr": -11.85,
+        "plx_mas": 7.54,
+        "rv_kms": -16.42
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 37.95456066963353,
+        "dec_deg": 89.26410896994376
+      },
+      "apparent_of_date": {
+        "lon_deg": 88.92618537391023,
+        "lat_deg": 66.10508273122271,
+        "ra_deg": 46.181374706719176,
+        "dec_deg": 89.3718124056828
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Scheat",
+      "bayer": "bePeg",
+      "hip": 113881,
+      "hr": 8775,
+      "hd": 217906,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.42,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 345.94305579,
+        "dec_deg": 28.08245431,
+        "pm_ra_cosdec_mas_yr": 187.65,
+        "pm_dec_mas_yr": 136.93,
+        "plx_mas": 16.64,
+        "rv_kms": 7.99
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 345.9435727452082,
+        "dec_deg": 28.082787124607663
+      },
+      "apparent_of_date": {
+        "lon_deg": 359.7449065004726,
+        "lat_deg": 31.13817585204163,
+        "ra_deg": 346.26666480784957,
+        "dec_deg": 28.22417505893986
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Algenib",
+      "bayer": "gaPeg",
+      "hip": 1067,
+      "hr": 39,
+      "hd": 886,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.83,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 3.30895847,
+        "dec_deg": 15.1836161,
+        "pm_ra_cosdec_mas_yr": 1.98,
+        "pm_dec_mas_yr": -9.28,
+        "plx_mas": 8.33,
+        "rv_kms": 3.2
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 3.3089634565724575,
+        "dec_deg": 15.183593544449767
+      },
+      "apparent_of_date": {
+        "lon_deg": 9.525235186111308,
+        "lat_deg": 12.599535913218746,
+        "ra_deg": 3.650667778388193,
+        "dec_deg": 15.329734387446534
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Alpheratz",
+      "bayer": "alAnd",
+      "hip": 677,
+      "hr": 15,
+      "hd": 358,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.06,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 2.09653385,
+        "dec_deg": 29.09082837,
+        "pm_ra_cosdec_mas_yr": 137.46,
+        "pm_dec_mas_yr": -163.44,
+        "plx_mas": 33.62,
+        "rv_kms": -10.1
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 2.0969161854916147,
+        "dec_deg": 29.0904311182509
+      },
+      "apparent_of_date": {
+        "lon_deg": 14.676630720075739,
+        "lat_deg": 25.677798719745265,
+        "ra_deg": 2.4400282682474024,
+        "dec_deg": 29.234329938413264
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Menkar",
+      "bayer": "alCet",
+      "hip": 14135,
+      "hr": 911,
+      "hd": 18884,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.53,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 45.56991317,
+        "dec_deg": 4.08992556,
+        "pm_ra_cosdec_mas_yr": -10.41,
+        "pm_dec_mas_yr": -76.85,
+        "plx_mas": 13.09,
+        "rv_kms": -26.08
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 45.56988780324474,
+        "dec_deg": 4.089738771234496
+      },
+      "apparent_of_date": {
+        "lon_deg": 44.687471475955476,
+        "lat_deg": -12.582699128640893,
+        "ra_deg": 45.91373353056258,
+        "dec_deg": 4.1934863080526625
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Mira",
+      "bayer": "omiCet",
+      "hip": 10826,
+      "hr": 681,
+      "hd": 14386,
+      "comp": "AP",
+      "is_astra_50": true,
+      "vmag": 3.04,
+      "flags": "MULTICOMP(AP)",
+      "icrs_j1991_25": {
+        "ra_deg": 34.83661105,
+        "dec_deg": -2.97706076,
+        "pm_ra_cosdec_mas_yr": 9.33,
+        "pm_dec_mas_yr": -237.36,
+        "plx_mas": 10.91,
+        "rv_kms": 63.5
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 34.83663375760063,
+        "dec_deg": -2.9776376730901926
+      },
+      "apparent_of_date": {
+        "lon_deg": 31.890135729183,
+        "lat_deg": -15.935289614127209,
+        "ra_deg": 35.16954046236745,
+        "dec_deg": -2.8569520498618117
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Baten Kaitos",
+      "bayer": "zeCet",
+      "hip": 8645,
+      "hr": 539,
+      "hd": 11353,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 3.73,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 27.8650443,
+        "dec_deg": -10.33494527,
+        "pm_ra_cosdec_mas_yr": 40.8,
+        "pm_dec_mas_yr": -37.25,
+        "plx_mas": 13.88,
+        "rv_kms": 7.8
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 27.865145102031317,
+        "dec_deg": -10.335035808091078
+      },
+      "apparent_of_date": {
+        "lon_deg": 22.320100668495513,
+        "lat_deg": -20.331640387310138,
+        "ra_deg": 28.190753729419193,
+        "dec_deg": -10.203063009361198
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Difda",
+      "bayer": "beCet",
+      "hip": 3419,
+      "hr": 188,
+      "hd": 4128,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.04,
+      "flags": "OK",
+      "icrs_j1991_25": {
+        "ra_deg": 10.89678447,
+        "dec_deg": -17.98668407,
+        "pm_ra_cosdec_mas_yr": 232.55,
+        "pm_dec_mas_yr": 31.99,
+        "plx_mas": 33.86,
+        "rv_kms": 13.1
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 10.897378735985946,
+        "dec_deg": -17.986606315931258
+      },
+      "apparent_of_date": {
+        "lon_deg": 2.9571466706456078,
+        "lat_deg": -20.78161644630826,
+        "ra_deg": 11.229690951638906,
+        "dec_deg": -17.839260112604414
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Enif",
+      "bayer": "epPeg",
+      "hip": 107315,
+      "hr": 8308,
+      "hd": 206778,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.39,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 326.0464175,
+        "dec_deg": 9.87500758,
+        "pm_ra_cosdec_mas_yr": 26.92,
+        "pm_dec_mas_yr": 0.44,
+        "plx_mas": 4.73,
+        "rv_kms": 3.39
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 326.0464839145289,
+        "dec_deg": 9.875008649437788
+      },
+      "apparent_of_date": {
+        "lon_deg": 332.2575585371091,
+        "lat_deg": 22.096510168155664,
+        "ra_deg": 326.37537174948557,
+        "dec_deg": 9.995796141071589
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Sadalmelik",
+      "bayer": "alAqr",
+      "hip": 109074,
+      "hr": 8414,
+      "hd": 209750,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.96,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 331.44593869,
+        "dec_deg": -0.31982628,
+        "pm_ra_cosdec_mas_yr": 18.25,
+        "pm_dec_mas_yr": -9.39,
+        "plx_mas": 6.23,
+        "rv_kms": 6.85
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 331.4459830483131,
+        "dec_deg": -0.319849102907855
+      },
+      "apparent_of_date": {
+        "lon_deg": 333.72544488123094,
+        "lat_deg": 10.659217160324207,
+        "ra_deg": 331.78933377933816,
+        "dec_deg": -0.19088005651840967
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Sadalsuud",
+      "bayer": "beAqr",
+      "hip": 106278,
+      "hr": 8232,
+      "hd": 204867,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.91,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 322.88966964,
+        "dec_deg": -5.5711556,
+        "pm_ra_cosdec_mas_yr": 18.77,
+        "pm_dec_mas_yr": -8.21,
+        "plx_mas": 6.07,
+        "rv_kms": 6.28
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 322.8897154780343,
+        "dec_deg": -5.571175554852534
+      },
+      "apparent_of_date": {
+        "lon_deg": 323.7690940221539,
+        "lat_deg": 8.612374901138585,
+        "ra_deg": 323.24225559076297,
+        "dec_deg": -5.453932770063302
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Deneb Algedi",
+      "bayer": "deCap",
+      "hip": 107556,
+      "hr": 8322,
+      "hd": 207098,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 2.87,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 326.7595222,
+        "dec_deg": -16.12656594,
+        "pm_ra_cosdec_mas_yr": 261.7,
+        "pm_dec_mas_yr": -296.7,
+        "plx_mas": 84.27,
+        "rv_kms": -3.4
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 326.76018433503685,
+        "dec_deg": -16.127287086661383
+      },
+      "apparent_of_date": {
+        "lon_deg": 323.9181149662539,
+        "lat_deg": -2.605948728585356,
+        "ra_deg": 327.12937939593434,
+        "dec_deg": -16.005366132203108
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Nashira",
+      "bayer": "gaCap",
+      "hip": 106985,
+      "hr": 8278,
+      "hd": 206088,
+      "comp": "A",
+      "is_astra_50": true,
+      "vmag": 3.68,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 325.02225947,
+        "dec_deg": -16.66225299,
+        "pm_ra_cosdec_mas_yr": 187.56,
+        "pm_dec_mas_yr": -22.45,
+        "plx_mas": 20.77,
+        "rv_kms": -31.2
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 325.022735328301,
+        "dec_deg": -16.66230755574586
+      },
+      "apparent_of_date": {
+        "lon_deg": 322.16663778757174,
+        "lat_deg": -2.559566458980651,
+        "ra_deg": 325.39345089455077,
+        "dec_deg": -16.54091084918149
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Revati (zeta Psc A)",
+      "bayer": "zePsc",
+      "hip": 5737,
+      "hr": 361,
+      "hd": 7344,
+      "comp": "A",
+      "is_astra_50": false,
+      "vmag": 5.24,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 18.43250842,
+        "dec_deg": 7.57548938,
+        "pm_ra_cosdec_mas_yr": 145.0,
+        "pm_dec_mas_yr": -55.69,
+        "plx_mas": 18.76,
+        "rv_kms": 15.0
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 18.43286395263639,
+        "dec_deg": 7.575354022557805
+      },
+      "apparent_of_date": {
+        "lon_deg": 20.247417097521055,
+        "lat_deg": -0.21273290153903437,
+        "ra_deg": 18.778424313699936,
+        "dec_deg": 7.714996829201405
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "name": "Pushya (delta Cnc)",
+      "bayer": "deCnc",
+      "hip": 42911,
+      "hr": 3461,
+      "hd": 74442,
+      "comp": "A",
+      "is_astra_50": false,
+      "vmag": 3.94,
+      "flags": "COMP_A",
+      "icrs_j1991_25": {
+        "ra_deg": 131.17129191,
+        "dec_deg": 18.15486373,
+        "pm_ra_cosdec_mas_yr": -17.67,
+        "pm_dec_mas_yr": -229.26,
+        "plx_mas": 24.98,
+        "rv_kms": 17.14
+      },
+      "icrs_j2000_0": {
+        "ra_deg": 131.17124671234654,
+        "dec_deg": 18.154306502963006
+      },
+      "apparent_of_date": {
+        "lon_deg": 129.08991024811138,
+        "lat_deg": 0.07800544073885136,
+        "ra_deg": 131.54466217016048,
+        "dec_deg": 18.057394235791588
+      }
+    }
+  ]
+}

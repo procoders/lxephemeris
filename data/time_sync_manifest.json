@@ -1,0 +1,11 @@
+{
+  "schema_version": "1.0.0",
+  "synced_at_utc": "2026-10-23T23:30:00Z",
+  "iers_release_date": "MJD-61757",
+  "finals2000a_sha256": "02f18d22f180a8c49711d4f662aa415971b80effd6e18b09667849a635dfd181",
+  "finals2000a_bytes": 2469568,
+  "leapseconds_sha256": "3524e1ae34d67e858873a89e59983bbc5bd100221da898e796c1b36036a310c3",
+  "leapseconds_bytes": 3321,
+  "coverage_start_mjd": 48622.0,
+  "coverage_end_mjd": 61757.0
+}

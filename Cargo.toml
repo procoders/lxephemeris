@@ -1,0 +1,41 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/lxephemeris-core",
+    "crates/lxephemeris-cli",
+    "crates/lxephemeris-py",
+    "crates/lxephemeris-node",
+]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2021"
+rust-version = "1.80"
+license = "PolyForm-Noncommercial-1.0.0 OR LicenseRef-Commercial"
+repository = "https://github.com/procoders/lxephemeris"
+homepage = "https://procoders.tech/"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+unwrap_used = "deny"
+panic = "deny"
+indexing_slicing = "warn"
+
+[workspace.dependencies]
+anise = { version = "=0.9.4", default-features = false }
+hifitime = "=4.3.1"
+sofars = "=0.6.1"
+thiserror = "=2.0.21"
+serde = { version = "=1.0.229", features = ["derive"] }
+serde_json = "=1.0.154"
+sha2 = "=0.10.9"
+rayon = "=1.12.0"
+static_assertions = "=1.1.0"
+clap = { version = "=4.6.7", features = ["derive", "env"] }
+ureq = { version = "=2.12.1", features = ["json"] }
+base64 = "=0.22.1"
+pyo3 = { version = "=0.24.2", features = ["abi3-py39"] }
+napi = { version = "=2.16.17", default-features = false, features = ["napi8", "async", "serde-json"] }
+napi-derive = "=2.16.13"
