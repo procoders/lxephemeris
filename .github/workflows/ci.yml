@@ -1,0 +1,53 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  rust-check-and-test:
+    name: Rust, Node.js & CLI CI (${{ matrix.os }})
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: dtolnay/rust-toolchain@stable
+        with:
+          components: clippy, rustfmt
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - uses: Swatinem/rust-cache@v2
+      - name: Run cargo clippy
+        run: cargo clippy --workspace --all-targets -- -D warnings
+      - name: Run lxephemeris-core unit tests
+        run: cargo test -p lxephemeris-core --lib --release
+      - name: Run lxephemeris-node Rust unit tests
+        run: cargo test -p lxephemeris-node --lib --release
+      - name: Build CLI and Node.js N-API addon
+        run: |
+          cargo build -p lxephemeris-cli --release
+          cargo build -p lxephemeris-node --release --features napi-addon
+          ./target/release/lxephemeris-cli calc --jd 2460676.5 --bodies Sun,Moon,Chiron
+          ./target/release/lxephemeris-cli houses --jd 2460676.5 --lat 51.5074 --lon -0.1278 --system P
+          ./target/release/lxephemeris-cli license-verify
+          node -e '
+            const assert = require("node:assert/strict");
+            const lx = require("./crates/lxephemeris-node");
+            const eng = new lx.Engine();
+            const sun = eng.calc("Sun", 2451545.0, "TT");
+            assert.ok(Math.abs(sun.lonDeg - 280.368) < 0.05);
+            const snap = eng.chartSnapshot(2451545.0, { latitudeDeg: 51.5074, longitudeDeg: -0.1278, altitudeM: 0 });
+            assert.equal(snap.lots.length, 7);
+            const lic = lx.licenseInfo();
+            assert.equal(lic.tier, "noncommercial");
+            console.log("Node.js N-API SDK verified:", { sunLon: sun.lonDeg, tier: lic.tier });
+          '

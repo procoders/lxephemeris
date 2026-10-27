@@ -1,0 +1,57 @@
+[build-system]
+requires = ["maturin>=1.7,<2.0"]
+build-backend = "maturin"
+
+[project]
+name = "lxephemeris"
+version = "1.0.0"
+description = "Clean-room high-precision astrological and astronomical ephemeris engine (DE440s + IAU 2006/2000A)"
+readme = "../../README.md"
+requires-python = ">=3.9"
+license = { text = "PolyForm-Noncommercial-1.0.0 OR LicenseRef-Commercial" }
+authors = [{ name = "ProCoders", email = "lxephemeris@procoders.tech" }]
+keywords = [
+    "ephemeris",
+    "astrology",
+    "astronomy",
+    "swisseph",
+    "pyswisseph",
+    "kerykeion",
+    "pyephem",
+    "de440",
+    "jyotish",
+    "human-design",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "Operating System :: POSIX :: Linux",
+    "Operating System :: MacOS",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Programming Language :: Rust",
+    "Topic :: Scientific/Engineering :: Astronomy",
+]
+
+[project.urls]
+Homepage = "https://procoders.tech/"
+Repository = "https://github.com/procoders/lxephemeris"
+Issues = "https://github.com/procoders/lxephemeris/issues"
+"Commercial License" = "https://procoders.tech/contacts/"
+
+[tool.maturin]
+no-default-features = true
+features = ["extension-module", "swe-compat"]
+module-name = "lxephemeris"
+include = [
+    "LICENSE.md",
+    "LICENSE-NONCOMMERCIAL.md",
+    "THIRD_PARTY_NOTICES.md",
+    "crates/lxephemeris-py/lxephemeris.pyi",
+]

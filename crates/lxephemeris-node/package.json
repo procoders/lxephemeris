@@ -1,0 +1,53 @@
+{
+  "name": "lxephemeris",
+  "version": "1.0.0",
+  "description": "High-precision clean-room astrological & astronomical ephemeris engine (Rust + napi-rs)",
+  "license": "PolyForm-Noncommercial-1.0.0 OR LicenseRef-Commercial",
+  "author": "ProCoders <lxephemeris@procoders.tech> (https://procoders.tech/)",
+  "homepage": "https://procoders.tech/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/procoders/lxephemeris.git",
+    "directory": "crates/lxephemeris-node"
+  },
+  "bugs": {
+    "url": "https://github.com/procoders/lxephemeris/issues"
+  },
+  "keywords": [
+    "ephemeris",
+    "astrology",
+    "astronomy",
+    "swisseph",
+    "de440",
+    "vedic",
+    "jyotish",
+    "human-design",
+    "bazi"
+  ],
+  "main": "index.js",
+  "types": "index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "*.node",
+    "README.md",
+    "LICENSE.md",
+    "LICENSE-NONCOMMERCIAL.md"
+  ],
+  "napi": {
+    "name": "lxephemeris",
+    "triples": {
+      "defaults": true,
+      "additional": [
+        "aarch64-apple-darwin",
+        "x86_64-apple-darwin",
+        "x86_64-unknown-linux-gnu",
+        "aarch64-unknown-linux-gnu",
+        "x86_64-pc-windows-msvc"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">= 18"
+  }
+}

@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.0.0",
+  "tier": "L1B_besselian_eclipses",
+  "source": "MODEL_PASSPORTS.md \u00a76 + JPL DE440s + NASA Espenak & Meeus Five Millennium Canon",
+  "solar_eclipse_count": 8,
+  "lunar_eclipse_count": 6,
+  "solar_eclipses": [
+    {
+      "label": "1999-08-11 Total Solar Eclipse (Europe)",
+      "nasa_canon_date_td": "1999 Aug 11 11:04:09 TD",
+      "kind": "Total",
+      "jd_tt_greatest": 2451401.9619412,
+      "gamma_earth_radii": 0.50739,
+      "magnitude": 1.02859,
+      "fundamental_plane_l1_er": 0.54228,
+      "fundamental_plane_l2_er": -0.003632,
+      "surface_L1_er": 0.538305,
+      "surface_L2_er": -0.007587
+    },
+    {
+      "label": "2005-04-08 Hybrid Solar Eclipse (Pacific / Americas)",
+      "nasa_canon_date_td": "2005 Apr 08 20:36:51 TD",
+      "kind": "Hybrid",
+      "jd_tt_greatest": 2453469.3582956,
+      "gamma_earth_radii": -0.348828,
+      "magnitude": 1.007366,
+      "fundamental_plane_l1_er": 0.548299,
+      "fundamental_plane_l2_er": 0.002357,
+      "surface_L1_er": 0.543924,
+      "surface_L2_er": -0.001996
+    },
+    {
+      "label": "2013-11-03 Hybrid Solar Eclipse (Atlantic / Africa)",
+      "nasa_canon_date_td": "2013 Nov 03 12:47:36 TD",
+      "kind": "Hybrid",
+      "jd_tt_greatest": 2456600.0333283,
+      "gamma_earth_radii": 0.327676,
+      "magnitude": 1.015867,
+      "fundamental_plane_l1_er": 0.546098,
+      "fundamental_plane_l2_er": 0.000167,
+      "surface_L1_er": 0.541646,
+      "surface_L2_er": -0.004263
+    },
+    {
+      "label": "2017-08-21 Total Solar Eclipse (North America)",
+      "nasa_canon_date_td": "2017 Aug 21 18:26:40 TD",
+      "kind": "Total",
+      "jd_tt_greatest": 2457987.2676702,
+      "gamma_earth_radii": 0.437507,
+      "magnitude": 1.030595,
+      "fundamental_plane_l1_er": 0.541943,
+      "fundamental_plane_l2_er": -0.003968,
+      "surface_L1_er": 0.537787,
+      "surface_L2_er": -0.008103
+    },
+    {
+      "label": "2023-04-20 Hybrid Solar Eclipse (Exmouth / Indonesia)",
+      "nasa_canon_date_td": "2023 Apr 20 04:17:56 TD",
+      "kind": "Hybrid",
+      "jd_tt_greatest": 2460054.67863,
+      "gamma_earth_radii": -0.396761,
+      "magnitude": 1.013184,
+      "fundamental_plane_l1_er": 0.546633,
+      "fundamental_plane_l2_er": 0.000699,
+      "surface_L1_er": 0.542361,
+      "surface_L2_er": -0.003552
+    },
+    {
+      "label": "2023-10-14 Annular Solar Eclipse (Americas)",
+      "nasa_canon_date_td": "2023 Oct 14 18:00:41 TD",
+      "kind": "Annular",
+      "jd_tt_greatest": 2460232.2500731,
+      "gamma_earth_radii": 0.376934,
+      "magnitude": 0.951997,
+      "fundamental_plane_l1_er": 0.564107,
+      "fundamental_plane_l2_er": 0.018086,
+      "surface_L1_er": 0.559765,
+      "surface_L2_er": 0.013766
+    },
+    {
+      "label": "2024-04-08 Total Solar Eclipse (North America)",
+      "nasa_canon_date_td": "2024 Apr 08 18:18:29 TD",
+      "kind": "Total",
+      "jd_tt_greatest": 2460409.2620058,
+      "gamma_earth_radii": 0.343506,
+      "magnitude": 1.056568,
+      "fundamental_plane_l1_er": 0.535629,
+      "fundamental_plane_l2_er": -0.01025,
+      "surface_L1_er": 0.531245,
+      "surface_L2_er": -0.014612
+    },
+    {
+      "label": "2025-03-29 Partial Solar Eclipse (North Atlantic / Europe)",
+      "nasa_canon_date_td": "2025 Mar 29 10:48:36 TD",
+      "kind": "Partial",
+      "jd_tt_greatest": 2460763.9497058,
+      "gamma_earth_radii": 1.042672,
+      "magnitude": 0.938377,
+      "fundamental_plane_l1_er": 0.535575,
+      "fundamental_plane_l2_er": -0.010303,
+      "surface_L1_er": 0.535575,
+      "surface_L2_er": -0.010303
+    }
+  ],
+  "lunar_eclipses": [
+    {
+      "label": "2000-07-16 Total Lunar Eclipse (Century-Max Duration)",
+      "nasa_canon_date_td": "2000 Jul 16 13:56:39 TD",
+      "kind": "Total",
+      "jd_tt_greatest": 2451742.0817919,
+      "umbral_magnitude": 1.761761,
+      "penumbral_magnitude": 2.842394,
+      "min_separation_deg": 0.026753,
+      "umbra_radius_deg": 0.645361,
+      "penumbra_radius_deg": 1.175167,
+      "moon_semidiameter_deg": 0.245137,
+      "contacts_jd_tt": {
+        "P1": 2451741.9513923,
+        "U1": 2451741.9999596,
+        "U2": 2451742.0449259,
+        "greatest": 2451742.0817919,
+        "U3": 2451742.1181068,
+        "U4": 2451742.1630751,
+        "P4": 2451742.2116245
+      }
+    },
+    {
+      "label": "2018-07-27 Total Lunar Eclipse (21st-Century Longest)",
+      "nasa_canon_date_td": "2018 Jul 27 20:22:54 TD",
+      "kind": "Total",
+      "jd_tt_greatest": 2458327.3501801,
+      "umbral_magnitude": 1.602061,
+      "penumbral_magnitude": 2.684142,
+      "min_separation_deg": 0.104649,
+      "umbra_radius_deg": 0.644705,
+      "penumbra_radius_deg": 1.174971,
+      "moon_semidiameter_deg": 0.245021,
+      "contacts_jd_tt": {
+        "P1": 2458327.2198384,
+        "U1": 2458327.2686992,
+        "U2": 2458327.3143634,
+        "greatest": 2458327.3501801,
+        "U3": 2458327.3851396,
+        "U4": 2458327.4308051,
+        "P4": 2458327.479655
+      }
+    },
+    {
+      "label": "2021-11-19 Near-Total Partial Lunar Eclipse",
+      "nasa_canon_date_td": "2021 Nov 19 09:04:06 TD",
+      "kind": "Partial",
+      "jd_tt_greatest": 2459537.8786466,
+      "umbral_magnitude": 0.967143,
+      "penumbral_magnitude": 2.076847,
+      "min_separation_deg": 0.40988,
+      "umbra_radius_deg": 0.639248,
+      "penumbra_radius_deg": 1.184114,
+      "moon_semidiameter_deg": 0.245501,
+      "contacts_jd_tt": {
+        "P1": 2459537.7527312,
+        "U1": 2459537.8064287,
+        "U2": null,
+        "greatest": 2459537.8786466,
+        "U3": null,
+        "U4": 2459537.9502942,
+        "P4": 2459538.0040285
+      }
+    },
+    {
+      "label": "2022-11-08 Total Lunar Eclipse",
+      "nasa_canon_date_td": "2022 Nov 08 11:00:22 TD",
+      "kind": "Total",
+      "jd_tt_greatest": 2459891.9599317,
+      "umbral_magnitude": 1.349642,
+      "penumbral_magnitude": 2.416503,
+      "min_separation_deg": 0.241214,
+      "umbra_radius_deg": 0.674031,
+      "penumbra_radius_deg": 1.217503,
+      "moon_semidiameter_deg": 0.254706,
+      "contacts_jd_tt": {
+        "P1": 2459891.836145,
+        "U1": 2459891.8831173,
+        "U2": 2459891.9300071,
+        "greatest": 2459891.9599317,
+        "U3": 2459891.988113,
+        "U4": 2459892.0349922,
+        "P4": 2459892.0820687
+      }
+    },
+    {
+      "label": "2023-05-05 Deep Penumbral Lunar Eclipse",
+      "nasa_canon_date_td": "2023 May 05 17:24:05 TD",
+      "kind": "Penumbral",
+      "jd_tt_greatest": 2460070.2254979,
+      "umbral_magnitude": -0.055237,
+      "penumbral_magnitude": 0.964936,
+      "min_separation_deg": 0.995224,
+      "umbra_radius_deg": 0.704624,
+      "penumbra_radius_deg": 1.238563,
+      "moon_semidiameter_deg": 0.261691,
+      "contacts_jd_tt": {
+        "P1": 2460070.1360485,
+        "U1": null,
+        "U2": null,
+        "greatest": 2460070.2254979,
+        "U3": null,
+        "U4": null,
+        "P4": 2460070.3150108
+      }
+    },
+    {
+      "label": "2025-03-14 Total Lunar Eclipse",
+      "nasa_canon_date_td": "2025 Mar 14 06:59:56 TD",
+      "kind": "Total",
+      "jd_tt_greatest": 2460748.792926,
+      "umbral_magnitude": 1.171389,
+      "penumbral_magnitude": 2.26413,
+      "min_separation_deg": 0.316689,
+      "umbra_radius_deg": 0.649459,
+      "penumbra_radius_deg": 1.19107,
+      "moon_semidiameter_deg": 0.247822,
+      "contacts_jd_tt": {
+        "P1": 2460748.6661235,
+        "U1": 2460748.716737,
+        "U2": 2460748.769931,
+        "greatest": 2460748.792926,
+        "U3": 2460748.8143194,
+        "U4": 2460748.8675071,
+        "P4": 2460748.9181844
+      }
+    }
+  ]
+}

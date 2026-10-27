@@ -1,0 +1,36 @@
+[package]
+name = "lxephemeris-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+readme = "../../README.md"
+description = "Clean-room, thread-safe astronomical and astrological ephemeris engine in pure Rust"
+exclude = ["tests/**"]
+
+[lints]
+workspace = true
+
+[features]
+default = ["swe-compat"]
+swe-compat = []
+# Deprecated alias kept for backward compatibility with older build scripts;
+# commercial entitlement is governed by LICENSE.md and verified via `license.rs`.
+commercial = ["swe-compat"]
+
+[dependencies]
+anise.workspace = true
+base64.workspace = true
+sofars.workspace = true
+thiserror.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+sha2.workspace = true
+rayon.workspace = true
+static_assertions.workspace = true
+
+[[bench]]
+name = "chart_bench"
+harness = false

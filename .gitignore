@@ -1,0 +1,26 @@
+# Rust / Cargo build outputs
+/target/
+**/*.rs.bk
+
+# Ephemeris binary kernels (tracked via SHA-256 in data/manifest.json) and Horizons download cache
+/data/*.bsp
+/data/*.tmp
+/data/.cache/
+/data/cache/
+
+# Python / Node / OS artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+*.so
+*.node
+*.dylib
+.DS_Store
+
+# Local maintainer-only license signing tool, private keys, and issued customer ledger (NEVER published)
+/private-maintainer/
+*.lic
+*.pem
+.env
+.env.*

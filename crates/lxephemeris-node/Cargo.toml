@@ -1,0 +1,34 @@
+[package]
+name = "lxephemeris-node"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "Node.js / TypeScript bindings (napi-rs) for lxephemeris"
+
+[lib]
+name = "lxephemeris_node"
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["swe-compat"]
+napi-addon = ["dep:napi", "dep:napi-derive"]
+swe-compat = ["lxephemeris-core/swe-compat"]
+commercial = ["swe-compat", "lxephemeris-core/commercial"]
+
+[lints.rust]
+unsafe_code = "allow"
+
+[lints.clippy]
+unwrap_used = "deny"
+panic = "deny"
+indexing_slicing = "warn"
+
+[dependencies]
+lxephemeris-core = { path = "../lxephemeris-core", default-features = false }
+napi = { workspace = true, optional = true }
+napi-derive = { workspace = true, optional = true }
+serde.workspace = true
+serde_json.workspace = true

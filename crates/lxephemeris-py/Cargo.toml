@@ -1,0 +1,34 @@
+[package]
+name = "lxephemeris-py"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+license.workspace = true
+repository.workspace = true
+homepage.workspace = true
+description = "Python bindings (PyO3/maturin) for lxephemeris"
+
+[lib]
+name = "lxephemeris_py"
+crate-type = ["cdylib", "rlib"]
+
+[features]
+default = ["auto-initialize", "swe-compat"]
+extension-module = ["pyo3/extension-module"]
+auto-initialize = ["pyo3/auto-initialize"]
+swe-compat = ["lxephemeris-core/swe-compat"]
+commercial = ["swe-compat", "lxephemeris-core/commercial"]
+
+[lints.rust]
+unsafe_code = "allow"
+
+[lints.clippy]
+unwrap_used = "deny"
+panic = "deny"
+indexing_slicing = "warn"
+
+[dependencies]
+lxephemeris-core = { path = "../lxephemeris-core", default-features = false }
+pyo3.workspace = true
+serde.workspace = true
+serde_json.workspace = true

@@ -1,0 +1,3360 @@
+{
+  "schema_version": "1.0.0",
+  "builder_version": "0.1.0",
+  "generated_at_utc": "2026-10-23T23:30:00Z",
+  "license_and_provenance": "Public astronomical ephemeris data from NASA JPL Horizons (DE440 / SB441-N16); converted from SPK Type 21 to SPK Type 2 Chebyshev polynomials by lxephemeris-cli build-spk with verified residuals < 0.5 m and < 0.01 mm/s.",
+  "safe_intervals": {
+    "planetary_and_minor_bodies_jd_tt": [
+      2396758.5,
+      2488069.5
+    ],
+    "planetary_and_minor_bodies_iso_tt": [
+      "1850-01-01T00:00:00 TT",
+      "2100-01-01T00:00:00 TT"
+    ],
+    "de440s_only_planetary_jd_tt": [
+      2396758.5,
+      2506350.5
+    ],
+    "de440s_only_planetary_iso_tt": [
+      "1850-01-01T00:00:00 TT",
+      "2150-01-20T00:00:00 TT"
+    ],
+    "interpolated_lilith_jd_tt": [
+      2396817.5,
+      2506270.5
+    ],
+    "interpolated_lilith_iso_tt": [
+      "1850-03-01T00:00:00 TT",
+      "2149-11-01T00:00:00 TT"
+    ]
+  },
+  "planetary_kernel": {
+    "filename": "de440s.bsp",
+    "source_url": "https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets/de440s.bsp",
+    "sha256": "c1c7feeab882263fc493a9d5a5b2ddd71b54826cdf65d8d17a76126b260a49f2",
+    "size_bytes": 32726016,
+    "raw_interval_jd_tdb": [
+      2396752.5,
+      2506352.5
+    ],
+    "raw_interval_iso_tt": [
+      "1849-12-26T00:00:00 TT",
+      "2150-01-22T00:00:00 TT"
+    ],
+    "segment_count": 14,
+    "segments": [
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 1,
+        "center_id": 0,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 2,
+        "center_id": 0,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 3,
+        "center_id": 0,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 4,
+        "center_id": 0,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 5,
+        "center_id": 0,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 6,
+        "center_id": 0,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 7,
+        "center_id": 0,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 8,
+        "center_id": 0,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 9,
+        "center_id": 0,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 10,
+        "center_id": 0,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 301,
+        "center_id": 3,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 399,
+        "center_id": 3,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 199,
+        "center_id": 1,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      },
+      {
+        "name": "DE-0440LE-0440",
+        "target_id": 299,
+        "center_id": 2,
+        "frame_id": 1,
+        "spk_type": 2,
+        "start_et_s": -4734072000.0,
+        "end_et_s": 4735368000.0,
+        "start_jd_tdb": 2396752.5,
+        "end_jd_tdb": 2506352.5
+      }
+    ]
+  },
+  "minor_bodies_kernel": {
+    "filename": "asteroids_68_1850_2100.bsp",
+    "source": "NASA JPL Horizons On-Line Ephemeris System (EPHEM_TYPE=SPK)",
+    "sha256": "929def38a9c9bf8e750950f386c0896691783c6de7f40369616f55136ec2b88c",
+    "size_bytes": 104763392,
+    "requested_interval_iso": [
+      "1849-12-26",
+      "2100-01-05"
+    ],
+    "raw_interval_jd_tdb": [
+      2396752.5,
+      2488073.5
+    ],
+    "raw_interval_iso_tt": [
+      "1849-12-26T00:00:00 TT",
+      "2100-01-05T00:00:00 TT"
+    ],
+    "safe_interval_jd_tt": [
+      2396758.5,
+      2488069.5
+    ],
+    "safe_interval_iso_tt": [
+      "1850-01-01T00:00:00 TT",
+      "2100-01-01T00:00:00 TT"
+    ],
+    "body_count": 68,
+    "bodies": [
+      {
+        "mpc": 1,
+        "name": "Ceres",
+        "category": "asteroid",
+        "naif_spk_id": 20000001,
+        "orbit_solution_id": "JPL#48",
+        "orbit_solution_date": "2021-Apr-13_11:04:44",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "4b3cf380b34e78041d4b7f6d624cebb038feb9d860f50ede94eea0fc6c24c253",
+        "conversion_max_pos_err_m": 0.006421622524584975,
+        "conversion_max_vel_err_mm_s": 0.0000711852189859417,
+        "segments": [
+          {
+            "name": "LXE:1:JPL#48",
+            "target_id": 20000001,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 2,
+        "name": "Pallas",
+        "category": "asteroid",
+        "naif_spk_id": 20000002,
+        "orbit_solution_id": "JPL#74",
+        "orbit_solution_date": "2026-Jun-05_03:03:25",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "da66af5e967176c0a6ca6b74ed7376de249524e686bf2885fdc54432a3e3cbd7",
+        "conversion_max_pos_err_m": 0.011072324845949603,
+        "conversion_max_vel_err_mm_s": 0.00045027454933311195,
+        "segments": [
+          {
+            "name": "LXE:2:JPL#74",
+            "target_id": 20000002,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 3,
+        "name": "Juno",
+        "category": "asteroid",
+        "naif_spk_id": 20000003,
+        "orbit_solution_id": "JPL#144",
+        "orbit_solution_date": "2026-Jun-05_03:03:21",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "9c9f23746ba2ebc35753e62982031ac8b1a33c6410af03ded7b57920b7380361",
+        "conversion_max_pos_err_m": 0.007359197603287994,
+        "conversion_max_vel_err_mm_s": 0.00008965077133604396,
+        "segments": [
+          {
+            "name": "LXE:3:JPL#144",
+            "target_id": 20000003,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 4,
+        "name": "Vesta",
+        "category": "asteroid",
+        "naif_spk_id": 20000004,
+        "orbit_solution_id": "JPL#36",
+        "orbit_solution_date": "2021-Apr-13_11:15:57",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "61e9950b954cd6e04d85b30800ac666fb5d1e837ffdd1eda52d6155ff1e70ba4",
+        "conversion_max_pos_err_m": 0.00907665738946312,
+        "conversion_max_vel_err_mm_s": 0.00009089666749268776,
+        "segments": [
+          {
+            "name": "LXE:4:JPL#36",
+            "target_id": 20000004,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 5,
+        "name": "Astraea",
+        "category": "asteroid",
+        "naif_spk_id": 20000005,
+        "orbit_solution_id": "JPL#147",
+        "orbit_solution_date": "2026-Mar-11_21:13:05",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "df6aaffcf3c91e1190919d0948778fcd0cb875311a5e938ca82a824fe3d3d4aa",
+        "conversion_max_pos_err_m": 0.008094458344291079,
+        "conversion_max_vel_err_mm_s": 0.000120678254810327,
+        "segments": [
+          {
+            "name": "LXE:5:JPL#147",
+            "target_id": 20000005,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 6,
+        "name": "Hebe",
+        "category": "asteroid",
+        "naif_spk_id": 20000006,
+        "orbit_solution_id": "JPL#121",
+        "orbit_solution_date": "2026-Jun-05_03:03:21",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "b892da631ffc80996470fdc34d18980a4c75263fd14b6c214be1afc370660df8",
+        "conversion_max_pos_err_m": 0.010090947097669533,
+        "conversion_max_vel_err_mm_s": 0.00009598740402604908,
+        "segments": [
+          {
+            "name": "LXE:6:JPL#121",
+            "target_id": 20000006,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 7,
+        "name": "Iris",
+        "category": "asteroid",
+        "naif_spk_id": 20000007,
+        "orbit_solution_id": "JPL#144",
+        "orbit_solution_date": "2026-Jun-05_03:03:25",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "722950516bf4ec363537a15978b76de25d8c5d4853f3d6fe61f351ea086a9e19",
+        "conversion_max_pos_err_m": 0.009367323753719917,
+        "conversion_max_vel_err_mm_s": 0.0001459289468193632,
+        "segments": [
+          {
+            "name": "LXE:7:JPL#144",
+            "target_id": 20000007,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 8,
+        "name": "Flora",
+        "category": "asteroid",
+        "naif_spk_id": 20000008,
+        "orbit_solution_id": "JPL#152",
+        "orbit_solution_date": "2025-Sep-15_15:02:53",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "a2ddc2a5405c7d16e79787fce5e4132720fc2deac5dcefeb4b815eda2dedfeca",
+        "conversion_max_pos_err_m": 0.008437426436670375,
+        "conversion_max_vel_err_mm_s": 0.0000862735568924895,
+        "segments": [
+          {
+            "name": "LXE:8:JPL#152",
+            "target_id": 20000008,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 9,
+        "name": "Metis",
+        "category": "asteroid",
+        "naif_spk_id": 20000009,
+        "orbit_solution_id": "JPL#148",
+        "orbit_solution_date": "2026-Mar-11_21:13:05",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "6a5db6e4a6d8c23e939151823ab113fc3bdf5ce31f943db667fa0073a5b78565",
+        "conversion_max_pos_err_m": 0.008734524442013595,
+        "conversion_max_vel_err_mm_s": 0.00011205410816474865,
+        "segments": [
+          {
+            "name": "LXE:9:JPL#148",
+            "target_id": 20000009,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 10,
+        "name": "Hygiea",
+        "category": "asteroid",
+        "naif_spk_id": 20000010,
+        "orbit_solution_id": "JPL#129",
+        "orbit_solution_date": "2026-Jun-16_11:32:04",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "349100ec30b866321e774751e7ff0138d9f7f3dc8b3d0f9fb11b5c4782883280",
+        "conversion_max_pos_err_m": 0.007447778651754624,
+        "conversion_max_vel_err_mm_s": 0.00007368641415223224,
+        "segments": [
+          {
+            "name": "LXE:10:JPL#129",
+            "target_id": 20000010,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 11,
+        "name": "Parthenope",
+        "category": "asteroid",
+        "naif_spk_id": 20000011,
+        "orbit_solution_id": "JPL#143",
+        "orbit_solution_date": "2026-Oct-22_08:20:09",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "ea97d14902f0e12a71a4c86ac3d00177c36a093880bc54873bb2182464e261ca",
+        "conversion_max_pos_err_m": 0.0085979419642121,
+        "conversion_max_vel_err_mm_s": 0.00013271274259782362,
+        "segments": [
+          {
+            "name": "LXE:11:JPL#143",
+            "target_id": 20000011,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 12,
+        "name": "Victoria",
+        "category": "asteroid",
+        "naif_spk_id": 20000012,
+        "orbit_solution_id": "JPL#160",
+        "orbit_solution_date": "2026-Oct-22_08:20:09",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "a8b7d226d35474552e48cff9a112367e4f33eba26e9a884aa6e1bba85d7e48bd",
+        "conversion_max_pos_err_m": 0.007554040533495673,
+        "conversion_max_vel_err_mm_s": 0.0006637025083568259,
+        "segments": [
+          {
+            "name": "LXE:12:JPL#160",
+            "target_id": 20000012,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 13,
+        "name": "Egeria",
+        "category": "asteroid",
+        "naif_spk_id": 20000013,
+        "orbit_solution_id": "JPL#131",
+        "orbit_solution_date": "2026-Jun-05_03:03:20",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "df0d691dff58f7770eb9de7983d70b90d9018b30d055e89e2a582e9815698217",
+        "conversion_max_pos_err_m": 0.014144836509913022,
+        "conversion_max_vel_err_mm_s": 0.0000992963878012091,
+        "segments": [
+          {
+            "name": "LXE:13:JPL#131",
+            "target_id": 20000013,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 14,
+        "name": "Irene",
+        "category": "asteroid",
+        "naif_spk_id": 20000014,
+        "orbit_solution_id": "JPL#118",
+        "orbit_solution_date": "2026-Jun-05_03:03:25",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "db5258f787aad5495a6126afb306c59ec44384b6dfbea1e8452871b57d124525",
+        "conversion_max_pos_err_m": 0.009401823859556083,
+        "conversion_max_vel_err_mm_s": 0.00010906954240362972,
+        "segments": [
+          {
+            "name": "LXE:14:JPL#118",
+            "target_id": 20000014,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 15,
+        "name": "Eunomia",
+        "category": "asteroid",
+        "naif_spk_id": 20000015,
+        "orbit_solution_id": "JPL#109",
+        "orbit_solution_date": "2026-Jun-16_11:32:04",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "1301c4f2be6bb8a33bb7a6abd62e50a8f1c170cebe3cf12e81f07e08ee26ae19",
+        "conversion_max_pos_err_m": 0.009692309069300404,
+        "conversion_max_vel_err_mm_s": 0.00008590390123050198,
+        "segments": [
+          {
+            "name": "LXE:15:JPL#109",
+            "target_id": 20000015,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 16,
+        "name": "Psyche",
+        "category": "asteroid",
+        "naif_spk_id": 20000016,
+        "orbit_solution_id": "JPL#92",
+        "orbit_solution_date": "2025-Feb-06_14:15:44",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "6276c28a799d814f5279fe40ff8b9332dc1af7c01a85e300ea935f3e494f0df8",
+        "conversion_max_pos_err_m": 0.0272595474746492,
+        "conversion_max_vel_err_mm_s": 0.0006553086486998402,
+        "segments": [
+          {
+            "name": "LXE:16:JPL#92",
+            "target_id": 20000016,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 18,
+        "name": "Melpomene",
+        "category": "asteroid",
+        "naif_spk_id": 20000018,
+        "orbit_solution_id": "JPL#140",
+        "orbit_solution_date": "2026-Jun-05_03:03:25",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "6a4708ff7414b7d278066c9153f5093bf8330caee0d4645304a4f2e36eb58e3c",
+        "conversion_max_pos_err_m": 0.010533856291718668,
+        "conversion_max_vel_err_mm_s": 0.00009543454652701172,
+        "segments": [
+          {
+            "name": "LXE:18:JPL#140",
+            "target_id": 20000018,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 19,
+        "name": "Fortuna",
+        "category": "asteroid",
+        "naif_spk_id": 20000019,
+        "orbit_solution_id": "JPL#170",
+        "orbit_solution_date": "2026-Jun-05_03:03:25",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "7dab75903232b849de7cef8706684a769a68670b13279295c177ff73bdf72dce",
+        "conversion_max_pos_err_m": 0.006511125430655695,
+        "conversion_max_vel_err_mm_s": 0.00009753413532002228,
+        "segments": [
+          {
+            "name": "LXE:19:JPL#170",
+            "target_id": 20000019,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 26,
+        "name": "Proserpina",
+        "category": "asteroid",
+        "naif_spk_id": 20000026,
+        "orbit_solution_id": "JPL#161",
+        "orbit_solution_date": "2026-Jun-05_03:03:24",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "9fdfe2df3424df58e1d3c8b0d38a679428968454be8f8b9240a04c5df65d4363",
+        "conversion_max_pos_err_m": 0.008212905813760822,
+        "conversion_max_vel_err_mm_s": 0.00009762214045615983,
+        "segments": [
+          {
+            "name": "LXE:26:JPL#161",
+            "target_id": 20000026,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 30,
+        "name": "Urania",
+        "category": "asteroid",
+        "naif_spk_id": 20000030,
+        "orbit_solution_id": "JPL#152",
+        "orbit_solution_date": "2026-Jun-05_03:03:25",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "bfda800ddb364a9f0e50ef931090916c082a07ebe73e94cf77cfec41715d2e5f",
+        "conversion_max_pos_err_m": 0.01316591589221103,
+        "conversion_max_vel_err_mm_s": 0.00007737430484075981,
+        "segments": [
+          {
+            "name": "LXE:30:JPL#152",
+            "target_id": 20000030,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 37,
+        "name": "Fides",
+        "category": "asteroid",
+        "naif_spk_id": 20000037,
+        "orbit_solution_id": "JPL#164",
+        "orbit_solution_date": "2026-Jun-05_03:03:41",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "1e12e67b8bee39c1b91edfaf02fa50f85441de811d7f1a66ab2d362f23eb6c18",
+        "conversion_max_pos_err_m": 0.006548513606915805,
+        "conversion_max_vel_err_mm_s": 0.00014386479178112545,
+        "segments": [
+          {
+            "name": "LXE:37:JPL#164",
+            "target_id": 20000037,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 40,
+        "name": "Harmonia",
+        "category": "asteroid",
+        "naif_spk_id": 20000040,
+        "orbit_solution_id": "JPL#154",
+        "orbit_solution_date": "2026-Jun-05_03:04:37",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "404a5952afcbacd0e8d1624febdc5436d46eac50d23dada3e051e81705c55a15",
+        "conversion_max_pos_err_m": 0.0084276441389492,
+        "conversion_max_vel_err_mm_s": 0.00007402458664024863,
+        "segments": [
+          {
+            "name": "LXE:40:JPL#154",
+            "target_id": 20000040,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 42,
+        "name": "Isis",
+        "category": "asteroid",
+        "naif_spk_id": 20000042,
+        "orbit_solution_id": "JPL#140",
+        "orbit_solution_date": "2026-Jun-05_03:04:51",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "1945fe8f8e78c3621e4242ef4e9337dbc85b4b51e23d2c15a05bce9bb76fa3bb",
+        "conversion_max_pos_err_m": 0.012090022032778692,
+        "conversion_max_vel_err_mm_s": 0.0003056286749203635,
+        "segments": [
+          {
+            "name": "LXE:42:JPL#140",
+            "target_id": 20000042,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 55,
+        "name": "Pandora",
+        "category": "asteroid",
+        "naif_spk_id": 20000055,
+        "orbit_solution_id": "JPL#111",
+        "orbit_solution_date": "2026-Jun-05_03:05:26",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "f5b0e16db71d8f22ed2d63f50d6fc04e3fa183a828897d43eab70d8feeb0898c",
+        "conversion_max_pos_err_m": 0.006919082670430846,
+        "conversion_max_vel_err_mm_s": 0.00008948999175853937,
+        "segments": [
+          {
+            "name": "LXE:55:JPL#111",
+            "target_id": 20000055,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 78,
+        "name": "Diana",
+        "category": "asteroid",
+        "naif_spk_id": 20000078,
+        "orbit_solution_id": "JPL#133",
+        "orbit_solution_date": "2026-Mar-11_21:17:32",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "ff402f016c3de8fad5e49f7d89b401ce8967dfaaa34df922312388c4acae3fe6",
+        "conversion_max_pos_err_m": 0.009318791157083646,
+        "conversion_max_vel_err_mm_s": 0.00011190886220058469,
+        "segments": [
+          {
+            "name": "LXE:78:JPL#133",
+            "target_id": 20000078,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 80,
+        "name": "Sappho",
+        "category": "asteroid",
+        "naif_spk_id": 20000080,
+        "orbit_solution_id": "JPL#82",
+        "orbit_solution_date": "2026-Jun-05_03:07:45",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "e40686be741a2fa55c9079eca339cfdf815c9372a3ea7427544ff4ebc945bb92",
+        "conversion_max_pos_err_m": 0.0077859324769277306,
+        "conversion_max_vel_err_mm_s": 0.00009230080668679737,
+        "segments": [
+          {
+            "name": "LXE:80:JPL#82",
+            "target_id": 20000080,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 100,
+        "name": "Hekate",
+        "category": "asteroid",
+        "naif_spk_id": 20000100,
+        "orbit_solution_id": "JPL#77",
+        "orbit_solution_date": "2026-Jun-05_03:09:24",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "b312225a3c226124c56b921cb917a9b42aff6a046d2cb81f20db39ea9ba8eaff",
+        "conversion_max_pos_err_m": 0.007083711745164968,
+        "conversion_max_vel_err_mm_s": 0.00006948183405954965,
+        "segments": [
+          {
+            "name": "LXE:100:JPL#77",
+            "target_id": 20000100,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 105,
+        "name": "Artemis",
+        "category": "asteroid",
+        "naif_spk_id": 20000105,
+        "orbit_solution_id": "JPL#157",
+        "orbit_solution_date": "2026-Jun-05_03:09:38",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "201acfe1f2e2e884da2e1c9af961a762e6980730e8e6694f925e2c0d13a57379",
+        "conversion_max_pos_err_m": 0.011517947586406374,
+        "conversion_max_vel_err_mm_s": 0.00008509208128591287,
+        "segments": [
+          {
+            "name": "LXE:105:JPL#157",
+            "target_id": 20000105,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 114,
+        "name": "Kassandra",
+        "category": "asteroid",
+        "naif_spk_id": 20000114,
+        "orbit_solution_id": "JPL#165",
+        "orbit_solution_date": "2026-Jun-05_03:10:13",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "75061f84ab266dfa2af922d593e0e92542e3c858d91422cb83c689e8438d736d",
+        "conversion_max_pos_err_m": 0.018124106615446722,
+        "conversion_max_vel_err_mm_s": 0.00031626373706839693,
+        "segments": [
+          {
+            "name": "LXE:114:JPL#165",
+            "target_id": 20000114,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 128,
+        "name": "Nemesis",
+        "category": "asteroid",
+        "naif_spk_id": 20000128,
+        "orbit_solution_id": "JPL#144",
+        "orbit_solution_date": "2026-Jun-05_03:11:08",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "d35ccc5a08c74df1cf7ab0e14e6e10a80c9c40a3ddf6e6970a9da5935a94969c",
+        "conversion_max_pos_err_m": 0.007259542321064506,
+        "conversion_max_vel_err_mm_s": 0.00007179965936992892,
+        "segments": [
+          {
+            "name": "LXE:128:JPL#144",
+            "target_id": 20000128,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 227,
+        "name": "Philosophia",
+        "category": "asteroid",
+        "naif_spk_id": 20000227,
+        "orbit_solution_id": "JPL#80",
+        "orbit_solution_date": "2026-Jun-05_03:19:08",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "24582349e6ba9014bfabf8340c05835eb42c069f85b7ca001b33e86dcf8a20b1",
+        "conversion_max_pos_err_m": 0.013382914983502105,
+        "conversion_max_vel_err_mm_s": 0.00007963308839893664,
+        "segments": [
+          {
+            "name": "LXE:227:JPL#80",
+            "target_id": 20000227,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 251,
+        "name": "Sophia",
+        "category": "asteroid",
+        "naif_spk_id": 20000251,
+        "orbit_solution_id": "JPL#83",
+        "orbit_solution_date": "2026-Jun-05_03:20:58",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "acbbf4fefed630b5f32b7917be318fd85406f0cea8575fefee56699d580e3d05",
+        "conversion_max_pos_err_m": 0.008001368563778909,
+        "conversion_max_vel_err_mm_s": 0.00008477347304487828,
+        "segments": [
+          {
+            "name": "LXE:251:JPL#83",
+            "target_id": 20000251,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 259,
+        "name": "Aletheia",
+        "category": "asteroid",
+        "naif_spk_id": 20000259,
+        "orbit_solution_id": "JPL#150",
+        "orbit_solution_date": "2026-Jun-05_03:21:48",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "1e3c4c866d74c2c5592b0c083cbf5bec5b5d81db38fc7556684dcb27636a246c",
+        "conversion_max_pos_err_m": 0.009568773438036153,
+        "conversion_max_vel_err_mm_s": 0.00008110998736567766,
+        "segments": [
+          {
+            "name": "LXE:259:JPL#150",
+            "target_id": 20000259,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 344,
+        "name": "Desiderata",
+        "category": "asteroid",
+        "naif_spk_id": 20000344,
+        "orbit_solution_id": "JPL#129",
+        "orbit_solution_date": "2026-Jun-05_03:29:02",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "cc19be312ae7d9314dbeef4c57bb0cb64295feddff5d46fc775ab41e8bb6c7de",
+        "conversion_max_pos_err_m": 0.035751969469731616,
+        "conversion_max_vel_err_mm_s": 0.00020846492541999612,
+        "segments": [
+          {
+            "name": "LXE:344:JPL#129",
+            "target_id": 20000344,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 375,
+        "name": "Ursula",
+        "category": "asteroid",
+        "naif_spk_id": 20000375,
+        "orbit_solution_id": "JPL#108",
+        "orbit_solution_date": "2026-Mar-11_21:42:55",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "f7ca15b73877cac8bc3d062c3348d98cb12a76dc2f080afede4bf61d38bdedfd",
+        "conversion_max_pos_err_m": 0.009863803364201382,
+        "conversion_max_vel_err_mm_s": 0.00007494390449042311,
+        "segments": [
+          {
+            "name": "LXE:375:JPL#108",
+            "target_id": 20000375,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 399,
+        "name": "Persephone",
+        "category": "asteroid",
+        "naif_spk_id": 20000399,
+        "orbit_solution_id": "JPL#81",
+        "orbit_solution_date": "2026-Jun-05_03:33:07",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "6ae762e1c8d13016c8e3f5571257fbeac354a33e1585aea11cc01eed436f2184",
+        "conversion_max_pos_err_m": 0.007956271257873711,
+        "conversion_max_vel_err_mm_s": 0.00006936173798596459,
+        "segments": [
+          {
+            "name": "LXE:399:JPL#81",
+            "target_id": 20000399,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 407,
+        "name": "Arachne",
+        "category": "asteroid",
+        "naif_spk_id": 20000407,
+        "orbit_solution_id": "JPL#80",
+        "orbit_solution_date": "2026-Jun-05_03:33:59",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "0b2a148cde97bee107e20af9a88326706707d9877291f5734a2d648245fd64f3",
+        "conversion_max_pos_err_m": 0.008258787114120116,
+        "conversion_max_vel_err_mm_s": 0.00011128592359734371,
+        "segments": [
+          {
+            "name": "LXE:407:JPL#80",
+            "target_id": 20000407,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 433,
+        "name": "Eros",
+        "category": "asteroid",
+        "naif_spk_id": 20000433,
+        "orbit_solution_id": "JPL#659",
+        "orbit_solution_date": "2021-May-24_17:55:05",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "f7460a2080ed2ff77a0ae58b71c28c5eeb72ec26535dbdbc2dc75d572456a600",
+        "conversion_max_pos_err_m": 0.007437519456680078,
+        "conversion_max_vel_err_mm_s": 0.0004603825405928217,
+        "segments": [
+          {
+            "name": "LXE:433:JPL#659",
+            "target_id": 20000433,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 447,
+        "name": "Valentine",
+        "category": "asteroid",
+        "naif_spk_id": 20000447,
+        "orbit_solution_id": "JPL#97",
+        "orbit_solution_date": "2026-Jun-05_03:36:31",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "319e988f944c0cd791cb2e6ec4f02eaa2e8fc351d8d7c9375fad6246121e37fb",
+        "conversion_max_pos_err_m": 0.006846419753711294,
+        "conversion_max_vel_err_mm_s": 0.00008965075017044037,
+        "segments": [
+          {
+            "name": "LXE:447:JPL#97",
+            "target_id": 20000447,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 471,
+        "name": "Papagena",
+        "category": "asteroid",
+        "naif_spk_id": 20000471,
+        "orbit_solution_id": "JPL#142",
+        "orbit_solution_date": "2026-Jun-05_03:38:55",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "5e78f2c76c94908cac5d4b03407a4f42ae299bcf7df87448efbe31e779d1b993",
+        "conversion_max_pos_err_m": 0.008940895396250315,
+        "conversion_max_vel_err_mm_s": 0.00008504269504356773,
+        "segments": [
+          {
+            "name": "LXE:471:JPL#142",
+            "target_id": 20000471,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 490,
+        "name": "Veritas",
+        "category": "asteroid",
+        "naif_spk_id": 20000490,
+        "orbit_solution_id": "JPL#75",
+        "orbit_solution_date": "2026-Jun-05_03:40:11",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "6ce240fcd1fe99c947111c208b0a3776355c7f2f1c38aed13e784c3846cc3e5e",
+        "conversion_max_pos_err_m": 0.013259955613264037,
+        "conversion_max_vel_err_mm_s": 0.00009711631704267127,
+        "segments": [
+          {
+            "name": "LXE:490:JPL#75",
+            "target_id": 20000490,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 504,
+        "name": "Cora",
+        "category": "asteroid",
+        "naif_spk_id": 20000504,
+        "orbit_solution_id": "JPL#79",
+        "orbit_solution_date": "2026-Jun-05_03:41:03",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "89c3bcfaa6d3f6866490519dcd26726a59618bfe9cf38878974479ebcb5ccf76",
+        "conversion_max_pos_err_m": 0.01286400309232167,
+        "conversion_max_vel_err_mm_s": 0.00008118999763162409,
+        "segments": [
+          {
+            "name": "LXE:504:JPL#79",
+            "target_id": 20000504,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 763,
+        "name": "Cupido",
+        "category": "asteroid",
+        "naif_spk_id": 20000763,
+        "orbit_solution_id": "JPL#66",
+        "orbit_solution_date": "2026-Jun-05_04:01:47",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "392847bba3237e055769040a83aa52fd6d9b36d762db363d94494019bdf578a2",
+        "conversion_max_pos_err_m": 0.007277276172967781,
+        "conversion_max_vel_err_mm_s": 0.0001147365537443233,
+        "segments": [
+          {
+            "name": "LXE:763:JPL#66",
+            "target_id": 20000763,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 944,
+        "name": "Hidalgo",
+        "category": "asteroid",
+        "naif_spk_id": 20000944,
+        "orbit_solution_id": "JPL#64",
+        "orbit_solution_date": "2026-Mar-11_22:28:59",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "b7dec03f3b2654c2cd9992d66fafcde8006caafb52cc2739d7c5ef5453f68942",
+        "conversion_max_pos_err_m": 0.009429315398399862,
+        "conversion_max_vel_err_mm_s": 0.00007735366578728484,
+        "segments": [
+          {
+            "name": "LXE:944:JPL#64",
+            "target_id": 20000944,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 1181,
+        "name": "Lilith",
+        "category": "asteroid",
+        "naif_spk_id": 20001181,
+        "orbit_solution_id": "JPL#73",
+        "orbit_solution_date": "2026-Jun-05_04:36:43",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "ccc1c29e50786372a46afdce3002372c31513af587c6bbbbe9448859fa29a8aa",
+        "conversion_max_pos_err_m": 0.009497699031060562,
+        "conversion_max_vel_err_mm_s": 0.001518272685008934,
+        "segments": [
+          {
+            "name": "LXE:1181:JPL#73",
+            "target_id": 20001181,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 1221,
+        "name": "Amor",
+        "category": "asteroid",
+        "naif_spk_id": 20001221,
+        "orbit_solution_id": "JPL#158",
+        "orbit_solution_date": "2026-Oct-21_06:50:32",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "55b262e61886c6ccd63d777b3cecf9a2e63c77793dc0d687be0810713d51cb16",
+        "conversion_max_pos_err_m": 0.008280411165271423,
+        "conversion_max_vel_err_mm_s": 0.00036484806029342393,
+        "segments": [
+          {
+            "name": "LXE:1221:JPL#158",
+            "target_id": 20001221,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 1387,
+        "name": "Kama",
+        "category": "asteroid",
+        "naif_spk_id": 20001387,
+        "orbit_solution_id": "JPL#64",
+        "orbit_solution_date": "2026-Jun-05_05:25:20",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "791aeedeff8be4cf567694cf0772bb86f41d565755f0aede0fb10984514d8d33",
+        "conversion_max_pos_err_m": 0.007696101066239775,
+        "conversion_max_vel_err_mm_s": 0.0000789461221792553,
+        "segments": [
+          {
+            "name": "LXE:1387:JPL#64",
+            "target_id": 20001387,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 1388,
+        "name": "Aphrodite",
+        "category": "asteroid",
+        "naif_spk_id": 20001388,
+        "orbit_solution_id": "JPL#81",
+        "orbit_solution_date": "2026-Jun-05_05:25:21",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "581fc16ddc1f96afa4215948c9fa97e1494f363b04dafbed103b5b010e47c72e",
+        "conversion_max_pos_err_m": 0.008538768440072802,
+        "conversion_max_vel_err_mm_s": 0.00006818836319705748,
+        "segments": [
+          {
+            "name": "LXE:1388:JPL#81",
+            "target_id": 20001388,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 1489,
+        "name": "Attila",
+        "category": "asteroid",
+        "naif_spk_id": 20001489,
+        "orbit_solution_id": "JPL#67",
+        "orbit_solution_date": "2026-Jul-15_11:08:24",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "9f62bc4cc3631dc55c77e91f3adcc8309f9e14be8f95a5355f0871ad87756ae1",
+        "conversion_max_pos_err_m": 0.0065471614003870925,
+        "conversion_max_vel_err_mm_s": 0.00006968387712622151,
+        "segments": [
+          {
+            "name": "LXE:1489:JPL#67",
+            "target_id": 20001489,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 1566,
+        "name": "Icarus",
+        "category": "asteroid",
+        "naif_spk_id": 20001566,
+        "orbit_solution_id": "JPL#196",
+        "orbit_solution_date": "2026-Sep-08_06:21:03",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "b726d596d40275b4786845b17cb153a24b93161764c1d6e88e47345ba504a7a3",
+        "conversion_max_pos_err_m": 0.024516219515059317,
+        "conversion_max_vel_err_mm_s": 0.003315321241218868,
+        "segments": [
+          {
+            "name": "LXE:1566:JPL#196",
+            "target_id": 20001566,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 1580,
+        "name": "Betulia",
+        "category": "asteroid",
+        "naif_spk_id": 20001580,
+        "orbit_solution_id": "JPL#405",
+        "orbit_solution_date": "2026-Oct-21_06:50:32",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "2128aebf8ec970f845b90cff0880020dfbb8a3871e1eb889c79bb9caa56b20c9",
+        "conversion_max_pos_err_m": 0.007770404216587643,
+        "conversion_max_vel_err_mm_s": 0.0004926932761022145,
+        "segments": [
+          {
+            "name": "LXE:1580:JPL#405",
+            "target_id": 20001580,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 1585,
+        "name": "Union",
+        "category": "asteroid",
+        "naif_spk_id": 20001585,
+        "orbit_solution_id": "JPL#83",
+        "orbit_solution_date": "2026-Jun-05_05:38:36",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "8c4f19dc0ead2763006fcd8ab5ce5311d746af6454c367b58d11bd97f6dfbcc7",
+        "conversion_max_pos_err_m": 0.0073608112369109545,
+        "conversion_max_vel_err_mm_s": 0.000135688256171234,
+        "segments": [
+          {
+            "name": "LXE:1585:JPL#83",
+            "target_id": 20001585,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 1862,
+        "name": "Apollo",
+        "category": "asteroid",
+        "naif_spk_id": 20001862,
+        "orbit_solution_id": "JPL#579",
+        "orbit_solution_date": "2026-Aug-31_06:24:24",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "fa9e780c44d8feb87a8644fcf87c5871ca85c4c81e170c90984f8df2de32e14a",
+        "conversion_max_pos_err_m": 0.012974192981658417,
+        "conversion_max_vel_err_mm_s": 0.001248473054695147,
+        "segments": [
+          {
+            "name": "LXE:1862:JPL#579",
+            "target_id": 20001862,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 1930,
+        "name": "Lucifer",
+        "category": "asteroid",
+        "naif_spk_id": 20001930,
+        "orbit_solution_id": "JPL#70",
+        "orbit_solution_date": "2026-Jun-05_06:01:11",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "deef5088f9fc03c2201ff39257a492939d04f3543713fcda64c1340baa553ac3",
+        "conversion_max_pos_err_m": 0.006704197858724401,
+        "conversion_max_vel_err_mm_s": 0.00007301758987702724,
+        "segments": [
+          {
+            "name": "LXE:1930:JPL#70",
+            "target_id": 20001930,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 2060,
+        "name": "Chiron",
+        "category": "asteroid",
+        "naif_spk_id": 20002060,
+        "orbit_solution_id": "JPL#171",
+        "orbit_solution_date": "2026-Jun-05_06:09:00",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "dc7d9e6ea0b90a891fdd0997c4e81ff7a705cc52f1c88000bd58f7cffedf5183",
+        "conversion_max_pos_err_m": 0.005728251350752813,
+        "conversion_max_vel_err_mm_s": 0.0001026490580850843,
+        "segments": [
+          {
+            "name": "LXE:2060:JPL#171",
+            "target_id": 20002060,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 2101,
+        "name": "Adonis",
+        "category": "asteroid",
+        "naif_spk_id": 20002101,
+        "orbit_solution_id": "JPL#53",
+        "orbit_solution_date": "2026-Aug-04_06:19:35",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "14244fba17ca8fc254805cd1071aaca048f894759b0f02de1b171c729de788fa",
+        "conversion_max_pos_err_m": 0.008426583598473843,
+        "conversion_max_vel_err_mm_s": 0.0010435568103409974,
+        "segments": [
+          {
+            "name": "LXE:2101:JPL#53",
+            "target_id": 20002101,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 3671,
+        "name": "Dionysus",
+        "category": "asteroid",
+        "naif_spk_id": 20003671,
+        "orbit_solution_id": "JPL#231",
+        "orbit_solution_date": "2026-Sep-02_08:22:59",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "4f4dc9bb9899f2c4734acef3c12b21efc224c22b094ac90745ecab95bc17ac12",
+        "conversion_max_pos_err_m": 0.009209836838539171,
+        "conversion_max_vel_err_mm_s": 0.0003697888123448854,
+        "segments": [
+          {
+            "name": "LXE:3671:JPL#231",
+            "target_id": 20003671,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 3782,
+        "name": "Celle",
+        "category": "asteroid",
+        "naif_spk_id": 20003782,
+        "orbit_solution_id": "JPL#111",
+        "orbit_solution_date": "2026-Jun-05_07:50:52",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "b3b2b66138babb4ad50b02843ac284e878206d2a16295d0cd304852993fa1598",
+        "conversion_max_pos_err_m": 0.014220798878345792,
+        "conversion_max_vel_err_mm_s": 0.00012197575387850492,
+        "segments": [
+          {
+            "name": "LXE:3782:JPL#111",
+            "target_id": 20003782,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 3811,
+        "name": "Karma",
+        "category": "asteroid",
+        "naif_spk_id": 20003811,
+        "orbit_solution_id": "JPL#62",
+        "orbit_solution_date": "2026-Jun-05_07:52:32",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "26ed488c24913aef0211cd540e729e1039f8749a1786e392b6cdf8684ad372a4",
+        "conversion_max_pos_err_m": 0.007428852824392672,
+        "conversion_max_vel_err_mm_s": 0.00008637332594920522,
+        "segments": [
+          {
+            "name": "LXE:3811:JPL#62",
+            "target_id": 20003811,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 4386,
+        "name": "Lust",
+        "category": "asteroid",
+        "naif_spk_id": 20004386,
+        "orbit_solution_id": "JPL#48",
+        "orbit_solution_date": "2025-Oct-31_15:38:33",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "aac6ba7eabb7bbc4e04b5687b28c55c6bedd050f8dfed2be91b114fdf3ac17ad",
+        "conversion_max_pos_err_m": 0.008295973082509569,
+        "conversion_max_vel_err_mm_s": 0.00010092014101233582,
+        "segments": [
+          {
+            "name": "LXE:4386:JPL#48",
+            "target_id": 20004386,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 5129,
+        "name": "Groom",
+        "category": "asteroid",
+        "naif_spk_id": 20005129,
+        "orbit_solution_id": "JPL#61",
+        "orbit_solution_date": "2026-Jun-05_09:02:20",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "5ca77b58343511ccd9b07199e6ada8ec869864f345bdc8b25874f23eb8132751",
+        "conversion_max_pos_err_m": 0.010557928262357808,
+        "conversion_max_vel_err_mm_s": 0.00007551861902470891,
+        "segments": [
+          {
+            "name": "LXE:5129:JPL#61",
+            "target_id": 20005129,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 5145,
+        "name": "Pholus",
+        "category": "asteroid",
+        "naif_spk_id": 20005145,
+        "orbit_solution_id": "JPL#24",
+        "orbit_solution_date": "2024-Oct-11_16:28:19",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "fff391fbc61d2e076df32b0fbdf6961d87fdc5fdfae3309f327dfd6e1cf28e97",
+        "conversion_max_pos_err_m": 0.007806160709259462,
+        "conversion_max_vel_err_mm_s": 0.00013617204761970272,
+        "segments": [
+          {
+            "name": "LXE:5145:JPL#24",
+            "target_id": 20005145,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 6583,
+        "name": "Destinn",
+        "category": "asteroid",
+        "naif_spk_id": 20006583,
+        "orbit_solution_id": "JPL#64",
+        "orbit_solution_date": "2026-Aug-08_17:33:15",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "a8517dfcb50c42e185283933dd8af41ba021322e204847eb2f9f0c52f81ba509",
+        "conversion_max_pos_err_m": 0.008128410140228396,
+        "conversion_max_vel_err_mm_s": 0.00009039666636784666,
+        "segments": [
+          {
+            "name": "LXE:6583:JPL#64",
+            "target_id": 20006583,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 7066,
+        "name": "Nessus",
+        "category": "asteroid",
+        "naif_spk_id": 20007066,
+        "orbit_solution_id": "JPL#10",
+        "orbit_solution_date": "2024-Apr-16_19:34:06",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "2210d4b52ee28e41b563ad701e87243a05348e2b7bd29e03ed82902b73f0c504",
+        "conversion_max_pos_err_m": 0.008915229128975027,
+        "conversion_max_vel_err_mm_s": 0.00013651970457468263,
+        "segments": [
+          {
+            "name": "LXE:7066:JPL#10",
+            "target_id": 20007066,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 90377,
+        "name": "Sedna",
+        "category": "dwarf_planet",
+        "naif_spk_id": 20090377,
+        "orbit_solution_id": "JPL#51",
+        "orbit_solution_date": "2026-Jun-06_14:12:24",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "d57287354beb4147c4a58377a518584b47e12185ab5a51955cf9eb985479edbc",
+        "conversion_max_pos_err_m": 0.03092096869826026,
+        "conversion_max_vel_err_mm_s": 0.0005129054346867448,
+        "segments": [
+          {
+            "name": "LXE:90377:JPL#51",
+            "target_id": 20090377,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 136108,
+        "name": "Haumea",
+        "category": "dwarf_planet",
+        "naif_spk_id": 20136108,
+        "orbit_solution_id": "JPL#132",
+        "orbit_solution_date": "2026-Jun-06_21:06:04",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "ead447610ff5f57f39c6843f575fdd3c460a62a91eb221771850f75f192a8082",
+        "conversion_max_pos_err_m": 0.029289603572723796,
+        "conversion_max_vel_err_mm_s": 0.00018201006670026825,
+        "segments": [
+          {
+            "name": "LXE:136108:JPL#132",
+            "target_id": 20136108,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 136199,
+        "name": "Eris",
+        "category": "dwarf_planet",
+        "naif_spk_id": 20136199,
+        "orbit_solution_id": "JPL#103",
+        "orbit_solution_date": "2026-Jun-06_21:06:42",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "2ca879f63053051ebb34cf76b30d0009b4e9d2727d5a7c0d0627759fe9fb9ad2",
+        "conversion_max_pos_err_m": 0.02081218036918182,
+        "conversion_max_vel_err_mm_s": 0.00034706487003746315,
+        "segments": [
+          {
+            "name": "LXE:136199:JPL#103",
+            "target_id": 20136199,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      },
+      {
+        "mpc": 136472,
+        "name": "Makemake",
+        "category": "dwarf_planet",
+        "naif_spk_id": 20136472,
+        "orbit_solution_id": "JPL#130",
+        "orbit_solution_date": "2026-Jun-06_21:09:02",
+        "center_id": 10,
+        "frame_id": 1,
+        "spk_type": 2,
+        "segment_count": 1,
+        "has_gaps": false,
+        "has_overlaps": false,
+        "raw_interval_jd_tdb": [
+          2396752.5,
+          2488073.5
+        ],
+        "raw_interval_iso_tt": [
+          "1849-12-26T00:00:00Z",
+          "2100-01-05T00:00:00Z"
+        ],
+        "safe_interval_jd_tt": [
+          2396758.5,
+          2488069.5
+        ],
+        "safe_interval_iso_tt": [
+          "1850-01-01T00:00:00 TT",
+          "2100-01-01T00:00:00 TT"
+        ],
+        "source_spk_sha256": "6bcaf90a73861c03ae5e6135c29c3e67791d1f892c10265581e7e7bb343027ac",
+        "conversion_max_pos_err_m": 0.013015121520954305,
+        "conversion_max_vel_err_mm_s": 0.00019428135522486464,
+        "segments": [
+          {
+            "name": "LXE:136472:JPL#130",
+            "target_id": 20136472,
+            "center_id": 10,
+            "frame_id": 1,
+            "spk_type": 2,
+            "start_et_s": -4734072000.0,
+            "end_et_s": 3156062400.0,
+            "start_jd_tdb": 2396752.5,
+            "end_jd_tdb": 2488073.5
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,767 @@
+{
+  "schema_version": "1.0.0",
+  "level": "L1B",
+  "source": "James Neely (1980) + Sevin/Strubell (1952) Keplerian elements + DE440s Earth state",
+  "ephemeris": "DE440s (de440s.bsp)",
+  "time_scale": "TT",
+  "tolerance_arcsec": 0.05,
+  "count": 54,
+  "vectors": [
+    {
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "target_name": "Cupido",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 105.30169426238008,
+        "lat_deg": -0.463312867495485,
+        "dist_au": 40.20090642102194,
+        "lon_speed_deg_day": -0.02091393203057656,
+        "lat_speed_deg_day": 4.6286572765956954e-05,
+        "dist_speed_au_day": -0.0017058048637048479
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "target_name": "Hades",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 336.3636604932433,
+        "lat_deg": 0.07322405532868746,
+        "dist_au": 51.090447439307596,
+        "lon_speed_deg_day": 0.01349346886294136,
+        "lat_speed_deg_day": -6.994707756081256e-05,
+        "dist_speed_au_day": 0.01458960978920584
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "target_name": "Zeus",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 104.28909634479915,
+        "lat_deg": 3.8559986921456876e-07,
+        "dist_au": 58.3029328712127,
+        "lon_speed_deg_day": -0.014852781278240327,
+        "lat_speed_deg_day": 1.0248931632183744e-06,
+        "dist_speed_au_day": -0.0014038317240840327
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "target_name": "Kronos",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 17.111317886754133,
+        "lat_deg": 3.300853465727878e-07,
+        "dist_au": 64.87599851300514,
+        "lon_speed_deg_day": -0.0001348478403054272,
+        "lat_speed_deg_day": 7.605183456198185e-07,
+        "dist_speed_au_day": 0.017322120238923183
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "target_name": "Apollon",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 138.56532921775656,
+        "lat_deg": 2.956621231547548e-07,
+        "dist_au": 69.53167928671957,
+        "lon_speed_deg_day": -0.009382265831767303,
+        "lat_speed_deg_day": 7.86088837584349e-07,
+        "dist_speed_au_day": -0.010969227850809926
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "target_name": "Admetos",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 350.6139128655065,
+        "lat_deg": 2.6916135677744417e-07,
+        "dist_au": 73.94244626162677,
+        "lon_speed_deg_day": 0.005970921139309251,
+        "lat_speed_deg_day": 5.235068147337706e-07,
+        "dist_speed_au_day": 0.01651602981360842
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "target_name": "Vulkanus",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 55.397717580196115,
+        "lat_deg": 2.523706918370586e-07,
+        "dist_au": 76.54838319843823,
+        "lon_speed_deg_day": -0.007898659613079487,
+        "lat_speed_deg_day": 8.404401857951435e-07,
+        "dist_speed_au_day": 0.012199888371112258
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "target_name": "Poseidon",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 166.14025636726012,
+        "lat_deg": 2.1890233909476713e-07,
+        "dist_au": 83.27195614770055,
+        "lon_speed_deg_day": -0.0033332331345048024,
+        "lat_speed_deg_day": 5.327753847725962e-07,
+        "dist_speed_au_day": -0.01602452692275949
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T00:00:00",
+      "jd_tt": 2415020.0,
+      "target_name": "Transpluto",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 101.62063468740314,
+        "lat_deg": -0.005675803105658924,
+        "dist_au": 74.30017557242883,
+        "lon_speed_deg_day": -0.011914887695921313,
+        "lat_speed_deg_day": 8.743968490937894e-07,
+        "dist_speed_au_day": 8.074376055722004e-06
+      }
+    },
+    {
+      "epoch_label": "1945-01-01T00:00:00",
+      "jd_tt": 2431456.5,
+      "target_name": "Cupido",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 168.2343724637774,
+        "lat_deg": 0.6512018092098822,
+        "dist_au": 40.752801655545575,
+        "lon_speed_deg_day": -0.005297772999174274,
+        "lat_speed_deg_day": 0.0003162477448562611,
+        "dist_speed_au_day": -0.0161594727905531
+      }
+    },
+    {
+      "epoch_label": "1945-01-01T00:00:00",
+      "jd_tt": 2431456.5,
+      "target_name": "Hades",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 21.878951124313918,
+        "lat_deg": -0.6891297655062808,
+        "dist_au": 50.422789793635594,
+        "lon_speed_deg_day": -0.0012997811812857337,
+        "lat_speed_deg_day": 0.0001962989613847704,
+        "dist_speed_au_day": 0.017085045682430883
+      }
+    },
+    {
+      "epoch_label": "1945-01-01T00:00:00",
+      "jd_tt": 2431456.5,
+      "target_name": "Zeus",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 140.9187153286084,
+        "lat_deg": 0.003346227769613925,
+        "dist_au": 58.53182100297731,
+        "lon_speed_deg_day": -0.010671566284090156,
+        "lat_speed_deg_day": 1.2700023920763434e-06,
+        "dist_speed_au_day": -0.011372255223073193
+      }
+    },
+    {
+      "epoch_label": "1945-01-01T00:00:00",
+      "jd_tt": 2431456.5,
+      "target_name": "Kronos",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 48.77324084663947,
+        "lat_deg": 0.0048626572444290545,
+        "dist_au": 64.38542986461924,
+        "lon_speed_deg_day": -0.007817046687666631,
+        "lat_speed_deg_day": -7.276531068545848e-08,
+        "dist_speed_au_day": 0.013652351560331559
+      }
+    },
+    {
+      "epoch_label": "1945-01-01T00:00:00",
+      "jd_tt": 2431456.5,
+      "target_name": "Apollon",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 166.8991686098663,
+        "lat_deg": 0.0008551228732588302,
+        "dist_au": 69.90431999773897,
+        "lon_speed_deg_day": -0.0038467080844291233,
+        "lat_speed_deg_day": 5.80746484645148e-07,
+        "dist_speed_au_day": -0.016027654683944192
+      }
+    },
+    {
+      "epoch_label": "1945-01-01T00:00:00",
+      "jd_tt": 2431456.5,
+      "target_name": "Admetos",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 16.840965654689995,
+        "lat_deg": 0.0023137917960046315,
+        "dist_au": 73.50790391053553,
+        "lon_speed_deg_day": -4.479820248516791e-05,
+        "lat_speed_deg_day": 2.2311933552229452e-07,
+        "dist_speed_au_day": 0.017343482560951164
+      }
+    },
+    {
+      "epoch_label": "1945-01-01T00:00:00",
+      "jd_tt": 2431456.5,
+      "target_name": "Vulkanus",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 80.13366721845503,
+        "lat_deg": 0.005937559940444231,
+        "dist_au": 76.33155301654769,
+        "lon_speed_deg_day": -0.010831745659032744,
+        "lat_speed_deg_day": 3.7734853989438455e-07,
+        "dist_speed_au_day": 0.0060053008640765055
+      }
+    },
+    {
+      "epoch_label": "1945-01-01T00:00:00",
+      "jd_tt": 2431456.5,
+      "target_name": "Poseidon",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 187.98009176542269,
+        "lat_deg": -0.0013068730121570966,
+        "dist_au": 83.62477597343404,
+        "lon_speed_deg_day": 0.0009742943679801327,
+        "lat_speed_deg_day": -5.8157674836915105e-08,
+        "dist_speed_au_day": -0.01745006154066519
+      }
+    },
+    {
+      "epoch_label": "1945-01-01T00:00:00",
+      "jd_tt": 2431456.5,
+      "target_name": "Transpluto",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 123.83166276106932,
+        "lat_deg": -1.0646625097018206e-07,
+        "dist_au": 83.63547230076183,
+        "lon_speed_deg_day": -0.009707916720032767,
+        "lat_speed_deg_day": 7.039047593199982e-07,
+        "dist_speed_au_day": -0.006472081830762364
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "target_name": "Cupido",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 214.85060780902862,
+        "lat_deg": 1.0899922529654733,
+        "dist_au": 40.321259196916294,
+        "lon_speed_deg_day": -0.011862384635620588,
+        "lat_speed_deg_day": -0.000338665966167741,
+        "dist_speed_au_day": 0.012792110072305225
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "target_name": "Hades",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 59.337639031399746,
+        "lat_deg": -0.993107641064109,
+        "dist_au": 51.62336220833802,
+        "lon_speed_deg_day": 0.019837279177608597,
+        "lat_speed_deg_day": -0.00014570039512349536,
+        "dist_speed_au_day": -0.007101768465837124
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "target_name": "Zeus",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 167.77077200740138,
+        "lat_deg": 0.0011214524325949746,
+        "dist_au": 59.372192874249464,
+        "lon_speed_deg_day": 0.003963057528098783,
+        "lat_speed_deg_day": -1.5588388086253512e-07,
+        "dist_speed_au_day": 0.016789402611500834
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "target_name": "Kronos",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 74.42883758527053,
+        "lat_deg": 0.010175157842261048,
+        "dist_au": 65.95810370737011,
+        "lon_speed_deg_day": 0.016429145090176085,
+        "lat_speed_deg_day": 1.3004424705701228e-06,
+        "dist_speed_au_day": -0.002881732190821182
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "target_name": "Apollon",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 187.50554486421865,
+        "lat_deg": -0.0024498528011887865,
+        "dist_au": 70.06433787502172,
+        "lon_speed_deg_day": -0.0015324042104702324,
+        "lat_speed_deg_day": 6.263394938178562e-07,
+        "dist_speed_au_day": 0.016456017431404943
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "target_name": "Admetos",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 38.860522902334736,
+        "lat_deg": 0.007154777801372916,
+        "dist_au": 74.33410070207614,
+        "lon_speed_deg_day": 0.010846589391206866,
+        "lat_speed_deg_day": 2.009847325934023e-06,
+        "dist_speed_au_day": -0.012033739196645053
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "target_name": "Vulkanus",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 99.47140699821257,
+        "lat_deg": 0.01003650888418936,
+        "dist_au": 78.2367492482663,
+        "lon_speed_deg_day": 0.01343899436646841,
+        "lat_speed_deg_day": 7.585139949427929e-08,
+        "dist_speed_au_day": 0.004446025823319465
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "target_name": "Poseidon",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 203.87669125068223,
+        "lat_deg": -0.005224087757851979,
+        "dist_au": 83.16644975452772,
+        "lon_speed_deg_day": -0.004496293374690555,
+        "lat_speed_deg_day": 8.977678951064883e-07,
+        "dist_speed_au_day": 0.01470112064551088
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "target_name": "Transpluto",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 137.5248200423812,
+        "lat_deg": 0.0027511204294930532,
+        "dist_au": 91.21350582241689,
+        "lon_speed_deg_day": 0.007351664185641966,
+        "lat_speed_deg_day": 6.540106083467713e-08,
+        "dist_speed_au_day": 0.013983736029727592
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "target_name": "Cupido",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 243.89644719841806,
+        "lat_deg": 0.9745410929102369,
+        "dist_au": 41.688673647854166,
+        "lon_speed_deg_day": 0.023132601341199488,
+        "lat_speed_deg_day": 0.00021417412031582002,
+        "dist_speed_au_day": -0.010376424385558886
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "target_name": "Hades",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 78.18039801471198,
+        "lat_deg": -1.0504283125100262,
+        "dist_au": 49.83148855292737,
+        "lon_speed_deg_day": -0.015848140656818638,
+        "lat_speed_deg_day": 0.000142897259689872,
+        "dist_speed_au_day": 0.0066027896445331295
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "target_name": "Zeus",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 185.38829422768492,
+        "lat_deg": -0.0021171558453092322,
+        "dist_au": 59.15187094629537,
+        "lon_speed_deg_day": 0.0008255688471892477,
+        "lat_speed_deg_day": -1.2324975750759255e-06,
+        "dist_speed_au_day": -0.017393766283646354
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "target_name": "Kronos",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 87.79836771225514,
+        "lat_deg": 0.013247792827656374,
+        "dist_au": 63.962009809259854,
+        "lon_speed_deg_day": -0.013364945932794053,
+        "lat_speed_deg_day": -4.807202494128532e-07,
+        "dist_speed_au_day": 0.0038054869776286905
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "target_name": "Apollon",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 201.30650949651232,
+        "lat_deg": -0.005587719054019303,
+        "dist_au": 70.47936965772746,
+        "lon_speed_deg_day": 0.004499115250219852,
+        "lat_speed_deg_day": -1.9014726464595029e-06,
+        "dist_speed_au_day": -0.017150782388009794
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "target_name": "Admetos",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 49.11515158760006,
+        "lat_deg": 0.010743123933247913,
+        "dist_au": 73.00833310563786,
+        "lon_speed_deg_day": -0.007053174603157818,
+        "lat_speed_deg_day": -1.5337434714491823e-06,
+        "dist_speed_au_day": 0.013630286970868911
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "target_name": "Vulkanus",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 110.4384338732991,
+        "lat_deg": 0.011974524601504234,
+        "dist_au": 76.28727607930242,
+        "lon_speed_deg_day": -0.011410222837560796,
+        "lat_speed_deg_day": 6.442724918213517e-07,
+        "dist_speed_au_day": -0.003044082535421847
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "target_name": "Poseidon",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 214.55807996180374,
+        "lat_deg": -0.008150263459391134,
+        "dist_au": 84.06713868689644,
+        "lon_speed_deg_day": 0.006294638768166604,
+        "lat_speed_deg_day": -2.0226058681198264e-06,
+        "dist_speed_au_day": -0.01594221610621583
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "target_name": "Transpluto",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 145.73652692198536,
+        "lat_deg": 0.003587680980204303,
+        "dist_au": 92.70314583210218,
+        "lon_speed_deg_day": -0.00653184055579323,
+        "lat_speed_deg_day": 5.348991059760499e-07,
+        "dist_speed_au_day": -0.012069353367270037
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "target_name": "Cupido",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 280.38967084756695,
+        "lat_deg": 0.5655116776464268,
+        "dist_au": 39.84958882568411,
+        "lon_speed_deg_day": -0.019316592384798683,
+        "lat_speed_deg_day": 7.233149545325969e-06,
+        "dist_speed_au_day": -0.004873334728588848
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "target_name": "Hades",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 104.86258738336025,
+        "lat_deg": -0.8572708902759303,
+        "dist_au": 51.72623867841061,
+        "lon_speed_deg_day": 0.02023194528414234,
+        "lat_speed_deg_day": 0.00012873677800127466,
+        "dist_speed_au_day": 0.006125561722322702
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "target_name": "Zeus",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 204.86043834884995,
+        "lat_deg": -0.008400937347035158,
+        "dist_au": 58.69231327761131,
+        "lon_speed_deg_day": -0.0063767835687697965,
+        "lat_speed_deg_day": 1.1763693848125828e-06,
+        "dist_speed_au_day": 0.014450009567861181
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "target_name": "Kronos",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 106.21644199271074,
+        "lat_deg": 0.015188800756143246,
+        "dist_au": 65.80316532338168,
+        "lon_speed_deg_day": 0.015543856471429652,
+        "lat_speed_deg_day": -1.5243375027421532e-06,
+        "dist_speed_au_day": 0.006493221576847081
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "target_name": "Apollon",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 216.4450824255067,
+        "lat_deg": -0.01107981376563096,
+        "dist_au": 69.60927682043058,
+        "lon_speed_deg_day": -0.007759921361849205,
+        "lat_speed_deg_day": 1.2314804713470819e-06,
+        "dist_speed_au_day": 0.012404263362936312
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "target_name": "Admetos",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 65.4022696383912,
+        "lat_deg": 0.015296241023680292,
+        "dist_au": 74.58998102332157,
+        "lon_speed_deg_day": 0.01403428222302566,
+        "lat_speed_deg_day": 1.4319091021634242e-06,
+        "dist_speed_au_day": -0.005285411459085177
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "target_name": "Vulkanus",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 124.21288128646614,
+        "lat_deg": 0.012661317907575532,
+        "dist_au": 78.02779211276929,
+        "lon_speed_deg_day": 0.010923660035091473,
+        "lat_speed_deg_day": -1.898072382283028e-06,
+        "dist_speed_au_day": 0.011009101951288652
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "target_name": "Poseidon",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 226.34397635102295,
+        "lat_deg": -0.013022476541466996,
+        "dist_au": 82.86204084559665,
+        "lon_speed_deg_day": -0.007978279007050011,
+        "lat_speed_deg_day": 9.791901683888364e-07,
+        "dist_speed_au_day": 0.010247519874032551
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "target_name": "Transpluto",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 153.9857505100849,
+        "lat_deg": 0.003758486870619464,
+        "dist_au": 96.84750927851438,
+        "lon_speed_deg_day": 0.004268298702707388,
+        "lat_speed_deg_day": -7.249737245956137e-07,
+        "dist_speed_au_day": 0.016224081265327015
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "target_name": "Cupido",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 312.1679358129455,
+        "lat_deg": -0.03084465570536921,
+        "dist_au": 41.648299587171934,
+        "lon_speed_deg_day": 0.024240597384800423,
+        "lat_speed_deg_day": -6.335252474921214e-05,
+        "dist_speed_au_day": 0.009066969287737618
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "target_name": "Hades",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 129.542278537605,
+        "lat_deg": -0.5894563823497332,
+        "dist_au": 49.92743417862316,
+        "lon_speed_deg_day": -0.014758696007676054,
+        "lat_speed_deg_day": -5.8945855470750166e-05,
+        "dist_speed_au_day": -0.00837911479395699
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "target_name": "Zeus",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 225.41886872683298,
+        "lat_deg": -0.014631578677358481,
+        "dist_au": 59.7515316834443,
+        "lon_speed_deg_day": 0.011780108773017635,
+        "lat_speed_deg_day": -4.677695770067092e-06,
+        "dist_speed_au_day": -0.014369602168500294
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "target_name": "Kronos",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 123.46899310433518,
+        "lat_deg": 0.015778243846906792,
+        "dist_au": 63.90066536433159,
+        "lon_speed_deg_day": -0.012488420913621155,
+        "lat_speed_deg_day": 1.1789067337509155e-06,
+        "dist_speed_au_day": -0.006726093510388813
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "target_name": "Apollon",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 232.3603678539651,
+        "lat_deg": -0.016102051084142168,
+        "dist_au": 70.9486559510174,
+        "lon_speed_deg_day": 0.011129051648518256,
+        "lat_speed_deg_day": -3.910823385776496e-06,
+        "dist_speed_au_day": -0.013070242472512235
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "target_name": "Admetos",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 78.6227299292186,
+        "lat_deg": 0.019698468868831153,
+        "dist_au": 72.71584886070143,
+        "lon_speed_deg_day": -0.011187816695222242,
+        "lat_speed_deg_day": -1.6749453679625744e-06,
+        "dist_speed_au_day": 0.006600854319068399
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "target_name": "Vulkanus",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 137.96507527493662,
+        "lat_deg": 0.012233649881318856,
+        "dist_au": 76.47019826869582,
+        "lon_speed_deg_day": -0.008888963299940367,
+        "lat_speed_deg_day": 1.2072092300595014e-06,
+        "dist_speed_au_day": -0.010543657155285668
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "target_name": "Poseidon",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 238.61910502044265,
+        "lat_deg": -0.017220176475259724,
+        "dist_au": 84.39574626870892,
+        "lon_speed_deg_day": 0.010171068828195767,
+        "lat_speed_deg_day": -3.179361970943645e-06,
+        "dist_speed_au_day": -0.011734324131689594
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "target_name": "Transpluto",
+      "target_kind": "hypothetical",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 162.87953937327745,
+        "lat_deg": 0.003150007445160331,
+        "dist_au": 98.14565160037745,
+        "lon_speed_deg_day": -0.0038096233464318093,
+        "lat_speed_deg_day": 1.3391409041249305e-07,
+        "dist_speed_au_day": -0.01522959628334187
+      }
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "$schema": "https://context7.com/schema/context7.json",
+  "projectTitle": "lxephemeris",
+  "description": "Clean-room, thread-safe astronomical and astrological ephemeris engine in Rust with native Python (PyO3) and Node.js/TypeScript (napi-rs) bindings. Complete replacement for Swiss Ephemeris (pyswisseph), Kerykeion, and PyEphem.",
+  "folders": [
+    "docs",
+    "crates/lxephemeris-core",
+    "crates/lxephemeris-py",
+    "crates/lxephemeris-node"
+  ],
+  "excludeFolders": [
+    "target",
+    "data",
+    "testdata",
+    "scripts",
+    "tests",
+    ".git"
+  ],
+  "excludeFiles": [
+    "Cargo.lock"
+  ],
+  "rules": [
+    "Always initialize `Engine` once via `Engine.from_data_dir(data_dir)` (or fileless `Engine.new_moshier()` / `Engine.from_data_dir_or_moshier(data_dir)`) in Python or `JsEngine.fromDataDir(dataDir)` / `JsEngine.newMoshier()` in Node.js and share it across threads; `Engine` is completely stateless and thread-safe (`Send + Sync`).",
+    "Never use process-global state (`set_ephe_path`, `set_sid_mode`, `set_topo`); pass `CalcOptions` (or `zodiac`, `ayanamsa`, `observer`, `polar_policy`) explicitly per call, or use an instance-scoped `SweAdapter(engine)` / `SweAdapter.new_moshier()` when migrating legacy `pyswisseph` code.",
+    "Always specify the input time scale explicitly (`scale='UT1'`, `'UTC'`, `'TT'`, or `'TDB'`). For standard astrological birth charts from UT Julian Dates, pass `scale='UT1'`.",
+    "For time-series scans (transits, stations, void-of-course Moon, 1-minute angular triggers), always use vectorized batch methods (`calc_batch`, `calc_batch_flat_f64`, `houses_batch`) instead of calling `calc` or `houses` in a Python/JS loop.",
+    "Inside the polar circle (|lat| >= 90 - eps), `PolarPolicy` defaults to `'strict'` (raising `PolarSingularityError` / `[UndefinedHouseSystem]` for `P`, `K`, `i`); pass `polar_policy='fallback_to_whole_sign'` (for `astra` R4.4 compatibility) or `'fallback_to_porphyry'` when automatic polar fallback is desired."
+  ]
+}

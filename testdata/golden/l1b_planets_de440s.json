@@ -1,0 +1,3015 @@
+{
+  "schema_version": "1.0.0",
+  "level": "L1B",
+  "source": "jplephem + pyerfa (IAU 2006/2000A) + 4th-order Cartesian stencil",
+  "versions": {
+    "erfa": "2.0.1.5",
+    "numpy": "2.5.4"
+  },
+  "ephemeris": "DE440s (de440s.bsp)",
+  "time_scale": "TT",
+  "tolerance_arcsec": 0.01,
+  "count": 120,
+  "vectors": [
+    {
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "jd_tdb": 2398585.5,
+      "target_id": 10,
+      "target_name": "Sun",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 281.08512204904565,
+        "lat_deg": 4.988963099704623e-05,
+        "dist_au": 0.9831986767144016,
+        "lon_speed_deg_day": 1.0190963429773328,
+        "lat_speed_deg_day": 2.9281184420449076e-05,
+        "dist_speed_au_day": 1.0795071431796898e-06
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 282.05590301729035,
+        "dec_deg": -22.99647777531148
+      },
+      "astrometric_icrf": {
+        "ra_deg": 284.2547409685681,
+        "dec_deg": -22.810408351148737,
+        "dist_au": 0.9831986767144018
+      }
+    },
+    {
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "jd_tdb": 2398585.5,
+      "target_id": 301,
+      "target_name": "Moon",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 86.29747222526554,
+        "lat_deg": 2.9388843182881206,
+        "dist_au": 0.0026894035352868083,
+        "lon_speed_deg_day": 12.057519349202474,
+        "lat_speed_deg_day": 0.8805523368516157,
+        "dist_speed_au_day": 1.4262815673180474e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 85.873073228059,
+        "dec_deg": 26.345449781827384
+      },
+      "astrometric_icrf": {
+        "ra_deg": 88.12719756159308,
+        "dec_deg": 26.386091245551224,
+        "dist_au": 0.0026894035352868087
+      }
+    },
+    {
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "jd_tdb": 2398585.5,
+      "target_id": 199,
+      "target_name": "Mercury",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 270.0396838082311,
+        "lat_deg": -0.7867057778102126,
+        "dist_au": 1.3900761730748739,
+        "lon_speed_deg_day": 1.5370554978779079,
+        "lat_speed_deg_day": -0.10437047932797994,
+        "dist_speed_au_day": 0.006474871387652458
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 270.04351894775186,
+        "dec_deg": -24.24633450352704
+      },
+      "astrometric_icrf": {
+        "ra_deg": 272.2737741787948,
+        "dec_deg": -24.22845024788796,
+        "dist_au": 1.3900761730748743
+      }
+    },
+    {
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "jd_tdb": 2398585.5,
+      "target_id": 299,
+      "target_name": "Venus",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 285.76143247936676,
+        "lat_deg": -0.8676799330047746,
+        "dist_au": 1.7033136425575799,
+        "lon_speed_deg_day": 1.2575410343226279,
+        "lat_speed_deg_day": -0.032471333811931444,
+        "dist_speed_au_day": -0.0007627937647402419
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 287.21259440392083,
+        "dec_deg": -23.389660861811453
+      },
+      "astrometric_icrf": {
+        "ra_deg": 289.4086690646997,
+        "dec_deg": -23.13339601509102,
+        "dist_au": 1.7033136425575799
+      }
+    },
+    {
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "jd_tdb": 2398585.5,
+      "target_id": 4,
+      "target_name": "Mars_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 302.9540063517514,
+        "lat_deg": -1.1402846812468483,
+        "dist_au": 2.248505798912939,
+        "lon_speed_deg_day": 0.7864010004751769,
+        "lat_speed_deg_day": 0.001352461133131503,
+        "dist_speed_au_day": 0.002152176232855922
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 305.5280130011879,
+        "dec_deg": -20.62441108987909
+      },
+      "astrometric_icrf": {
+        "ra_deg": 307.63452088887414,
+        "dec_deg": -20.13985519471804,
+        "dist_au": 2.248505798912939
+      }
+    },
+    {
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "jd_tdb": 2398585.5,
+      "target_id": 5,
+      "target_name": "Jupiter_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 303.09796556375494,
+        "lat_deg": -0.5289982395343802,
+        "dist_au": 5.984261729921565,
+        "lon_speed_deg_day": 0.22864302517259416,
+        "lat_speed_deg_day": -0.0009469237333366299,
+        "dist_speed_au_day": 0.0056690501434194605
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 305.526531867211,
+        "dec_deg": -19.996407232419347
+      },
+      "astrometric_icrf": {
+        "ra_deg": 307.62497526574833,
+        "dec_deg": -19.511938100994907,
+        "dist_au": 5.984261729921564
+      }
+    },
+    {
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "jd_tdb": 2398585.5,
+      "target_id": 6,
+      "target_name": "Saturn_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 70.22943000334708,
+        "lat_deg": -1.7355856046042455,
+        "dist_au": 8.173546902837181,
+        "lon_speed_deg_day": -0.06418078634040052,
+        "lat_speed_deg_day": 0.0032268692358478606,
+        "dist_speed_au_day": 0.008547704195567154
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 68.87194074515872,
+        "dec_deg": 20.28445393583762
+      },
+      "astrometric_icrf": {
+        "ra_deg": 71.00972679020059,
+        "dec_deg": 20.55988243913632,
+        "dist_au": 8.173546902837181
+      }
+    },
+    {
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "jd_tdb": 2398585.5,
+      "target_id": 7,
+      "target_name": "Uranus_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 42.84934613461277,
+        "lat_deg": -0.37323698011538325,
+        "dist_au": 19.124038322021264,
+        "lon_speed_deg_day": -0.016133508657523082,
+        "lat_speed_deg_day": 0.00042486710251450876,
+        "dist_speed_au_day": 0.014554796889443796
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 40.51299099471961,
+        "dec_deg": 15.352547785824626
+      },
+      "astrometric_icrf": {
+        "ra_deg": 42.520481958621204,
+        "dec_deg": 15.956302241955754,
+        "dist_au": 19.124038322021264
+      }
+    },
+    {
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "jd_tdb": 2398585.5,
+      "target_id": 8,
+      "target_name": "Neptune_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 343.58247183055244,
+        "lat_deg": -1.0103368778592732,
+        "dist_au": 30.379418004288702,
+        "lon_speed_deg_day": 0.021175613881909607,
+        "lat_speed_deg_day": 0.00036290698281473663,
+        "dist_speed_au_day": 0.015395496531573792
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 345.26629874725467,
+        "dec_deg": -7.393065013328799
+      },
+      "astrometric_icrf": {
+        "ra_deg": 347.1522070806056,
+        "dec_deg": -6.606078841450193,
+        "dist_au": 30.37941800428871
+      }
+    },
+    {
+      "epoch_label": "1855-01-01T00:00:00",
+      "jd_tt": 2398585.5,
+      "jd_tdb": 2398585.5,
+      "target_id": 9,
+      "target_name": "Pluto_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 31.784654598991143,
+        "lat_deg": -16.748134369365328,
+        "dist_au": 48.72993764260815,
+        "lon_speed_deg_day": -0.004988742497138964,
+        "lat_speed_deg_day": 0.0057071343105326204,
+        "dist_speed_au_day": 0.015749808027845695
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 35.350834345881104,
+        "dec_deg": -3.6435194352996123
+      },
+      "astrometric_icrf": {
+        "ra_deg": 37.18054297034832,
+        "dec_deg": -2.991473153130645,
+        "dist_au": 48.72993764260814
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00",
+      "jd_tt": 2415021.0,
+      "jd_tdb": 2415021.0,
+      "target_id": 10,
+      "target_name": "Sun",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 280.6633113519595,
+        "lat_deg": 7.241176437746648e-05,
+        "dist_au": 0.9832644469993108,
+        "lon_speed_deg_day": 1.0198554488726583,
+        "lat_speed_deg_day": 3.8209236666122903e-05,
+        "dist_speed_au_day": -2.752183656705778e-06
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 281.5984622620148,
+        "dec_deg": -23.023057351997572
+      },
+      "astrometric_icrf": {
+        "ra_deg": 283.1107399502157,
+        "dec_deg": -22.9044560484816,
+        "dist_au": 0.9832644469993104
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00",
+      "jd_tt": 2415021.0,
+      "jd_tdb": 2415021.0,
+      "target_id": 301,
+      "target_name": "Moon",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 279.6167111465455,
+        "lat_deg": 1.7442926421637788,
+        "dist_au": 0.0024505181106000366,
+        "lon_speed_deg_day": 14.473600654619924,
+        "lat_speed_deg_day": 1.2533663406167488,
+        "dist_speed_au_day": -2.1757389962362954e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 280.3288917003662,
+        "dec_deg": -21.363041579216326
+      },
+      "astrometric_icrf": {
+        "ra_deg": 281.8238321161278,
+        "dec_deg": -21.256611108278282,
+        "dist_au": 0.002450518110600037
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00",
+      "jd_tt": 2415021.0,
+      "jd_tdb": 2415021.0,
+      "target_id": 199,
+      "target_name": "Mercury",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 259.6393798380243,
+        "lat_deg": 1.0559088992967718,
+        "dist_au": 1.1505613052420256,
+        "lon_speed_deg_day": 1.2896030937936949,
+        "lat_speed_deg_day": -0.14087701608875342,
+        "dist_speed_au_day": 0.01683664756958389
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 258.8179948576484,
+        "dec_deg": -21.994276711551603
+      },
+      "astrometric_icrf": {
+        "ra_deg": 260.32103050501746,
+        "dec_deg": -22.0957037494901,
+        "dist_au": 1.1505613052420252
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00",
+      "jd_tt": 2415021.0,
+      "jd_tdb": 2415021.0,
+      "target_id": 299,
+      "target_name": "Venus",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 306.99618085401795,
+        "lat_deg": -1.6864388210279708,
+        "dist_au": 1.4624100194577199,
+        "lon_speed_deg_day": 1.2433421197707741,
+        "lat_speed_deg_day": -0.006367696928105406,
+        "dist_speed_au_day": -0.004381128355452124
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 309.84968735055065,
+        "dec_deg": -20.164339351460676
+      },
+      "astrometric_icrf": {
+        "ra_deg": 311.28470722522286,
+        "dec_deg": -19.80254229472124,
+        "dist_au": 1.4624100194577199
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00",
+      "jd_tt": 2415021.0,
+      "jd_tdb": 2415021.0,
+      "target_id": 4,
+      "target_name": "Mars_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 284.2530530817155,
+        "lat_deg": -0.9282442454507299,
+        "dist_au": 2.4007081604265075,
+        "lon_speed_deg_day": 0.7707459517394053,
+        "lat_speed_deg_day": -0.005638745554185668,
+        "dist_speed_au_day": -0.0005153949209938478
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 285.58484103390765,
+        "dec_deg": -23.611688812511428
+      },
+      "astrometric_icrf": {
+        "ra_deg": 287.0993319909083,
+        "dec_deg": -23.45550915997058,
+        "dist_au": 2.4007081604265066
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00",
+      "jd_tt": 2415021.0,
+      "jd_tdb": 2415021.0,
+      "target_id": 5,
+      "target_name": "Jupiter_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 241.23361806672926,
+        "lat_deg": 0.814412397643939,
+        "dist_au": 6.107827040296858,
+        "lon_speed_deg_day": 0.1950479296820389,
+        "lat_speed_deg_day": 0.00026338282877928196,
+        "dist_speed_au_day": -0.010517272120416272
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 239.27942225063015,
+        "dec_deg": -19.62033309161169
+      },
+      "astrometric_icrf": {
+        "ra_deg": 240.7328954946198,
+        "dec_deg": -19.899104670599943,
+        "dist_au": 6.107827040296855
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00",
+      "jd_tt": 2415021.0,
+      "jd_tdb": 2415021.0,
+      "target_id": 6,
+      "target_name": "Saturn_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 267.77495740186316,
+        "lat_deg": 1.0073194482407493,
+        "dist_au": 11.022822665780517,
+        "lon_speed_deg_day": 0.11622250661593096,
+        "lat_speed_deg_day": -0.0007214344026803942,
+        "dist_speed_au_day": -0.0037590063233592717
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 267.59319060747185,
+        "dec_deg": -22.425738776468947
+      },
+      "astrometric_icrf": {
+        "ra_deg": 269.1045767919544,
+        "dec_deg": -22.442398516367284,
+        "dist_au": 11.022822665780518
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00",
+      "jd_tt": 2415021.0,
+      "jd_tdb": 2415021.0,
+      "target_id": 7,
+      "target_name": "Uranus_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 250.16694540834794,
+        "lat_deg": 0.06333202267645646,
+        "dist_au": 19.833550537285024,
+        "lon_speed_deg_day": 0.05515768647493847,
+        "lat_speed_deg_day": -0.0001248675874951451,
+        "dist_speed_au_day": -0.008596142377389673
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 248.54768840103762,
+        "dec_deg": -21.922680586462437
+      },
+      "astrometric_icrf": {
+        "ra_deg": 250.0391427912221,
+        "dec_deg": -22.120164014394877,
+        "dist_au": 19.833550537285017
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00",
+      "jd_tt": 2415021.0,
+      "jd_tdb": 2415021.0,
+      "target_id": 8,
+      "target_name": "Neptune_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 85.205133824696,
+        "lat_deg": -1.2994718438462607,
+        "dist_au": 28.922516878121417,
+        "lon_speed_deg_day": -0.027120464342642155,
+        "lat_speed_deg_day": 0.00034493696151633265,
+        "dist_speed_au_day": 0.004656404549484052
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 84.82649508690548,
+        "dec_deg": 22.066071875547934
+      },
+      "astrometric_icrf": {
+        "ra_deg": 86.32123224124169,
+        "dec_deg": 22.10938517260871,
+        "dist_au": 28.92251687812141
+      }
+    },
+    {
+      "epoch_label": "1900-01-01T12:00:00",
+      "jd_tt": 2415021.0,
+      "jd_tdb": 2415021.0,
+      "target_id": 9,
+      "target_name": "Pluto_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 75.24284073603427,
+        "lat_deg": -9.775840021346047,
+        "dist_au": 46.082502053677416,
+        "lon_speed_deg_day": -0.01718600464375027,
+        "lat_speed_deg_day": 0.002250201782003391,
+        "dist_speed_au_day": 0.007014132901025551
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 75.07595759767193,
+        "dec_deg": 12.914164345081302
+      },
+      "astrometric_icrf": {
+        "ra_deg": 76.47081706679602,
+        "dec_deg": 13.051040854623073,
+        "dist_au": 46.0825020536774
+      }
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00",
+      "jd_tt": 2433282.5,
+      "jd_tdb": 2433282.499999999,
+      "target_id": 10,
+      "target_name": "Sun",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 280.00451449579907,
+        "lat_deg": -2.0560811303540096e-05,
+        "dist_au": 0.9832436299660513,
+        "lon_speed_deg_day": 1.019067297015819,
+        "lat_speed_deg_day": 2.3297183795090974e-05,
+        "dist_speed_au_day": -1.420369434448529e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 280.8843919320834,
+        "dec_deg": -23.070767190225038
+      },
+      "astrometric_icrf": {
+        "ra_deg": 281.6480742488813,
+        "dec_deg": -23.013585027022156,
+        "dist_au": 0.9832436299660514
+      }
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00",
+      "jd_tt": 2433282.5,
+      "jd_tdb": 2433282.499999999,
+      "target_id": 301,
+      "target_name": "Moon",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 61.41134900204287,
+        "lat_deg": 3.7815907896452705,
+        "dist_au": 0.0026713417703318498,
+        "lon_speed_deg_day": 12.199075242067149,
+        "lat_speed_deg_day": 0.7015619356521201,
+        "dist_speed_au_day": -2.0155457918525143e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 58.44746739615692,
+        "dec_deg": 24.151404677746527
+      },
+      "astrometric_icrf": {
+        "ra_deg": 59.19182160664775,
+        "dec_deg": 24.29258837308393,
+        "dist_au": 0.0026713417703318498
+      }
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00",
+      "jd_tt": 2433282.5,
+      "jd_tdb": 2433282.499999999,
+      "target_id": 199,
+      "target_name": "Mercury",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 299.4469192224319,
+        "lat_deg": -1.224433134886912,
+        "dist_au": 1.0029913378202933,
+        "lon_speed_deg_day": 1.0712844062169307,
+        "lat_speed_deg_day": 0.17219976802457143,
+        "dist_speed_au_day": -0.025511933551330093
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 301.881134811842,
+        "dec_deg": -21.471399340587148
+      },
+      "astrometric_icrf": {
+        "ra_deg": 302.620058778874,
+        "dec_deg": -21.31948408146745,
+        "dist_au": 1.0029913378202935
+      }
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00",
+      "jd_tt": 2433282.5,
+      "jd_tdb": 2433282.499999999,
+      "target_id": 299,
+      "target_name": "Venus",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 316.97938449671705,
+        "lat_deg": 0.6307103786010714,
+        "dist_au": 0.37468540543273776,
+        "lon_speed_deg_day": 0.3541168063830135,
+        "lat_speed_deg_day": 0.19329368449389325,
+        "dist_speed_au_day": -0.006073391706812655
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 319.23479245361966,
+        "dec_deg": -15.151311140943607
+      },
+      "astrometric_icrf": {
+        "ra_deg": 319.92879072050897,
+        "dec_deg": -14.936208003418757,
+        "dist_au": 0.37468540543273776
+      }
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00",
+      "jd_tt": 2433282.5,
+      "jd_tdb": 2433282.499999999,
+      "target_id": 4,
+      "target_name": "Mars_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 182.21109968650921,
+        "lat_deg": 2.51248189575929,
+        "dist_au": 1.2155205515753902,
+        "lon_speed_deg_day": 0.3678420788126046,
+        "lat_speed_deg_day": 0.017984372428759977,
+        "dist_speed_au_day": -0.009708716830833615
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 183.0278438084484,
+        "dec_deg": 1.4256391524766003
+      },
+      "astrometric_icrf": {
+        "ra_deg": 183.6681152634691,
+        "dec_deg": 1.1480241161255338,
+        "dist_au": 1.21552055157539
+      }
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00",
+      "jd_tt": 2433282.5,
+      "jd_tdb": 2433282.499999999,
+      "target_id": 5,
+      "target_name": "Jupiter_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 306.505285010152,
+        "lat_deg": -0.5840090048174374,
+        "dist_au": 5.935365588758849,
+        "lon_speed_deg_day": 0.2251924434627877,
+        "lat_speed_deg_day": -0.0007396357204685483,
+        "dist_speed_au_day": 0.00679577376349507
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 309.0484108054132,
+        "dec_deg": -19.21912080797641
+      },
+      "astrometric_icrf": {
+        "ra_deg": 309.7692199451596,
+        "dec_deg": -19.0390216109892,
+        "dist_au": 5.935365588758851
+      }
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00",
+      "jd_tt": 2433282.5,
+      "jd_tdb": 2433282.499999999,
+      "target_id": 6,
+      "target_name": "Saturn_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 169.4374422120531,
+        "lat_deg": 2.0062131877916336,
+        "dist_au": 8.96249210306375,
+        "lon_speed_deg_day": -0.0033399989997742133,
+        "lat_speed_deg_day": 0.004539848307189429,
+        "dist_speed_au_day": -0.01551352139811049
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 171.08348515919545,
+        "dec_deg": 6.027985274400051
+      },
+      "astrometric_icrf": {
+        "ra_deg": 171.72705313399752,
+        "dec_deg": 5.7529760532215635,
+        "dist_au": 8.96249210306375
+      }
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00",
+      "jd_tt": 2433282.5,
+      "jd_tdb": 2433282.499999999,
+      "target_id": 7,
+      "target_name": "Uranus_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 92.68282327773947,
+        "lat_deg": 0.26892790671082656,
+        "dist_au": 17.96986626946294,
+        "lon_speed_deg_day": -0.04258581907323084,
+        "lat_speed_deg_day": 0.0001300861189870475,
+        "dist_speed_au_day": 0.0020418065860338
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 92.92986922067807,
+        "dec_deg": 23.689733513884104
+      },
+      "astrometric_icrf": {
+        "ra_deg": 93.68691447726732,
+        "dec_deg": 23.67146431333647,
+        "dist_au": 17.96986626946294
+      }
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00",
+      "jd_tt": 2433282.5,
+      "jd_tdb": 2433282.499999999,
+      "target_id": 8,
+      "target_name": "Neptune_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 197.26606350390304,
+        "lat_deg": 1.5917270955573604,
+        "dist_au": 30.403715888636903,
+        "lon_speed_deg_day": 0.010170552184911688,
+        "lat_speed_deg_day": 0.0009824978854481238,
+        "dist_speed_au_day": -0.01723363949102208
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 196.52709487940865,
+        "dec_deg": -5.311863639655965
+      },
+      "astrometric_icrf": {
+        "ra_deg": 197.17706011660908,
+        "dec_deg": -5.578121862557128,
+        "dist_au": 30.403715888636903
+      }
+    },
+    {
+      "epoch_label": "1950-01-01T00:00:00",
+      "jd_tt": 2433282.5,
+      "jd_tdb": 2433282.499999999,
+      "target_id": 9,
+      "target_name": "Pluto_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 137.79839839829773,
+        "lat_deg": 8.201438422670849,
+        "dist_au": 35.551101158301655,
+        "lon_speed_deg_day": -0.017843174041806277,
+        "lat_speed_deg_day": 0.0036844774791219862,
+        "dist_speed_au_day": -0.011247245673014446
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 142.96566648482016,
+        "dec_deg": 23.29328560480319
+      },
+      "astrometric_icrf": {
+        "ra_deg": 143.67296037791274,
+        "dec_deg": 23.070289792786255,
+        "dist_au": 35.551101158301655
+      }
+    },
+    {
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "jd_tdb": 2435553.5000000186,
+      "target_id": 10,
+      "target_name": "Sun",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 0.35800399984082176,
+        "lat_deg": -5.380283603232111e-05,
+        "dist_au": 0.9962875868072355,
+        "lon_speed_deg_day": 0.9927507518542169,
+        "lat_speed_deg_day": -2.969836948814187e-05,
+        "dist_speed_au_day": 0.0002755551856545954
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 0.3284717779251502,
+        "dec_deg": 0.14238461998294694
+      },
+      "astrometric_icrf": {
+        "ra_deg": 0.890287479997884,
+        "dec_deg": 0.38656330061842303,
+        "dist_au": 0.9962875868072355
+      }
+    },
+    {
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "jd_tdb": 2435553.5000000186,
+      "target_id": 301,
+      "target_name": "Moon",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 107.22078997196844,
+        "lat_deg": -2.9977247315111435,
+        "dist_au": 0.002467966175550274,
+        "lon_speed_deg_day": 14.214192773226829,
+        "lat_speed_deg_day": -1.0121191034882941,
+        "dist_speed_au_day": -4.495836705085812e-06
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 108.26253913006356,
+        "dec_deg": 19.361262068045807
+      },
+      "astrometric_icrf": {
+        "ra_deg": 108.89779147488642,
+        "dec_deg": 19.28528410657248,
+        "dist_au": 0.0024679661755502734
+      }
+    },
+    {
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "jd_tdb": 2435553.5000000186,
+      "target_id": 199,
+      "target_name": "Mercury",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 345.58701523052673,
+        "lat_deg": -2.2521636497049813,
+        "dist_au": 1.3008650038174767,
+        "lon_speed_deg_day": 1.7282223907641214,
+        "lat_speed_deg_day": 0.015211637129144738,
+        "dist_speed_au_day": 0.007047578250103685
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 347.6129898188536,
+        "dec_deg": -7.759054643861713
+      },
+      "astrometric_icrf": {
+        "ra_deg": 348.1816200922841,
+        "dec_deg": -7.520540262766877,
+        "dist_au": 1.3008650038174763
+      }
+    },
+    {
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "jd_tdb": 2435553.5000000186,
+      "target_id": 299,
+      "target_name": "Venus",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 44.7168325044521,
+        "lat_deg": 1.9261867732472429,
+        "dist_au": 0.8866465726832562,
+        "lon_speed_deg_day": 1.1003158600313714,
+        "lat_speed_deg_day": 0.07173547374961141,
+        "dist_speed_au_day": -0.007455119615594893
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 41.65607591144859,
+        "dec_deg": 18.096195647010653
+      },
+      "astrometric_icrf": {
+        "ra_deg": 42.26971405064362,
+        "dec_deg": 18.277560656255105,
+        "dist_au": 0.8866465726832559
+      }
+    },
+    {
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "jd_tdb": 2435553.5000000186,
+      "target_id": 4,
+      "target_name": "Mars_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 283.8436696735932,
+        "lat_deg": -0.5134355132968261,
+        "dist_au": 1.394898677077295,
+        "lon_speed_deg_day": 0.6514968036183101,
+        "lat_speed_deg_day": -0.02071749865251256,
+        "dist_speed_au_day": -0.008786346027546792
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 285.0927792454663,
+        "dec_deg": -23.23522204171562
+      },
+      "astrometric_icrf": {
+        "ra_deg": 285.75092860183264,
+        "dec_deg": -23.171401093717865,
+        "dist_au": 1.3948986770772946
+      }
+    },
+    {
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "jd_tdb": 2435553.5000000186,
+      "target_id": 5,
+      "target_name": "Jupiter_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 142.653626331587,
+        "lat_deg": 1.1666666825376664,
+        "dist_au": 4.5550992038802,
+        "lon_speed_deg_day": -0.08244669211688795,
+        "lat_speed_deg_day": -0.0010829386869737924,
+        "dist_speed_au_day": 0.009770058081235272
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 145.3986081217687,
+        "dec_deg": 15.06907191402841
+      },
+      "astrometric_icrf": {
+        "ra_deg": 145.98728080252897,
+        "dec_deg": 14.871037856509329,
+        "dist_au": 4.5550992038802
+      }
+    },
+    {
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "jd_tdb": 2435553.5000000186,
+      "target_id": 6,
+      "target_name": "Saturn_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 242.74810102944608,
+        "lat_deg": 2.1624298211401407,
+        "dist_au": 9.460157711922918,
+        "lon_speed_deg_day": -0.014797361436238813,
+        "lat_speed_deg_day": 0.0026206282142513097,
+        "dist_speed_au_day": -0.01476464960931627
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 241.13341369298195,
+        "dec_deg": -18.59200513491455
+      },
+      "astrometric_icrf": {
+        "ra_deg": 241.758975773038,
+        "dec_deg": -18.707515632788137,
+        "dist_au": 9.460157711922918
+      }
+    },
+    {
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "jd_tdb": 2435553.5000000186,
+      "target_id": 7,
+      "target_name": "Uranus_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 118.32315853975471,
+        "lat_deg": 0.582748733738668,
+        "dist_au": 18.090904959985817,
+        "lon_speed_deg_day": -0.013614819128035166,
+        "lat_speed_deg_day": -0.00036355004919873826,
+        "dist_speed_au_day": 0.014781056335021005
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 120.55850510866215,
+        "dec_deg": 21.072051573686128
+      },
+      "astrometric_icrf": {
+        "ra_deg": 121.19204170905064,
+        "dec_deg": 20.94896485882661,
+        "dist_au": 18.090904959985817
+      }
+    },
+    {
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "jd_tdb": 2435553.5000000186,
+      "target_id": 8,
+      "target_name": "Neptune_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 209.8091928951431,
+        "lat_deg": 1.7837052134722209,
+        "dist_au": 29.452518490593054,
+        "lon_speed_deg_day": -0.022826516063801466,
+        "lat_speed_deg_day": 0.0005668819084122521,
+        "dist_speed_au_day": -0.008657180396638495
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 208.3646826357092,
+        "dec_deg": -9.737106587905307
+      },
+      "astrometric_icrf": {
+        "ra_deg": 208.93662357223113,
+        "dec_deg": -9.947899195705098,
+        "dist_au": 29.452518490593057
+      }
+    },
+    {
+      "epoch_label": "1956-03-21T00:00:00",
+      "jd_tt": 2435553.5,
+      "jd_tdb": 2435553.5000000186,
+      "target_id": 9,
+      "target_name": "Pluto_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 146.61027875862374,
+        "lat_deg": 10.96761804074291,
+        "dist_au": 33.9421127271007,
+        "lon_speed_deg_day": -0.019915684084235444,
+        "lat_speed_deg_day": -0.0017858537529337672,
+        "dist_speed_au_day": 0.00846831849754129
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 152.8710064085789,
+        "dec_deg": 22.92354656849472
+      },
+      "astrometric_icrf": {
+        "ra_deg": 153.46866336393745,
+        "dec_deg": 22.70914620712729,
+        "dist_au": 33.9421127271007
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "jd_tdb": 2444406.0000000056,
+      "target_id": 10,
+      "target_name": "Sun",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 84.5188534345467,
+        "lat_deg": -3.856245858757406e-05,
+        "dist_au": 1.0159119565090988,
+        "lon_speed_deg_day": 0.9552753772347352,
+        "lat_speed_deg_day": 3.139588660959367e-05,
+        "dist_speed_au_day": 8.558223222991742e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 84.02928516556726,
+        "dec_deg": 23.326028999422633
+      },
+      "astrometric_icrf": {
+        "ra_deg": 84.33556130351786,
+        "dec_deg": 23.339614244893966,
+        "dist_au": 1.0159119565090986
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "jd_tdb": 2444406.0000000056,
+      "target_id": 301,
+      "target_name": "Moon",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 117.63304190922382,
+        "lat_deg": -2.0781265510050586,
+        "dist_au": 0.0025829471007531002,
+        "lon_speed_deg_day": 13.010598970689442,
+        "lat_speed_deg_day": 1.0592781772192752,
+        "dist_speed_au_day": 3.324134390442846e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 119.27728619431642,
+        "dec_deg": 18.596896703302004
+      },
+      "astrometric_icrf": {
+        "ra_deg": 119.56778077994615,
+        "dec_deg": 18.543998496654073,
+        "dist_au": 0.0025829471007531007
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "jd_tdb": 2444406.0000000056,
+      "target_id": 199,
+      "target_name": "Mercury",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 108.96140177324335,
+        "lat_deg": 0.8816002964083574,
+        "dist_au": 0.806302048142409,
+        "lon_speed_deg_day": 0.9077350639125318,
+        "lat_speed_deg_day": -0.17556581334121446,
+        "dist_speed_au_day": -0.016950114618068318
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 110.66329154239874,
+        "dec_deg": 22.971272375422686
+      },
+      "astrometric_icrf": {
+        "ra_deg": 110.96570937484849,
+        "dec_deg": 22.93351288803021,
+        "dist_au": 0.8063020481424089
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "jd_tdb": 2444406.0000000056,
+      "target_id": 299,
+      "target_name": "Venus",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 84.21988937294142,
+        "lat_deg": -1.2091408653809976,
+        "dist_au": 0.28932622422375603,
+        "lon_speed_deg_day": -0.6260480294420826,
+        "lat_speed_deg_day": -0.2334541450814244,
+        "dist_speed_au_day": 7.909119553055726e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 83.76094506718377,
+        "dec_deg": 22.105361453871758
+      },
+      "astrometric_icrf": {
+        "ra_deg": 84.06440678351858,
+        "dec_deg": 22.11947103346705,
+        "dist_au": 0.28932622422375603
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "jd_tdb": 2444406.0000000056,
+      "target_id": 4,
+      "target_name": "Mars_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 166.76473805985876,
+        "lat_deg": 0.8652259872316643,
+        "dist_au": 1.3902061863350486,
+        "lon_speed_deg_day": 0.4875673133156555,
+        "lat_speed_deg_day": -0.02136155303113826,
+        "dist_speed_au_day": 0.007777982306157882
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 168.1612141511488,
+        "dec_deg": 6.02233892916017
+      },
+      "astrometric_icrf": {
+        "ra_deg": 168.4174972404792,
+        "dec_deg": 5.9147349325110445,
+        "dist_au": 1.3902061863350486
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "jd_tdb": 2444406.0000000056,
+      "target_id": 5,
+      "target_name": "Jupiter_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 153.77902992196226,
+        "lat_deg": 1.1133835165013355,
+        "dist_au": 5.690856970207057,
+        "lon_speed_deg_day": 0.13169645231737814,
+        "lat_speed_deg_day": -0.002110858046502555,
+        "dist_speed_au_day": 0.014777094495835799
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 156.09441003098354,
+        "dec_deg": 11.15992025839746
+      },
+      "astrometric_icrf": {
+        "ra_deg": 156.35841600032904,
+        "dec_deg": 11.059357599757712,
+        "dist_au": 5.690856970207058
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "jd_tdb": 2444406.0000000056,
+      "target_id": 6,
+      "target_name": "Saturn_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 170.6824006132434,
+        "lat_deg": 2.2189566512337535,
+        "dist_au": 9.48343317614053,
+        "lon_speed_deg_day": 0.04024885283608433,
+        "lat_speed_deg_day": -0.003149550682251012,
+        "dist_speed_au_day": 0.016594516711551998
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 172.31642756156498,
+        "dec_deg": 5.73218924903689
+      },
+      "astrometric_icrf": {
+        "ra_deg": 172.57139863315638,
+        "dec_deg": 5.6231173949315005,
+        "dist_au": 9.48343317614053
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "jd_tdb": 2444406.0000000056,
+      "target_id": 7,
+      "target_name": "Uranus_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 232.3017937863978,
+        "lat_deg": 0.2773576431689159,
+        "dist_au": 17.887131530364027,
+        "lon_speed_deg_day": -0.033143327161650575,
+        "lat_speed_deg_day": -0.0002983570399736998,
+        "dist_speed_au_day": 0.009016071628962428
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 229.96570813907772,
+        "dec_deg": -18.077140198087946
+      },
+      "astrometric_icrf": {
+        "ra_deg": 230.24107791809809,
+        "dec_deg": -18.148188899713453,
+        "dist_au": 17.887131530364027
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "jd_tdb": 2444406.0000000056,
+      "target_id": 8,
+      "target_name": "Neptune_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 261.21038996828565,
+        "lat_deg": 1.4096985191852274,
+        "dist_au": 29.265213411932994,
+        "lon_speed_deg_day": -0.02696424900099783,
+        "lat_speed_deg_day": -0.0001605621393786415,
+        "dist_speed_au_day": 0.0008809235165681263
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 260.53417333102266,
+        "dec_deg": -21.741542430252647
+      },
+      "astrometric_icrf": {
+        "ra_deg": 260.82439561563456,
+        "dec_deg": -21.76119482541676,
+        "dist_au": 29.26521341193299
+      }
+    },
+    {
+      "epoch_label": "1980-06-15T12:00:00",
+      "jd_tt": 2444406.0,
+      "jd_tdb": 2444406.0000000056,
+      "target_id": 9,
+      "target_name": "Pluto_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 199.0177719919999,
+        "lat_deg": 17.38471622298361,
+        "dist_au": 29.724771899448935,
+        "lon_speed_deg_day": -0.007352440561657181,
+        "lat_speed_deg_day": -0.008807762299467937,
+        "dist_speed_au_day": 0.01429802598729633
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 204.1306172006289,
+        "dec_deg": 8.651825955065721
+      },
+      "astrometric_icrf": {
+        "ra_deg": 204.37438781451414,
+        "dec_deg": 8.55012288453201,
+        "dist_au": 29.724771899448935
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "jd_tdb": 2451544.999999999,
+      "target_id": 10,
+      "target_name": "Sun",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 280.36816528249966,
+        "lat_deg": 0.00022740705197262697,
+        "dist_au": 0.9833276319890775,
+        "lon_speed_deg_day": 1.0194336436715434,
+        "lat_speed_deg_day": -6.48567030718954e-06,
+        "dist_speed_au_day": -7.354366725336504e-06
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 281.27756941779177,
+        "dec_deg": -23.032489070718427
+      },
+      "astrometric_icrf": {
+        "ra_deg": 281.2881636184066,
+        "dec_deg": -23.033310039737938,
+        "dist_au": 0.9833276319890778
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "jd_tdb": 2451544.999999999,
+      "target_id": 301,
+      "target_name": "Moon",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 223.3148699898562,
+        "lat_deg": 5.1708719069598565,
+        "dist_au": 0.0026899754547181293,
+        "lon_speed_deg_day": 12.021433733981507,
+        "lat_speed_deg_day": -0.17787498067432278,
+        "dist_speed_au_day": 1.858135953072417e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 222.44359986766452,
+        "dec_deg": -10.897906380800181
+      },
+      "astrometric_icrf": {
+        "ra_deg": 222.45030940101657,
+        "dec_deg": -10.900636304950023,
+        "dist_au": 0.0026899754547181293
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "jd_tdb": 2451544.999999999,
+      "target_id": 199,
+      "target_name": "Mercury",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 271.8881270955688,
+        "lat_deg": -0.9947565627375996,
+        "dist_au": 1.415466038869473,
+        "lon_speed_deg_day": 1.5562515853926855,
+        "lat_speed_deg_day": -0.09749970561335919,
+        "dist_speed_au_day": 0.004617674272911157
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 272.0733815629475,
+        "dec_deg": -24.418845965895667
+      },
+      "astrometric_icrf": {
+        "ra_deg": 272.0839463376498,
+        "dec_deg": -24.420325103151367,
+        "dist_au": 1.4154660388694738
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "jd_tdb": 2451544.999999999,
+      "target_id": 299,
+      "target_name": "Venus",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 241.56489494283235,
+        "lat_deg": 2.0663698432037982,
+        "dist_au": 1.1375744254838684,
+        "lon_speed_deg_day": 1.2090415055628698,
+        "lat_speed_deg_day": -0.02807820421086962,
+        "dist_speed_au_day": 0.006484271917902871
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 239.89185128995334,
+        "dec_deg": -18.4487195570346
+      },
+      "astrometric_icrf": {
+        "ra_deg": 239.90025939924374,
+        "dec_deg": -18.451653788774195,
+        "dist_au": 1.1375744254838684
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "jd_tdb": 2451544.999999999,
+      "target_id": 4,
+      "target_name": "Mars_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 327.9627293467878,
+        "lat_deg": -1.0677945845966497,
+        "dist_au": 1.8496838343971538,
+        "lon_speed_deg_day": 0.7756736807771777,
+        "lat_speed_deg_day": 0.01247244875739464,
+        "dist_speed_au_day": 0.005422621069648085
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 330.51626226199573,
+        "dec_deg": -13.182689491093257
+      },
+      "astrometric_icrf": {
+        "ra_deg": 330.5240491167472,
+        "dec_deg": -13.180707612457729,
+        "dist_au": 1.8496838343971542
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "jd_tdb": 2451544.999999999,
+      "target_id": 5,
+      "target_name": "Jupiter_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 25.253056923826033,
+        "lat_deg": -1.2621917169502639,
+        "dist_au": 4.621163601787188,
+        "lon_speed_deg_day": 0.04075883396496132,
+        "lat_speed_deg_day": 0.005176104717954776,
+        "dist_speed_au_day": 0.015522920030335847
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 23.867828907608246,
+        "dec_deg": 8.594249260927677
+      },
+      "astrometric_icrf": {
+        "ra_deg": 23.869806807999986,
+        "dec_deg": 8.595886050120289,
+        "dist_au": 4.62116360178719
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "jd_tdb": 2451544.999999999,
+      "target_id": 6,
+      "target_name": "Saturn_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 40.39567789404159,
+        "lat_deg": -2.444858168546037,
+        "dist_au": 8.652785686729281,
+        "lon_speed_deg_day": -0.019946261537920063,
+        "lat_speed_deg_day": 0.004747193269395836,
+        "dist_speed_au_day": 0.01438705305524342
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 38.76542961533197,
+        "dec_deg": 12.61476560972767
+      },
+      "astrometric_icrf": {
+        "ra_deg": 38.766027502339725,
+        "dec_deg": 12.616279674524925,
+        "dist_au": 8.652785686729283
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "jd_tdb": 2451544.999999999,
+      "target_id": 7,
+      "target_name": "Uranus_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 314.80915040537604,
+        "lat_deg": -0.6583350406110117,
+        "dist_au": 20.72716337611826,
+        "lon_speed_deg_day": 0.05034334142717229,
+        "lat_speed_deg_day": 0.0002457573811314256,
+        "dist_speed_au_day": 0.009879700032063128
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 317.47479451436504,
+        "dec_deg": -17.02033951328036
+      },
+      "astrometric_icrf": {
+        "ra_deg": 317.4837833178084,
+        "dec_deg": -17.018850630995892,
+        "dist_au": 20.727163376118263
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "jd_tdb": 2451544.999999999,
+      "target_id": 8,
+      "target_name": "Neptune_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 303.192986849601,
+        "lat_deg": 0.2349920136365575,
+        "dist_au": 31.024492614628866,
+        "lon_speed_deg_day": 0.035570175342696166,
+        "lat_speed_deg_day": -0.00022870808318789813,
+        "dist_speed_au_day": 0.006704920841359754
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 305.4328184034998,
+        "dec_deg": -19.213246509794175
+      },
+      "astrometric_icrf": {
+        "ra_deg": 305.4426235547098,
+        "dec_deg": -19.212437949558762,
+        "dist_au": 31.024492614628873
+      }
+    },
+    {
+      "epoch_label": "2000-01-01T12:00:00",
+      "jd_tt": 2451545.0,
+      "jd_tdb": 2451544.999999999,
+      "target_id": 9,
+      "target_name": "Pluto_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 251.45475324942606,
+        "lat_deg": 10.855230539509638,
+        "dist_au": 31.064366871000093,
+        "lon_speed_deg_day": 0.03515370983590733,
+        "lat_speed_deg_day": 0.0014615990204994017,
+        "dist_speed_au_day": -0.007961579283808175
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 251.41915551904032,
+        "dec_deg": -11.39429322111314
+      },
+      "astrometric_icrf": {
+        "ra_deg": 251.42808987751965,
+        "dec_deg": -11.396437621932327,
+        "dist_au": 31.064366871000097
+      }
+    },
+    {
+      "epoch_label": "2020-03-20T03:50:00",
+      "jd_tt": 2458928.659722222,
+      "jd_tdb": 2458928.6597222406,
+      "target_id": 10,
+      "target_name": "Sun",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 359.999467349177,
+        "lat_deg": -1.917044381049876e-05,
+        "dist_au": 0.9959179332777002,
+        "lon_speed_deg_day": 0.9938810728844689,
+        "lat_speed_deg_day": -2.7511514105099158e-05,
+        "dist_speed_au_day": 0.0002852247721283453
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 359.99951891741074,
+        "dec_deg": -0.00022944268881832007
+      },
+      "astrometric_icrf": {
+        "ra_deg": 359.7500324548789,
+        "dec_deg": -0.10863421922261379,
+        "dist_au": 0.9959179332777004
+      }
+    },
+    {
+      "epoch_label": "2020-03-20T03:50:00",
+      "jd_tt": 2458928.659722222,
+      "jd_tdb": 2458928.6597222406,
+      "target_id": 301,
+      "target_name": "Moon",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 313.5419981936719,
+        "lat_deg": -3.163527563908172,
+        "dist_au": 0.0026724537391197433,
+        "lon_speed_deg_day": 12.149718968498798,
+        "lat_speed_deg_day": -0.8258346369886823,
+        "dist_speed_au_day": 2.1269086845323677e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 316.96938111574264,
+        "dec_deg": -19.78549188723288
+      },
+      "astrometric_icrf": {
+        "ra_deg": 316.6914974852267,
+        "dec_deg": -19.86526659227135,
+        "dist_au": 0.0026724537391197433
+      }
+    },
+    {
+      "epoch_label": "2020-03-20T03:50:00",
+      "jd_tt": 2458928.659722222,
+      "jd_tdb": 2458928.6597222406,
+      "target_id": 199,
+      "target_name": "Mercury",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 332.6019519583326,
+        "lat_deg": -0.632034044640266,
+        "dist_au": 0.848131655177395,
+        "lon_speed_deg_day": 0.7975946559427589,
+        "lat_speed_deg_day": -0.1767719394525426,
+        "dist_speed_au_day": 0.014726320936054927
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 334.7980700429493,
+        "dec_deg": -11.135804239160402
+      },
+      "astrometric_icrf": {
+        "ra_deg": 334.5388568058434,
+        "dec_deg": -11.234027567483192,
+        "dist_au": 0.8481316551773947
+      }
+    },
+    {
+      "epoch_label": "2020-03-20T03:50:00",
+      "jd_tt": 2458928.659722222,
+      "jd_tdb": 2458928.6597222406,
+      "target_id": 299,
+      "target_name": "Venus",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 45.944465866917724,
+        "lat_deg": 2.679653490508268,
+        "dist_au": 0.7453396951479964,
+        "lon_speed_deg_day": 1.019622315345101,
+        "lat_speed_deg_day": 0.08073471875218882,
+        "dist_speed_au_day": -0.00764725156867976
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 42.660187547328775,
+        "dec_deg": 19.172950048483905
+      },
+      "astrometric_icrf": {
+        "ra_deg": 42.38351611575994,
+        "dec_deg": 19.0923389127424,
+        "dist_au": 0.7453396951479965
+      }
+    },
+    {
+      "epoch_label": "2020-03-20T03:50:00",
+      "jd_tt": 2458928.659722222,
+      "jd_tdb": 2458928.6597222406,
+      "target_id": 4,
+      "target_name": "Mars_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 292.59049281293767,
+        "lat_deg": -0.7432775568783094,
+        "dist_au": 1.5558909653623314,
+        "lon_speed_deg_day": 0.6945846123084032,
+        "lat_speed_deg_day": -0.018548688763692298,
+        "dist_speed_au_day": -0.008113900104730187
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 294.52512740412135,
+        "dec_deg": -22.277290087451327
+      },
+      "astrometric_icrf": {
+        "ra_deg": 294.2315001959867,
+        "dec_deg": -22.322668627772256,
+        "dist_au": 1.5558909653623318
+      }
+    },
+    {
+      "epoch_label": "2020-03-20T03:50:00",
+      "jd_tt": 2458928.659722222,
+      "jd_tdb": 2458928.6597222406,
+      "target_id": 5,
+      "target_name": "Jupiter_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 292.76666961888884,
+        "lat_deg": -0.041075943485036535,
+        "dist_au": 5.502190036466603,
+        "lon_speed_deg_day": 0.1504238677114321,
+        "lat_speed_deg_day": -0.001898216204278158,
+        "dist_speed_au_day": -0.014848796778192109
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 294.5872964952107,
+        "dec_deg": -21.55562737809094
+      },
+      "astrometric_icrf": {
+        "ra_deg": 294.29515865072096,
+        "dec_deg": -21.60104959409709,
+        "dist_au": 5.502190036466604
+      }
+    },
+    {
+      "epoch_label": "2020-03-20T03:50:00",
+      "jd_tt": 2458928.659722222,
+      "jd_tdb": 2458928.6597222406,
+      "target_id": 6,
+      "target_name": "Saturn_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 299.8472399891982,
+        "lat_deg": -0.04515119099520201,
+        "dist_au": 10.484235967130276,
+        "lon_speed_deg_day": 0.07735119089571392,
+        "lat_speed_deg_day": -0.0013214836854835079,
+        "dist_speed_au_day": -0.014497996409700134
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 302.0318330260103,
+        "dec_deg": -20.22455638402442
+      },
+      "astrometric_icrf": {
+        "ra_deg": 301.7454814199581,
+        "dec_deg": -20.282415534739446,
+        "dist_au": 10.484235967130278
+      }
+    },
+    {
+      "epoch_label": "2020-03-20T03:50:00",
+      "jd_tt": 2458928.659722222,
+      "jd_tdb": 2458928.6597222406,
+      "target_id": 7,
+      "target_name": "Uranus_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 34.54945205206959,
+        "lat_deg": -0.45585300878871715,
+        "dist_au": 20.62102838026012,
+        "lon_speed_deg_day": 0.04960149926984786,
+        "lat_speed_deg_day": 0.00033091899614793246,
+        "dist_speed_au_day": 0.009798621887485422
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 32.43960301677134,
+        "dec_deg": 12.606591361805911
+      },
+      "astrometric_icrf": {
+        "ra_deg": 32.17616885558881,
+        "dec_deg": 12.514636714216644,
+        "dist_au": 20.621028380260128
+      }
+    },
+    {
+      "epoch_label": "2020-03-20T03:50:00",
+      "jd_tt": 2458928.659722222,
+      "jd_tdb": 2458928.6597222406,
+      "target_id": 8,
+      "target_name": "Neptune_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 348.83513386182443,
+        "lat_deg": -1.01822734379737,
+        "dist_au": 30.907926146965636,
+        "lon_speed_deg_day": 0.03742655725186453,
+        "lat_speed_deg_day": -0.00024466179833862944,
+        "dist_speed_au_day": -0.0030602284937064667
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 350.1360337963527,
+        "dec_deg": -5.3538723147272655
+      },
+      "astrometric_icrf": {
+        "ra_deg": 349.8847029967142,
+        "dec_deg": -5.4606803252825795,
+        "dist_au": 30.907926146965636
+      }
+    },
+    {
+      "epoch_label": "2020-03-20T03:50:00",
+      "jd_tt": 2458928.659722222,
+      "jd_tdb": 2458928.6597222406,
+      "target_id": 9,
+      "target_name": "Pluto_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 294.66744400616074,
+        "lat_deg": -0.7831918805250978,
+        "dist_au": 34.40596123991278,
+        "lon_speed_deg_day": 0.01744361336899181,
+        "lat_speed_deg_day": -0.0018648806010502334,
+        "dist_speed_au_day": -0.014842361526190402
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 296.74086764746704,
+        "dec_deg": -21.95925572113925
+      },
+      "astrometric_icrf": {
+        "ra_deg": 296.4488235052086,
+        "dec_deg": -22.00843578312425,
+        "dist_au": 34.405961239912784
+      }
+    },
+    {
+      "epoch_label": "2024-04-08T18:18:00",
+      "jd_tt": 2460409.2625,
+      "jd_tdb": 2460409.2625000193,
+      "target_id": 10,
+      "target_name": "Sun",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 19.397701606611076,
+        "lat_deg": -5.539799049946052e-05,
+        "dist_au": 1.0015069174976738,
+        "lon_speed_deg_day": 0.9829817913088144,
+        "lat_speed_deg_day": 4.039748691256795e-05,
+        "dist_speed_au_day": 0.00028557652239798707
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 17.903407863960226,
+        "dec_deg": 7.59137121472562
+      },
+      "astrometric_icrf": {
+        "ra_deg": 17.59403663987645,
+        "dec_deg": 7.4646230836091,
+        "dist_au": 1.0015069174976738
+      }
+    },
+    {
+      "epoch_label": "2024-04-08T18:18:00",
+      "jd_tt": 2460409.2625,
+      "jd_tdb": 2460409.2625000193,
+      "target_id": 301,
+      "target_name": "Moon",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 19.35866251214362,
+        "lat_deg": 0.3454600584076365,
+        "dist_au": 0.0024051313736748485,
+        "lon_speed_deg_day": 14.994543356154027,
+        "lat_speed_deg_day": 1.3860656488158267,
+        "dist_speed_au_day": 1.2529589691354137e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 17.73489691380161,
+        "dec_deg": 7.896370648933334
+      },
+      "astrometric_icrf": {
+        "ra_deg": 17.42537226536718,
+        "dec_deg": 7.76951126075089,
+        "dist_au": 0.0024051313736748476
+      }
+    },
+    {
+      "epoch_label": "2024-04-08T18:18:00",
+      "jd_tt": 2460409.2625,
+      "jd_tdb": 2460409.2625000193,
+      "target_id": 199,
+      "target_name": "Mercury",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 24.79963431422114,
+        "lat_deg": 2.834516639802583,
+        "dist_au": 0.606697135535026,
+        "lon_speed_deg_day": -0.6383800378235325,
+        "lat_speed_deg_day": -0.15479211711360677,
+        "dist_speed_au_day": -0.009605889824308036
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 21.91176455701254,
+        "dec_deg": 12.240122146526637
+      },
+      "astrometric_icrf": {
+        "ra_deg": 21.59732185802226,
+        "dec_deg": 12.116288845783902,
+        "dist_au": 0.6066971355350259
+      }
+    },
+    {
+      "epoch_label": "2024-04-08T18:18:00",
+      "jd_tt": 2460409.2625,
+      "jd_tdb": 2460409.2625000193,
+      "target_id": 299,
+      "target_name": "Venus",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 4.44166036090871,
+        "lat_deg": -1.4965150638326066,
+        "dist_au": 1.6468011270238112,
+        "lon_speed_deg_day": 1.2353081242806632,
+        "lat_speed_deg_day": 0.0004522059421675688,
+        "dist_speed_au_day": 0.002929379522042067
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 4.6701689577793735,
+        "dec_deg": 0.39150647986786963
+      },
+      "astrometric_icrf": {
+        "ra_deg": 4.365619380319051,
+        "dec_deg": 0.2593623575852755,
+        "dist_au": 1.6468011270238108
+      }
+    },
+    {
+      "epoch_label": "2024-04-08T18:18:00",
+      "jd_tt": 2460409.2625,
+      "jd_tdb": 2460409.2625000193,
+      "target_id": 4,
+      "target_name": "Mars_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 343.04926463875285,
+        "lat_deg": -1.244721645686592,
+        "dist_au": 2.0607741727615547,
+        "lon_speed_deg_day": 0.7774685302580343,
+        "lat_speed_deg_day": -0.0023912494659742924,
+        "dist_speed_au_day": -0.003814069024519647
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 344.85806499322734,
+        "dec_deg": -7.8090443275605645
+      },
+      "astrometric_icrf": {
+        "ra_deg": 344.5475758936746,
+        "dec_deg": -7.936397344318427,
+        "dist_au": 2.060774172761554
+      }
+    },
+    {
+      "epoch_label": "2024-04-08T18:18:00",
+      "jd_tt": 2460409.2625,
+      "jd_tdb": 2460409.2625000193,
+      "target_id": 5,
+      "target_name": "Jupiter_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 49.045139910796046,
+        "lat_deg": -0.8016520167771336,
+        "dist_au": 5.851752642965844,
+        "lon_speed_deg_day": 0.22134478890912004,
+        "lat_speed_deg_day": 0.002305875525318294,
+        "dist_speed_au_day": 0.008206946043427144
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 46.81952062941359,
+        "dec_deg": 16.710665634346373
+      },
+      "astrometric_icrf": {
+        "ra_deg": 46.486086046865715,
+        "dec_deg": 16.617823500237915,
+        "dist_au": 5.8517526429658435
+      }
+    },
+    {
+      "epoch_label": "2024-04-08T18:18:00",
+      "jd_tt": 2460409.2625,
+      "jd_tdb": 2460409.2625000193,
+      "target_id": 6,
+      "target_name": "Saturn_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 344.4549479846279,
+        "lat_deg": -1.6844416291779563,
+        "dist_au": 10.513214845665118,
+        "lon_speed_deg_day": 0.10760644513284226,
+        "lat_speed_deg_day": -0.0023565804452779266,
+        "dist_speed_au_day": -0.00956888701381641
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 346.3376875379554,
+        "dec_deg": -7.673249034299229
+      },
+      "astrometric_icrf": {
+        "ra_deg": 346.02782182197484,
+        "dec_deg": -7.801516578165642,
+        "dist_au": 10.513214845665118
+      }
+    },
+    {
+      "epoch_label": "2024-04-08T18:18:00",
+      "jd_tt": 2460409.2625,
+      "jd_tdb": 2460409.2625000193,
+      "target_id": 7,
+      "target_name": "Uranus_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 51.170985482017805,
+        "lat_deg": -0.27058420363794866,
+        "dist_au": 20.441873807642846,
+        "lon_speed_deg_day": 0.05125928503397837,
+        "lat_speed_deg_day": 0.0002598506119650964,
+        "dist_speed_au_day": 0.009023960691803909
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 48.816033011323924,
+        "dec_deg": 17.79023656266773
+      },
+      "astrometric_icrf": {
+        "ra_deg": 48.47951976112916,
+        "dec_deg": 17.70069061099388,
+        "dist_au": 20.441873807642846
+      }
+    },
+    {
+      "epoch_label": "2024-04-08T18:18:00",
+      "jd_tt": 2460409.2625,
+      "jd_tdb": 2460409.2625000193,
+      "target_id": 8,
+      "target_name": "Neptune_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 358.1900497708921,
+        "lat_deg": -1.2219228070871855,
+        "dist_au": 30.832509768097754,
+        "lon_speed_deg_day": 0.035885037209817686,
+        "lat_speed_deg_day": -0.000358071507541619,
+        "dist_speed_au_day": -0.005935440594758445
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 358.8253659633804,
+        "dec_deg": -1.840985668944416
+      },
+      "astrometric_icrf": {
+        "ra_deg": 358.5205088156393,
+        "dec_deg": -1.9733190630562027,
+        "dist_au": 30.83250976809775
+      }
+    },
+    {
+      "epoch_label": "2024-04-08T18:18:00",
+      "jd_tt": 2460409.2625,
+      "jd_tdb": 2460409.2625000193,
+      "target_id": 9,
+      "target_name": "Pluto_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 301.96763619086346,
+        "lat_deg": -2.964172782681881,
+        "dist_au": 35.19343715899989,
+        "lon_speed_deg_day": 0.011286718531360559,
+        "lat_speed_deg_day": -0.002814700556037232,
+        "dist_speed_au_day": -0.015929481513418883
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 304.94200906819754,
+        "dec_deg": -22.60888311556798
+      },
+      "astrometric_icrf": {
+        "ra_deg": 304.5871750625403,
+        "dec_deg": -22.683433903346973,
+        "dist_au": 35.19343715899989
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "jd_tdb": 2461206.5000000065,
+      "target_id": 10,
+      "target_name": "Sun",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 83.93385708720787,
+        "lat_deg": 0.00014408442912198347,
+        "dist_au": 1.0157061440507664,
+        "lon_speed_deg_day": 0.9557992501736503,
+        "lat_speed_deg_day": -1.2156402494147652e-05,
+        "dist_speed_au_day": 9.547070369152805e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 83.3929588734484,
+        "dec_deg": 23.299054288398764
+      },
+      "astrometric_icrf": {
+        "ra_deg": 82.99512039980482,
+        "dec_deg": 23.27970691923537,
+        "dist_au": 1.0157061440507666
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "jd_tdb": 2461206.5000000065,
+      "target_id": 301,
+      "target_name": "Moon",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 82.18571639228175,
+        "lat_deg": 4.738278351879847,
+        "dist_au": 0.0023877102255580236,
+        "lon_speed_deg_day": 15.315997890107825,
+        "lat_speed_deg_day": -0.45627411977865046,
+        "dist_speed_au_day": 4.1521144240700893e-07
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 81.17763425607924,
+        "dec_deg": 27.937213069458306
+      },
+      "astrometric_icrf": {
+        "ra_deg": 80.76587596460278,
+        "dec_deg": 27.912287776180083,
+        "dist_au": 0.0023877102255580236
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "jd_tdb": 2461206.5000000065,
+      "target_id": 199,
+      "target_name": "Mercury",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 108.40598669758143,
+        "lat_deg": 1.1432112627249247,
+        "dist_au": 0.8365855471523369,
+        "lon_speed_deg_day": 1.0099246062514917,
+        "lat_speed_deg_day": -0.15751557022263005,
+        "dist_speed_au_day": -0.017520906712430253
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 110.10438074517428,
+        "dec_deg": 23.30573762393565
+      },
+      "astrometric_icrf": {
+        "ra_deg": 109.70876112269109,
+        "dec_deg": 23.353456100075608,
+        "dist_au": 0.836585547152337
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "jd_tdb": 2461206.5000000065,
+      "target_id": 299,
+      "target_name": "Venus",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 121.80418149254918,
+        "lat_deg": 2.0343246347217967,
+        "dist_au": 1.1605647708606877,
+        "lon_speed_deg_day": 1.1628590130998875,
+        "lat_speed_deg_day": -0.002668305887642287,
+        "dist_speed_au_day": -0.007085384442922144
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 124.54225127160717,
+        "dec_deg": 21.739685652474574
+      },
+      "astrometric_icrf": {
+        "ra_deg": 124.15677340115091,
+        "dec_deg": 21.8203967845165,
+        "dist_au": 1.1605647708606879
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "jd_tdb": 2461206.5000000065,
+      "target_id": 4,
+      "target_name": "Mars_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 50.04482087150522,
+        "lat_deg": -0.4815335835739922,
+        "dist_au": 2.15071589080582,
+        "lon_speed_deg_day": 0.7280354861033667,
+        "lat_speed_deg_day": 0.010812678279537235,
+        "dist_speed_au_day": -0.002550494959997129
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 47.73585383206649,
+        "dec_deg": 17.288096409622558
+      },
+      "astrometric_icrf": {
+        "ra_deg": 47.36635211986869,
+        "dec_deg": 17.18786352352503,
+        "dist_au": 2.1507158908058206
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "jd_tdb": 2461206.5000000065,
+      "target_id": 5,
+      "target_name": "Jupiter_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 116.81539430899389,
+        "lat_deg": 0.4236231013226441,
+        "dist_au": 6.094701837139653,
+        "lon_speed_deg_day": 0.20320653048995177,
+        "lat_speed_deg_day": 0.0008841786115321845,
+        "dist_speed_au_day": 0.008843325687226183
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 118.93890170534931,
+        "dec_deg": 21.208096077096393
+      },
+      "astrometric_icrf": {
+        "ra_deg": 118.5522244266466,
+        "dec_deg": 21.27655522962246,
+        "dist_au": 6.094701837139653
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "jd_tdb": 2461206.5000000065,
+      "target_id": 6,
+      "target_name": "Saturn_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 13.305748830476995,
+        "lat_deg": -2.31406609642994,
+        "dist_au": 9.755654116936528,
+        "lon_speed_deg_day": 0.06669809043924432,
+        "lat_speed_deg_day": -0.004049569038049125,
+        "dist_speed_au_day": -0.01567694259706395
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 13.143062148194096,
+        "dec_deg": 3.119694053882682
+      },
+      "astrometric_icrf": {
+        "ra_deg": 12.802465526059036,
+        "dec_deg": 2.975487116559754,
+        "dist_au": 9.755654116936528
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "jd_tdb": 2461206.5000000065,
+      "target_id": 7,
+      "target_name": "Uranus_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 62.86023179685769,
+        "lat_deg": -0.15771477134595127,
+        "dist_au": 20.40510969452831,
+        "lon_speed_deg_day": 0.05551199936166592,
+        "lat_speed_deg_day": 9.777849723524011e-05,
+        "dist_speed_au_day": -0.006109538467863777
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 60.840614275106724,
+        "dec_deg": 20.575055833153428
+      },
+      "astrometric_icrf": {
+        "ra_deg": 60.457385247464515,
+        "dec_deg": 20.501689734057393,
+        "dist_au": 20.40510969452831
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "jd_tdb": 2461206.5000000065,
+      "target_id": 8,
+      "target_name": "Neptune_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 4.2808172909167315,
+        "lat_deg": -1.3522812047266306,
+        "dist_au": 30.04625764606376,
+        "lon_speed_deg_day": 0.012196257396323606,
+        "lat_speed_deg_day": -0.000863206127245757,
+        "dist_speed_au_day": -0.01656397382262022
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 4.465357558113523,
+        "dec_deg": 0.46007354417101964
+      },
+      "astrometric_icrf": {
+        "ra_deg": 4.125538952190523,
+        "dec_deg": 0.3125707236618425,
+        "dist_au": 30.04625764606377
+      }
+    },
+    {
+      "epoch_label": "2026-06-15T00:00:00",
+      "jd_tt": 2461206.5,
+      "jd_tdb": 2461206.5000000065,
+      "target_id": 9,
+      "target_name": "Pluto_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 305.1720645381086,
+        "lat_deg": -4.183530597918279,
+        "dist_au": 34.76702684644455,
+        "lon_speed_deg_day": -0.01614880072607418,
+        "lat_speed_deg_day": -0.0027413052774285887,
+        "dist_speed_au_day": -0.010461040645411472
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 308.6270456004785,
+        "dec_deg": -23.029280496330767
+      },
+      "astrometric_icrf": {
+        "ra_deg": 308.23197394017416,
+        "dec_deg": -23.12097790352076,
+        "dist_au": 34.76702684644455
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "jd_tdb": 2469807.499999999,
+      "target_id": 10,
+      "target_name": "Sun",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 280.7475596394059,
+        "lat_deg": 0.00010272484525565037,
+        "dist_au": 0.9833493299904692,
+        "lon_speed_deg_day": 1.0191195933996673,
+        "lat_speed_deg_day": -2.7783308519708324e-05,
+        "dist_speed_au_day": -2.2128693454648324e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 281.6879496488187,
+        "dec_deg": -22.99632107283115
+      },
+      "astrometric_icrf": {
+        "ra_deg": 280.9331121185229,
+        "dec_deg": -23.052240813520154,
+        "dist_au": 0.983349329990469
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "jd_tdb": 2469807.499999999,
+      "target_id": 301,
+      "target_name": "Moon",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 18.664783566931,
+        "lat_deg": 3.3919492453130533,
+        "dist_au": 0.002531489466397458,
+        "lon_speed_deg_day": 13.494502079476716,
+        "lat_speed_deg_day": -0.922202821620165,
+        "dist_speed_au_day": 3.0144174189582444e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 15.91093832506973,
+        "dec_deg": 10.446895441449804
+      },
+      "astrometric_icrf": {
+        "ra_deg": 15.25183525077424,
+        "dec_deg": 10.176976344598973,
+        "dist_au": 0.0025314894663974576
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "jd_tdb": 2469807.499999999,
+      "target_id": 199,
+      "target_name": "Mercury",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 270.0602486307546,
+        "lat_deg": 3.135699602470375,
+        "dist_au": 0.7014859534285508,
+        "lon_speed_deg_day": -0.9572611667450934,
+        "lat_speed_deg_day": 0.06786333887629191,
+        "dist_speed_au_day": 0.011688189221737208
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 270.06414054854406,
+        "dec_deg": -20.295580904041238
+      },
+      "astrometric_icrf": {
+        "ra_deg": 269.32210221150183,
+        "dec_deg": -20.295520315551528,
+        "dist_au": 0.7014859534285508
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "jd_tdb": 2469807.499999999,
+      "target_id": 299,
+      "target_name": "Venus",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 281.24702369908005,
+        "lat_deg": -0.606043636584237,
+        "dist_au": 1.7106918511721125,
+        "lon_speed_deg_day": 1.2583589970959521,
+        "lat_speed_deg_day": -0.03626905449110907,
+        "dist_speed_au_day": -5.30229898116398e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 282.2843013388018,
+        "dec_deg": -23.559151682293198
+      },
+      "astrometric_icrf": {
+        "ra_deg": 281.5264938534729,
+        "dec_deg": -23.617840804083873,
+        "dist_au": 1.7106918511721125
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "jd_tdb": 2469807.499999999,
+      "target_id": 4,
+      "target_name": "Mars_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 227.71417842869502,
+        "lat_deg": 0.7726812814344699,
+        "dist_au": 2.0120052115267533,
+        "lon_speed_deg_day": 0.6354201851785418,
+        "lat_speed_deg_day": -0.007420573960676998,
+        "dist_speed_au_day": -0.008450723834099604
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 225.4781882362335,
+        "dec_deg": -16.36645254607271
+      },
+      "astrometric_icrf": {
+        "ra_deg": 224.77891807256816,
+        "dec_deg": -16.17088122071696,
+        "dist_au": 2.0120052115267533
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "jd_tdb": 2469807.499999999,
+      "target_id": 5,
+      "target_name": "Jupiter_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 121.69163728067876,
+        "lat_deg": 0.45807944992092126,
+        "dist_au": 4.3111385691173005,
+        "lon_speed_deg_day": -0.1182759657400752,
+        "lat_speed_deg_day": 0.002758528238712883,
+        "dist_speed_au_day": -0.005371607569446774
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 124.04497993021279,
+        "dec_deg": 20.223285129018244
+      },
+      "astrometric_icrf": {
+        "ra_deg": 123.30891560822006,
+        "dec_deg": 20.380987976955435,
+        "dist_au": 4.3111385691173005
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "jd_tdb": 2469807.499999999,
+      "target_id": 6,
+      "target_name": "Saturn_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 297.5741735517082,
+        "lat_deg": -0.20358905994339951,
+        "dist_au": 10.922005717923541,
+        "lon_speed_deg_day": 0.11564560893202114,
+        "lat_speed_deg_day": -0.0011138300340688735,
+        "dist_speed_au_day": 0.004756524442668554
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 299.68907618385197,
+        "dec_deg": -20.838749475253106
+      },
+      "astrometric_icrf": {
+        "ra_deg": 298.9573570802796,
+        "dec_deg": -20.976083772612103,
+        "dist_au": 10.922005717923541
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "jd_tdb": 2469807.499999999,
+      "target_id": 7,
+      "target_name": "Uranus_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 170.7325210040091,
+        "lat_deg": 0.786732142171108,
+        "dist_au": 17.923995402215702,
+        "lon_speed_deg_day": -0.005917883737692434,
+        "lat_speed_deg_day": 0.0006997651449789247,
+        "dist_speed_au_day": -0.0162239214304523
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 171.79534554048905,
+        "dec_deg": 4.394952987941024
+      },
+      "astrometric_icrf": {
+        "ra_deg": 171.14581593301273,
+        "dec_deg": 4.6729181091116425,
+        "dist_au": 17.923995402215706
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "jd_tdb": 2469807.499999999,
+      "target_id": 8,
+      "target_name": "Neptune_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 53.603438244774594,
+        "lat_deg": -1.762788667146132,
+        "dist_au": 29.139633455148946,
+        "lon_speed_deg_day": -0.01717944312360486,
+        "lat_speed_deg_day": 0.0008110406603998458,
+        "dist_speed_au_day": 0.012755878277768836
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 51.67972492728777,
+        "dec_deg": 16.959941757876617
+      },
+      "astrometric_icrf": {
+        "ra_deg": 50.96458503656779,
+        "dec_deg": 16.78527243856377,
+        "dist_au": 29.13963345514894
+      }
+    },
+    {
+      "epoch_label": "2050-01-01T00:00:00",
+      "jd_tt": 2469807.5,
+      "jd_tdb": 2469807.499999999,
+      "target_id": 9,
+      "target_name": "Pluto_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 337.53303359897774,
+        "lat_deg": -12.691379307467741,
+        "dist_au": 41.95117214469649,
+        "lon_speed_deg_day": 0.01686231923712044,
+        "lat_speed_deg_day": 0.0036950563969917883,
+        "dist_speed_au_day": 0.014845911144838447
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 344.22339739573704,
+        "dec_deg": -20.477013367504536
+      },
+      "astrometric_icrf": {
+        "ra_deg": 343.5528365770291,
+        "dec_deg": -20.74419920865437,
+        "dist_au": 41.9511721446965
+      }
+    },
+    {
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "jd_tdb": 2488069.499999999,
+      "target_id": 10,
+      "target_name": "Sun",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 280.6033268103229,
+        "lat_deg": 7.847358097308934e-05,
+        "dist_au": 0.9833577324815875,
+        "lon_speed_deg_day": 1.0188918689966924,
+        "lat_speed_deg_day": -3.894626048577313e-05,
+        "dist_speed_au_day": -1.42223966023925e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 281.5315384942525,
+        "dec_deg": -23.005295916167455
+      },
+      "astrometric_icrf": {
+        "ra_deg": 280.02237425248563,
+        "dec_deg": -23.10668313429204,
+        "dist_au": 0.9833577324815874
+      }
+    },
+    {
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "jd_tdb": 2488069.499999999,
+      "target_id": 301,
+      "target_name": "Moon",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 157.40033613789967,
+        "lat_deg": 1.0927266786261878,
+        "dist_au": 0.0024845259481413627,
+        "lon_speed_deg_day": 14.011868515752205,
+        "lat_speed_deg_day": -1.2116703966347497,
+        "dist_speed_au_day": -7.961998539226877e-06
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 159.5082476176462,
+        "dec_deg": 9.803328134539887
+      },
+      "astrometric_icrf": {
+        "ra_deg": 158.18686598734087,
+        "dec_deg": 10.323174888244731,
+        "dist_au": 0.0024845259481413627
+      }
+    },
+    {
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "jd_tdb": 2488069.499999999,
+      "target_id": 199,
+      "target_name": "Mercury",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 288.0044225043522,
+        "lat_deg": -2.1126692228475057,
+        "dist_au": 1.386115808105813,
+        "lon_speed_deg_day": 1.6228658178677566,
+        "lat_speed_deg_day": -0.023240217642279237,
+        "dist_speed_au_day": -0.00896427646236732
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 289.81220715175226,
+        "dec_deg": -24.31200816312263
+      },
+      "astrometric_icrf": {
+        "ra_deg": 288.2969036521967,
+        "dec_deg": -24.490827903270542,
+        "dist_au": 1.3861158081058134
+      }
+    },
+    {
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "jd_tdb": 2488069.499999999,
+      "target_id": 299,
+      "target_name": "Venus",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 320.06947225075874,
+        "lat_deg": -1.8524341801382835,
+        "dist_au": 1.1257485334138173,
+        "lon_speed_deg_day": 1.2027376934038934,
+        "lat_speed_deg_day": 0.02214590014528553,
+        "dist_speed_au_day": -0.006360739037279337
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 323.0840369447108,
+        "dec_deg": -16.54296170342953
+      },
+      "astrometric_icrf": {
+        "ra_deg": 321.7031237299448,
+        "dec_deg": -16.981236782589082,
+        "dist_au": 1.1257485334138173
+      }
+    },
+    {
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "jd_tdb": 2488069.499999999,
+      "target_id": 4,
+      "target_name": "Mars_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 29.524983728370295,
+        "lat_deg": 0.9517474424455372,
+        "dist_au": 0.8699532374562089,
+        "lon_speed_deg_day": 0.40663594424987803,
+        "lat_speed_deg_day": 0.019418838937470085,
+        "dist_speed_au_day": 0.008953832518990932
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 27.11541497525355,
+        "dec_deg": 12.190088273805774
+      },
+      "astrometric_icrf": {
+        "ra_deg": 25.779286489290232,
+        "dec_deg": 11.689602439537246,
+        "dist_au": 0.869953237456209
+      }
+    },
+    {
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "jd_tdb": 2488069.499999999,
+      "target_id": 5,
+      "target_name": "Jupiter_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 201.20619328553104,
+        "lat_deg": 1.276604724060568,
+        "dist_au": 5.545856129787547,
+        "lon_speed_deg_day": 0.10632059567824492,
+        "lat_speed_deg_day": 0.0036713503883773666,
+        "dist_speed_au_day": -0.015878611062855267
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 200.0781007897623,
+        "dec_deg": -7.085272673201159
+      },
+      "astrometric_icrf": {
+        "ra_deg": 198.7748807567985,
+        "dec_deg": -6.559507327774402,
+        "dist_au": 5.5458561297875475
+      }
+    },
+    {
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "jd_tdb": 2488069.499999999,
+      "target_id": 6,
+      "target_name": "Saturn_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 205.63157338369976,
+        "lat_deg": 2.4222172968248152,
+        "dist_au": 9.874018044052484,
+        "lon_speed_deg_day": 0.057994131389396776,
+        "lat_speed_deg_day": 0.0041159053661031075,
+        "dist_speed_au_day": -0.016044370043514247
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 204.65019422640538,
+        "dec_deg": -7.646763929967729
+      },
+      "astrometric_icrf": {
+        "ra_deg": 203.3402199815281,
+        "dec_deg": -7.1372911483307595,
+        "dist_au": 9.874018044052482
+      }
+    },
+    {
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "jd_tdb": 2488069.499999999,
+      "target_id": 7,
+      "target_name": "Uranus_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 17.74117204343993,
+        "lat_deg": -0.6294685651382972,
+        "dist_au": 19.824751024025822,
+        "lon_speed_deg_day": 0.004544267036643177,
+        "lat_speed_deg_day": 0.0006298273042696687,
+        "dist_speed_au_day": 0.01707931694212435
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 16.601562439260785,
+        "dec_deg": 6.377005724634753
+      },
+      "astrometric_icrf": {
+        "ra_deg": 15.3023674869997,
+        "dec_deg": 5.840618503862016,
+        "dist_au": 19.824751024025826
+      }
+    },
+    {
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "jd_tdb": 2488069.499999999,
+      "target_id": 8,
+      "target_name": "Neptune_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 167.29050582316125,
+        "lat_deg": 0.9638902455490348,
+        "dist_au": 29.804990668027262,
+        "lon_speed_deg_day": -0.007190964605707357,
+        "lat_speed_deg_day": 0.0006710612895726028,
+        "dist_speed_au_day": -0.01593604493109193
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 168.68553277915646,
+        "dec_deg": 5.906166635080684
+      },
+      "astrometric_icrf": {
+        "ra_deg": 167.38832887918812,
+        "dec_deg": 6.4515190677981495,
+        "dist_au": 29.804990668027266
+      }
+    },
+    {
+      "epoch_label": "2100-01-01T00:00:00",
+      "jd_tt": 2488069.5,
+      "jd_tdb": 2488069.499999999,
+      "target_id": 9,
+      "target_name": "Pluto_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 32.40298690993593,
+        "lat_deg": -16.92121683200442,
+        "dist_au": 48.5747520204385,
+        "lon_speed_deg_day": -0.005425345629312111,
+        "lat_speed_deg_day": 0.005702473548632549,
+        "dist_speed_au_day": 0.015648459286706762
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 35.96598905001054,
+        "dec_deg": -3.6246139909519406
+      },
+      "astrometric_icrf": {
+        "ra_deg": 34.70262706470333,
+        "dec_deg": -4.0796117226716975,
+        "dist_au": 48.57475202043852
+      }
+    },
+    {
+      "epoch_label": "2145-01-01T00:00:00",
+      "jd_tt": 2504505.5,
+      "jd_tdb": 2504505.4999999986,
+      "target_id": 10,
+      "target_name": "Sun",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 280.6822246715685,
+        "lat_deg": -9.513604886657674e-05,
+        "dist_au": 0.9834114156695378,
+        "lon_speed_deg_day": 1.019044341190258,
+        "lat_speed_deg_day": -3.373445843225704e-05,
+        "dist_speed_au_day": -2.9864276132479472e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 281.6160723787273,
+        "dec_deg": -22.988618037920308
+      },
+      "astrometric_icrf": {
+        "ra_deg": 279.4242354095885,
+        "dec_deg": -23.1381712328937,
+        "dist_au": 0.9834114156695376
+      }
+    },
+    {
+      "epoch_label": "2145-01-01T00:00:00",
+      "jd_tt": 2504505.5,
+      "jd_tdb": 2504505.4999999986,
+      "target_id": 301,
+      "target_name": "Moon",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 11.073161251378647,
+        "lat_deg": 0.8901832745976078,
+        "dist_au": 0.0026818579648864474,
+        "lon_speed_deg_day": 11.96755762161509,
+        "lat_speed_deg_day": -1.0432897527472234,
+        "dist_speed_au_day": 2.0314716252577392e-05
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 9.83133213587625,
+        "dec_deg": 5.196929401236234
+      },
+      "astrometric_icrf": {
+        "ra_deg": 7.960438857064319,
+        "dec_deg": 4.39931176123943,
+        "dist_au": 0.0026818579648864482
+      }
+    },
+    {
+      "epoch_label": "2145-01-01T00:00:00",
+      "jd_tt": 2504505.5,
+      "jd_tdb": 2504505.4999999986,
+      "target_id": 199,
+      "target_name": "Mercury",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 275.3809168220456,
+        "lat_deg": -1.2785195195763854,
+        "dist_au": 1.4358201350214135,
+        "lon_speed_deg_day": 1.5746161072948464,
+        "lat_speed_deg_day": -0.08720713901845986,
+        "dist_speed_au_day": 0.0021583239075196503
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 275.91775236324565,
+        "dec_deg": -24.586017447076525
+      },
+      "astrometric_icrf": {
+        "ra_deg": 273.69515796844337,
+        "dec_deg": -24.65605402518535,
+        "dist_au": 1.4358201350214135
+      }
+    },
+    {
+      "epoch_label": "2145-01-01T00:00:00",
+      "jd_tt": 2504505.5,
+      "jd_tdb": 2504505.4999999986,
+      "target_id": 299,
+      "target_name": "Venus",
+      "target_kind": "planet",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 324.84775515471665,
+        "lat_deg": -0.4454706521594489,
+        "dist_au": 0.4811691698395397,
+        "lon_speed_deg_day": 0.7333234441620003,
+        "lat_speed_deg_day": 0.1360786510825488,
+        "dist_speed_au_day": -0.007062721001267541
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 327.2835882421157,
+        "dec_deg": -13.647666336684784
+      },
+      "astrometric_icrf": {
+        "ra_deg": 325.3163507141417,
+        "dec_deg": -14.319596710296853,
+        "dist_au": 0.4811691698395398
+      }
+    },
+    {
+      "epoch_label": "2145-01-01T00:00:00",
+      "jd_tt": 2504505.5,
+      "jd_tdb": 2504505.4999999986,
+      "target_id": 4,
+      "target_name": "Mars_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 357.9636138885052,
+        "lat_deg": -0.3970101177269608,
+        "dist_au": 1.2967503088723626,
+        "lon_speed_deg_day": 0.6883467029847741,
+        "lat_speed_deg_day": 0.022640167073281738,
+        "dist_speed_au_day": 0.008196519730072039
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 358.2889587812655,
+        "dec_deg": -1.1735273461420093
+      },
+      "astrometric_icrf": {
+        "ra_deg": 356.4289607445698,
+        "dec_deg": -1.97987513584346,
+        "dist_au": 1.2967503088723629
+      }
+    },
+    {
+      "epoch_label": "2145-01-01T00:00:00",
+      "jd_tt": 2504505.5,
+      "jd_tdb": 2504505.4999999986,
+      "target_id": 5,
+      "target_name": "Jupiter_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 126.82742140453567,
+        "lat_deg": 0.5378347276632038,
+        "dist_au": 4.359512076677227,
+        "lon_speed_deg_day": -0.10923980182394545,
+        "lat_speed_deg_day": 0.0029376632812948065,
+        "dist_speed_au_day": -0.006712179693433753
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 129.3595221650814,
+        "dec_deg": 19.070034248892142
+      },
+      "astrometric_icrf": {
+        "ra_deg": 127.27235220253415,
+        "dec_deg": 19.5740780713715,
+        "dist_au": 4.359512076677226
+      }
+    },
+    {
+      "epoch_label": "2145-01-01T00:00:00",
+      "jd_tt": 2504505.5,
+      "jd_tdb": 2504505.4999999986,
+      "target_id": 6,
+      "target_name": "Saturn_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 12.62453458749693,
+        "lat_deg": -2.4902521380526106,
+        "dist_au": 9.301115575809193,
+        "lon_speed_deg_day": 0.030949360327593656,
+        "lat_speed_deg_day": 0.004350769799595733,
+        "dist_speed_au_day": 0.016571891288261788
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 12.584377749858493,
+        "dec_deg": 2.688794712950819
+      },
+      "astrometric_icrf": {
+        "ra_deg": 10.717268292794747,
+        "dec_deg": 1.898475424148573,
+        "dist_au": 9.301115575809195
+      }
+    },
+    {
+      "epoch_label": "2145-01-01T00:00:00",
+      "jd_tt": 2504505.5,
+      "jd_tdb": 2504505.4999999986,
+      "target_id": 7,
+      "target_name": "Uranus_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 223.12784774555175,
+        "lat_deg": 0.4223949624526369,
+        "dist_au": 19.059244933251133,
+        "lon_speed_deg_day": 0.04040338915848813,
+        "lat_speed_deg_day": 0.00018495826994002743,
+        "dist_speed_au_day": -0.014451464563905853
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 220.81242058339353,
+        "dec_deg": -15.362500258147957
+      },
+      "astrometric_icrf": {
+        "ra_deg": 218.81566806352652,
+        "dec_deg": -14.744677858636024,
+        "dist_au": 19.059244933251133
+      }
+    },
+    {
+      "epoch_label": "2145-01-01T00:00:00",
+      "jd_tt": 2504505.5,
+      "jd_tdb": 2504505.4999999986,
+      "target_id": 8,
+      "target_name": "Neptune_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 263.59581801269405,
+        "lat_deg": 1.3116780004656967,
+        "dist_au": 31.216868085656714,
+        "lon_speed_deg_day": 0.03644145317356164,
+        "lat_speed_deg_day": 0.00010045801853988754,
+        "dist_speed_au_day": -0.005149690915493702
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 263.09462505048884,
+        "dec_deg": -21.952943899711837
+      },
+      "astrometric_icrf": {
+        "ra_deg": 260.91874579714215,
+        "dec_deg": -21.843430966248974,
+        "dist_au": 31.216868085656703
+      }
+    },
+    {
+      "epoch_label": "2145-01-01T00:00:00",
+      "jd_tt": 2504505.5,
+      "jd_tdb": 2504505.4999999986,
+      "target_id": 9,
+      "target_name": "Pluto_BC",
+      "target_kind": "barycenter",
+      "apparent_ecliptic_true_of_date": {
+        "lon_deg": 75.76814184203586,
+        "lat_deg": -10.465704255702143,
+        "dist_au": 46.485845751269686,
+        "lon_speed_deg_day": -0.017186953418724123,
+        "lat_speed_deg_day": 0.0022824758568362933,
+        "dist_speed_au_day": 0.006910122582629091
+      },
+      "apparent_equatorial_true_of_date": {
+        "ra_deg": 75.67704025330103,
+        "dec_deg": 12.247950984287568
+      },
+      "astrometric_icrf": {
+        "ra_deg": 73.64373002432858,
+        "dec_deg": 12.036640310519562,
+        "dist_au": 46.48584575126967
+      }
+    }
+  ]
+}
