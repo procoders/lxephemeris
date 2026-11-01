@@ -6,6 +6,9 @@
 use crate::error::EphemerisError;
 use crate::types::{JD_J2000, SECONDS_PER_DAY};
 use serde::{Deserialize, Serialize};
+use std::fs::File;
+use std::io::{Read, Seek, SeekFrom};
+use std::path::Path;
 
 const DAF_RECORD_BYTES: usize = 1024;
 const DAF_RECORD_WORDS: usize = 128;
@@ -80,19 +83,19 @@ fn read_f64_at(bytes: &[u8], offset: usize, little_endian: bool) -> Option<f64> 
     })
 }
 
-/// Parses and validates the header, comment records, and segment descriptors of a `DAF/SPK` binary buffer.
-pub fn parse_daf_spk(bytes: &[u8], path_label: &str) -> Result<DafSpkFile, EphemerisError> {
-    if bytes.len() < DAF_RECORD_BYTES {
-        return Err(EphemerisError::CorruptKernel {
-            path: path_label.to_owned(),
-            reason: format!(
-                "File size {} bytes is smaller than 1024-byte DAF record",
-                bytes.len()
-            ),
-        });
-    }
+struct DafHeaderFields {
+    internal_name: String,
+    little_endian: bool,
+    fward: usize,
+    bward: usize,
+    free_word: usize,
+}
 
-    let magic = bytes
+fn parse_daf_header_record(
+    header: &[u8],
+    path_label: &str,
+) -> Result<DafHeaderFields, EphemerisError> {
+    let magic = header
         .get(0..8)
         .ok_or_else(|| EphemerisError::CorruptKernel {
             path: path_label.to_owned(),
@@ -109,18 +112,18 @@ pub fn parse_daf_spk(bytes: &[u8], path_label: &str) -> Result<DafSpkFile, Ephem
     }
 
     // Determine endianness from LOCFMT at offset 88..96 or ND==2 check at offset 8..12.
-    let locfmt = bytes.get(88..96).unwrap_or(b"        ");
+    let locfmt = header.get(88..96).unwrap_or(b"        ");
     let little_endian = if locfmt.starts_with(b"LTL-IEEE") {
         true
     } else if locfmt.starts_with(b"BIG-IEEE") {
         false
     } else {
-        let nd_le = read_i32_at(bytes, 8, true).unwrap_or(0);
+        let nd_le = read_i32_at(header, 8, true).unwrap_or(0);
         nd_le == 2
     };
 
-    let nd = read_i32_at(bytes, 8, little_endian).unwrap_or(0);
-    let ni = read_i32_at(bytes, 12, little_endian).unwrap_or(0);
+    let nd = read_i32_at(header, 8, little_endian).unwrap_or(0);
+    let ni = read_i32_at(header, 12, little_endian).unwrap_or(0);
     if nd != 2 || ni != 6 {
         return Err(EphemerisError::CorruptKernel {
             path: path_label.to_owned(),
@@ -128,14 +131,14 @@ pub fn parse_daf_spk(bytes: &[u8], path_label: &str) -> Result<DafSpkFile, Ephem
         });
     }
 
-    let internal_name = bytes
+    let internal_name = header
         .get(16..76)
         .map(|s| String::from_utf8_lossy(s).trim().to_owned())
         .unwrap_or_default();
 
-    let fward_i32 = read_i32_at(bytes, 76, little_endian).unwrap_or(0);
-    let bward_i32 = read_i32_at(bytes, 80, little_endian).unwrap_or(0);
-    let free_i32 = read_i32_at(bytes, 84, little_endian).unwrap_or(0);
+    let fward_i32 = read_i32_at(header, 76, little_endian).unwrap_or(0);
+    let bward_i32 = read_i32_at(header, 80, little_endian).unwrap_or(0);
+    let free_i32 = read_i32_at(header, 84, little_endian).unwrap_or(0);
 
     if fward_i32 < 2 || bward_i32 < fward_i32 || free_i32 < 1 {
         return Err(EphemerisError::CorruptKernel {
@@ -146,15 +149,136 @@ pub fn parse_daf_spk(bytes: &[u8], path_label: &str) -> Result<DafSpkFile, Ephem
         });
     }
 
-    let fward = fward_i32 as usize;
-    let bward = bward_i32 as usize;
-    let free_word = free_i32 as usize;
+    Ok(DafHeaderFields {
+        internal_name,
+        little_endian,
+        fward: fward_i32 as usize,
+        bward: bward_i32 as usize,
+        free_word: free_i32 as usize,
+    })
+}
+
+fn parse_summary_record_entries(
+    sum_record: &[u8],
+    name_record: &[u8],
+    curr_rec: usize,
+    little_endian: bool,
+    total_byte_len: usize,
+    path_label: &str,
+    segments: &mut Vec<DafSegmentDescriptor>,
+) -> Result<usize, EphemerisError> {
+    let next_f64 = read_f64_at(sum_record, 0, little_endian).unwrap_or(0.0);
+    let nsum_f64 = read_f64_at(sum_record, 16, little_endian).unwrap_or(0.0);
+
+    if !(0.0..=(MAX_SUMMARIES_PER_RECORD as f64)).contains(&nsum_f64) {
+        return Err(EphemerisError::CorruptKernel {
+            path: path_label.to_owned(),
+            reason: format!("Invalid NSUM={nsum_f64} in summary record {curr_rec}"),
+        });
+    }
+
+    let nsum = nsum_f64 as usize;
+    for idx in 0..nsum {
+        let entry_offset = 24 + idx.saturating_mul(SUMMARY_BYTES);
+        let start_et_s =
+            read_f64_at(sum_record, entry_offset, little_endian).ok_or_else(|| {
+                EphemerisError::CorruptKernel {
+                    path: path_label.to_owned(),
+                    reason: format!("Truncated summary entry {idx} in record {curr_rec}"),
+                }
+            })?;
+        let end_et_s =
+            read_f64_at(sum_record, entry_offset + 8, little_endian).ok_or_else(|| {
+                EphemerisError::CorruptKernel {
+                    path: path_label.to_owned(),
+                    reason: format!("Truncated summary entry {idx} in record {curr_rec}"),
+                }
+            })?;
+        let target_id = read_i32_at(sum_record, entry_offset + 16, little_endian).unwrap_or(0);
+        let center_id = read_i32_at(sum_record, entry_offset + 20, little_endian).unwrap_or(0);
+        let frame_id = read_i32_at(sum_record, entry_offset + 24, little_endian).unwrap_or(0);
+        let spk_type = read_i32_at(sum_record, entry_offset + 28, little_endian).unwrap_or(0);
+        let initial_word_i32 =
+            read_i32_at(sum_record, entry_offset + 32, little_endian).unwrap_or(0);
+        let final_word_i32 =
+            read_i32_at(sum_record, entry_offset + 36, little_endian).unwrap_or(0);
+
+        if !start_et_s.is_finite()
+            || !end_et_s.is_finite()
+            || start_et_s >= end_et_s
+            || initial_word_i32 < 1
+            || final_word_i32 < initial_word_i32
+        {
+            return Err(EphemerisError::CorruptKernel {
+                path: path_label.to_owned(),
+                reason: format!(
+                    "Invalid segment bounds for target {target_id}: et=[{start_et_s}, {end_et_s}], words=[{initial_word_i32}, {final_word_i32}]"
+                ),
+            });
+        }
+
+        let initial_word = initial_word_i32 as usize;
+        let final_word = final_word_i32 as usize;
+        let end_byte = final_word.saturating_mul(8);
+        if end_byte > total_byte_len {
+            return Err(EphemerisError::CorruptKernel {
+                path: path_label.to_owned(),
+                reason: format!(
+                    "Segment for target {target_id} references word {final_word} (byte {end_byte}), exceeding file size {total_byte_len}"
+                ),
+            });
+        }
+
+        let name_start = idx.saturating_mul(NAME_SLOT_BYTES);
+        let name = name_record
+            .get(name_start..name_start.saturating_add(NAME_SLOT_BYTES))
+            .map(|s| String::from_utf8_lossy(s).trim().to_owned())
+            .unwrap_or_default();
+
+        let start_jd_tdb = JD_J2000 + start_et_s / SECONDS_PER_DAY;
+        let end_jd_tdb = JD_J2000 + end_et_s / SECONDS_PER_DAY;
+
+        segments.push(DafSegmentDescriptor {
+            name,
+            target_id,
+            center_id,
+            frame_id,
+            spk_type,
+            start_et_s,
+            end_et_s,
+            start_jd_tdb,
+            end_jd_tdb,
+            initial_word,
+            final_word,
+        });
+    }
+
+    Ok(if next_f64 <= 0.0 {
+        0
+    } else {
+        next_f64 as usize
+    })
+}
+
+/// Parses and validates the header, comment records, and segment descriptors of a `DAF/SPK` binary buffer.
+pub fn parse_daf_spk(bytes: &[u8], path_label: &str) -> Result<DafSpkFile, EphemerisError> {
+    if bytes.len() < DAF_RECORD_BYTES {
+        return Err(EphemerisError::CorruptKernel {
+            path: path_label.to_owned(),
+            reason: format!(
+                "File size {} bytes is smaller than 1024-byte DAF record",
+                bytes.len()
+            ),
+        });
+    }
+
+    let hdr = parse_daf_header_record(bytes, path_label)?;
 
     // Extract DAF comment records (records 2 .. fward - 1).
     let mut comments = String::new();
-    if fward > 2 {
+    if hdr.fward > 2 {
         let mut comment_bytes = Vec::new();
-        'comment_loop: for rec_idx in 2..fward {
+        'comment_loop: for rec_idx in 2..hdr.fward {
             let rec_offset = (rec_idx - 1).saturating_mul(DAF_RECORD_BYTES);
             // Each comment record holds up to 1000 characters.
             let rec_slice =
@@ -181,7 +305,7 @@ pub fn parse_daf_spk(bytes: &[u8], path_label: &str) -> Result<DafSpkFile, Ephem
 
     // Traverse summary records starting at FWARD.
     let mut segments = Vec::new();
-    let mut curr_rec = fward;
+    let mut curr_rec = hdr.fward;
     let mut visited = 0usize;
     let max_records = bytes.len() / DAF_RECORD_BYTES + 1;
 
@@ -205,110 +329,178 @@ pub fn parse_daf_spk(bytes: &[u8], path_label: &str) -> Result<DafSpkFile, Ephem
         let name_offset = curr_rec.saturating_mul(DAF_RECORD_BYTES);
         let name_record = bytes
             .get(name_offset..name_offset.saturating_add(DAF_RECORD_BYTES))
-            .unwrap_or(&[]);
-
-        let next_f64 = read_f64_at(sum_record, 0, little_endian).unwrap_or(0.0);
-        let nsum_f64 = read_f64_at(sum_record, 16, little_endian).unwrap_or(0.0);
-
-        if !(0.0..=(MAX_SUMMARIES_PER_RECORD as f64)).contains(&nsum_f64) {
-            return Err(EphemerisError::CorruptKernel {
+            .ok_or_else(|| EphemerisError::CorruptKernel {
                 path: path_label.to_owned(),
-                reason: format!("Invalid NSUM={nsum_f64} in summary record {curr_rec}"),
-            });
-        }
+                reason: format!("Name record {} extends past end of file", curr_rec + 1),
+            })?;
 
-        let nsum = nsum_f64 as usize;
-        for idx in 0..nsum {
-            let entry_offset = 24 + idx.saturating_mul(SUMMARY_BYTES);
-            let start_et_s =
-                read_f64_at(sum_record, entry_offset, little_endian).ok_or_else(|| {
-                    EphemerisError::CorruptKernel {
-                        path: path_label.to_owned(),
-                        reason: format!("Truncated summary entry {idx} in record {curr_rec}"),
-                    }
-                })?;
-            let end_et_s =
-                read_f64_at(sum_record, entry_offset + 8, little_endian).ok_or_else(|| {
-                    EphemerisError::CorruptKernel {
-                        path: path_label.to_owned(),
-                        reason: format!("Truncated summary entry {idx} in record {curr_rec}"),
-                    }
-                })?;
-            let target_id =
-                read_i32_at(sum_record, entry_offset + 16, little_endian).unwrap_or(0);
-            let center_id =
-                read_i32_at(sum_record, entry_offset + 20, little_endian).unwrap_or(0);
-            let frame_id = read_i32_at(sum_record, entry_offset + 24, little_endian).unwrap_or(0);
-            let spk_type = read_i32_at(sum_record, entry_offset + 28, little_endian).unwrap_or(0);
-            let initial_word_i32 =
-                read_i32_at(sum_record, entry_offset + 32, little_endian).unwrap_or(0);
-            let final_word_i32 =
-                read_i32_at(sum_record, entry_offset + 36, little_endian).unwrap_or(0);
-
-            if !start_et_s.is_finite()
-                || !end_et_s.is_finite()
-                || start_et_s >= end_et_s
-                || initial_word_i32 < 1
-                || final_word_i32 < initial_word_i32
-            {
-                return Err(EphemerisError::CorruptKernel {
-                    path: path_label.to_owned(),
-                    reason: format!(
-                        "Invalid segment bounds for target {target_id}: et=[{start_et_s}, {end_et_s}], words=[{initial_word_i32}, {final_word_i32}]"
-                    ),
-                });
-            }
-
-            let initial_word = initial_word_i32 as usize;
-            let final_word = final_word_i32 as usize;
-            let end_byte = final_word.saturating_mul(8);
-            if end_byte > bytes.len() {
-                return Err(EphemerisError::CorruptKernel {
-                    path: path_label.to_owned(),
-                    reason: format!(
-                        "Segment for target {target_id} references word {final_word} (byte {end_byte}), exceeding file size {}",
-                        bytes.len()
-                    ),
-                });
-            }
-
-            let name_start = idx.saturating_mul(NAME_SLOT_BYTES);
-            let name = name_record
-                .get(name_start..name_start.saturating_add(NAME_SLOT_BYTES))
-                .map(|s| String::from_utf8_lossy(s).trim().to_owned())
-                .unwrap_or_default();
-
-            let start_jd_tdb = JD_J2000 + start_et_s / SECONDS_PER_DAY;
-            let end_jd_tdb = JD_J2000 + end_et_s / SECONDS_PER_DAY;
-
-            segments.push(DafSegmentDescriptor {
-                name,
-                target_id,
-                center_id,
-                frame_id,
-                spk_type,
-                start_et_s,
-                end_et_s,
-                start_jd_tdb,
-                end_jd_tdb,
-                initial_word,
-                final_word,
-            });
-        }
-
-        curr_rec = if next_f64 <= 0.0 {
-            0
-        } else {
-            next_f64 as usize
-        };
+        curr_rec = parse_summary_record_entries(
+            sum_record,
+            name_record,
+            curr_rec,
+            hdr.little_endian,
+            bytes.len(),
+            path_label,
+            &mut segments,
+        )?;
     }
 
     Ok(DafSpkFile {
-        internal_name,
-        little_endian,
-        fward,
-        bward,
-        free_word,
+        internal_name: hdr.internal_name,
+        little_endian: hdr.little_endian,
+        fward: hdr.fward,
+        bward: hdr.bward,
+        free_word: hdr.free_word,
+        comments,
+        segments,
+    })
+}
+
+/// Parses and validates ONLY the 1024-byte header record, comment records (`2..fward`), and
+/// `fward` summary/name record chain directly from disk via `File` + `Seek` without reading the
+/// Chebyshev/data payload into heap memory.
+pub fn parse_daf_spk_file_headers(path: &Path) -> Result<DafSpkFile, EphemerisError> {
+    let path_label = path.display().to_string();
+    let mut file = File::open(path).map_err(|e| EphemerisError::MissingData {
+        detail: format!("Failed to read BSP file '{path_label}': {e}"),
+    })?;
+    let file_len_u64 = file
+        .metadata()
+        .map_err(|e| EphemerisError::MissingData {
+            detail: format!("Failed to stat BSP file '{path_label}': {e}"),
+        })?
+        .len();
+    let file_len = usize::try_from(file_len_u64).map_err(|_| EphemerisError::CorruptKernel {
+        path: path_label.clone(),
+        reason: format!("File size {file_len_u64} exceeds addressable usize"),
+    })?;
+
+    if file_len < DAF_RECORD_BYTES {
+        return Err(EphemerisError::CorruptKernel {
+            path: path_label,
+            reason: format!(
+                "File size {file_len} bytes is smaller than 1024-byte DAF record"
+            ),
+        });
+    }
+
+    let mut header = [0u8; DAF_RECORD_BYTES];
+    file.read_exact(&mut header)
+        .map_err(|e| EphemerisError::CorruptKernel {
+            path: path_label.clone(),
+            reason: format!("Failed to read 1024-byte DAF header record: {e}"),
+        })?;
+
+    let hdr = parse_daf_header_record(&header, &path_label)?;
+
+    // Extract DAF comment records (records 2 .. fward - 1).
+    let mut comments = String::new();
+    if hdr.fward > 2 {
+        let mut comment_bytes = Vec::new();
+        let mut rec_buf = [0u8; 1000];
+        'comment_loop: for rec_idx in 2..hdr.fward {
+            let rec_offset = (rec_idx - 1).saturating_mul(DAF_RECORD_BYTES);
+            if rec_offset.saturating_add(1000) > file_len {
+                return Err(EphemerisError::CorruptKernel {
+                    path: path_label,
+                    reason: format!("Truncated DAF comment record {rec_idx}"),
+                });
+            }
+            file.seek(SeekFrom::Start(rec_offset as u64)).map_err(|e| {
+                EphemerisError::CorruptKernel {
+                    path: path_label.clone(),
+                    reason: format!("Failed to seek to DAF comment record {rec_idx}: {e}"),
+                }
+            })?;
+            file.read_exact(&mut rec_buf)
+                .map_err(|_| EphemerisError::CorruptKernel {
+                    path: path_label.clone(),
+                    reason: format!("Truncated DAF comment record {rec_idx}"),
+                })?;
+            for &b in &rec_buf {
+                if b == 4 {
+                    break 'comment_loop;
+                } else if b == 0 {
+                    comment_bytes.push(b'\n');
+                } else {
+                    comment_bytes.push(b);
+                }
+            }
+        }
+        comments = String::from_utf8_lossy(&comment_bytes).into_owned();
+    }
+
+    // Traverse summary records starting at FWARD.
+    let mut segments = Vec::new();
+    let mut curr_rec = hdr.fward;
+    let mut visited = 0usize;
+    let max_records = file_len / DAF_RECORD_BYTES + 1;
+    let mut sum_record = [0u8; DAF_RECORD_BYTES];
+    let mut name_record_buf = [0u8; DAF_RECORD_BYTES];
+
+    while curr_rec != 0 {
+        visited += 1;
+        if visited > max_records {
+            return Err(EphemerisError::CorruptKernel {
+                path: path_label,
+                reason: "Cycle detected in DAF summary record chain".to_owned(),
+            });
+        }
+
+        let sum_offset = (curr_rec - 1).saturating_mul(DAF_RECORD_BYTES);
+        if sum_offset.saturating_add(DAF_RECORD_BYTES) > file_len {
+            return Err(EphemerisError::CorruptKernel {
+                path: path_label,
+                reason: format!("Summary record {curr_rec} extends past end of file"),
+            });
+        }
+        file.seek(SeekFrom::Start(sum_offset as u64))
+            .map_err(|e| EphemerisError::CorruptKernel {
+                path: path_label.clone(),
+                reason: format!("Failed to seek to summary record {curr_rec}: {e}"),
+            })?;
+        file.read_exact(&mut sum_record)
+            .map_err(|_| EphemerisError::CorruptKernel {
+                path: path_label.clone(),
+                reason: format!("Summary record {curr_rec} extends past end of file"),
+            })?;
+
+        let name_offset = curr_rec.saturating_mul(DAF_RECORD_BYTES);
+        if name_offset.saturating_add(DAF_RECORD_BYTES) > file_len {
+            return Err(EphemerisError::CorruptKernel {
+                path: path_label,
+                reason: format!("Name record {} extends past end of file", curr_rec + 1),
+            });
+        }
+        file.seek(SeekFrom::Start(name_offset as u64))
+            .map_err(|e| EphemerisError::CorruptKernel {
+                path: path_label.clone(),
+                reason: format!("Failed to seek to name record {}: {e}", curr_rec + 1),
+            })?;
+        file.read_exact(&mut name_record_buf)
+            .map_err(|e| EphemerisError::CorruptKernel {
+                path: path_label.clone(),
+                reason: format!("Failed to read name record {}: {e}", curr_rec + 1),
+            })?;
+        let name_record: &[u8] = &name_record_buf;
+
+        curr_rec = parse_summary_record_entries(
+            &sum_record,
+            name_record,
+            curr_rec,
+            hdr.little_endian,
+            file_len,
+            &path_label,
+            &mut segments,
+        )?;
+    }
+
+    Ok(DafSpkFile {
+        internal_name: hdr.internal_name,
+        little_endian: hdr.little_endian,
+        fward: hdr.fward,
+        bward: hdr.bward,
+        free_word: hdr.free_word,
         comments,
         segments,
     })

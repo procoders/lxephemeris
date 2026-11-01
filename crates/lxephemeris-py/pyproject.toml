@@ -4,7 +4,7 @@ build-backend = "maturin"
 
 [project]
 name = "lxephemeris"
-version = "1.0.0"
+version = "1.0.1"
 description = "Clean-room high-precision astrological and astronomical ephemeris engine (DE440s + IAU 2006/2000A)"
 readme = "../../README.md"
 requires-python = ">=3.9"

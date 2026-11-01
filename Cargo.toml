@@ -8,7 +8,7 @@ members = [
 ]
 
 [workspace.package]
-version = "1.0.0"
+version = "1.0.1"
 edition = "2021"
 rust-version = "1.80"
 license = "PolyForm-Noncommercial-1.0.0 OR LicenseRef-Commercial"
@@ -25,6 +25,7 @@ indexing_slicing = "warn"
 
 [workspace.dependencies]
 anise = { version = "=0.9.4", default-features = false }
+bytes = "=1.12.1"
 hifitime = "=4.3.1"
 sofars = "=0.6.1"
 thiserror = "=2.0.21"

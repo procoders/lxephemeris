@@ -1,6 +1,6 @@
 {
   "name": "lxephemeris",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "High-precision clean-room astrological & astronomical ephemeris engine (Rust + napi-rs)",
   "license": "PolyForm-Noncommercial-1.0.0 OR LicenseRef-Commercial",
   "author": "ProCoders <lxephemeris@procoders.tech> (https://procoders.tech/)",

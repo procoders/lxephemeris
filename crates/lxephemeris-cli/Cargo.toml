@@ -22,7 +22,7 @@ commercial = ["swe-compat", "lxephemeris-core/commercial"]
 workspace = true
 
 [dependencies]
-lxephemeris-core = { version = "1.0.0", path = "../lxephemeris-core", default-features = false }
+lxephemeris-core = { version = "1.0.1", path = "../lxephemeris-core", default-features = false }
 anise.workspace = true
 hifitime.workspace = true
 sofars.workspace = true

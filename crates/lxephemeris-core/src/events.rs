@@ -216,6 +216,10 @@ fn characteristic_longitude_step_days(body: BodyId) -> f64 {
         BodyId::Planet(
             PlanetId::Sun | PlanetId::Mercury | PlanetId::Venus | PlanetId::Earth,
         ) => 1.0,
+        BodyId::Planet(PlanetId::Mars) => 2.0,
+        BodyId::Planet(PlanetId::Jupiter) => 5.0,
+        BodyId::Planet(PlanetId::Saturn) => 10.0,
+        BodyId::Planet(PlanetId::Uranus | PlanetId::Neptune | PlanetId::Pluto) => 15.0,
         BodyId::LunarPoint(_) => 0.5,
         BodyId::Planet(_) | BodyId::MinorPlanet(_) | BodyId::Hypothetical(_) => 2.0,
         BodyId::FixedStar(_) => 10.0,

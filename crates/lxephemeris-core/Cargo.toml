@@ -23,6 +23,7 @@ commercial = ["swe-compat"]
 [dependencies]
 anise.workspace = true
 base64.workspace = true
+bytes.workspace = true
 sofars.workspace = true
 thiserror.workspace = true
 serde.workspace = true

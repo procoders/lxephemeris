@@ -852,10 +852,11 @@ dependencies = [
 
 [[package]]
 name = "lxephemeris-core"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "anise",
  "base64",
+ "bytes",
  "rayon",
  "serde",
  "serde_json",
@@ -867,7 +868,7 @@ dependencies = [
 
 [[package]]
 name = "lxephemeris-node"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "lxephemeris-core",
  "napi",
@@ -878,7 +879,7 @@ dependencies = [
 
 [[package]]
 name = "lxephemeris-py"
-version = "1.0.0"
+version = "1.0.1"
 dependencies = [
  "lxephemeris-core",
  "pyo3",
